@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Variables locales
+.env
+*.env
+
+# Archivos de trabajo (no van al repo)
+FUENTES/
+PUBLICAR/
+*.xlsx
+generar_mapa_partidos.py

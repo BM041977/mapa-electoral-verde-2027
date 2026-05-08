@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BaldemarMaza.com — Mapas Electorales Chiapas 2024</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg:           #FBF9F4;
+    --bg-card:      #FFFFFF;
+    --ink:          #1A1A1A;
+    --ink-soft:     #5A5A5A;
+    --line:         #E8E4DC;
+    --accent:       #B85042;   /* terracota */
+    --accent-soft:  #F4E4E0;
+    --shadow-sm:    0 1px 2px rgba(26,26,26,0.04);
+    --shadow-md:    0 8px 24px rgba(26,26,26,0.08);
+    --shadow-lg:    0 16px 48px rgba(184,80,66,0.18);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Manrope', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+}
+
+/* Sutil textura de fondo */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(circle at 1px 1px, rgba(26,26,26,0.04) 1px, transparent 0);
+    background-size: 24px 24px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 32px 120px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ENCABEZADO */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 56px;
+    animation: fadeUp 0.6s ease-out;
+}
+
+.brand-mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: var(--ink);
+    position: relative;
+    flex-shrink: 0;
+}
+
+.brand-mark::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+}
+
+.brand-mark::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 50%;
+}
+
+.brand-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+}
+
+.brand-tld {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+header {
+    margin-bottom: 64px;
+    animation: fadeUp 0.7s ease-out;
+}
+
+.eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(36px, 5.5vw, 56px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    max-width: 720px;
+}
+
+h1 em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--accent);
+}
+
+.lead {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    max-width: 560px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    flex: 1;
+}
+
+@media (max-width: 720px) {
+    .cards { grid-template-columns: 1fr; }
+    .wrap { padding: 48px 20px 100px; }
+}
+
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 36px 32px 32px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    animation: fadeUp 0.7s ease-out backwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.15s; }
+.card:nth-child(2) { animation-delay: 0.3s; }
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent);
+}
+
+.card:hover::after { transform: scaleX(1); }
+
+.card-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    transition: background 0.25s ease;
+}
+
+.card:hover .card-icon {
+    background: var(--accent);
+    color: white;
+}
+
+.card-icon svg { width: 28px; height: 28px; }
+
+.card-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+}
+
+.card-desc {
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+    flex: 1;
+}
+
+.card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--ink-soft);
+}
+
+.card-cta {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: auto;
+}
+
+.card-cta svg {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.25s ease;
+}
+
+.card:hover .card-cta svg { transform: translateX(4px); }
+
+/* CONTADOR DE LOGOUT */
+#contador {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+    background: white;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+#contador::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #16a34a;
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+#contador.alerta {
+    background: #FEF2F2;
+    color: #B91C1C;
+    border-color: #FECACA;
+    font-weight: 600;
+}
+
+#contador.alerta::before { background: #DC2626; }
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* FOOTER */
+footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout-link {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.logout-link:hover {
+    color: var(--accent);
+}
+
+@media (max-width: 480px) {
+    footer { flex-direction: column; gap: 8px; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+    <div class="brand">
+        <span class="brand-mark"></span>
+        <span class="brand-name">BaldemarMaza<span class="brand-tld">.com</span></span>
+    </div>
+
+    <header>
+        <div class="eyebrow">Elección · Chiapas 2024</div>
+        <h1>Mapas <em>electorales</em><br>de casillas y partidos.</h1>
+        <p class="lead">Visualización geográfica de las 7,214 casillas instaladas. Selecciona la vista que deseas consultar.</p>
+    </header>
+
+    <div class="cards">
+
+        <a class="card" href="/mapa">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7" rx="1"/>
+                    <rect x="14" y="3" width="7" height="7" rx="1"/>
+                    <rect x="3" y="14" width="7" height="7" rx="1"/>
+                    <rect x="14" y="14" width="7" height="7" rx="1"/>
+                </svg>
+            </div>
+            <div class="card-title">Mapa Sección</div>
+            <p class="card-desc">Vista general de casillas con información por sección electoral: ubicación, listado nominal, votación total y porcentaje de participación ciudadana.</p>
+            <div class="card-meta">
+                <span class="tag">Secciones</span>
+                <span class="tag">Casillas</span>
+                <span class="tag">Participación</span>
+            </div>
+            <div class="card-cta">
+                Abrir mapa
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M13 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+
+        <a class="card" href="/mapa-partidos">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                    <path d="M2 17l10 5 10-5"/>
+                    <path d="M2 12l10 5 10-5"/>
+                </svg>
+            </div>
+            <div class="card-title">Mapa Partido</div>
+            <p class="card-desc">Análisis por fuerza política con capas filtrables: visualiza dónde ganó cada partido o consulta su intensidad de voto en todo el estado.</p>
+            <div class="card-meta">
+                <span class="tag">13 partidos</span>
+                <span class="tag">Ganador</span>
+                <span class="tag">Intensidad</span>
+            </div>
+            <div class="card-cta">
+                Abrir mapa
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M13 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+
+    </div>
+
+    <footer>
+        <span>© {{ owner }} · Ayuntamientos Chiapas 2024</span>
+        <a href="/logout" class="logout-link">Cerrar sesión</a>
+    </footer>
+
+</div>
+
+<div id="contador" aria-live="polite">⏳ 3:00</div>
+
+<script>
+(function () {
+    const DURACION_MS = 180000; // 3 minutos (alineado con Flask)
+    const UMBRAL = 30;
+    const URL_LOGOUT = '/logout';
+    const expira = Date.now() + DURACION_MS;
+    const c = document.getElementById('contador');
+    let expirado = false, iv;
+
+    function tick() {
+        const r = Math.max(0, Math.ceil((expira - Date.now()) / 1000));
+        const min = Math.floor(r / 60);
+        const sec = r % 60;
+        c.textContent = '⏳ ' + min + ':' + (sec < 10 ? '0' : '') + sec;
+        if (r <= UMBRAL && r > 0) c.classList.add('alerta');
+        if (r <= 0 && !expirado) {
+            expirado = true;
+            clearInterval(iv);
+            alert('Sesión expirada');
+            window.location.href = URL_LOGOUT;
+        }
+    }
+    tick();
+    iv = setInterval(tick, 1000);
+})();
+</script>
+
+</body>
+</html>

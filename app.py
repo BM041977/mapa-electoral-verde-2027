@@ -10,8 +10,8 @@ app = Flask(__name__)
 # 🔐 CONFIGURACIÓN
 app.secret_key = os.environ.get("SECRET_KEY", "clave_super_segura")
 
-# ⏳ SESIÓN DE 3 MINUTOS
-app.permanent_session_lifetime = timedelta(minutes=3)
+# ⏳ SESIÓN DE 20 MINUTOS
+app.permanent_session_lifetime = timedelta(minutes=20)
 
 # 🍪 SEGURIDAD DE COOKIES
 app.config["SESSION_COOKIE_HTTPONLY"] = True                              # JS no puede leer la cookie

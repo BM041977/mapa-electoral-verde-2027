@@ -420,11 +420,11 @@ footer {
 
 </div>
 
-<div id="contador" aria-live="polite">⏳ 3:00</div>
+<div id="contador" aria-live="polite">⏳ 20:00</div>
 
 <script>
 (function () {
-    const DURACION_MS = 180000; // 3 minutos (alineado con Flask)
+    const DURACION_MS = 1200000; // 20 minutos (alineado con Flask)
     const UMBRAL = 30;
     const URL_LOGOUT = '/logout';
     const expira = Date.now() + DURACION_MS;

@@ -1,126 +1,345 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Acceso al Sistema Electoral</title>
-    <style>
-        * { box-sizing: border-box; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acceso · BaldemarMaza.com</title>
 
-        body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #f4f6f9;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            padding: 20px;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        .card {
-            background: white;
-            padding: 40px 36px 28px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            width: 100%;
-            max-width: 380px;
-        }
+<style>
+:root {
+    --bg:           #FBF9F4;
+    --bg-card:      #FFFFFF;
+    --ink:          #1A1A1A;
+    --ink-soft:     #5A5A5A;
+    --ink-light:    #888888;
+    --line:         #E8E4DC;
+    --accent:       #2D2D2D;
+    --accent-soft:  #ECECEC;
+    --error:        #B91C1C;
+    --error-soft:   #FEF2F2;
+    --shadow-sm:    0 1px 2px rgba(26,26,26,0.04);
+    --shadow-md:    0 8px 24px rgba(26,26,26,0.08);
+    --shadow-lg:    0 16px 48px rgba(26,26,26,0.18);
+}
 
-        h1 {
-            margin: 0 0 28px;
-            text-align: center;
-            font-size: 1.35rem;
-            color: #1a1a1a;
-        }
+* { box-sizing: border-box; }
 
-        label {
-            display: block;
-            margin-bottom: 6px;
-            font-size: 0.9rem;
-            color: #444;
-        }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
-        input {
-            width: 100%;
-            padding: 10px 12px;
-            margin-bottom: 18px;
-            border: 1px solid #d0d7de;
-            border-radius: 6px;
-            font-size: 1rem;
-            background: #f7f9fc;
-            transition: border-color 0.2s, background 0.2s;
-        }
-        input:focus {
-            outline: none;
-            border-color: #2563eb;
-            background: white;
-        }
+body {
+    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+}
 
-        button {
-            width: 100%;
-            padding: 11px;
-            background: #2563eb;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 1rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        button:hover { background: #1d4ed8; }
+/* Patrón punteado del fondo (igual que la landing) */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.04) 1px, transparent 1px);
+    background-size: 24px 24px;
+    pointer-events: none;
+    z-index: 0;
+}
 
-        .error {
-            background: #fee2e2;
-            color: #991b1b;
-            padding: 10px 12px;
-            border-radius: 6px;
-            margin-bottom: 16px;
-            font-size: 0.9rem;
-            text-align: center;
-        }
+main {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+}
 
-        .aviso {
-            margin-top: 24px;
-            padding-top: 16px;
-            border-top: 1px solid #eee;
-            font-size: 0.72rem;
-            color: #888;
-            text-align: center;
-            line-height: 1.5;
-        }
-        .aviso a {
-            color: #888;
-            text-decoration: none;
-        }
-    </style>
+/* Brand arriba (igual que landing) */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: var(--ink);
+}
+
+.brand-mark {
+    width: 32px;
+    height: 32px;
+    background: var(--ink);
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+}
+.brand-mark::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+    border: 2px solid #888888;
+    border-radius: 50%;
+}
+.brand-mark::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 4px;
+    background: #888888;
+    border-radius: 50%;
+}
+
+.brand-text {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+}
+.brand-tld {
+    color: var(--ink-soft);
+    font-weight: 500;
+}
+
+/* Card de login */
+.login-card {
+    background: var(--bg-card);
+    border-radius: 24px;
+    padding: 40px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--line);
+    position: relative;
+}
+
+.login-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 32px;
+    right: 32px;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 0 0 4px 4px;
+    transform: scaleX(0.4);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+}
+
+.login-card:hover::before {
+    transform: scaleX(1);
+}
+
+.eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.subtitle {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin: 0 0 28px 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Inputs */
+.field {
+    margin-bottom: 16px;
+}
+
+.field label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 6px;
+    letter-spacing: 0.02em;
+}
+
+.field input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid var(--line);
+    border-radius: 10px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    background: var(--bg);
+    color: var(--ink);
+    transition: all 0.2s ease;
+}
+
+.field input:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: white;
+    box-shadow: 0 0 0 3px rgba(45, 45, 45, 0.08);
+}
+
+.field input::placeholder {
+    color: var(--ink-light);
+}
+
+/* Botón principal */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background: var(--ink);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-submit:hover {
+    background: var(--accent);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(26,26,26,0.18);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.btn-submit svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.2s ease;
+}
+
+.btn-submit:hover svg {
+    transform: translateX(2px);
+}
+
+/* Mensaje de error */
+.error-msg {
+    background: var(--error-soft);
+    color: var(--error);
+    border: 1px solid #FECACA;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Footer del card */
+.card-footer {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    text-align: center;
+    font-size: 12px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+}
+
+.card-footer strong {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+.contact-line {
+    margin-top: 4px;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    main { padding: 24px 16px; }
+    .brand { margin-bottom: 28px; }
+    .login-card { padding: 28px 24px; border-radius: 20px; }
+    h1 { font-size: 24px; }
+}
+</style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>Acceso al Sistema Electoral</h1>
+<main>
+    <div class="brand">
+        <div class="brand-mark"></div>
+        <span class="brand-text">BaldemarMaza<span class="brand-tld">.com</span></span>
+    </div>
+
+    <div class="login-card">
+        <p class="eyebrow">Elección · Chiapas 2024</p>
+        <h1>Acceso al sistema</h1>
+        <p class="subtitle">Ingresa tus credenciales para consultar los mapas electorales</p>
 
         {% if error %}
-            <div class="error">{{ error }}</div>
+            <div class="error-msg">{{ error }}</div>
         {% endif %}
 
-        <form method="POST" action="/">
-            <label for="usuario">Usuario</label>
-            <input type="text" id="usuario" name="usuario" autocomplete="username" required autofocus>
+        <form method="post" action="/">
+            <div class="field">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Tu nombre de usuario" required autocomplete="username">
+            </div>
 
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password" autocomplete="current-password" required>
+            <div class="field">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" required autocomplete="current-password">
+            </div>
 
-            <button type="submit">Entrar</button>
+            <button type="submit" class="btn-submit">
+                Entrar
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M13 5l7 7-7 7"/>
+                </svg>
+            </button>
         </form>
 
-        <div class="aviso">
-            Este sistema es un desarrollo independiente<br>
-            propiedad de <strong>{{ owner }}</strong><br>
-            <a href="tel:{{ telefono }}">{{ telefono }}</a>
+        <div class="card-footer">
+            Sistema desarrollado de manera independiente<br>
+            propiedad de <strong>Baldemar Maza León</strong>
+            <div class="contact-line">961 217 0091</div>
         </div>
     </div>
+</main>
 
 </body>
 </html>

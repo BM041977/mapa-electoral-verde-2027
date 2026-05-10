@@ -16,11 +16,11 @@
     --ink:          #1A1A1A;
     --ink-soft:     #5A5A5A;
     --line:         #E8E4DC;
-    --accent:       #B85042;   /* terracota */
-    --accent-soft:  #F4E4E0;
+    --accent:       #2D2D2D;   /* grafito (neutral) */
+    --accent-soft:  #ECECEC;
     --shadow-sm:    0 1px 2px rgba(26,26,26,0.04);
     --shadow-md:    0 8px 24px rgba(26,26,26,0.08);
-    --shadow-lg:    0 16px 48px rgba(184,80,66,0.18);
+    --shadow-lg:    0 16px 48px rgba(26,26,26,0.18);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -81,7 +81,7 @@ body::before {
     transform: translate(-50%, -50%);
     width: 14px;
     height: 14px;
-    border: 2px solid var(--accent);
+    border: 2px solid #888888;
     border-radius: 50%;
 }
 
@@ -93,7 +93,7 @@ body::before {
     transform: translate(-50%, -50%);
     width: 4px;
     height: 4px;
-    background: var(--accent);
+    background: #888888;
     border-radius: 50%;
 }
 
@@ -106,7 +106,7 @@ body::before {
 }
 
 .brand-tld {
-    color: var(--accent);
+    color: var(--ink-soft);
     font-weight: 500;
 }
 
@@ -120,7 +120,7 @@ header {
     font-weight: 600;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--accent);
+    color: var(--ink-soft);
     margin-bottom: 16px;
 }
 
@@ -137,7 +137,7 @@ h1 {
 h1 em {
     font-style: italic;
     font-weight: 400;
-    color: var(--accent);
+    color: var(--ink-soft);
 }
 
 .lead {
@@ -227,6 +227,16 @@ h1 em {
     margin-bottom: 8px;
 }
 
+.card-question {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--ink-soft);
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
 .card-desc {
     font-size: 15px;
     line-height: 1.55;
@@ -295,7 +305,7 @@ h1 em {
     content: '';
     width: 6px;
     height: 6px;
-    background: #16a34a;
+    background: #888888;
     border-radius: 50%;
     animation: pulse 2s ease-in-out infinite;
 }
@@ -374,11 +384,11 @@ footer {
                 </svg>
             </div>
             <div class="card-title">Mapa Sección</div>
-            <p class="card-desc">Vista general de casillas con información por sección electoral: ubicación, listado nominal, votación total y porcentaje de participación ciudadana.</p>
+            <p class="card-question">¿Quién ganó cada zona?</p>
+            <p class="card-desc">Vista política territorial. Cada sección coloreada por su partido ganador. Útil para entender de un vistazo el mapa de poder territorial del estado.</p>
             <div class="card-meta">
-                <span class="tag">Secciones</span>
-                <span class="tag">Casillas</span>
-                <span class="tag">Participación</span>
+                <span class="tag">Color por ganador</span>
+                <span class="tag">Vista territorial</span>
             </div>
             <div class="card-cta">
                 Abrir mapa
@@ -397,11 +407,11 @@ footer {
                 </svg>
             </div>
             <div class="card-title">Mapa Partido</div>
-            <p class="card-desc">Análisis por fuerza política con capas filtrables: visualiza dónde ganó cada partido o consulta su intensidad de voto en todo el estado.</p>
+            <p class="card-question">¿Cómo le fue al partido X?</p>
+            <p class="card-desc">Vista por fuerza electoral. Filtra por cada partido y observa dónde tiene presencia, aunque no haya ganado. Incluye Top 3 por sección y detalle de casillas.</p>
             <div class="card-meta">
-                <span class="tag">13 partidos</span>
-                <span class="tag">Ganador</span>
-                <span class="tag">Intensidad</span>
+                <span class="tag">Filtros por partido</span>
+                <span class="tag">Top 3 + casillas</span>
             </div>
             <div class="card-cta">
                 Abrir mapa

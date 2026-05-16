@@ -1,0 +1,39 @@
+{
+  "votos_ganador_historico": [
+    46877,
+    36613,
+    89776,
+    54153,
+    50650,
+    76683,
+    66590,
+    94873,
+    75199,
+    94893
+  ],
+  "promedio_ult3": 88321,
+  "voto_minimo_2027": 104646,
+  "voto_seguro_2027": 134545,
+  "ln_2027": 482243,
+  "voto_morena_2024": 115930,
+  "voto_oposicion_2024": 92493,
+  "oposicion_detalle": [
+    {
+      "partido": "PAN",
+      "votos": 61184
+    },
+    {
+      "partido": "MC",
+      "votos": 17396
+    },
+    {
+      "partido": "PRI",
+      "votos": 13913
+    }
+  ],
+  "secciones_perfil": {
+    "chicas": 93,
+    "medias": 126,
+    "grandes": 31
+  }
+}

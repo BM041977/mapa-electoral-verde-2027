@@ -1,0 +1,376 @@
+{
+  "total_secciones": 264,
+  "secciones_morena": 207,
+  "secciones_pan": 56,
+  "secciones_coal": 1,
+  "top10_morena": [
+    {
+      "seccion": 1618,
+      "votos": 207
+    },
+    {
+      "seccion": 1964,
+      "votos": 198
+    },
+    {
+      "seccion": 1717,
+      "votos": 193
+    },
+    {
+      "seccion": 1610,
+      "votos": 191
+    },
+    {
+      "seccion": 1639,
+      "votos": 182
+    },
+    {
+      "seccion": 1607,
+      "votos": 181
+    },
+    {
+      "seccion": 1612,
+      "votos": 181
+    },
+    {
+      "seccion": 1732,
+      "votos": 179
+    },
+    {
+      "seccion": 2038,
+      "votos": 178
+    },
+    {
+      "seccion": 2162,
+      "votos": 177
+    }
+  ],
+  "top10_pan": [
+    {
+      "seccion": 1673,
+      "votos": 228
+    },
+    {
+      "seccion": 1646,
+      "votos": 215
+    },
+    {
+      "seccion": 1685,
+      "votos": 214
+    },
+    {
+      "seccion": 2169,
+      "votos": 212
+    },
+    {
+      "seccion": 1649,
+      "votos": 211
+    },
+    {
+      "seccion": 2132,
+      "votos": 206
+    },
+    {
+      "seccion": 1699,
+      "votos": 198
+    },
+    {
+      "seccion": 1641,
+      "votos": 197
+    },
+    {
+      "seccion": 1672,
+      "votos": 197
+    },
+    {
+      "seccion": 1675,
+      "votos": 182
+    }
+  ],
+  "top3_oposicion": [
+    {
+      "partido": "PAN",
+      "votos": 61184
+    },
+    {
+      "partido": "MC",
+      "votos": 17396
+    },
+    {
+      "partido": "PRI",
+      "votos": 13913
+    }
+  ],
+  "total_casillas": 758,
+  "distritos_tuxtla": "01, 02 y 13",
+  "listado_nominal": {
+    "2015": 408925,
+    "2018": 440458,
+    "2021": 454063,
+    "2024": 467347,
+    "2027": 482243
+  },
+  "top10_pobladas": [
+    {
+      "seccion": 1736,
+      "ln_2024": 14234,
+      "ln_2027": 15092,
+      "crecimiento_pct": 6.0
+    },
+    {
+      "seccion": 1638,
+      "ln_2024": 10029,
+      "ln_2027": 10997,
+      "crecimiento_pct": 9.6
+    },
+    {
+      "seccion": 1739,
+      "ln_2024": 8488,
+      "ln_2027": 9361,
+      "crecimiento_pct": 10.3
+    },
+    {
+      "seccion": 1640,
+      "ln_2024": 8882,
+      "ln_2027": 9307,
+      "crecimiento_pct": 4.8
+    },
+    {
+      "seccion": 1747,
+      "ln_2024": 6838,
+      "ln_2027": 7729,
+      "crecimiento_pct": 13.0
+    },
+    {
+      "seccion": 1622,
+      "ln_2024": 7135,
+      "ln_2027": 7629,
+      "crecimiento_pct": 6.9
+    },
+    {
+      "seccion": 1748,
+      "ln_2024": 6135,
+      "ln_2027": 7188,
+      "crecimiento_pct": 17.2
+    },
+    {
+      "seccion": 1735,
+      "ln_2024": 6784,
+      "ln_2027": 7067,
+      "crecimiento_pct": 4.2
+    },
+    {
+      "seccion": 1610,
+      "ln_2024": 6420,
+      "ln_2027": 6757,
+      "crecimiento_pct": 5.2
+    },
+    {
+      "seccion": 1750,
+      "ln_2024": 6209,
+      "ln_2027": 6363,
+      "crecimiento_pct": 2.5
+    }
+  ],
+  "top10_creciendo": [
+    {
+      "seccion": 2017,
+      "ln_2024": 1369,
+      "ln_2027": 1627,
+      "nuevos_electores": 258,
+      "crecimiento_pct": 18.8
+    },
+    {
+      "seccion": 2022,
+      "ln_2024": 2010,
+      "ln_2027": 2364,
+      "nuevos_electores": 354,
+      "crecimiento_pct": 17.6
+    },
+    {
+      "seccion": 1748,
+      "ln_2024": 6135,
+      "ln_2027": 7188,
+      "nuevos_electores": 1053,
+      "crecimiento_pct": 17.2
+    },
+    {
+      "seccion": 2024,
+      "ln_2024": 1349,
+      "ln_2027": 1571,
+      "nuevos_electores": 222,
+      "crecimiento_pct": 16.5
+    },
+    {
+      "seccion": 1747,
+      "ln_2024": 6838,
+      "ln_2027": 7729,
+      "nuevos_electores": 891,
+      "crecimiento_pct": 13.0
+    },
+    {
+      "seccion": 2028,
+      "ln_2024": 1254,
+      "ln_2027": 1401,
+      "nuevos_electores": 147,
+      "crecimiento_pct": 11.7
+    },
+    {
+      "seccion": 2021,
+      "ln_2024": 1144,
+      "ln_2027": 1276,
+      "nuevos_electores": 132,
+      "crecimiento_pct": 11.5
+    },
+    {
+      "seccion": 2040,
+      "ln_2024": 1179,
+      "ln_2027": 1315,
+      "nuevos_electores": 136,
+      "crecimiento_pct": 11.5
+    },
+    {
+      "seccion": 1746,
+      "ln_2024": 4203,
+      "ln_2027": 4679,
+      "nuevos_electores": 476,
+      "crecimiento_pct": 11.3
+    },
+    {
+      "seccion": 2046,
+      "ln_2024": 1078,
+      "ln_2027": 1200,
+      "nuevos_electores": 122,
+      "crecimiento_pct": 11.3
+    }
+  ],
+  "secciones_crecen": 160,
+  "secciones_decrecen": 69,
+  "crecimiento_ln_2024_2027_pct": 3.2,
+  "top10_morena_v2": [
+    {
+      "seccion": 1736,
+      "votos": 2688
+    },
+    {
+      "seccion": 1638,
+      "votos": 1882
+    },
+    {
+      "seccion": 1640,
+      "votos": 1545
+    },
+    {
+      "seccion": 1622,
+      "votos": 1478
+    },
+    {
+      "seccion": 1610,
+      "votos": 1427
+    },
+    {
+      "seccion": 1735,
+      "votos": 1396
+    },
+    {
+      "seccion": 1747,
+      "votos": 1389
+    },
+    {
+      "seccion": 1750,
+      "votos": 1373
+    },
+    {
+      "seccion": 1739,
+      "votos": 1328
+    },
+    {
+      "seccion": 1748,
+      "votos": 1129
+    }
+  ],
+  "top10_pan_v2": [
+    {
+      "seccion": 1640,
+      "votos": 1738
+    },
+    {
+      "seccion": 1736,
+      "votos": 1733
+    },
+    {
+      "seccion": 1638,
+      "votos": 1081
+    },
+    {
+      "seccion": 1685,
+      "votos": 835
+    },
+    {
+      "seccion": 2169,
+      "votos": 813
+    },
+    {
+      "seccion": 1610,
+      "votos": 799
+    },
+    {
+      "seccion": 1739,
+      "votos": 799
+    },
+    {
+      "seccion": 1673,
+      "votos": 781
+    },
+    {
+      "seccion": 1750,
+      "votos": 740
+    },
+    {
+      "seccion": 1641,
+      "votos": 713
+    }
+  ],
+  "top10_mc": [
+    {
+      "seccion": 1736,
+      "votos": 542
+    },
+    {
+      "seccion": 1638,
+      "votos": 366
+    },
+    {
+      "seccion": 1640,
+      "votos": 359
+    },
+    {
+      "seccion": 1610,
+      "votos": 273
+    },
+    {
+      "seccion": 1739,
+      "votos": 264
+    },
+    {
+      "seccion": 1750,
+      "votos": 260
+    },
+    {
+      "seccion": 1747,
+      "votos": 235
+    },
+    {
+      "seccion": 1735,
+      "votos": 231
+    },
+    {
+      "seccion": 1622,
+      "votos": 220
+    },
+    {
+      "seccion": 1609,
+      "votos": 205
+    }
+  ]
+}

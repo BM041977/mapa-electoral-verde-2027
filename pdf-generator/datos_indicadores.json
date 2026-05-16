@@ -1,0 +1,7604 @@
+{
+  "heatmap_secciones": [
+    {
+      "seccion": 0,
+      "participacion": 56.5,
+      "ln": 23
+    },
+    {
+      "seccion": 1603,
+      "participacion": 39.5,
+      "ln": 3479
+    },
+    {
+      "seccion": 1604,
+      "participacion": 38.8,
+      "ln": 3671
+    },
+    {
+      "seccion": 1605,
+      "participacion": 39.6,
+      "ln": 3742
+    },
+    {
+      "seccion": 1607,
+      "participacion": 41.0,
+      "ln": 2510
+    },
+    {
+      "seccion": 1608,
+      "participacion": 41.4,
+      "ln": 4828
+    },
+    {
+      "seccion": 1609,
+      "participacion": 43.2,
+      "ln": 5653
+    },
+    {
+      "seccion": 1610,
+      "participacion": 53.3,
+      "ln": 6420
+    },
+    {
+      "seccion": 1611,
+      "participacion": 48.5,
+      "ln": 3886
+    },
+    {
+      "seccion": 1612,
+      "participacion": 50.4,
+      "ln": 2504
+    },
+    {
+      "seccion": 1613,
+      "participacion": 50.9,
+      "ln": 2277
+    },
+    {
+      "seccion": 1614,
+      "participacion": 47.0,
+      "ln": 3186
+    },
+    {
+      "seccion": 1615,
+      "participacion": 43.5,
+      "ln": 4814
+    },
+    {
+      "seccion": 1617,
+      "participacion": 56.4,
+      "ln": 3763
+    },
+    {
+      "seccion": 1618,
+      "participacion": 52.2,
+      "ln": 2066
+    },
+    {
+      "seccion": 1619,
+      "participacion": 62.3,
+      "ln": 1824
+    },
+    {
+      "seccion": 1620,
+      "participacion": 60.4,
+      "ln": 2271
+    },
+    {
+      "seccion": 1621,
+      "participacion": 59.7,
+      "ln": 901
+    },
+    {
+      "seccion": 1622,
+      "participacion": 42.6,
+      "ln": 7135
+    },
+    {
+      "seccion": 1623,
+      "participacion": 38.5,
+      "ln": 2596
+    },
+    {
+      "seccion": 1624,
+      "participacion": 45.7,
+      "ln": 2409
+    },
+    {
+      "seccion": 1625,
+      "participacion": 44.0,
+      "ln": 3186
+    },
+    {
+      "seccion": 1626,
+      "participacion": 60.9,
+      "ln": 1569
+    },
+    {
+      "seccion": 1627,
+      "participacion": 57.4,
+      "ln": 1296
+    },
+    {
+      "seccion": 1628,
+      "participacion": 64.3,
+      "ln": 1492
+    },
+    {
+      "seccion": 1629,
+      "participacion": 56.3,
+      "ln": 3709
+    },
+    {
+      "seccion": 1630,
+      "participacion": 56.9,
+      "ln": 1814
+    },
+    {
+      "seccion": 1631,
+      "participacion": 48.2,
+      "ln": 2037
+    },
+    {
+      "seccion": 1632,
+      "participacion": 55.1,
+      "ln": 1686
+    },
+    {
+      "seccion": 1633,
+      "participacion": 60.9,
+      "ln": 1755
+    },
+    {
+      "seccion": 1634,
+      "participacion": 57.7,
+      "ln": 2262
+    },
+    {
+      "seccion": 1635,
+      "participacion": 64.4,
+      "ln": 893
+    },
+    {
+      "seccion": 1636,
+      "participacion": 53.1,
+      "ln": 2365
+    },
+    {
+      "seccion": 1637,
+      "participacion": 52.6,
+      "ln": 2626
+    },
+    {
+      "seccion": 1638,
+      "participacion": 44.5,
+      "ln": 10029
+    },
+    {
+      "seccion": 1639,
+      "participacion": 49.2,
+      "ln": 2061
+    },
+    {
+      "seccion": 1640,
+      "participacion": 55.9,
+      "ln": 8882
+    },
+    {
+      "seccion": 1642,
+      "participacion": 66.6,
+      "ln": 1119
+    },
+    {
+      "seccion": 1643,
+      "participacion": 55.4,
+      "ln": 1241
+    },
+    {
+      "seccion": 1644,
+      "participacion": 61.5,
+      "ln": 1782
+    },
+    {
+      "seccion": 1645,
+      "participacion": 68.9,
+      "ln": 1525
+    },
+    {
+      "seccion": 1646,
+      "participacion": 64.8,
+      "ln": 1869
+    },
+    {
+      "seccion": 1647,
+      "participacion": 59.7,
+      "ln": 1883
+    },
+    {
+      "seccion": 1648,
+      "participacion": 60.0,
+      "ln": 1278
+    },
+    {
+      "seccion": 1649,
+      "participacion": 62.2,
+      "ln": 1451
+    },
+    {
+      "seccion": 1650,
+      "participacion": 49.3,
+      "ln": 998
+    },
+    {
+      "seccion": 1651,
+      "participacion": 55.0,
+      "ln": 1716
+    },
+    {
+      "seccion": 1652,
+      "participacion": 55.6,
+      "ln": 1361
+    },
+    {
+      "seccion": 1653,
+      "participacion": 60.8,
+      "ln": 1992
+    },
+    {
+      "seccion": 1654,
+      "participacion": 61.8,
+      "ln": 1376
+    },
+    {
+      "seccion": 1655,
+      "participacion": 68.7,
+      "ln": 1551
+    },
+    {
+      "seccion": 1656,
+      "participacion": 57.6,
+      "ln": 1185
+    },
+    {
+      "seccion": 1657,
+      "participacion": 60.1,
+      "ln": 3054
+    },
+    {
+      "seccion": 1660,
+      "participacion": 43.9,
+      "ln": 2681
+    },
+    {
+      "seccion": 1661,
+      "participacion": 39.2,
+      "ln": 3309
+    },
+    {
+      "seccion": 1662,
+      "participacion": 59.8,
+      "ln": 2421
+    },
+    {
+      "seccion": 1663,
+      "participacion": 54.7,
+      "ln": 3471
+    },
+    {
+      "seccion": 1665,
+      "participacion": 59.6,
+      "ln": 1059
+    },
+    {
+      "seccion": 1666,
+      "participacion": 52.0,
+      "ln": 1622
+    },
+    {
+      "seccion": 1667,
+      "participacion": 58.6,
+      "ln": 764
+    },
+    {
+      "seccion": 1668,
+      "participacion": 58.9,
+      "ln": 1412
+    },
+    {
+      "seccion": 1669,
+      "participacion": 57.0,
+      "ln": 1336
+    },
+    {
+      "seccion": 1670,
+      "participacion": 60.8,
+      "ln": 969
+    },
+    {
+      "seccion": 1671,
+      "participacion": 59.1,
+      "ln": 1081
+    },
+    {
+      "seccion": 1672,
+      "participacion": 64.8,
+      "ln": 1399
+    },
+    {
+      "seccion": 1673,
+      "participacion": 61.8,
+      "ln": 2705
+    },
+    {
+      "seccion": 1674,
+      "participacion": 49.4,
+      "ln": 1262
+    },
+    {
+      "seccion": 1675,
+      "participacion": 69.9,
+      "ln": 888
+    },
+    {
+      "seccion": 1676,
+      "participacion": 58.3,
+      "ln": 926
+    },
+    {
+      "seccion": 1677,
+      "participacion": 59.6,
+      "ln": 646
+    },
+    {
+      "seccion": 1678,
+      "participacion": 62.6,
+      "ln": 794
+    },
+    {
+      "seccion": 1679,
+      "participacion": 61.1,
+      "ln": 885
+    },
+    {
+      "seccion": 1680,
+      "participacion": 54.7,
+      "ln": 874
+    },
+    {
+      "seccion": 1681,
+      "participacion": 66.3,
+      "ln": 926
+    },
+    {
+      "seccion": 1682,
+      "participacion": 59.0,
+      "ln": 1453
+    },
+    {
+      "seccion": 1683,
+      "participacion": 58.3,
+      "ln": 1474
+    },
+    {
+      "seccion": 1684,
+      "participacion": 53.8,
+      "ln": 1536
+    },
+    {
+      "seccion": 1685,
+      "participacion": 65.1,
+      "ln": 2799
+    },
+    {
+      "seccion": 1686,
+      "participacion": 52.4,
+      "ln": 2047
+    },
+    {
+      "seccion": 1687,
+      "participacion": 56.7,
+      "ln": 1049
+    },
+    {
+      "seccion": 1688,
+      "participacion": 57.5,
+      "ln": 1058
+    },
+    {
+      "seccion": 1689,
+      "participacion": 56.2,
+      "ln": 1687
+    },
+    {
+      "seccion": 1690,
+      "participacion": 54.2,
+      "ln": 1562
+    },
+    {
+      "seccion": 1691,
+      "participacion": 58.6,
+      "ln": 1127
+    },
+    {
+      "seccion": 1692,
+      "participacion": 55.9,
+      "ln": 1140
+    },
+    {
+      "seccion": 1693,
+      "participacion": 57.3,
+      "ln": 1011
+    },
+    {
+      "seccion": 1694,
+      "participacion": 56.6,
+      "ln": 814
+    },
+    {
+      "seccion": 1695,
+      "participacion": 60.6,
+      "ln": 881
+    },
+    {
+      "seccion": 1696,
+      "participacion": 62.4,
+      "ln": 761
+    },
+    {
+      "seccion": 1697,
+      "participacion": 58.3,
+      "ln": 684
+    },
+    {
+      "seccion": 1698,
+      "participacion": 65.9,
+      "ln": 1312
+    },
+    {
+      "seccion": 1699,
+      "participacion": 66.4,
+      "ln": 1351
+    },
+    {
+      "seccion": 1700,
+      "participacion": 57.8,
+      "ln": 2311
+    },
+    {
+      "seccion": 1701,
+      "participacion": 50.4,
+      "ln": 1204
+    },
+    {
+      "seccion": 1702,
+      "participacion": 54.3,
+      "ln": 1447
+    },
+    {
+      "seccion": 1703,
+      "participacion": 43.6,
+      "ln": 4156
+    },
+    {
+      "seccion": 1704,
+      "participacion": 48.1,
+      "ln": 2115
+    },
+    {
+      "seccion": 1705,
+      "participacion": 48.7,
+      "ln": 1719
+    },
+    {
+      "seccion": 1706,
+      "participacion": 52.3,
+      "ln": 3164
+    },
+    {
+      "seccion": 1707,
+      "participacion": 59.3,
+      "ln": 2463
+    },
+    {
+      "seccion": 1708,
+      "participacion": 60.4,
+      "ln": 1642
+    },
+    {
+      "seccion": 1709,
+      "participacion": 59.7,
+      "ln": 1309
+    },
+    {
+      "seccion": 1710,
+      "participacion": 53.2,
+      "ln": 682
+    },
+    {
+      "seccion": 1711,
+      "participacion": 52.7,
+      "ln": 717
+    },
+    {
+      "seccion": 1712,
+      "participacion": 52.8,
+      "ln": 1600
+    },
+    {
+      "seccion": 1713,
+      "participacion": 56.3,
+      "ln": 1631
+    },
+    {
+      "seccion": 1714,
+      "participacion": 55.6,
+      "ln": 1758
+    },
+    {
+      "seccion": 1715,
+      "participacion": 54.6,
+      "ln": 1570
+    },
+    {
+      "seccion": 1716,
+      "participacion": 53.8,
+      "ln": 1676
+    },
+    {
+      "seccion": 1717,
+      "participacion": 55.9,
+      "ln": 2780
+    },
+    {
+      "seccion": 1718,
+      "participacion": 59.0,
+      "ln": 1466
+    },
+    {
+      "seccion": 1719,
+      "participacion": 58.9,
+      "ln": 1109
+    },
+    {
+      "seccion": 1720,
+      "participacion": 51.1,
+      "ln": 1836
+    },
+    {
+      "seccion": 1721,
+      "participacion": 56.1,
+      "ln": 1585
+    },
+    {
+      "seccion": 1722,
+      "participacion": 54.6,
+      "ln": 1125
+    },
+    {
+      "seccion": 1723,
+      "participacion": 55.8,
+      "ln": 1416
+    },
+    {
+      "seccion": 1724,
+      "participacion": 55.6,
+      "ln": 1332
+    },
+    {
+      "seccion": 1725,
+      "participacion": 49.8,
+      "ln": 1445
+    },
+    {
+      "seccion": 1726,
+      "participacion": 55.1,
+      "ln": 1654
+    },
+    {
+      "seccion": 1727,
+      "participacion": 50.9,
+      "ln": 1820
+    },
+    {
+      "seccion": 1728,
+      "participacion": 47.9,
+      "ln": 1531
+    },
+    {
+      "seccion": 1729,
+      "participacion": 38.8,
+      "ln": 4970
+    },
+    {
+      "seccion": 1730,
+      "participacion": 50.2,
+      "ln": 4234
+    },
+    {
+      "seccion": 1732,
+      "participacion": 51.3,
+      "ln": 2613
+    },
+    {
+      "seccion": 1733,
+      "participacion": 50.2,
+      "ln": 1889
+    },
+    {
+      "seccion": 1734,
+      "participacion": 47.3,
+      "ln": 2652
+    },
+    {
+      "seccion": 1735,
+      "participacion": 46.4,
+      "ln": 6784
+    },
+    {
+      "seccion": 1736,
+      "participacion": 47.2,
+      "ln": 14234
+    },
+    {
+      "seccion": 1738,
+      "participacion": 45.5,
+      "ln": 3208
+    },
+    {
+      "seccion": 1739,
+      "participacion": 37.6,
+      "ln": 8488
+    },
+    {
+      "seccion": 1745,
+      "participacion": 48.1,
+      "ln": 3344
+    },
+    {
+      "seccion": 1746,
+      "participacion": 41.8,
+      "ln": 4203
+    },
+    {
+      "seccion": 1747,
+      "participacion": 47.9,
+      "ln": 6838
+    },
+    {
+      "seccion": 1748,
+      "participacion": 39.4,
+      "ln": 6135
+    },
+    {
+      "seccion": 1750,
+      "participacion": 52.4,
+      "ln": 6209
+    },
+    {
+      "seccion": 1751,
+      "participacion": 53.6,
+      "ln": 2901
+    },
+    {
+      "seccion": 1752,
+      "participacion": 47.1,
+      "ln": 204
+    },
+    {
+      "seccion": 1753,
+      "participacion": 42.0,
+      "ln": 283
+    },
+    {
+      "seccion": 1754,
+      "participacion": 65.4,
+      "ln": 1352
+    },
+    {
+      "seccion": 1930,
+      "participacion": 30.5,
+      "ln": 696
+    },
+    {
+      "seccion": 1931,
+      "participacion": 44.9,
+      "ln": 563
+    },
+    {
+      "seccion": 1932,
+      "participacion": 40.9,
+      "ln": 516
+    },
+    {
+      "seccion": 1933,
+      "participacion": 44.0,
+      "ln": 489
+    },
+    {
+      "seccion": 1934,
+      "participacion": 48.9,
+      "ln": 476
+    },
+    {
+      "seccion": 1935,
+      "participacion": 45.8,
+      "ln": 384
+    },
+    {
+      "seccion": 1936,
+      "participacion": 44.3,
+      "ln": 564
+    },
+    {
+      "seccion": 1937,
+      "participacion": 46.4,
+      "ln": 491
+    },
+    {
+      "seccion": 1938,
+      "participacion": 41.7,
+      "ln": 350
+    },
+    {
+      "seccion": 1939,
+      "participacion": 41.5,
+      "ln": 576
+    },
+    {
+      "seccion": 1940,
+      "participacion": 49.8,
+      "ln": 707
+    },
+    {
+      "seccion": 1941,
+      "participacion": 48.2,
+      "ln": 711
+    },
+    {
+      "seccion": 1942,
+      "participacion": 45.1,
+      "ln": 368
+    },
+    {
+      "seccion": 1943,
+      "participacion": 39.3,
+      "ln": 618
+    },
+    {
+      "seccion": 1944,
+      "participacion": 51.6,
+      "ln": 316
+    },
+    {
+      "seccion": 1945,
+      "participacion": 51.8,
+      "ln": 546
+    },
+    {
+      "seccion": 1946,
+      "participacion": 52.6,
+      "ln": 694
+    },
+    {
+      "seccion": 1947,
+      "participacion": 61.5,
+      "ln": 768
+    },
+    {
+      "seccion": 1948,
+      "participacion": 60.2,
+      "ln": 798
+    },
+    {
+      "seccion": 1949,
+      "participacion": 49.4,
+      "ln": 449
+    },
+    {
+      "seccion": 1950,
+      "participacion": 61.9,
+      "ln": 688
+    },
+    {
+      "seccion": 1951,
+      "participacion": 47.7,
+      "ln": 451
+    },
+    {
+      "seccion": 1952,
+      "participacion": 59.2,
+      "ln": 431
+    },
+    {
+      "seccion": 1953,
+      "participacion": 53.7,
+      "ln": 525
+    },
+    {
+      "seccion": 1954,
+      "participacion": 47.4,
+      "ln": 428
+    },
+    {
+      "seccion": 1955,
+      "participacion": 62.4,
+      "ln": 843
+    },
+    {
+      "seccion": 1956,
+      "participacion": 40.5,
+      "ln": 486
+    },
+    {
+      "seccion": 1957,
+      "participacion": 55.6,
+      "ln": 871
+    },
+    {
+      "seccion": 1958,
+      "participacion": 48.3,
+      "ln": 501
+    },
+    {
+      "seccion": 1959,
+      "participacion": 54.0,
+      "ln": 417
+    },
+    {
+      "seccion": 1960,
+      "participacion": 52.0,
+      "ln": 565
+    },
+    {
+      "seccion": 1961,
+      "participacion": 47.4,
+      "ln": 460
+    },
+    {
+      "seccion": 1962,
+      "participacion": 45.2,
+      "ln": 454
+    },
+    {
+      "seccion": 1963,
+      "participacion": 48.5,
+      "ln": 540
+    },
+    {
+      "seccion": 1964,
+      "participacion": 47.3,
+      "ln": 749
+    },
+    {
+      "seccion": 1965,
+      "participacion": 46.2,
+      "ln": 606
+    },
+    {
+      "seccion": 1966,
+      "participacion": 49.0,
+      "ln": 471
+    },
+    {
+      "seccion": 1967,
+      "participacion": 54.3,
+      "ln": 626
+    },
+    {
+      "seccion": 1968,
+      "participacion": 50.8,
+      "ln": 717
+    },
+    {
+      "seccion": 1969,
+      "participacion": 61.0,
+      "ln": 520
+    },
+    {
+      "seccion": 1970,
+      "participacion": 62.8,
+      "ln": 573
+    },
+    {
+      "seccion": 1971,
+      "participacion": 68.6,
+      "ln": 966
+    },
+    {
+      "seccion": 1972,
+      "participacion": 62.2,
+      "ln": 458
+    },
+    {
+      "seccion": 1973,
+      "participacion": 63.9,
+      "ln": 587
+    },
+    {
+      "seccion": 1974,
+      "participacion": 72.0,
+      "ln": 615
+    },
+    {
+      "seccion": 1975,
+      "participacion": 71.2,
+      "ln": 459
+    },
+    {
+      "seccion": 2012,
+      "participacion": 35.5,
+      "ln": 586
+    },
+    {
+      "seccion": 2013,
+      "participacion": 43.1,
+      "ln": 573
+    },
+    {
+      "seccion": 2014,
+      "participacion": 40.4,
+      "ln": 717
+    },
+    {
+      "seccion": 2015,
+      "participacion": 33.8,
+      "ln": 814
+    },
+    {
+      "seccion": 2016,
+      "participacion": 49.7,
+      "ln": 721
+    },
+    {
+      "seccion": 2017,
+      "participacion": 39.8,
+      "ln": 1369
+    },
+    {
+      "seccion": 2018,
+      "participacion": 34.5,
+      "ln": 820
+    },
+    {
+      "seccion": 2019,
+      "participacion": 54.7,
+      "ln": 1116
+    },
+    {
+      "seccion": 2020,
+      "participacion": 56.6,
+      "ln": 893
+    },
+    {
+      "seccion": 2021,
+      "participacion": 59.1,
+      "ln": 1144
+    },
+    {
+      "seccion": 2022,
+      "participacion": 40.5,
+      "ln": 2010
+    },
+    {
+      "seccion": 2023,
+      "participacion": 52.9,
+      "ln": 624
+    },
+    {
+      "seccion": 2024,
+      "participacion": 45.7,
+      "ln": 1349
+    },
+    {
+      "seccion": 2025,
+      "participacion": 60.1,
+      "ln": 795
+    },
+    {
+      "seccion": 2026,
+      "participacion": 56.3,
+      "ln": 698
+    },
+    {
+      "seccion": 2027,
+      "participacion": 60.3,
+      "ln": 627
+    },
+    {
+      "seccion": 2028,
+      "participacion": 46.8,
+      "ln": 1254
+    },
+    {
+      "seccion": 2029,
+      "participacion": 32.2,
+      "ln": 1279
+    },
+    {
+      "seccion": 2030,
+      "participacion": 53.3,
+      "ln": 599
+    },
+    {
+      "seccion": 2031,
+      "participacion": 49.3,
+      "ln": 804
+    },
+    {
+      "seccion": 2032,
+      "participacion": 52.5,
+      "ln": 724
+    },
+    {
+      "seccion": 2033,
+      "participacion": 62.8,
+      "ln": 500
+    },
+    {
+      "seccion": 2034,
+      "participacion": 54.2,
+      "ln": 552
+    },
+    {
+      "seccion": 2035,
+      "participacion": 59.1,
+      "ln": 423
+    },
+    {
+      "seccion": 2036,
+      "participacion": 59.8,
+      "ln": 398
+    },
+    {
+      "seccion": 2037,
+      "participacion": 45.6,
+      "ln": 487
+    },
+    {
+      "seccion": 2038,
+      "participacion": 49.3,
+      "ln": 625
+    },
+    {
+      "seccion": 2039,
+      "participacion": 51.2,
+      "ln": 521
+    },
+    {
+      "seccion": 2040,
+      "participacion": 42.5,
+      "ln": 1179
+    },
+    {
+      "seccion": 2041,
+      "participacion": 52.7,
+      "ln": 457
+    },
+    {
+      "seccion": 2042,
+      "participacion": 44.7,
+      "ln": 566
+    },
+    {
+      "seccion": 2043,
+      "participacion": 43.8,
+      "ln": 851
+    },
+    {
+      "seccion": 2044,
+      "participacion": 47.1,
+      "ln": 784
+    },
+    {
+      "seccion": 2045,
+      "participacion": 43.2,
+      "ln": 630
+    },
+    {
+      "seccion": 2046,
+      "participacion": 49.4,
+      "ln": 1078
+    },
+    {
+      "seccion": 2116,
+      "participacion": 48.7,
+      "ln": 2256
+    },
+    {
+      "seccion": 2117,
+      "participacion": 55.3,
+      "ln": 1882
+    },
+    {
+      "seccion": 2118,
+      "participacion": 56.1,
+      "ln": 1185
+    },
+    {
+      "seccion": 2119,
+      "participacion": 53.6,
+      "ln": 2805
+    },
+    {
+      "seccion": 2131,
+      "participacion": 41.8,
+      "ln": 1559
+    },
+    {
+      "seccion": 2132,
+      "participacion": 69.2,
+      "ln": 1643
+    },
+    {
+      "seccion": 2148,
+      "participacion": 58.0,
+      "ln": 1625
+    },
+    {
+      "seccion": 2149,
+      "participacion": 59.3,
+      "ln": 2230
+    },
+    {
+      "seccion": 2150,
+      "participacion": 60.2,
+      "ln": 1963
+    },
+    {
+      "seccion": 2159,
+      "participacion": 35.6,
+      "ln": 2954
+    },
+    {
+      "seccion": 2160,
+      "participacion": 37.9,
+      "ln": 1342
+    },
+    {
+      "seccion": 2161,
+      "participacion": 37.5,
+      "ln": 2771
+    },
+    {
+      "seccion": 2162,
+      "participacion": 47.2,
+      "ln": 2206
+    },
+    {
+      "seccion": 2163,
+      "participacion": 44.8,
+      "ln": 2087
+    },
+    {
+      "seccion": 2164,
+      "participacion": 29.4,
+      "ln": 2731
+    },
+    {
+      "seccion": 2166,
+      "participacion": 30.3,
+      "ln": 2827
+    },
+    {
+      "seccion": 2167,
+      "participacion": 48.5,
+      "ln": 1183
+    },
+    {
+      "seccion": 2168,
+      "participacion": 62.6,
+      "ln": 2798
+    },
+    {
+      "seccion": 2169,
+      "participacion": 60.5,
+      "ln": 2886
+    },
+    {
+      "seccion": 2191,
+      "participacion": 51.6,
+      "ln": 1753
+    },
+    {
+      "seccion": 2192,
+      "participacion": 50.1,
+      "ln": 1586
+    },
+    {
+      "seccion": 2193,
+      "participacion": 31.8,
+      "ln": 2139
+    },
+    {
+      "seccion": 2194,
+      "participacion": 37.7,
+      "ln": 2270
+    },
+    {
+      "seccion": 2195,
+      "participacion": 52.6,
+      "ln": 1897
+    },
+    {
+      "seccion": 2196,
+      "participacion": 42.7,
+      "ln": 2850
+    },
+    {
+      "seccion": 2197,
+      "participacion": 42.7,
+      "ln": 2983
+    },
+    {
+      "seccion": 2202,
+      "participacion": 48.4,
+      "ln": 2663
+    },
+    {
+      "seccion": 2203,
+      "participacion": 40.1,
+      "ln": 2709
+    },
+    {
+      "seccion": 2204,
+      "participacion": 33.6,
+      "ln": 1810
+    },
+    {
+      "seccion": 2205,
+      "participacion": 37.8,
+      "ln": 2603
+    }
+  ],
+  "heatmap_baja_secciones": 100,
+  "heatmap_baja_ln": 219324,
+  "heatmap_no_movilizados": 125103,
+  "sparklines_muestra": [
+    {
+      "seccion": 1652,
+      "v18": 24.0,
+      "v21": 28.5,
+      "v24": 42.0,
+      "delta": 18.0,
+      "clasif": "CONSOLIDADA"
+    },
+    {
+      "seccion": 1667,
+      "v18": 16.9,
+      "v21": 25.8,
+      "v24": 34.8,
+      "delta": 17.9,
+      "clasif": "CONSOLIDADA"
+    },
+    {
+      "seccion": 1632,
+      "v18": 27.8,
+      "v21": 28.4,
+      "v24": 33.8,
+      "delta": 6.0,
+      "clasif": "ESTABLE"
+    },
+    {
+      "seccion": 1633,
+      "v18": 23.0,
+      "v21": 28.4,
+      "v24": 30.0,
+      "delta": 7.0,
+      "clasif": "ESTABLE"
+    },
+    {
+      "seccion": 1685,
+      "v18": 22.0,
+      "v21": 26.0,
+      "v24": 36.0,
+      "delta": 14.0,
+      "clasif": "CONSOLIDADA"
+    },
+    {
+      "seccion": 1730,
+      "v18": 18.0,
+      "v21": 24.0,
+      "v24": 31.0,
+      "delta": 13.0,
+      "clasif": "CONSOLIDADA"
+    }
+  ],
+  "sparklines_distribucion": {
+    "CRECIENTE": 223,
+    "CONSOLIDADA": 1
+  },
+  "poblacion_tuxtla": [
+    {
+      "año": 1990,
+      "pob": 295615
+    },
+    {
+      "año": 1995,
+      "pob": 367033
+    },
+    {
+      "año": 2000,
+      "pob": 434143
+    },
+    {
+      "año": 2005,
+      "pob": 503320
+    },
+    {
+      "año": 2010,
+      "pob": 553374
+    },
+    {
+      "año": 2015,
+      "pob": 598710
+    },
+    {
+      "año": 2020,
+      "pob": 671619
+    },
+    {
+      "año": 2025,
+      "pob": 695200
+    },
+    {
+      "año": 2027,
+      "pob": 715400
+    }
+  ],
+  "radar": {
+    "MORENA": {
+      "Cobertura territorial": 78.4,
+      "Votación promedio": 100.0,
+      "Crecimiento histórico": 92,
+      "Movilización": 78.9,
+      "Bastiones seguros": 78.4,
+      "Penetración urbana": 72
+    },
+    "PAN": {
+      "Cobertura territorial": 21.2,
+      "Votación promedio": 66.4,
+      "Crecimiento histórico": 38,
+      "Movilización": 52.4,
+      "Bastiones seguros": 21.2,
+      "Penetración urbana": 65
+    },
+    "MC": {
+      "Cobertura territorial": 0.0,
+      "Votación promedio": 18.9,
+      "Crecimiento histórico": 65,
+      "Movilización": 14.9,
+      "Bastiones seguros": 0.0,
+      "Penetración urbana": 45
+    }
+  },
+  "radar_raw": {
+    "MORENA": {
+      "votos": 92204,
+      "secs_ganadas": 207,
+      "promedio_por_seccion": 122.12450331125828
+    },
+    "PAN": {
+      "votos": 61184,
+      "secs_ganadas": 56,
+      "promedio_por_seccion": 81.0384105960265
+    },
+    "MC": {
+      "votos": 17396,
+      "secs_ganadas": 0,
+      "promedio_por_seccion": 23.071618037135277
+    }
+  },
+  "margen_estrecho": [
+    {
+      "seccion": 1754,
+      "votos_morena": 274,
+      "segundo_partido": "PAN",
+      "votos_segundo": 273,
+      "margen_abs": 1,
+      "margen_pct": 0.1
+    },
+    {
+      "seccion": 2195,
+      "votos_morena": 333,
+      "segundo_partido": "PAN",
+      "votos_segundo": 330,
+      "margen_abs": 3,
+      "margen_pct": 0.3
+    },
+    {
+      "seccion": 1708,
+      "votos_morena": 331,
+      "segundo_partido": "PAN",
+      "votos_segundo": 327,
+      "margen_abs": 4,
+      "margen_pct": 0.4
+    },
+    {
+      "seccion": 1653,
+      "votos_morena": 423,
+      "segundo_partido": "PAN",
+      "votos_segundo": 415,
+      "margen_abs": 8,
+      "margen_pct": 0.7
+    },
+    {
+      "seccion": 1628,
+      "votos_morena": 321,
+      "segundo_partido": "PAN",
+      "votos_segundo": 314,
+      "margen_abs": 7,
+      "margen_pct": 0.8
+    },
+    {
+      "seccion": 1711,
+      "votos_morena": 126,
+      "segundo_partido": "PAN",
+      "votos_segundo": 122,
+      "margen_abs": 4,
+      "margen_pct": 1.2
+    },
+    {
+      "seccion": 1970,
+      "votos_morena": 117,
+      "segundo_partido": "PAN",
+      "votos_segundo": 113,
+      "margen_abs": 4,
+      "margen_pct": 1.2
+    },
+    {
+      "seccion": 1647,
+      "votos_morena": 399,
+      "segundo_partido": "PAN",
+      "votos_segundo": 376,
+      "margen_abs": 23,
+      "margen_pct": 2.3
+    },
+    {
+      "seccion": 1668,
+      "votos_morena": 301,
+      "segundo_partido": "PAN",
+      "votos_segundo": 284,
+      "margen_abs": 17,
+      "margen_pct": 2.3
+    },
+    {
+      "seccion": 2033,
+      "votos_morena": 105,
+      "segundo_partido": "PAN",
+      "votos_segundo": 97,
+      "margen_abs": 8,
+      "margen_pct": 2.9
+    }
+  ],
+  "margen_estrecho_total": 73,
+  "heatmap_ganador": [
+    {
+      "seccion": 0,
+      "ganador": "MORENA",
+      "votos": 4
+    },
+    {
+      "seccion": 1603,
+      "ganador": "MORENA",
+      "votos": 143
+    },
+    {
+      "seccion": 1603,
+      "ganador": "MORENA",
+      "votos": 143
+    },
+    {
+      "seccion": 1604,
+      "ganador": "MORENA",
+      "votos": 159
+    },
+    {
+      "seccion": 1605,
+      "ganador": "MORENA",
+      "votos": 159
+    },
+    {
+      "seccion": 1607,
+      "ganador": "MORENA",
+      "votos": 181
+    },
+    {
+      "seccion": 1608,
+      "ganador": "MORENA",
+      "votos": 153
+    },
+    {
+      "seccion": 1608,
+      "ganador": "MORENA",
+      "votos": 153
+    },
+    {
+      "seccion": 1609,
+      "ganador": "MORENA",
+      "votos": 168
+    },
+    {
+      "seccion": 1610,
+      "ganador": "MORENA",
+      "votos": 191
+    },
+    {
+      "seccion": 1611,
+      "ganador": "MORENA",
+      "votos": 175
+    },
+    {
+      "seccion": 1612,
+      "ganador": "MORENA",
+      "votos": 181
+    },
+    {
+      "seccion": 1613,
+      "ganador": "MORENA",
+      "votos": 145
+    },
+    {
+      "seccion": 1614,
+      "ganador": "MORENA",
+      "votos": 140
+    },
+    {
+      "seccion": 1615,
+      "ganador": "MORENA",
+      "votos": 171
+    },
+    {
+      "seccion": 1617,
+      "ganador": "MORENA",
+      "votos": 169
+    },
+    {
+      "seccion": 1618,
+      "ganador": "MORENA",
+      "votos": 207
+    },
+    {
+      "seccion": 1619,
+      "ganador": "MORENA",
+      "votos": 135
+    },
+    {
+      "seccion": 1620,
+      "ganador": "MORENA",
+      "votos": 138
+    },
+    {
+      "seccion": 1621,
+      "ganador": "MORENA",
+      "votos": 112
+    },
+    {
+      "seccion": 1622,
+      "ganador": "MORENA",
+      "votos": 171
+    },
+    {
+      "seccion": 1623,
+      "ganador": "MORENA",
+      "votos": 141
+    },
+    {
+      "seccion": 1624,
+      "ganador": "MORENA",
+      "votos": 147
+    },
+    {
+      "seccion": 1625,
+      "ganador": "MORENA",
+      "votos": 140
+    },
+    {
+      "seccion": 1626,
+      "ganador": "MORENA",
+      "votos": 140
+    },
+    {
+      "seccion": 1627,
+      "ganador": "MORENA",
+      "votos": 146
+    },
+    {
+      "seccion": 1628,
+      "ganador": "MORENA",
+      "votos": 163
+    },
+    {
+      "seccion": 1629,
+      "ganador": "MORENA",
+      "votos": 161
+    },
+    {
+      "seccion": 1630,
+      "ganador": "MORENA",
+      "votos": 141
+    },
+    {
+      "seccion": 1631,
+      "ganador": "MORENA",
+      "votos": 130
+    },
+    {
+      "seccion": 1632,
+      "ganador": "PAN",
+      "votos": 108
+    },
+    {
+      "seccion": 1632,
+      "ganador": "MORENA",
+      "votos": 108
+    },
+    {
+      "seccion": 1633,
+      "ganador": "PAN",
+      "votos": 127
+    },
+    {
+      "seccion": 1633,
+      "ganador": "PAN",
+      "votos": 127
+    },
+    {
+      "seccion": 1634,
+      "ganador": "PAN",
+      "votos": 137
+    },
+    {
+      "seccion": 1635,
+      "ganador": "PAN",
+      "votos": 136
+    },
+    {
+      "seccion": 1636,
+      "ganador": "MORENA",
+      "votos": 139
+    },
+    {
+      "seccion": 1637,
+      "ganador": "MORENA",
+      "votos": 122
+    },
+    {
+      "seccion": 1638,
+      "ganador": "MORENA",
+      "votos": 147
+    },
+    {
+      "seccion": 1639,
+      "ganador": "MORENA",
+      "votos": 182
+    },
+    {
+      "seccion": 1640,
+      "ganador": "PAN",
+      "votos": 169
+    },
+    {
+      "seccion": 1641,
+      "ganador": "PAN",
+      "votos": 197
+    },
+    {
+      "seccion": 1642,
+      "ganador": "MORENA",
+      "votos": 130
+    },
+    {
+      "seccion": 1643,
+      "ganador": "MORENA",
+      "votos": 135
+    },
+    {
+      "seccion": 1644,
+      "ganador": "PAN",
+      "votos": 157
+    },
+    {
+      "seccion": 1645,
+      "ganador": "PAN",
+      "votos": 141
+    },
+    {
+      "seccion": 1646,
+      "ganador": "PAN",
+      "votos": 215
+    },
+    {
+      "seccion": 1647,
+      "ganador": "PAN",
+      "votos": 140
+    },
+    {
+      "seccion": 1648,
+      "ganador": "PAN",
+      "votos": 178
+    },
+    {
+      "seccion": 1649,
+      "ganador": "PAN",
+      "votos": 211
+    },
+    {
+      "seccion": 1650,
+      "ganador": "MORENA",
+      "votos": 92
+    },
+    {
+      "seccion": 1651,
+      "ganador": "MORENA",
+      "votos": 126
+    },
+    {
+      "seccion": 1652,
+      "ganador": "MORENA",
+      "votos": 157
+    },
+    {
+      "seccion": 1653,
+      "ganador": "PAN",
+      "votos": 151
+    },
+    {
+      "seccion": 1654,
+      "ganador": "PAN",
+      "votos": 150
+    },
+    {
+      "seccion": 1655,
+      "ganador": "MORENA",
+      "votos": 165
+    },
+    {
+      "seccion": 1656,
+      "ganador": "MORENA",
+      "votos": 142
+    },
+    {
+      "seccion": 1657,
+      "ganador": "MORENA",
+      "votos": 152
+    },
+    {
+      "seccion": 1659,
+      "ganador": "MORENA",
+      "votos": 152
+    },
+    {
+      "seccion": 1660,
+      "ganador": "MORENA",
+      "votos": 160
+    },
+    {
+      "seccion": 1661,
+      "ganador": "MORENA",
+      "votos": 146
+    },
+    {
+      "seccion": 1662,
+      "ganador": "PAN",
+      "votos": 133
+    },
+    {
+      "seccion": 1663,
+      "ganador": "MORENA",
+      "votos": 152
+    },
+    {
+      "seccion": 1664,
+      "ganador": "MORENA",
+      "votos": 99
+    },
+    {
+      "seccion": 1665,
+      "ganador": "PAN",
+      "votos": 130
+    },
+    {
+      "seccion": 1666,
+      "ganador": "MORENA",
+      "votos": 104
+    },
+    {
+      "seccion": 1667,
+      "ganador": "PAN",
+      "votos": 80
+    },
+    {
+      "seccion": 1668,
+      "ganador": "MORENA",
+      "votos": 160
+    },
+    {
+      "seccion": 1669,
+      "ganador": "MORENA",
+      "votos": 141
+    },
+    {
+      "seccion": 1670,
+      "ganador": "MORENA",
+      "votos": 108
+    },
+    {
+      "seccion": 1671,
+      "ganador": "PAN",
+      "votos": 124
+    },
+    {
+      "seccion": 1672,
+      "ganador": "PAN",
+      "votos": 197
+    },
+    {
+      "seccion": 1673,
+      "ganador": "PAN",
+      "votos": 228
+    },
+    {
+      "seccion": 1674,
+      "ganador": "PAN",
+      "votos": 164
+    },
+    {
+      "seccion": 1675,
+      "ganador": "PAN",
+      "votos": 182
+    },
+    {
+      "seccion": 1676,
+      "ganador": "PAN",
+      "votos": 114
+    },
+    {
+      "seccion": 1677,
+      "ganador": "PAN",
+      "votos": 134
+    },
+    {
+      "seccion": 1678,
+      "ganador": "PAN",
+      "votos": 100
+    },
+    {
+      "seccion": 1679,
+      "ganador": "MORENA",
+      "votos": 122
+    },
+    {
+      "seccion": 1680,
+      "ganador": "PAN",
+      "votos": 106
+    },
+    {
+      "seccion": 1681,
+      "ganador": "PAN",
+      "votos": 131
+    },
+    {
+      "seccion": 1682,
+      "ganador": "PAN",
+      "votos": 156
+    },
+    {
+      "seccion": 1683,
+      "ganador": "MORENA",
+      "votos": 155
+    },
+    {
+      "seccion": 1684,
+      "ganador": "MORENA",
+      "votos": 120
+    },
+    {
+      "seccion": 1685,
+      "ganador": "PAN",
+      "votos": 214
+    },
+    {
+      "seccion": 1686,
+      "ganador": "MORENA",
+      "votos": 144
+    },
+    {
+      "seccion": 1687,
+      "ganador": "MORENA",
+      "votos": 128
+    },
+    {
+      "seccion": 1688,
+      "ganador": "MORENA",
+      "votos": 108
+    },
+    {
+      "seccion": 1689,
+      "ganador": "MORENA",
+      "votos": 147
+    },
+    {
+      "seccion": 1690,
+      "ganador": "MORENA",
+      "votos": 117
+    },
+    {
+      "seccion": 1691,
+      "ganador": "MORENA",
+      "votos": 130
+    },
+    {
+      "seccion": 1692,
+      "ganador": "MORENA",
+      "votos": 133
+    },
+    {
+      "seccion": 1693,
+      "ganador": "MORENA",
+      "votos": 108
+    },
+    {
+      "seccion": 1694,
+      "ganador": "PAN",
+      "votos": 87
+    },
+    {
+      "seccion": 1695,
+      "ganador": "PAN",
+      "votos": 98
+    },
+    {
+      "seccion": 1696,
+      "ganador": "PAN",
+      "votos": 100
+    },
+    {
+      "seccion": 1697,
+      "ganador": "PAN",
+      "votos": 149
+    },
+    {
+      "seccion": 1698,
+      "ganador": "PAN",
+      "votos": 164
+    },
+    {
+      "seccion": 1699,
+      "ganador": "PAN",
+      "votos": 198
+    },
+    {
+      "seccion": 1700,
+      "ganador": "PAN",
+      "votos": 126
+    },
+    {
+      "seccion": 1701,
+      "ganador": "MORENA",
+      "votos": 116
+    },
+    {
+      "seccion": 1702,
+      "ganador": "PAN",
+      "votos": 144
+    },
+    {
+      "seccion": 1703,
+      "ganador": "MORENA",
+      "votos": 168
+    },
+    {
+      "seccion": 1704,
+      "ganador": "MORENA",
+      "votos": 148
+    },
+    {
+      "seccion": 1705,
+      "ganador": "MORENA",
+      "votos": 113
+    },
+    {
+      "seccion": 1706,
+      "ganador": "MORENA",
+      "votos": 141
+    },
+    {
+      "seccion": 1707,
+      "ganador": "PAN",
+      "votos": 144
+    },
+    {
+      "seccion": 1708,
+      "ganador": "PAN",
+      "votos": 131
+    },
+    {
+      "seccion": 1709,
+      "ganador": "PAN",
+      "votos": 145
+    },
+    {
+      "seccion": 1709,
+      "ganador": "MORENA",
+      "votos": 145
+    },
+    {
+      "seccion": 1710,
+      "ganador": "PAN",
+      "votos": 124
+    },
+    {
+      "seccion": 1711,
+      "ganador": "MORENA",
+      "votos": 126
+    },
+    {
+      "seccion": 1712,
+      "ganador": "MORENA",
+      "votos": 119
+    },
+    {
+      "seccion": 1713,
+      "ganador": "MORENA",
+      "votos": 130
+    },
+    {
+      "seccion": 1714,
+      "ganador": "MORENA",
+      "votos": 150
+    },
+    {
+      "seccion": 1715,
+      "ganador": "MORENA",
+      "votos": 117
+    },
+    {
+      "seccion": 1716,
+      "ganador": "MORENA",
+      "votos": 148
+    },
+    {
+      "seccion": 1717,
+      "ganador": "MORENA",
+      "votos": 193
+    },
+    {
+      "seccion": 1718,
+      "ganador": "MORENA",
+      "votos": 174
+    },
+    {
+      "seccion": 1719,
+      "ganador": "MORENA",
+      "votos": 121
+    },
+    {
+      "seccion": 1720,
+      "ganador": "MORENA",
+      "votos": 134
+    },
+    {
+      "seccion": 1721,
+      "ganador": "PAN",
+      "votos": 144
+    },
+    {
+      "seccion": 1722,
+      "ganador": "MORENA",
+      "votos": 134
+    },
+    {
+      "seccion": 1723,
+      "ganador": "MORENA",
+      "votos": 158
+    },
+    {
+      "seccion": 1724,
+      "ganador": "MORENA",
+      "votos": 149
+    },
+    {
+      "seccion": 1725,
+      "ganador": "MORENA",
+      "votos": 167
+    },
+    {
+      "seccion": 1726,
+      "ganador": "MORENA",
+      "votos": 140
+    },
+    {
+      "seccion": 1727,
+      "ganador": "MORENA",
+      "votos": 125
+    },
+    {
+      "seccion": 1728,
+      "ganador": "MORENA",
+      "votos": 115
+    },
+    {
+      "seccion": 1729,
+      "ganador": "MORENA",
+      "votos": 153
+    },
+    {
+      "seccion": 1730,
+      "ganador": "MORENA",
+      "votos": 177
+    },
+    {
+      "seccion": 1732,
+      "ganador": "MORENA",
+      "votos": 179
+    },
+    {
+      "seccion": 1733,
+      "ganador": "MORENA",
+      "votos": 135
+    },
+    {
+      "seccion": 1734,
+      "ganador": "MORENA",
+      "votos": 129
+    },
+    {
+      "seccion": 1734,
+      "ganador": "MORENA",
+      "votos": 129
+    },
+    {
+      "seccion": 1735,
+      "ganador": "MORENA",
+      "votos": 158
+    },
+    {
+      "seccion": 1736,
+      "ganador": "MORENA",
+      "votos": 169
+    },
+    {
+      "seccion": 1738,
+      "ganador": "MORENA",
+      "votos": 168
+    },
+    {
+      "seccion": 1739,
+      "ganador": "MORENA",
+      "votos": 127
+    },
+    {
+      "seccion": 1741,
+      "ganador": "MORENA",
+      "votos": 125
+    },
+    {
+      "seccion": 1742,
+      "ganador": "MORENA",
+      "votos": 168
+    },
+    {
+      "seccion": 1745,
+      "ganador": "MORENA",
+      "votos": 134
+    },
+    {
+      "seccion": 1746,
+      "ganador": "MORENA",
+      "votos": 115
+    },
+    {
+      "seccion": 1747,
+      "ganador": "MORENA",
+      "votos": 165
+    },
+    {
+      "seccion": 1748,
+      "ganador": "MORENA",
+      "votos": 152
+    },
+    {
+      "seccion": 1750,
+      "ganador": "MORENA",
+      "votos": 176
+    },
+    {
+      "seccion": 1751,
+      "ganador": "MORENA",
+      "votos": 146
+    },
+    {
+      "seccion": 1752,
+      "ganador": "MORENA",
+      "votos": 38
+    },
+    {
+      "seccion": 1753,
+      "ganador": "MORENA",
+      "votos": 59
+    },
+    {
+      "seccion": 1754,
+      "ganador": "MORENA",
+      "votos": 161
+    },
+    {
+      "seccion": 1930,
+      "ganador": "MORENA",
+      "votos": 95
+    },
+    {
+      "seccion": 1931,
+      "ganador": "MORENA",
+      "votos": 96
+    },
+    {
+      "seccion": 1932,
+      "ganador": "MORENA",
+      "votos": 108
+    },
+    {
+      "seccion": 1933,
+      "ganador": "MORENA",
+      "votos": 109
+    },
+    {
+      "seccion": 1934,
+      "ganador": "MORENA",
+      "votos": 99
+    },
+    {
+      "seccion": 1935,
+      "ganador": "MORENA",
+      "votos": 75
+    },
+    {
+      "seccion": 1936,
+      "ganador": "MORENA",
+      "votos": 120
+    },
+    {
+      "seccion": 1937,
+      "ganador": "MORENA",
+      "votos": 108
+    },
+    {
+      "seccion": 1938,
+      "ganador": "MORENA",
+      "votos": 76
+    },
+    {
+      "seccion": 1939,
+      "ganador": "MORENA",
+      "votos": 104
+    },
+    {
+      "seccion": 1940,
+      "ganador": "MORENA",
+      "votos": 168
+    },
+    {
+      "seccion": 1941,
+      "ganador": "MORENA",
+      "votos": 157
+    },
+    {
+      "seccion": 1942,
+      "ganador": "MORENA",
+      "votos": 74
+    },
+    {
+      "seccion": 1943,
+      "ganador": "MORENA",
+      "votos": 107
+    },
+    {
+      "seccion": 1944,
+      "ganador": "MORENA",
+      "votos": 76
+    },
+    {
+      "seccion": 1945,
+      "ganador": "MORENA",
+      "votos": 130
+    },
+    {
+      "seccion": 1946,
+      "ganador": "MORENA",
+      "votos": 170
+    },
+    {
+      "seccion": 1947,
+      "ganador": "MORENA",
+      "votos": 95
+    },
+    {
+      "seccion": 1948,
+      "ganador": "MORENA",
+      "votos": 83
+    },
+    {
+      "seccion": 1948,
+      "ganador": "MORENA",
+      "votos": 83
+    },
+    {
+      "seccion": 1949,
+      "ganador": "MORENA",
+      "votos": 100
+    },
+    {
+      "seccion": 1950,
+      "ganador": "PAN",
+      "votos": 148
+    },
+    {
+      "seccion": 1951,
+      "ganador": "MORENA",
+      "votos": 109
+    },
+    {
+      "seccion": 1952,
+      "ganador": "MORENA",
+      "votos": 119
+    },
+    {
+      "seccion": 1953,
+      "ganador": "MORENA",
+      "votos": 146
+    },
+    {
+      "seccion": 1954,
+      "ganador": "MORENA",
+      "votos": 102
+    },
+    {
+      "seccion": 1955,
+      "ganador": "MORENA",
+      "votos": 101
+    },
+    {
+      "seccion": 1956,
+      "ganador": "MORENA",
+      "votos": 101
+    },
+    {
+      "seccion": 1957,
+      "ganador": "MORENA",
+      "votos": 93
+    },
+    {
+      "seccion": 1958,
+      "ganador": "MORENA",
+      "votos": 92
+    },
+    {
+      "seccion": 1959,
+      "ganador": "MORENA",
+      "votos": 75
+    },
+    {
+      "seccion": 1960,
+      "ganador": "MORENA",
+      "votos": 145
+    },
+    {
+      "seccion": 1961,
+      "ganador": "MORENA",
+      "votos": 131
+    },
+    {
+      "seccion": 1962,
+      "ganador": "MORENA",
+      "votos": 98
+    },
+    {
+      "seccion": 1963,
+      "ganador": "MORENA",
+      "votos": 140
+    },
+    {
+      "seccion": 1964,
+      "ganador": "MORENA",
+      "votos": 198
+    },
+    {
+      "seccion": 1965,
+      "ganador": "MORENA",
+      "votos": 141
+    },
+    {
+      "seccion": 1966,
+      "ganador": "MORENA",
+      "votos": 110
+    },
+    {
+      "seccion": 1967,
+      "ganador": "MORENA",
+      "votos": 142
+    },
+    {
+      "seccion": 1968,
+      "ganador": "MORENA",
+      "votos": 156
+    },
+    {
+      "seccion": 1969,
+      "ganador": "MORENA",
+      "votos": 130
+    },
+    {
+      "seccion": 1970,
+      "ganador": "MORENA",
+      "votos": 117
+    },
+    {
+      "seccion": 1971,
+      "ganador": "PAN",
+      "votos": 133
+    },
+    {
+      "seccion": 1972,
+      "ganador": "PAN",
+      "votos": 95
+    },
+    {
+      "seccion": 1973,
+      "ganador": "PAN",
+      "votos": 133
+    },
+    {
+      "seccion": 1974,
+      "ganador": "PAN",
+      "votos": 153
+    },
+    {
+      "seccion": 1975,
+      "ganador": "PAN",
+      "votos": 126
+    },
+    {
+      "seccion": 2012,
+      "ganador": "MORENA",
+      "votos": 106
+    },
+    {
+      "seccion": 2013,
+      "ganador": "MORENA",
+      "votos": 104
+    },
+    {
+      "seccion": 2014,
+      "ganador": "MORENA",
+      "votos": 161
+    },
+    {
+      "seccion": 2015,
+      "ganador": "MORENA",
+      "votos": 64
+    },
+    {
+      "seccion": 2016,
+      "ganador": "MORENA",
+      "votos": 173
+    },
+    {
+      "seccion": 2017,
+      "ganador": "MORENA",
+      "votos": 106
+    },
+    {
+      "seccion": 2018,
+      "ganador": "MORENA",
+      "votos": 64
+    },
+    {
+      "seccion": 2019,
+      "ganador": "MORENA",
+      "votos": 142
+    },
+    {
+      "seccion": 2020,
+      "ganador": "MORENA",
+      "votos": 109
+    },
+    {
+      "seccion": 2021,
+      "ganador": "MORENA",
+      "votos": 118
+    },
+    {
+      "seccion": 2022,
+      "ganador": "MORENA",
+      "votos": 139
+    },
+    {
+      "seccion": 2023,
+      "ganador": "MORENA",
+      "votos": 149
+    },
+    {
+      "seccion": 2024,
+      "ganador": "MORENA",
+      "votos": 151
+    },
+    {
+      "seccion": 2025,
+      "ganador": "MORENA",
+      "votos": 115
+    },
+    {
+      "seccion": 2026,
+      "ganador": "MORENA",
+      "votos": 134
+    },
+    {
+      "seccion": 2027,
+      "ganador": "MORENA",
+      "votos": 144
+    },
+    {
+      "seccion": 2028,
+      "ganador": "MORENA",
+      "votos": 133
+    },
+    {
+      "seccion": 2029,
+      "ganador": "MORENA",
+      "votos": 95
+    },
+    {
+      "seccion": 2030,
+      "ganador": "MORENA",
+      "votos": 131
+    },
+    {
+      "seccion": 2031,
+      "ganador": "MORENA",
+      "votos": 86
+    },
+    {
+      "seccion": 2032,
+      "ganador": "MORENA",
+      "votos": 139
+    },
+    {
+      "seccion": 2033,
+      "ganador": "MORENA",
+      "votos": 105
+    },
+    {
+      "seccion": 2034,
+      "ganador": "MORENA",
+      "votos": 92
+    },
+    {
+      "seccion": 2035,
+      "ganador": "MORENA",
+      "votos": 99
+    },
+    {
+      "seccion": 2036,
+      "ganador": "MORENA",
+      "votos": 92
+    },
+    {
+      "seccion": 2037,
+      "ganador": "MORENA",
+      "votos": 94
+    },
+    {
+      "seccion": 2038,
+      "ganador": "MORENA",
+      "votos": 178
+    },
+    {
+      "seccion": 2039,
+      "ganador": "MORENA",
+      "votos": 132
+    },
+    {
+      "seccion": 2040,
+      "ganador": "MORENA",
+      "votos": 122
+    },
+    {
+      "seccion": 2041,
+      "ganador": "MORENA",
+      "votos": 111
+    },
+    {
+      "seccion": 2042,
+      "ganador": "MORENA",
+      "votos": 118
+    },
+    {
+      "seccion": 2043,
+      "ganador": "MORENA",
+      "votos": 85
+    },
+    {
+      "seccion": 2044,
+      "ganador": "MORENA",
+      "votos": 79
+    },
+    {
+      "seccion": 2045,
+      "ganador": "MORENA",
+      "votos": 119
+    },
+    {
+      "seccion": 2046,
+      "ganador": "MORENA",
+      "votos": 98
+    },
+    {
+      "seccion": 2116,
+      "ganador": "MORENA",
+      "votos": 143
+    },
+    {
+      "seccion": 2117,
+      "ganador": "PAN",
+      "votos": 128
+    },
+    {
+      "seccion": 2118,
+      "ganador": "MORENA",
+      "votos": 116
+    },
+    {
+      "seccion": 2119,
+      "ganador": "PAN",
+      "votos": 152
+    },
+    {
+      "seccion": 2131,
+      "ganador": "MORENA",
+      "votos": 101
+    },
+    {
+      "seccion": 2132,
+      "ganador": "PAN",
+      "votos": 206
+    },
+    {
+      "seccion": 2148,
+      "ganador": "MORENA",
+      "votos": 121
+    },
+    {
+      "seccion": 2149,
+      "ganador": "MORENA",
+      "votos": 167
+    },
+    {
+      "seccion": 2150,
+      "ganador": "MORENA",
+      "votos": 148
+    },
+    {
+      "seccion": 2159,
+      "ganador": "MORENA",
+      "votos": 137
+    },
+    {
+      "seccion": 2160,
+      "ganador": "MORENA",
+      "votos": 141
+    },
+    {
+      "seccion": 2161,
+      "ganador": "MORENA",
+      "votos": 142
+    },
+    {
+      "seccion": 2162,
+      "ganador": "MORENA",
+      "votos": 177
+    },
+    {
+      "seccion": 2163,
+      "ganador": "MORENA",
+      "votos": 133
+    },
+    {
+      "seccion": 2164,
+      "ganador": "MORENA",
+      "votos": 115
+    },
+    {
+      "seccion": 2165,
+      "ganador": "MORENA",
+      "votos": 115
+    },
+    {
+      "seccion": 2166,
+      "ganador": "MORENA",
+      "votos": 155
+    },
+    {
+      "seccion": 2167,
+      "ganador": "PAN",
+      "votos": 120
+    },
+    {
+      "seccion": 2168,
+      "ganador": "PAN",
+      "votos": 162
+    },
+    {
+      "seccion": 2169,
+      "ganador": "PAN",
+      "votos": 212
+    },
+    {
+      "seccion": 2191,
+      "ganador": "MORENA",
+      "votos": 115
+    },
+    {
+      "seccion": 2192,
+      "ganador": "COAL",
+      "votos": 142
+    },
+    {
+      "seccion": 2193,
+      "ganador": "MORENA",
+      "votos": 117
+    },
+    {
+      "seccion": 2193,
+      "ganador": "MORENA",
+      "votos": 117
+    },
+    {
+      "seccion": 2194,
+      "ganador": "MORENA",
+      "votos": 121
+    },
+    {
+      "seccion": 2195,
+      "ganador": "PAN",
+      "votos": 118
+    },
+    {
+      "seccion": 2196,
+      "ganador": "MORENA",
+      "votos": 152
+    },
+    {
+      "seccion": 2197,
+      "ganador": "MORENA",
+      "votos": 153
+    },
+    {
+      "seccion": 2202,
+      "ganador": "MORENA",
+      "votos": 139
+    },
+    {
+      "seccion": 2203,
+      "ganador": "MORENA",
+      "votos": 151
+    },
+    {
+      "seccion": 2204,
+      "ganador": "MORENA",
+      "votos": 128
+    },
+    {
+      "seccion": 2205,
+      "ganador": "MORENA",
+      "votos": 143
+    }
+  ],
+  "votos_nulos_total": 7016,
+  "votos_nulos_pct": 3.0,
+  "coalicion_morena": {
+    "morena_puro": 92204,
+    "pvem_puro": 9207,
+    "pt_puro": 7260,
+    "coal_3_partidos": 5295,
+    "coal_pvem_morena": 1047,
+    "coal_pt_morena": 917,
+    "coal_pvem_pt": 438,
+    "voto_morena_efectivo": 99463,
+    "aporte_aliados_pct": 23.9
+  },
+  "comparativo_metropolitano": [
+    {
+      "municipio": "TUXTLA GUTIERREZ",
+      "ln_2024": 467347,
+      "ln_2027": 482243,
+      "crecimiento_pct": 3.2,
+      "morena_votos": 92204,
+      "pan_votos": 61184,
+      "total_secciones": 264,
+      "secciones_morena": 207,
+      "pct_secciones_morena": 78.4
+    },
+    {
+      "municipio": "BERRIOZABAL",
+      "ln_2024": 42278,
+      "ln_2027": 45358,
+      "crecimiento_pct": 7.3,
+      "morena_votos": 10824,
+      "pan_votos": 372,
+      "total_secciones": 20,
+      "secciones_morena": 14,
+      "pct_secciones_morena": 70.0
+    },
+    {
+      "municipio": "CHIAPA DE CORZO",
+      "ln_2024": 79889,
+      "ln_2027": 85030,
+      "crecimiento_pct": 6.4,
+      "morena_votos": 10076,
+      "pan_votos": 667,
+      "total_secciones": 38,
+      "secciones_morena": 5,
+      "pct_secciones_morena": 13.2
+    },
+    {
+      "municipio": "SUCHIAPA",
+      "ln_2024": 19097,
+      "ln_2027": 20445,
+      "crecimiento_pct": 7.1,
+      "morena_votos": 5723,
+      "pan_votos": 24,
+      "total_secciones": 8,
+      "secciones_morena": 6,
+      "pct_secciones_morena": 75.0
+    },
+    {
+      "municipio": "OCOZOCOAUTLA",
+      "ln_2024": 69830,
+      "ln_2027": 74216,
+      "crecimiento_pct": 6.3,
+      "morena_votos": 8852,
+      "pan_votos": 637,
+      "total_secciones": 35,
+      "secciones_morena": 8,
+      "pct_secciones_morena": 22.9
+    },
+    {
+      "municipio": "SAN FERNANDO",
+      "ln_2024": 29626,
+      "ln_2027": 31530,
+      "crecimiento_pct": 6.4,
+      "morena_votos": 2235,
+      "pan_votos": 158,
+      "total_secciones": 16,
+      "secciones_morena": 0,
+      "pct_secciones_morena": 0.0
+    }
+  ],
+  "bastion_historico": [
+    {
+      "seccion": 1602,
+      "dominante": "PRI",
+      "izq": 3,
+      "pan": 0,
+      "pri": 6,
+      "total": 9
+    },
+    {
+      "seccion": 1603,
+      "dominante": "PRI",
+      "izq": 4,
+      "pan": 0,
+      "pri": 6,
+      "total": 10
+    },
+    {
+      "seccion": 1604,
+      "dominante": "PRI",
+      "izq": 4,
+      "pan": 0,
+      "pri": 6,
+      "total": 10
+    },
+    {
+      "seccion": 1605,
+      "dominante": "PRI",
+      "izq": 4,
+      "pan": 0,
+      "pri": 6,
+      "total": 10
+    },
+    {
+      "seccion": 1606,
+      "dominante": "PRI",
+      "izq": 1,
+      "pan": 1,
+      "pri": 3,
+      "total": 5
+    },
+    {
+      "seccion": 1607,
+      "dominante": "PRI",
+      "izq": 4,
+      "pan": 1,
+      "pri": 5,
+      "total": 10
+    },
+    {
+      "seccion": 1608,
+      "dominante": "PRI",
+      "izq": 4,
+      "pan": 0,
+      "pri": 6,
+      "total": 10
+    },
+    {
+      "seccion": 1609,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 1,
+      "pri": 4,
+      "total": 10
+    },
+    {
+      "seccion": 1610,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 1,
+      "pri": 3,
+      "total": 8
+    },
+    {
+      "seccion": 1611,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 3,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1612,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 3,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1613,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 1,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1614,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 2,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1615,
+      "dominante": "PRI",
+      "izq": 3,
+      "pan": 1,
+      "pri": 5,
+      "total": 9
+    },
+    {
+      "seccion": 1616,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 3,
+      "pri": 2,
+      "total": 7
+    },
+    {
+      "seccion": 1617,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 3,
+      "total": 8
+    },
+    {
+      "seccion": 1618,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 3,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1619,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 2,
+      "pri": 2,
+      "total": 8
+    },
+    {
+      "seccion": 1620,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 3,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1621,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 4,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1622,
+      "dominante": "PRI",
+      "izq": 4,
+      "pan": 0,
+      "pri": 6,
+      "total": 10
+    },
+    {
+      "seccion": 1623,
+      "dominante": "PRI",
+      "izq": 4,
+      "pan": 0,
+      "pri": 6,
+      "total": 10
+    },
+    {
+      "seccion": 1624,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 0,
+      "pri": 4,
+      "total": 9
+    },
+    {
+      "seccion": 1625,
+      "dominante": "PRI",
+      "izq": 4,
+      "pan": 0,
+      "pri": 5,
+      "total": 9
+    },
+    {
+      "seccion": 1626,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 4,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1627,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 4,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1628,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 3,
+      "total": 8
+    },
+    {
+      "seccion": 1629,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 3,
+      "total": 8
+    },
+    {
+      "seccion": 1630,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 3,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1631,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 2,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1632,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 4,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1633,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1634,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 4,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1635,
+      "dominante": "PAN",
+      "izq": 1,
+      "pan": 5,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1636,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 3,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1637,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 3,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1638,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 2,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1639,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 0,
+      "pri": 4,
+      "total": 9
+    },
+    {
+      "seccion": 1640,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 4,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1641,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1642,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1643,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 3,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1644,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1645,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 5,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1646,
+      "dominante": "PAN",
+      "izq": 1,
+      "pan": 5,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1647,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 3,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1648,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1649,
+      "dominante": "PAN",
+      "izq": 1,
+      "pan": 5,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1650,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 3,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1651,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 3,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1652,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 4,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1653,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 3,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1654,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1655,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 4,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1656,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 3,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1657,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 4,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1658,
+      "dominante": "PAN",
+      "izq": 1,
+      "pan": 3,
+      "pri": 3,
+      "total": 7
+    },
+    {
+      "seccion": 1659,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 2,
+      "pri": 2,
+      "total": 8
+    },
+    {
+      "seccion": 1660,
+      "dominante": "PRI",
+      "izq": 4,
+      "pan": 0,
+      "pri": 5,
+      "total": 9
+    },
+    {
+      "seccion": 1661,
+      "dominante": "PRI",
+      "izq": 4,
+      "pan": 0,
+      "pri": 6,
+      "total": 10
+    },
+    {
+      "seccion": 1662,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1663,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 3,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1664,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 2,
+      "pri": 2,
+      "total": 8
+    },
+    {
+      "seccion": 1665,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1666,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 4,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1667,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1668,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 4,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1669,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 4,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1670,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 4,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1671,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 4,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1672,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1673,
+      "dominante": "PAN",
+      "izq": 1,
+      "pan": 5,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1674,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 4,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1675,
+      "dominante": "PAN",
+      "izq": 1,
+      "pan": 6,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1676,
+      "dominante": "PAN",
+      "izq": 1,
+      "pan": 5,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1677,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1678,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1679,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 4,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1680,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1681,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1682,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 4,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1683,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 3,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1684,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 3,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1685,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 4,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1686,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 3,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1687,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 3,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1688,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 2,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1689,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 4,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1690,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 3,
+      "total": 8
+    },
+    {
+      "seccion": 1691,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 4,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1692,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 3,
+      "total": 8
+    },
+    {
+      "seccion": 1693,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 2,
+      "pri": 2,
+      "total": 8
+    },
+    {
+      "seccion": 1694,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1695,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1696,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1697,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1698,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1699,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1700,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 5,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1701,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 2,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1702,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 3,
+      "pri": 2,
+      "total": 8
+    },
+    {
+      "seccion": 1703,
+      "dominante": "PRI",
+      "izq": 4,
+      "pan": 1,
+      "pri": 5,
+      "total": 10
+    },
+    {
+      "seccion": 1704,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 2,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1705,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 1,
+      "pri": 3,
+      "total": 8
+    },
+    {
+      "seccion": 1706,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 3,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1707,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1708,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 4,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1709,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 5,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1710,
+      "dominante": "PAN",
+      "izq": 3,
+      "pan": 5,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1711,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 3,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1712,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 3,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1713,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 2,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1714,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 2,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1715,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 2,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1716,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 2,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1717,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 3,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1718,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 3,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1719,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 4,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1720,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 2,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1721,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 3,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1722,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 2,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1723,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 3,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1724,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 3,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1725,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 3,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1726,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 3,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1727,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 2,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1728,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 2,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1729,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 1,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1730,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 1,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1731,
+      "dominante": "IZQ",
+      "izq": 2,
+      "pan": 2,
+      "pri": 2,
+      "total": 6
+    },
+    {
+      "seccion": 1732,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 0,
+      "pri": 4,
+      "total": 9
+    },
+    {
+      "seccion": 1733,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 2,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1734,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 3,
+      "pri": 2,
+      "total": 10
+    },
+    {
+      "seccion": 1735,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 2,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1736,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 3,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1737,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 3,
+      "total": 8
+    },
+    {
+      "seccion": 1738,
+      "dominante": "PRI",
+      "izq": 4,
+      "pan": 1,
+      "pri": 5,
+      "total": 10
+    },
+    {
+      "seccion": 1739,
+      "dominante": "PRI",
+      "izq": 3,
+      "pan": 1,
+      "pri": 5,
+      "total": 9
+    },
+    {
+      "seccion": 1740,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 3,
+      "pri": 2,
+      "total": 7
+    },
+    {
+      "seccion": 1741,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 2,
+      "pri": 3,
+      "total": 9
+    },
+    {
+      "seccion": 1742,
+      "dominante": "IZQ",
+      "izq": 5,
+      "pan": 1,
+      "pri": 4,
+      "total": 10
+    },
+    {
+      "seccion": 1743,
+      "dominante": "PRI",
+      "izq": 2,
+      "pan": 1,
+      "pri": 4,
+      "total": 7
+    },
+    {
+      "seccion": 1744,
+      "dominante": "PRI",
+      "izq": 2,
+      "pan": 0,
+      "pri": 3,
+      "total": 5
+    },
+    {
+      "seccion": 1745,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 3,
+      "pri": 3,
+      "total": 8
+    },
+    {
+      "seccion": 1746,
+      "dominante": "PRI",
+      "izq": 3,
+      "pan": 2,
+      "pri": 4,
+      "total": 9
+    },
+    {
+      "seccion": 1747,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 3,
+      "pri": 2,
+      "total": 9
+    },
+    {
+      "seccion": 1748,
+      "dominante": "PRI",
+      "izq": 3,
+      "pan": 0,
+      "pri": 6,
+      "total": 9
+    },
+    {
+      "seccion": 1749,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 3,
+      "pri": 2,
+      "total": 8
+    },
+    {
+      "seccion": 1750,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 1,
+      "pri": 3,
+      "total": 8
+    },
+    {
+      "seccion": 1751,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 2,
+      "pri": 2,
+      "total": 8
+    },
+    {
+      "seccion": 1752,
+      "dominante": "PRI",
+      "izq": 1,
+      "pan": 4,
+      "pri": 5,
+      "total": 10
+    },
+    {
+      "seccion": 1753,
+      "dominante": "PRI",
+      "izq": 3,
+      "pan": 1,
+      "pri": 5,
+      "total": 9
+    },
+    {
+      "seccion": 1754,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 3,
+      "pri": 3,
+      "total": 10
+    },
+    {
+      "seccion": 1930,
+      "dominante": "PRI",
+      "izq": 2,
+      "pan": 0,
+      "pri": 3,
+      "total": 5
+    },
+    {
+      "seccion": 1931,
+      "dominante": "PRI",
+      "izq": 2,
+      "pan": 0,
+      "pri": 3,
+      "total": 5
+    },
+    {
+      "seccion": 1932,
+      "dominante": "PRI",
+      "izq": 2,
+      "pan": 0,
+      "pri": 3,
+      "total": 5
+    },
+    {
+      "seccion": 1933,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 2,
+      "total": 5
+    },
+    {
+      "seccion": 1934,
+      "dominante": "PRI",
+      "izq": 2,
+      "pan": 0,
+      "pri": 3,
+      "total": 5
+    },
+    {
+      "seccion": 1935,
+      "dominante": "PRI",
+      "izq": 1,
+      "pan": 0,
+      "pri": 4,
+      "total": 5
+    },
+    {
+      "seccion": 1936,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 2,
+      "total": 5
+    },
+    {
+      "seccion": 1937,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 2,
+      "total": 5
+    },
+    {
+      "seccion": 1938,
+      "dominante": "PRI",
+      "izq": 2,
+      "pan": 0,
+      "pri": 3,
+      "total": 5
+    },
+    {
+      "seccion": 1939,
+      "dominante": "PRI",
+      "izq": 2,
+      "pan": 0,
+      "pri": 3,
+      "total": 5
+    },
+    {
+      "seccion": 1940,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 0,
+      "pri": 1,
+      "total": 5
+    },
+    {
+      "seccion": 1941,
+      "dominante": "PRI",
+      "izq": 2,
+      "pan": 0,
+      "pri": 3,
+      "total": 5
+    },
+    {
+      "seccion": 1942,
+      "dominante": "PRI",
+      "izq": 2,
+      "pan": 0,
+      "pri": 3,
+      "total": 5
+    },
+    {
+      "seccion": 1943,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 2,
+      "total": 5
+    },
+    {
+      "seccion": 1944,
+      "dominante": "PRI",
+      "izq": 2,
+      "pan": 0,
+      "pri": 3,
+      "total": 5
+    },
+    {
+      "seccion": 1945,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 1,
+      "pri": 1,
+      "total": 5
+    },
+    {
+      "seccion": 1946,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 2,
+      "total": 5
+    },
+    {
+      "seccion": 1947,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 0,
+      "total": 5
+    },
+    {
+      "seccion": 1948,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 1,
+      "pri": 0,
+      "total": 5
+    },
+    {
+      "seccion": 1949,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 2,
+      "total": 5
+    },
+    {
+      "seccion": 1950,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 0,
+      "total": 5
+    },
+    {
+      "seccion": 1951,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 2,
+      "total": 5
+    },
+    {
+      "seccion": 1952,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 0,
+      "total": 5
+    },
+    {
+      "seccion": 1953,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 0,
+      "total": 5
+    },
+    {
+      "seccion": 1954,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 1,
+      "pri": 1,
+      "total": 5
+    },
+    {
+      "seccion": 1955,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 1,
+      "pri": 0,
+      "total": 4
+    },
+    {
+      "seccion": 1956,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 1,
+      "pri": 1,
+      "total": 5
+    },
+    {
+      "seccion": 1957,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 1,
+      "pri": 0,
+      "total": 5
+    },
+    {
+      "seccion": 1958,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 1,
+      "pri": 0,
+      "total": 5
+    },
+    {
+      "seccion": 1959,
+      "dominante": "IZQ",
+      "izq": 4,
+      "pan": 0,
+      "pri": 1,
+      "total": 5
+    },
+    {
+      "seccion": 1960,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 2,
+      "total": 5
+    },
+    {
+      "seccion": 1961,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 2,
+      "total": 5
+    },
+    {
+      "seccion": 1962,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 2,
+      "total": 5
+    },
+    {
+      "seccion": 1963,
+      "dominante": "PRI",
+      "izq": 2,
+      "pan": 0,
+      "pri": 3,
+      "total": 5
+    },
+    {
+      "seccion": 1964,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 2,
+      "total": 5
+    },
+    {
+      "seccion": 1965,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 2,
+      "total": 5
+    },
+    {
+      "seccion": 1966,
+      "dominante": "IZQ",
+      "izq": 2,
+      "pan": 1,
+      "pri": 2,
+      "total": 5
+    },
+    {
+      "seccion": 1967,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 0,
+      "total": 5
+    },
+    {
+      "seccion": 1968,
+      "dominante": "IZQ",
+      "izq": 2,
+      "pan": 2,
+      "pri": 1,
+      "total": 5
+    },
+    {
+      "seccion": 1969,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 0,
+      "total": 5
+    },
+    {
+      "seccion": 1970,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 0,
+      "total": 5
+    },
+    {
+      "seccion": 1971,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 3,
+      "pri": 0,
+      "total": 5
+    },
+    {
+      "seccion": 1972,
+      "dominante": "PAN",
+      "izq": 2,
+      "pan": 3,
+      "pri": 0,
+      "total": 5
+    },
+    {
+      "seccion": 1973,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 0,
+      "total": 5
+    },
+    {
+      "seccion": 1974,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 0,
+      "total": 5
+    },
+    {
+      "seccion": 1975,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 2,
+      "pri": 0,
+      "total": 5
+    },
+    {
+      "seccion": 2012,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2013,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2014,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2015,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2016,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2017,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2018,
+      "dominante": "IZQ",
+      "izq": 2,
+      "pan": 0,
+      "pri": 1,
+      "total": 3
+    },
+    {
+      "seccion": 2019,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 1,
+      "pri": 0,
+      "total": 4
+    },
+    {
+      "seccion": 2020,
+      "dominante": "IZQ",
+      "izq": 2,
+      "pan": 1,
+      "pri": 0,
+      "total": 3
+    },
+    {
+      "seccion": 2021,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 1,
+      "pri": 0,
+      "total": 4
+    },
+    {
+      "seccion": 2022,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2023,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 1,
+      "pri": 0,
+      "total": 4
+    },
+    {
+      "seccion": 2024,
+      "dominante": "IZQ",
+      "izq": 2,
+      "pan": 0,
+      "pri": 1,
+      "total": 3
+    },
+    {
+      "seccion": 2025,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 1,
+      "pri": 0,
+      "total": 4
+    },
+    {
+      "seccion": 2026,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 1,
+      "pri": 0,
+      "total": 4
+    },
+    {
+      "seccion": 2027,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 1,
+      "pri": 0,
+      "total": 4
+    },
+    {
+      "seccion": 2028,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2029,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2030,
+      "dominante": "IZQ",
+      "izq": 2,
+      "pan": 1,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2031,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2032,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 1,
+      "pri": 0,
+      "total": 4
+    },
+    {
+      "seccion": 2033,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2034,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2035,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 1,
+      "pri": 0,
+      "total": 4
+    },
+    {
+      "seccion": 2036,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 1,
+      "pri": 0,
+      "total": 4
+    },
+    {
+      "seccion": 2037,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2038,
+      "dominante": "IZQ",
+      "izq": 2,
+      "pan": 0,
+      "pri": 1,
+      "total": 3
+    },
+    {
+      "seccion": 2039,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2040,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2041,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2042,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2043,
+      "dominante": "IZQ",
+      "izq": 2,
+      "pan": 1,
+      "pri": 0,
+      "total": 3
+    },
+    {
+      "seccion": 2044,
+      "dominante": "IZQ",
+      "izq": 3,
+      "pan": 0,
+      "pri": 1,
+      "total": 4
+    },
+    {
+      "seccion": 2045,
+      "dominante": "IZQ",
+      "izq": 2,
+      "pan": 0,
+      "pri": 1,
+      "total": 3
+    },
+    {
+      "seccion": 2046,
+      "dominante": "IZQ",
+      "izq": 2,
+      "pan": 1,
+      "pri": 0,
+      "total": 3
+    },
+    {
+      "seccion": 2116,
+      "dominante": "IZQ",
+      "izq": 2,
+      "pan": 0,
+      "pri": 0,
+      "total": 2
+    },
+    {
+      "seccion": 2117,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 1,
+      "pri": 0,
+      "total": 2
+    },
+    {
+      "seccion": 2118,
+      "dominante": "IZQ",
+      "izq": 2,
+      "pan": 0,
+      "pri": 0,
+      "total": 2
+    },
+    {
+      "seccion": 2119,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 1,
+      "pri": 0,
+      "total": 2
+    },
+    {
+      "seccion": 2131,
+      "dominante": "IZQ",
+      "izq": 2,
+      "pan": 0,
+      "pri": 0,
+      "total": 2
+    },
+    {
+      "seccion": 2132,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 1,
+      "pri": 0,
+      "total": 2
+    },
+    {
+      "seccion": 2148,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2149,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2150,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2159,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2160,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2161,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2162,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2163,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2164,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2165,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2166,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2167,
+      "dominante": "PAN",
+      "izq": 0,
+      "pan": 1,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2168,
+      "dominante": "PAN",
+      "izq": 0,
+      "pan": 1,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2169,
+      "dominante": "PAN",
+      "izq": 0,
+      "pan": 1,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2191,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2192,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2193,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2194,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2195,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2196,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2197,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2202,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2203,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2204,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    },
+    {
+      "seccion": 2205,
+      "dominante": "IZQ",
+      "izq": 1,
+      "pan": 0,
+      "pri": 0,
+      "total": 1
+    }
+  ],
+  "bastion_stats": {
+    "total_secciones": 265,
+    "izq": 175,
+    "pan": 57,
+    "pri": 33,
+    "elecciones_analizadas": 10
+  },
+  "bastion_perfectas": {
+    "IZQ": 0,
+    "PAN": 0,
+    "PRI": 0
+  },
+  "voto_cruzado": [
+    {
+      "seccion": 1603,
+      "pct_morena_muni": 55.198776758409785,
+      "pct_morena_gub": 49.42748091603054,
+      "delta_pct_morena": 5.771295842379246,
+      "pct_pan_muni": 15.749235474006115,
+      "pct_pan_gub": 8.015267175572518,
+      "delta_pct_pan": 7.733968298433597,
+      "morena_muni": 722.0,
+      "morena_gub": 777.0
+    },
+    {
+      "seccion": 1604,
+      "pct_morena_muni": 58.08556925308195,
+      "pct_morena_gub": 49.464524765729585,
+      "delta_pct_morena": 8.621044487352364,
+      "pct_pan_muni": 15.373459028281363,
+      "pct_pan_gub": 6.693440428380187,
+      "delta_pct_pan": 8.680018599901176,
+      "morena_muni": 801.0,
+      "morena_gub": 739.0
+    },
+    {
+      "seccion": 1605,
+      "pct_morena_muni": 56.777856635911995,
+      "pct_morena_gub": 47.61904761904761,
+      "delta_pct_morena": 9.158809016864382,
+      "pct_pan_muni": 15.330021291696239,
+      "pct_pan_gub": 5.135387488328664,
+      "delta_pct_pan": 10.194633803367575,
+      "morena_muni": 800.0,
+      "morena_gub": 510.0
+    },
+    {
+      "seccion": 1607,
+      "pct_morena_muni": 56.53923541247485,
+      "pct_morena_gub": 52.32558139534884,
+      "delta_pct_morena": 4.213654017126011,
+      "pct_pan_muni": 16.498993963782695,
+      "pct_pan_gub": 5.456171735241503,
+      "delta_pct_pan": 11.042822228541192,
+      "morena_muni": 562.0,
+      "morena_gub": 585.0
+    },
+    {
+      "seccion": 1608,
+      "pct_morena_muni": 56.168662155127535,
+      "pct_morena_gub": 50.96251266464032,
+      "delta_pct_morena": 5.206149490487213,
+      "pct_pan_muni": 16.970327954190527,
+      "pct_pan_gub": 6.028368794326241,
+      "delta_pct_pan": 10.941959159864286,
+      "morena_muni": 1079.0,
+      "morena_gub": 1006.0
+    },
+    {
+      "seccion": 1609,
+      "pct_morena_muni": 50.81545064377683,
+      "pct_morena_gub": 52.74414850686037,
+      "delta_pct_morena": -1.928697863083542,
+      "pct_pan_muni": 22.017167381974247,
+      "pct_pan_gub": 7.142857142857142,
+      "delta_pct_pan": 14.874310239117104,
+      "morena_muni": 1184.0,
+      "morena_gub": 1307.0
+    },
+    {
+      "seccion": 1610,
+      "pct_morena_muni": 46.89572031344183,
+      "pct_morena_gub": 49.98327199732352,
+      "delta_pct_morena": -3.087551683881692,
+      "pct_pan_muni": 26.853526220614825,
+      "pct_pan_gub": 9.100033456005354,
+      "delta_pct_pan": 17.75349276460947,
+      "morena_muni": 1556.0,
+      "morena_gub": 1494.0
+    },
+    {
+      "seccion": 1611,
+      "pct_morena_muni": 57.368134855899946,
+      "pct_morena_gub": 55.26438933083762,
+      "delta_pct_morena": 2.1037455250623225,
+      "pct_pan_muni": 18.8689505165851,
+      "pct_pan_gub": 6.457650912494151,
+      "delta_pct_pan": 12.411299604090951,
+      "morena_muni": 1055.0,
+      "morena_gub": 1181.0
+    },
+    {
+      "seccion": 1612,
+      "pct_morena_muni": 55.392156862745104,
+      "pct_morena_gub": 51.55004428697963,
+      "delta_pct_morena": 3.8421125757654764,
+      "pct_pan_muni": 20.26143790849673,
+      "pct_pan_gub": 7.351638618246235,
+      "delta_pct_pan": 12.909799290250497,
+      "morena_muni": 678.0,
+      "morena_gub": 582.0
+    },
+    {
+      "seccion": 1613,
+      "pct_morena_muni": 51.52057245080501,
+      "pct_morena_gub": 50.07407407407407,
+      "delta_pct_morena": 1.4464983767309434,
+      "pct_pan_muni": 23.97137745974955,
+      "pct_pan_gub": 8.666666666666668,
+      "delta_pct_pan": 15.304710793082883,
+      "morena_muni": 576.0,
+      "morena_gub": 676.0
+    },
+    {
+      "seccion": 1614,
+      "pct_morena_muni": 50.03450655624568,
+      "pct_morena_gub": 31.683168316831683,
+      "delta_pct_morena": 18.351338239413998,
+      "pct_pan_muni": 23.878536922015183,
+      "pct_pan_gub": 7.326732673267326,
+      "delta_pct_pan": 16.551804248747857,
+      "morena_muni": 725.0,
+      "morena_gub": 160.0
+    },
+    {
+      "seccion": 1615,
+      "pct_morena_muni": 57.03086722195002,
+      "pct_morena_gub": 46.180110968843366,
+      "delta_pct_morena": 10.850756253106653,
+      "pct_pan_muni": 20.62714355707986,
+      "pct_pan_gub": 8.279982927870252,
+      "delta_pct_pan": 12.34716062920961,
+      "morena_muni": 1164.0,
+      "morena_gub": 1082.0
+    },
+    {
+      "seccion": 1617,
+      "pct_morena_muni": 49.70873786407767,
+      "pct_morena_gub": 49.798590130916416,
+      "delta_pct_morena": -0.08985226683874714,
+      "pct_pan_muni": 27.52427184466019,
+      "pct_pan_gub": 10.070493454179255,
+      "delta_pct_pan": 17.453778390480934,
+      "morena_muni": 1024.0,
+      "morena_gub": 989.0
+    },
+    {
+      "seccion": 1618,
+      "pct_morena_muni": 57.23809523809524,
+      "pct_morena_gub": 56.683168316831676,
+      "delta_pct_morena": 0.554926921263565,
+      "pct_pan_muni": 21.714285714285715,
+      "pct_pan_gub": 8.58085808580858,
+      "delta_pct_pan": 13.133427628477135,
+      "morena_muni": 601.0,
+      "morena_gub": 687.0
+    },
+    {
+      "seccion": 1619,
+      "pct_morena_muni": 38.56502242152467,
+      "pct_morena_gub": 46.912114014251785,
+      "delta_pct_morena": -8.347091592727118,
+      "pct_pan_muni": 32.28699551569507,
+      "pct_pan_gub": 9.73871733966746,
+      "delta_pct_pan": 22.54827817602761,
+      "morena_muni": 430.0,
+      "morena_gub": 395.0
+    },
+    {
+      "seccion": 1620,
+      "pct_morena_muni": 42.27886056971514,
+      "pct_morena_gub": 44.47403462050599,
+      "delta_pct_morena": -2.195174050790847,
+      "pct_pan_muni": 33.28335832083958,
+      "pct_pan_gub": 12.649800266311583,
+      "delta_pct_pan": 20.633558054528,
+      "morena_muni": 564.0,
+      "morena_gub": 668.0
+    },
+    {
+      "seccion": 1621,
+      "pct_morena_muni": 46.73076923076923,
+      "pct_morena_gub": 53.57710651828299,
+      "delta_pct_morena": -6.846337287513755,
+      "pct_pan_muni": 25.192307692307693,
+      "pct_pan_gub": 6.677265500794912,
+      "delta_pct_pan": 18.51504219151278,
+      "morena_muni": 243.0,
+      "morena_gub": 337.0
+    },
+    {
+      "seccion": 1622,
+      "pct_morena_muni": 54.92527173913043,
+      "pct_morena_gub": 43.926247288503255,
+      "delta_pct_morena": 10.999024450627175,
+      "pct_pan_muni": 18.58016304347826,
+      "pct_pan_gub": 7.429501084598698,
+      "delta_pct_pan": 11.150661958879564,
+      "morena_muni": 1617.0,
+      "morena_gub": 810.0
+    },
+    {
+      "seccion": 1623,
+      "pct_morena_muni": 56.9620253164557,
+      "pct_morena_gub": 42.745098039215684,
+      "delta_pct_morena": 14.216927277240018,
+      "pct_pan_muni": 13.39662447257384,
+      "pct_pan_gub": 5.588235294117648,
+      "delta_pct_pan": 7.808389178456193,
+      "morena_muni": 540.0,
+      "morena_gub": 436.0
+    },
+    {
+      "seccion": 1624,
+      "pct_morena_muni": 56.06773283160865,
+      "pct_morena_gub": 52.30263157894737,
+      "delta_pct_morena": 3.7651012526612817,
+      "pct_pan_muni": 15.61618062088429,
+      "pct_pan_gub": 5.509868421052631,
+      "delta_pct_pan": 10.10631219983166,
+      "morena_muni": 596.0,
+      "morena_gub": 636.0
+    },
+    {
+      "seccion": 1625,
+      "pct_morena_muni": 52.377414561664196,
+      "pct_morena_gub": 49.424552429667514,
+      "delta_pct_morena": 2.9528621319966817,
+      "pct_pan_muni": 20.72808320950966,
+      "pct_pan_gub": 8.184143222506394,
+      "delta_pct_pan": 12.543939987003265,
+      "morena_muni": 705.0,
+      "morena_gub": 773.0
+    },
+    {
+      "seccion": 1626,
+      "pct_morena_muni": 47.77898158179848,
+      "pct_morena_gub": 46.91011235955056,
+      "delta_pct_morena": 0.8688692222479233,
+      "pct_pan_muni": 28.602383531960996,
+      "pct_pan_gub": 10.674157303370785,
+      "delta_pct_pan": 17.928226228590212,
+      "morena_muni": 441.0,
+      "morena_gub": 501.0
+    },
+    {
+      "seccion": 1627,
+      "pct_morena_muni": 42.95485636114911,
+      "pct_morena_gub": 64.1711229946524,
+      "delta_pct_morena": -21.216266633503295,
+      "pct_pan_muni": 31.053351573187417,
+      "pct_pan_gub": 6.283422459893048,
+      "delta_pct_pan": 24.769929113294367,
+      "morena_muni": 314.0,
+      "morena_gub": 480.0
+    },
+    {
+      "seccion": 1628,
+      "pct_morena_muni": 36.71291355389541,
+      "pct_morena_gub": 48.57685009487666,
+      "delta_pct_morena": -11.86393654098125,
+      "pct_pan_muni": 35.75240128068303,
+      "pct_pan_gub": 12.808349146110057,
+      "delta_pct_pan": 22.944052134572974,
+      "morena_muni": 344.0,
+      "morena_gub": 512.0
+    },
+    {
+      "seccion": 1629,
+      "pct_morena_muni": 40.25465230166503,
+      "pct_morena_gub": 44.24192212096106,
+      "delta_pct_morena": -3.9872698192960243,
+      "pct_pan_muni": 35.6513222331048,
+      "pct_pan_gub": 13.628831814415907,
+      "delta_pct_pan": 22.022490418688893,
+      "morena_muni": 822.0,
+      "morena_gub": 1068.0
+    },
+    {
+      "seccion": 1630,
+      "pct_morena_muni": 44.55544455544456,
+      "pct_morena_gub": 47.674418604651166,
+      "delta_pct_morena": -3.1189740492066065,
+      "pct_pan_muni": 27.77222777222777,
+      "pct_pan_gub": 12.701252236135957,
+      "delta_pct_pan": 15.070975536091812,
+      "morena_muni": 446.0,
+      "morena_gub": 533.0
+    },
+    {
+      "seccion": 1631,
+      "pct_morena_muni": 42.25941422594142,
+      "pct_morena_gub": 44.73924977127173,
+      "delta_pct_morena": -2.4798355453303103,
+      "pct_pan_muni": 29.079497907949794,
+      "pct_pan_gub": 13.174748398902103,
+      "delta_pct_pan": 15.90474950904769,
+      "morena_muni": 404.0,
+      "morena_gub": 489.0
+    },
+    {
+      "seccion": 1632,
+      "pct_morena_muni": 35.87786259541985,
+      "pct_morena_gub": 42.26020892687559,
+      "delta_pct_morena": -6.382346331455743,
+      "pct_pan_muni": 37.73173391494002,
+      "pct_pan_gub": 14.245014245014245,
+      "delta_pct_pan": 23.486719669925776,
+      "morena_muni": 329.0,
+      "morena_gub": 445.0
+    },
+    {
+      "seccion": 1633,
+      "pct_morena_muni": 34.619093539054965,
+      "pct_morena_gub": 43.875838926174495,
+      "delta_pct_morena": -9.25674538711953,
+      "pct_pan_muni": 40.40501446480231,
+      "pct_pan_gub": 13.674496644295303,
+      "delta_pct_pan": 26.73051782050701,
+      "morena_muni": 359.0,
+      "morena_gub": 523.0
+    },
+    {
+      "seccion": 1635,
+      "pct_morena_muni": 29.8932384341637,
+      "pct_morena_gub": 38.080495356037154,
+      "delta_pct_morena": -8.187256921873455,
+      "pct_pan_muni": 49.11032028469751,
+      "pct_pan_gub": 22.910216718266255,
+      "delta_pct_pan": 26.200103566431252,
+      "morena_muni": 168.0,
+      "morena_gub": 246.0
+    },
+    {
+      "seccion": 1636,
+      "pct_morena_muni": 42.51644736842105,
+      "pct_morena_gub": 46.350106307583275,
+      "delta_pct_morena": -3.833658939162227,
+      "pct_pan_muni": 34.786184210526315,
+      "pct_pan_gub": 11.835577604535791,
+      "delta_pct_pan": 22.950606605990522,
+      "morena_muni": 517.0,
+      "morena_gub": 654.0
+    },
+    {
+      "seccion": 1637,
+      "pct_morena_muni": 39.81968444778362,
+      "pct_morena_gub": 40.41450777202073,
+      "delta_pct_morena": -0.5948233242371046,
+      "pct_pan_muni": 34.109691960931634,
+      "pct_pan_gub": 13.249444855662473,
+      "delta_pct_pan": 20.86024710526916,
+      "morena_muni": 530.0,
+      "morena_gub": 546.0
+    },
+    {
+      "seccion": 1638,
+      "pct_morena_muni": 46.61482159194876,
+      "pct_morena_gub": 47.5049504950495,
+      "delta_pct_morena": -0.890128903100738,
+      "pct_pan_muni": 27.31015553522415,
+      "pct_pan_gub": 12.198019801980198,
+      "delta_pct_pan": 15.112135733243953,
+      "morena_muni": 2038.0,
+      "morena_gub": 2399.0
+    },
+    {
+      "seccion": 1639,
+      "pct_morena_muni": 53.367346938775505,
+      "pct_morena_gub": 52.69516728624535,
+      "delta_pct_morena": 0.6721796525301542,
+      "pct_pan_muni": 21.224489795918366,
+      "pct_pan_gub": 7.434944237918216,
+      "delta_pct_pan": 13.78954555800015,
+      "morena_muni": 523.0,
+      "morena_gub": 567.0
+    },
+    {
+      "seccion": 1640,
+      "pct_morena_muni": 34.78170478170478,
+      "pct_morena_gub": 31.87394247038917,
+      "delta_pct_morena": 2.9077623113156115,
+      "pct_pan_muni": 39.729729729729726,
+      "pct_pan_gub": 31.42978003384095,
+      "delta_pct_pan": 8.299949695888778,
+      "morena_muni": 1673.0,
+      "morena_gub": 1507.0
+    },
+    {
+      "seccion": 1641,
+      "pct_morena_muni": 26.768010575016522,
+      "pct_morena_gub": 9.29203539823009,
+      "delta_pct_morena": 17.475975176786434,
+      "pct_pan_muni": 49.306014540647716,
+      "pct_pan_gub": 5.878634639696586,
+      "delta_pct_pan": 43.42737990095113,
+      "morena_muni": 405.0,
+      "morena_gub": 147.0
+    },
+    {
+      "seccion": 1642,
+      "pct_morena_muni": 35.89041095890411,
+      "pct_morena_gub": 39.120879120879124,
+      "delta_pct_morena": -3.2304681619750113,
+      "pct_pan_muni": 39.178082191780824,
+      "pct_pan_gub": 14.285714285714285,
+      "delta_pct_pan": 24.89236790606654,
+      "morena_muni": 262.0,
+      "morena_gub": 178.0
+    },
+    {
+      "seccion": 1643,
+      "pct_morena_muni": 42.40601503759399,
+      "pct_morena_gub": 44.97716894977169,
+      "delta_pct_morena": -2.5711539121776994,
+      "pct_pan_muni": 34.13533834586466,
+      "pct_pan_gub": 10.95890410958904,
+      "delta_pct_pan": 23.176434236275618,
+      "morena_muni": 282.0,
+      "morena_gub": 197.0
+    },
+    {
+      "seccion": 1644,
+      "pct_morena_muni": 34.81894150417828,
+      "pct_morena_gub": 43.4070434070434,
+      "delta_pct_morena": -8.588101902865127,
+      "pct_pan_muni": 41.78272980501393,
+      "pct_pan_gub": 16.707616707616708,
+      "delta_pct_pan": 25.07511309739722,
+      "morena_muni": 375.0,
+      "morena_gub": 530.0
+    },
+    {
+      "seccion": 1645,
+      "pct_morena_muni": 36.89320388349515,
+      "pct_morena_gub": 46.117084826762245,
+      "delta_pct_morena": -9.223880943267098,
+      "pct_pan_muni": 40.3883495145631,
+      "pct_pan_gub": 15.531660692951016,
+      "delta_pct_pan": 24.85668882161209,
+      "morena_muni": 380.0,
+      "morena_gub": 386.0
+    },
+    {
+      "seccion": 1646,
+      "pct_morena_muni": 24.45378151260504,
+      "pct_morena_gub": 34.15915915915916,
+      "delta_pct_morena": -9.705377646554119,
+      "pct_pan_muni": 52.77310924369748,
+      "pct_pan_gub": 26.726726726726728,
+      "delta_pct_pan": 26.046382516970755,
+      "morena_muni": 291.0,
+      "morena_gub": 455.0
+    },
+    {
+      "seccion": 1647,
+      "pct_morena_muni": 40.62214089661482,
+      "pct_morena_gub": 48.697711128650354,
+      "delta_pct_morena": -8.075570232035531,
+      "pct_pan_muni": 36.68801463860933,
+      "pct_pan_gub": 14.917127071823206,
+      "delta_pct_pan": 21.770887566786126,
+      "morena_muni": 444.0,
+      "morena_gub": 617.0
+    },
+    {
+      "seccion": 1648,
+      "pct_morena_muni": 25.84573748308525,
+      "pct_morena_gub": 35.66350710900474,
+      "delta_pct_morena": -9.817769625919489,
+      "pct_pan_muni": 48.44384303112314,
+      "pct_pan_gub": 20.85308056872038,
+      "delta_pct_pan": 27.590762462402758,
+      "morena_muni": 191.0,
+      "morena_gub": 301.0
+    },
+    {
+      "seccion": 1649,
+      "pct_morena_muni": 26.98768197088466,
+      "pct_morena_gub": 33.89494549058474,
+      "delta_pct_morena": -6.907263519700081,
+      "pct_pan_muni": 49.0481522956327,
+      "pct_pan_gub": 27.254707631318137,
+      "delta_pct_pan": 21.79344466431456,
+      "morena_muni": 241.0,
+      "morena_gub": 342.0
+    },
+    {
+      "seccion": 1650,
+      "pct_morena_muni": 40.208333333333336,
+      "pct_morena_gub": 35.174418604651166,
+      "delta_pct_morena": 5.03391472868217,
+      "pct_pan_muni": 33.541666666666664,
+      "pct_pan_gub": 12.5,
+      "delta_pct_pan": 21.041666666666664,
+      "morena_muni": 193.0,
+      "morena_gub": 121.0
+    },
+    {
+      "seccion": 1651,
+      "pct_morena_muni": 40.43956043956044,
+      "pct_morena_gub": 42.937324602432184,
+      "delta_pct_morena": -2.4977641628717464,
+      "pct_pan_muni": 35.05494505494505,
+      "pct_pan_gub": 11.693171188026193,
+      "delta_pct_pan": 23.36177386691886,
+      "morena_muni": 368.0,
+      "morena_gub": 459.0
+    },
+    {
+      "seccion": 1652,
+      "pct_morena_muni": 44.822888283378745,
+      "pct_morena_gub": 42.1978021978022,
+      "delta_pct_morena": 2.625086085576548,
+      "pct_pan_muni": 31.471389645776565,
+      "pct_pan_gub": 13.406593406593407,
+      "delta_pct_pan": 18.06479623918316,
+      "morena_muni": 329.0,
+      "morena_gub": 192.0
+    },
+    {
+      "seccion": 1653,
+      "pct_morena_muni": 38.21070234113713,
+      "pct_morena_gub": 47.041198501872664,
+      "delta_pct_morena": -8.830496160735535,
+      "pct_pan_muni": 37.20735785953177,
+      "pct_pan_gub": 14.382022471910114,
+      "delta_pct_pan": 22.825335387621656,
+      "morena_muni": 457.0,
+      "morena_gub": 628.0
+    },
+    {
+      "seccion": 1655,
+      "pct_morena_muni": 42.377756471716204,
+      "pct_morena_gub": 43.96782841823057,
+      "delta_pct_morena": -1.5900719465143638,
+      "pct_pan_muni": 30.105465004793864,
+      "pct_pan_gub": 11.438784629133155,
+      "delta_pct_pan": 18.66668037566071,
+      "morena_muni": 442.0,
+      "morena_gub": 492.0
+    },
+    {
+      "seccion": 1656,
+      "pct_morena_muni": 43.657817109144545,
+      "pct_morena_gub": 55.51282051282052,
+      "delta_pct_morena": -11.855003403675973,
+      "pct_pan_muni": 33.33333333333333,
+      "pct_pan_gub": 11.666666666666666,
+      "delta_pct_pan": 21.666666666666664,
+      "morena_muni": 296.0,
+      "morena_gub": 433.0
+    },
+    {
+      "seccion": 1657,
+      "pct_morena_muni": 42.27733934611049,
+      "pct_morena_gub": 47.62855716425362,
+      "delta_pct_morena": -5.351217818143134,
+      "pct_pan_muni": 33.03269447576099,
+      "pct_pan_gub": 11.732401397903146,
+      "delta_pct_pan": 21.300293077857845,
+      "morena_muni": 750.0,
+      "morena_gub": 954.0
+    },
+    {
+      "seccion": 1659,
+      "pct_morena_muni": 39.36235438381361,
+      "pct_morena_gub": 25.415113520840393,
+      "delta_pct_morena": 13.947240862973217,
+      "pct_pan_muni": 30.472103004291846,
+      "pct_pan_gub": 8.91223314130803,
+      "delta_pct_pan": 21.559869862983817,
+      "morena_muni": 642.0,
+      "morena_gub": 750.0
+    },
+    {
+      "seccion": 1660,
+      "pct_morena_muni": 53.08098591549296,
+      "pct_morena_gub": 53.68421052631579,
+      "delta_pct_morena": -0.6032246108228279,
+      "pct_pan_muni": 15.845070422535212,
+      "pct_pan_gub": 4.887218045112782,
+      "delta_pct_pan": 10.95785237742243,
+      "morena_muni": 603.0,
+      "morena_gub": 714.0
+    },
+    {
+      "seccion": 1661,
+      "pct_morena_muni": 55.76470588235294,
+      "pct_morena_gub": 34.375,
+      "delta_pct_morena": 21.389705882352942,
+      "pct_pan_muni": 15.137254901960784,
+      "pct_pan_gub": 4.017857142857143,
+      "delta_pct_pan": 11.119397759103641,
+      "morena_muni": 711.0,
+      "morena_gub": 154.0
+    },
+    {
+      "seccion": 1662,
+      "pct_morena_muni": 34.86888731396173,
+      "pct_morena_gub": 41.7910447761194,
+      "delta_pct_morena": -6.922157462157671,
+      "pct_pan_muni": 39.97165131112686,
+      "pct_pan_gub": 18.90547263681592,
+      "delta_pct_pan": 21.066178674310944,
+      "morena_muni": 492.0,
+      "morena_gub": 672.0
+    },
+    {
+      "seccion": 1663,
+      "pct_morena_muni": 38.265582655826556,
+      "pct_morena_gub": 42.46641074856046,
+      "delta_pct_morena": -4.200828092733907,
+      "pct_pan_muni": 34.09214092140921,
+      "pct_pan_gub": 13.867562380038386,
+      "delta_pct_pan": 20.224578541370825,
+      "morena_muni": 706.0,
+      "morena_gub": 885.0
+    },
+    {
+      "seccion": 1664,
+      "pct_morena_muni": 39.603960396039604,
+      "pct_morena_gub": 9.811565951916828,
+      "delta_pct_morena": 29.792394444122777,
+      "pct_pan_muni": 35.024752475247524,
+      "pct_pan_gub": 4.808317089018843,
+      "delta_pct_pan": 30.21643538622868,
+      "morena_muni": 320.0,
+      "morena_gub": 151.0
+    },
+    {
+      "seccion": 1665,
+      "pct_morena_muni": 33.54943273905997,
+      "pct_morena_gub": 37.177747625508815,
+      "delta_pct_morena": -3.628314886448848,
+      "pct_pan_muni": 43.11183144246353,
+      "pct_pan_gub": 17.774762550881952,
+      "delta_pct_pan": 25.33706889158158,
+      "morena_muni": 207.0,
+      "morena_gub": 274.0
+    },
+    {
+      "seccion": 1666,
+      "pct_morena_muni": 39.97539975399754,
+      "pct_morena_gub": 46.86192468619247,
+      "delta_pct_morena": -6.886524932194924,
+      "pct_pan_muni": 34.686346863468636,
+      "pct_pan_gub": 11.506276150627615,
+      "delta_pct_pan": 23.180070712841022,
+      "morena_muni": 325.0,
+      "morena_gub": 448.0
+    },
+    {
+      "seccion": 1667,
+      "pct_morena_muni": 35.944700460829495,
+      "pct_morena_gub": 4.326923076923077,
+      "delta_pct_morena": 31.617777383906418,
+      "pct_pan_muni": 39.40092165898618,
+      "pct_pan_gub": 22.596153846153847,
+      "delta_pct_pan": 16.80476781283233,
+      "morena_muni": 156.0,
+      "morena_gub": 9.0
+    },
+    {
+      "seccion": 1668,
+      "pct_morena_muni": 39.603960396039604,
+      "pct_morena_gub": 42.083333333333336,
+      "delta_pct_morena": -2.479372937293732,
+      "pct_pan_muni": 38.86138613861386,
+      "pct_pan_gub": 14.166666666666666,
+      "delta_pct_pan": 24.694719471947195,
+      "morena_muni": 320.0,
+      "morena_gub": 202.0
+    },
+    {
+      "seccion": 1669,
+      "pct_morena_muni": 41.11261872455903,
+      "pct_morena_gub": 45.72446555819478,
+      "delta_pct_morena": -4.611846833635752,
+      "pct_pan_muni": 31.75033921302578,
+      "pct_pan_gub": 11.63895486935867,
+      "delta_pct_pan": 20.11138434366711,
+      "morena_muni": 303.0,
+      "morena_gub": 385.0
+    },
+    {
+      "seccion": 1670,
+      "pct_morena_muni": 40.27777777777778,
+      "pct_morena_gub": 42.12076583210604,
+      "delta_pct_morena": -1.8429880543282593,
+      "pct_pan_muni": 33.68055555555556,
+      "pct_pan_gub": 14.432989690721648,
+      "delta_pct_pan": 19.24756586483391,
+      "morena_muni": 232.0,
+      "morena_gub": 286.0
+    },
+    {
+      "seccion": 1671,
+      "pct_morena_muni": 34.92822966507177,
+      "pct_morena_gub": 38.995215311004785,
+      "delta_pct_morena": -4.066985645933016,
+      "pct_pan_muni": 39.07496012759171,
+      "pct_pan_gub": 11.004784688995215,
+      "delta_pct_pan": 28.070175438596493,
+      "morena_muni": 219.0,
+      "morena_gub": 163.0
+    },
+    {
+      "seccion": 1672,
+      "pct_morena_muni": 27.242152466367713,
+      "pct_morena_gub": 34.72222222222222,
+      "delta_pct_morena": -7.480069755854508,
+      "pct_pan_muni": 48.318385650224215,
+      "pct_pan_gub": 22.023809523809522,
+      "delta_pct_pan": 26.294576126414693,
+      "morena_muni": 243.0,
+      "morena_gub": 350.0
+    },
+    {
+      "seccion": 1673,
+      "pct_morena_muni": 25.106124924196482,
+      "pct_morena_gub": 34.932614555256066,
+      "delta_pct_morena": -9.826489631059584,
+      "pct_pan_muni": 50.57610673135233,
+      "pct_pan_gub": 25.822102425876007,
+      "delta_pct_pan": 24.754004305476325,
+      "morena_muni": 414.0,
+      "morena_gub": 648.0
+    },
+    {
+      "seccion": 1674,
+      "pct_morena_muni": 27.51235584843493,
+      "pct_morena_gub": 34.58980044345898,
+      "delta_pct_morena": -7.077444595024048,
+      "pct_pan_muni": 44.81054365733114,
+      "pct_pan_gub": 23.946784922394677,
+      "delta_pct_pan": 20.86375873493646,
+      "morena_muni": 167.0,
+      "morena_gub": 312.0
+    },
+    {
+      "seccion": 1675,
+      "pct_morena_muni": 14.424635332252835,
+      "pct_morena_gub": 17.147435897435898,
+      "delta_pct_morena": -2.7228005651830625,
+      "pct_pan_muni": 60.777957860615885,
+      "pct_pan_gub": 39.58333333333333,
+      "delta_pct_pan": 21.194624527282556,
+      "morena_muni": 89.0,
+      "morena_gub": 107.0
+    },
+    {
+      "seccion": 1676,
+      "pct_morena_muni": 32.196969696969695,
+      "pct_morena_gub": 35.588235294117645,
+      "delta_pct_morena": -3.3912655971479495,
+      "pct_pan_muni": 42.99242424242424,
+      "pct_pan_gub": 14.705882352941178,
+      "delta_pct_pan": 28.286541889483065,
+      "morena_muni": 170.0,
+      "morena_gub": 121.0
+    },
+    {
+      "seccion": 1677,
+      "pct_morena_muni": 37.33681462140992,
+      "pct_morena_gub": 44.75524475524475,
+      "delta_pct_morena": -7.418430133834832,
+      "pct_pan_muni": 39.686684073107045,
+      "pct_pan_gub": 14.685314685314685,
+      "delta_pct_pan": 25.00136938779236,
+      "morena_muni": 143.0,
+      "morena_gub": 192.0
+    },
+    {
+      "seccion": 1679,
+      "pct_morena_muni": 40.874524714828894,
+      "pct_morena_gub": 19.12751677852349,
+      "delta_pct_morena": 21.747007936305405,
+      "pct_pan_muni": 36.88212927756654,
+      "pct_pan_gub": 20.469798657718123,
+      "delta_pct_pan": 16.41233061984842,
+      "morena_muni": 215.0,
+      "morena_gub": 114.0
+    },
+    {
+      "seccion": 1680,
+      "pct_morena_muni": 31.27659574468085,
+      "pct_morena_gub": 37.52212389380531,
+      "delta_pct_morena": -6.245528149124457,
+      "pct_pan_muni": 48.08510638297872,
+      "pct_pan_gub": 21.5929203539823,
+      "delta_pct_pan": 26.49218602899642,
+      "morena_muni": 147.0,
+      "morena_gub": 212.0
+    },
+    {
+      "seccion": 1681,
+      "pct_morena_muni": 32.663316582914575,
+      "pct_morena_gub": 39.593114241001565,
+      "delta_pct_morena": -6.92979765808699,
+      "pct_pan_muni": 46.231155778894475,
+      "pct_pan_gub": 14.241001564945227,
+      "delta_pct_pan": 31.990154213949246,
+      "morena_muni": 195.0,
+      "morena_gub": 253.0
+    },
+    {
+      "seccion": 1682,
+      "pct_morena_muni": 37.44075829383886,
+      "pct_morena_gub": 45.172031076581575,
+      "delta_pct_morena": -7.731272782742714,
+      "pct_pan_muni": 38.27014218009479,
+      "pct_pan_gub": 13.984461709211987,
+      "delta_pct_pan": 24.285680470882802,
+      "morena_muni": 316.0,
+      "morena_gub": 407.0
+    },
+    {
+      "seccion": 1683,
+      "pct_morena_muni": 39.92673992673993,
+      "pct_morena_gub": 50.847457627118644,
+      "delta_pct_morena": -10.920717700378717,
+      "pct_pan_muni": 35.28693528693529,
+      "pct_pan_gub": 8.47457627118644,
+      "delta_pct_pan": 26.81235901574885,
+      "morena_muni": 327.0,
+      "morena_gub": 420.0
+    },
+    {
+      "seccion": 1684,
+      "pct_morena_muni": 47.59493670886076,
+      "pct_morena_gub": 47.36275565123789,
+      "delta_pct_morena": 0.23218105762286712,
+      "pct_pan_muni": 29.367088607594937,
+      "pct_pan_gub": 11.194833153928956,
+      "delta_pct_pan": 18.172255453665983,
+      "morena_muni": 376.0,
+      "morena_gub": 440.0
+    },
+    {
+      "seccion": 1685,
+      "pct_morena_muni": 26.51006711409396,
+      "pct_morena_gub": 35.66047212456052,
+      "delta_pct_morena": -9.15040501046656,
+      "pct_pan_muni": 49.832214765100666,
+      "pct_pan_gub": 25.16323455549975,
+      "delta_pct_pan": 24.668980209600917,
+      "morena_muni": 474.0,
+      "morena_gub": 710.0
+    },
+    {
+      "seccion": 1686,
+      "pct_morena_muni": 43.80952380952381,
+      "pct_morena_gub": 39.2931392931393,
+      "delta_pct_morena": 4.516384516384512,
+      "pct_pan_muni": 31.61904761904762,
+      "pct_pan_gub": 12.474012474012476,
+      "delta_pct_pan": 19.145035145035145,
+      "morena_muni": 460.0,
+      "morena_gub": 189.0
+    },
+    {
+      "seccion": 1687,
+      "pct_morena_muni": 44.69565217391304,
+      "pct_morena_gub": 51.47286821705427,
+      "delta_pct_morena": -6.77721604314123,
+      "pct_pan_muni": 27.1304347826087,
+      "pct_pan_gub": 11.162790697674419,
+      "delta_pct_pan": 15.96764408493428,
+      "morena_muni": 257.0,
+      "morena_gub": 332.0
+    },
+    {
+      "seccion": 1688,
+      "pct_morena_muni": 39.69072164948454,
+      "pct_morena_gub": 39.589442815249264,
+      "delta_pct_morena": 0.10127883423527351,
+      "pct_pan_muni": 34.192439862542955,
+      "pct_pan_gub": 10.850439882697946,
+      "delta_pct_pan": 23.341999979845006,
+      "morena_muni": 231.0,
+      "morena_gub": 135.0
+    },
+    {
+      "seccion": 1689,
+      "pct_morena_muni": 49.18918918918919,
+      "pct_morena_gub": 49.904580152671755,
+      "delta_pct_morena": -0.7153909634825624,
+      "pct_pan_muni": 30.594594594594593,
+      "pct_pan_gub": 10.591603053435113,
+      "delta_pct_pan": 20.00299154115948,
+      "morena_muni": 455.0,
+      "morena_gub": 523.0
+    },
+    {
+      "seccion": 1690,
+      "pct_morena_muni": 39.51219512195122,
+      "pct_morena_gub": 41.977077363896846,
+      "delta_pct_morena": -2.4648822419456238,
+      "pct_pan_muni": 38.90243902439025,
+      "pct_pan_gub": 14.469914040114611,
+      "delta_pct_pan": 24.432524984275638,
+      "morena_muni": 324.0,
+      "morena_gub": 293.0
+    },
+    {
+      "seccion": 1692,
+      "pct_morena_muni": 44.516129032258064,
+      "pct_morena_gub": 44.59102902374671,
+      "delta_pct_morena": -0.07489999148864257,
+      "pct_pan_muni": 33.70967741935484,
+      "pct_pan_gub": 10.554089709762533,
+      "delta_pct_pan": 23.155587709592307,
+      "morena_muni": 276.0,
+      "morena_gub": 169.0
+    },
+    {
+      "seccion": 1693,
+      "pct_morena_muni": 39.26056338028169,
+      "pct_morena_gub": 43.97590361445783,
+      "delta_pct_morena": -4.715340234176139,
+      "pct_pan_muni": 32.3943661971831,
+      "pct_pan_gub": 12.5,
+      "delta_pct_pan": 19.894366197183103,
+      "morena_muni": 223.0,
+      "morena_gub": 292.0
+    },
+    {
+      "seccion": 1694,
+      "pct_morena_muni": 30.80357142857143,
+      "pct_morena_gub": 31.88854489164087,
+      "delta_pct_morena": -1.0849734630694385,
+      "pct_pan_muni": 40.625,
+      "pct_pan_gub": 13.312693498452013,
+      "delta_pct_pan": 27.312306501547987,
+      "morena_muni": 138.0,
+      "morena_gub": 103.0
+    },
+    {
+      "seccion": 1695,
+      "pct_morena_muni": 31.73076923076923,
+      "pct_morena_gub": 36.67205169628433,
+      "delta_pct_morena": -4.941282465515098,
+      "pct_pan_muni": 40.96153846153846,
+      "pct_pan_gub": 20.84006462035541,
+      "delta_pct_pan": 20.12147384118305,
+      "morena_muni": 165.0,
+      "morena_gub": 227.0
+    },
+    {
+      "seccion": 1696,
+      "pct_morena_muni": 37.3134328358209,
+      "pct_morena_gub": 43.76130198915009,
+      "delta_pct_morena": -6.447869153329194,
+      "pct_pan_muni": 40.298507462686565,
+      "pct_pan_gub": 18.083182640144667,
+      "delta_pct_pan": 22.2153248225419,
+      "morena_muni": 175.0,
+      "morena_gub": 242.0
+    },
+    {
+      "seccion": 1697,
+      "pct_morena_muni": 32.64781491002571,
+      "pct_morena_gub": 43.60730593607306,
+      "delta_pct_morena": -10.959491026047353,
+      "pct_pan_muni": 43.44473007712082,
+      "pct_pan_gub": 14.383561643835616,
+      "delta_pct_pan": 29.061168433285207,
+      "morena_muni": 127.0,
+      "morena_gub": 191.0
+    },
+    {
+      "seccion": 1698,
+      "pct_morena_muni": 36.11764705882353,
+      "pct_morena_gub": 40.56902002107481,
+      "delta_pct_morena": -4.451372962251284,
+      "pct_pan_muni": 41.294117647058826,
+      "pct_pan_gub": 19.388830347734455,
+      "delta_pct_pan": 21.90528729932437,
+      "morena_muni": 307.0,
+      "morena_gub": 385.0
+    },
+    {
+      "seccion": 1699,
+      "pct_morena_muni": 28.8135593220339,
+      "pct_morena_gub": 33.20610687022901,
+      "delta_pct_morena": -4.3925475481951075,
+      "pct_pan_muni": 47.909604519774014,
+      "pct_pan_gub": 24.236641221374043,
+      "delta_pct_pan": 23.67296329839997,
+      "morena_muni": 255.0,
+      "morena_gub": 174.0
+    },
+    {
+      "seccion": 1700,
+      "pct_morena_muni": 36.440030557677616,
+      "pct_morena_gub": 42.16216216216216,
+      "delta_pct_morena": -5.722131604484545,
+      "pct_pan_muni": 39.49579831932773,
+      "pct_pan_gub": 18.175675675675677,
+      "delta_pct_pan": 21.320122643652056,
+      "morena_muni": 477.0,
+      "morena_gub": 624.0
+    },
+    {
+      "seccion": 1701,
+      "pct_morena_muni": 42.53859348198971,
+      "pct_morena_gub": 42.857142857142854,
+      "delta_pct_morena": -0.31854937515314674,
+      "pct_pan_muni": 31.56089193825043,
+      "pct_pan_gub": 11.832611832611832,
+      "delta_pct_pan": 19.728280105638596,
+      "morena_muni": 248.0,
+      "morena_gub": 297.0
+    },
+    {
+      "seccion": 1702,
+      "pct_morena_muni": 38.08255659121172,
+      "pct_morena_gub": 40.664375715922105,
+      "delta_pct_morena": -2.5818191247103854,
+      "pct_pan_muni": 38.348868175765645,
+      "pct_pan_gub": 15.120274914089347,
+      "delta_pct_pan": 23.2285932616763,
+      "morena_muni": 286.0,
+      "morena_gub": 355.0
+    },
+    {
+      "seccion": 1703,
+      "pct_morena_muni": 52.07977207977208,
+      "pct_morena_gub": 52.23367697594502,
+      "delta_pct_morena": -0.15390489617294634,
+      "pct_pan_muni": 22.108262108262107,
+      "pct_pan_gub": 10.407461953853707,
+      "delta_pct_pan": 11.7008001544084,
+      "morena_muni": 914.0,
+      "morena_gub": 1064.0
+    },
+    {
+      "seccion": 1704,
+      "pct_morena_muni": 43.673469387755105,
+      "pct_morena_gub": 45.2991452991453,
+      "delta_pct_morena": -1.6256759113901964,
+      "pct_pan_muni": 30.918367346938773,
+      "pct_pan_gub": 10.378510378510379,
+      "delta_pct_pan": 20.539856968428396,
+      "morena_muni": 428.0,
+      "morena_gub": 371.0
+    },
+    {
+      "seccion": 1705,
+      "pct_morena_muni": 42.4317617866005,
+      "pct_morena_gub": 44.642857142857146,
+      "delta_pct_morena": -2.2110953562566493,
+      "pct_pan_muni": 31.389578163771713,
+      "pct_pan_gub": 11.869747899159663,
+      "delta_pct_pan": 19.51983026461205,
+      "morena_muni": 342.0,
+      "morena_gub": 425.0
+    },
+    {
+      "seccion": 1706,
+      "pct_morena_muni": 43.02615193026152,
+      "pct_morena_gub": 43.05882352941177,
+      "delta_pct_morena": -0.0326715991502482,
+      "pct_pan_muni": 31.94271481942715,
+      "pct_pan_gub": 12.294117647058824,
+      "delta_pct_pan": 19.648597172368326,
+      "morena_muni": 691.0,
+      "morena_gub": 732.0
+    },
+    {
+      "seccion": 1707,
+      "pct_morena_muni": 34.03508771929825,
+      "pct_morena_gub": 41.80929095354523,
+      "delta_pct_morena": -7.774203234246983,
+      "pct_pan_muni": 42.59649122807018,
+      "pct_pan_gub": 18.031784841075797,
+      "delta_pct_pan": 24.56470638699438,
+      "morena_muni": 485.0,
+      "morena_gub": 684.0
+    },
+    {
+      "seccion": 1708,
+      "pct_morena_muni": 37.43589743589744,
+      "pct_morena_gub": 34.14141414141414,
+      "delta_pct_morena": 3.2944832944832996,
+      "pct_pan_muni": 36.82051282051282,
+      "pct_pan_gub": 13.737373737373737,
+      "delta_pct_pan": 23.08313908313908,
+      "morena_muni": 365.0,
+      "morena_gub": 169.0
+    },
+    {
+      "seccion": 1709,
+      "pct_morena_muni": 38.07040417209909,
+      "pct_morena_gub": 42.716319824753555,
+      "delta_pct_morena": -4.645915652654466,
+      "pct_pan_muni": 40.15645371577575,
+      "pct_pan_gub": 16.10076670317634,
+      "delta_pct_pan": 24.055687012599407,
+      "morena_muni": 292.0,
+      "morena_gub": 390.0
+    },
+    {
+      "seccion": 1710,
+      "pct_morena_muni": 37.570621468926554,
+      "pct_morena_gub": 44.58128078817734,
+      "delta_pct_morena": -7.0106593192507844,
+      "pct_pan_muni": 38.983050847457626,
+      "pct_pan_gub": 15.270935960591133,
+      "delta_pct_pan": 23.712114886866495,
+      "morena_muni": 133.0,
+      "morena_gub": 181.0
+    },
+    {
+      "seccion": 1711,
+      "pct_morena_muni": 37.77173913043478,
+      "pct_morena_gub": 43.333333333333336,
+      "delta_pct_morena": -5.561594202898554,
+      "pct_pan_muni": 37.77173913043478,
+      "pct_pan_gub": 15.476190476190476,
+      "delta_pct_pan": 22.295548654244307,
+      "morena_muni": 139.0,
+      "morena_gub": 182.0
+    },
+    {
+      "seccion": 1712,
+      "pct_morena_muni": 45.354523227383865,
+      "pct_morena_gub": 47.0954356846473,
+      "delta_pct_morena": -1.740912457263434,
+      "pct_pan_muni": 31.41809290953545,
+      "pct_pan_gub": 10.78838174273859,
+      "delta_pct_pan": 20.62971116679686,
+      "morena_muni": 371.0,
+      "morena_gub": 454.0
+    },
+    {
+      "seccion": 1713,
+      "pct_morena_muni": 44.25863991081383,
+      "pct_morena_gub": 53.485952133194594,
+      "delta_pct_morena": -9.227312222380768,
+      "pct_pan_muni": 30.54626532887402,
+      "pct_pan_gub": 9.781477627471384,
+      "delta_pct_pan": 20.76478770140264,
+      "morena_muni": 397.0,
+      "morena_gub": 514.0
+    },
+    {
+      "seccion": 1714,
+      "pct_morena_muni": 48.79074658254469,
+      "pct_morena_gub": 38.46153846153847,
+      "delta_pct_morena": 10.329208121006225,
+      "pct_pan_muni": 24.500525762355416,
+      "pct_pan_gub": 5.88235294117647,
+      "delta_pct_pan": 18.618172821178945,
+      "morena_muni": 464.0,
+      "morena_gub": 170.0
+    },
+    {
+      "seccion": 1715,
+      "pct_morena_muni": 45.94272076372315,
+      "pct_morena_gub": 47.12643678160919,
+      "delta_pct_morena": -1.1837160178860415,
+      "pct_pan_muni": 25.53699284009546,
+      "pct_pan_gub": 13.31417624521073,
+      "delta_pct_pan": 12.222816594884732,
+      "morena_muni": 385.0,
+      "morena_gub": 492.0
+    },
+    {
+      "seccion": 1716,
+      "pct_morena_muni": 48.963133640552996,
+      "pct_morena_gub": 32.12341197822142,
+      "delta_pct_morena": 16.839721662331577,
+      "pct_pan_muni": 24.078341013824886,
+      "pct_pan_gub": 4.3557168784029034,
+      "delta_pct_pan": 19.72262413542198,
+      "morena_muni": 425.0,
+      "morena_gub": 177.0
+    },
+    {
+      "seccion": 1717,
+      "pct_morena_muni": 48.96872920825017,
+      "pct_morena_gub": 54.116222760290555,
+      "delta_pct_morena": -5.1474935520403875,
+      "pct_pan_muni": 25.016633399866933,
+      "pct_pan_gub": 8.898305084745763,
+      "delta_pct_pan": 16.11832831512117,
+      "morena_muni": 736.0,
+      "morena_gub": 894.0
+    },
+    {
+      "seccion": 1718,
+      "pct_morena_muni": 39.78365384615385,
+      "pct_morena_gub": 28.150134048257375,
+      "delta_pct_morena": 11.633519797896472,
+      "pct_pan_muni": 31.490384615384613,
+      "pct_pan_gub": 16.0857908847185,
+      "delta_pct_pan": 15.404593730666114,
+      "morena_muni": 331.0,
+      "morena_gub": 210.0
+    },
+    {
+      "seccion": 1719,
+      "pct_morena_muni": 41.88976377952756,
+      "pct_morena_gub": 43.648648648648646,
+      "delta_pct_morena": -1.7588848691210828,
+      "pct_pan_muni": 31.181102362204726,
+      "pct_pan_gub": 13.243243243243244,
+      "delta_pct_pan": 17.937859118961484,
+      "morena_muni": 266.0,
+      "morena_gub": 323.0
+    },
+    {
+      "seccion": 1720,
+      "pct_morena_muni": 45.2354874041621,
+      "pct_morena_gub": 47.47663551401869,
+      "delta_pct_morena": -2.2411481098565886,
+      "pct_pan_muni": 28.915662650602407,
+      "pct_pan_gub": 8.69158878504673,
+      "delta_pct_pan": 20.224073865555678,
+      "morena_muni": 413.0,
+      "morena_gub": 508.0
+    },
+    {
+      "seccion": 1721,
+      "pct_morena_muni": 38.70220162224797,
+      "pct_morena_gub": 48.95833333333333,
+      "delta_pct_morena": -10.25613171108536,
+      "pct_pan_muni": 35.573580533024334,
+      "pct_pan_gub": 10.3125,
+      "delta_pct_pan": 25.261080533024334,
+      "morena_muni": 334.0,
+      "morena_gub": 470.0
+    },
+    {
+      "seccion": 1722,
+      "pct_morena_muni": 47.333333333333336,
+      "pct_morena_gub": 48.42406876790831,
+      "delta_pct_morena": -1.0907354345749738,
+      "pct_pan_muni": 26.666666666666668,
+      "pct_pan_gub": 9.169054441260744,
+      "delta_pct_pan": 17.497612225405923,
+      "morena_muni": 284.0,
+      "morena_gub": 338.0
+    },
+    {
+      "seccion": 1723,
+      "pct_morena_muni": 40.92769440654843,
+      "pct_morena_gub": 42.64705882352941,
+      "delta_pct_morena": -1.71936441698098,
+      "pct_pan_muni": 36.4256480218281,
+      "pct_pan_gub": 16.386554621848738,
+      "delta_pct_pan": 20.039093399979365,
+      "morena_muni": 300.0,
+      "morena_gub": 203.0
+    },
+    {
+      "seccion": 1724,
+      "pct_morena_muni": 42.95580110497237,
+      "pct_morena_gub": 44.0,
+      "delta_pct_morena": -1.0441988950276269,
+      "pct_pan_muni": 33.42541436464088,
+      "pct_pan_gub": 10.947368421052632,
+      "delta_pct_pan": 22.47804594358825,
+      "morena_muni": 311.0,
+      "morena_gub": 209.0
+    },
+    {
+      "seccion": 1725,
+      "pct_morena_muni": 48.300283286118976,
+      "pct_morena_gub": 51.63727959697732,
+      "delta_pct_morena": -3.3369963108583462,
+      "pct_pan_muni": 29.603399433427764,
+      "pct_pan_gub": 11.712846347607053,
+      "delta_pct_pan": 17.890553085820713,
+      "morena_muni": 341.0,
+      "morena_gub": 410.0
+    },
+    {
+      "seccion": 1726,
+      "pct_morena_muni": 46.96449026345933,
+      "pct_morena_gub": 39.111111111111114,
+      "delta_pct_morena": 7.853379152348218,
+      "pct_pan_muni": 25.773195876288657,
+      "pct_pan_gub": 8.88888888888889,
+      "delta_pct_pan": 16.884306987399768,
+      "morena_muni": 410.0,
+      "morena_gub": 176.0
+    },
+    {
+      "seccion": 1727,
+      "pct_morena_muni": 41.629464285714285,
+      "pct_morena_gub": 43.18181818181818,
+      "delta_pct_morena": -1.5523538961038952,
+      "pct_pan_muni": 35.825892857142854,
+      "pct_pan_gub": 13.257575757575758,
+      "delta_pct_pan": 22.568317099567096,
+      "morena_muni": 373.0,
+      "morena_gub": 456.0
+    },
+    {
+      "seccion": 1728,
+      "pct_morena_muni": 46.49859943977591,
+      "pct_morena_gub": 46.162927981109796,
+      "delta_pct_morena": 0.3356714586661127,
+      "pct_pan_muni": 23.10924369747899,
+      "pct_pan_gub": 8.264462809917356,
+      "delta_pct_pan": 14.844780887561635,
+      "morena_muni": 332.0,
+      "morena_gub": 391.0
+    },
+    {
+      "seccion": 1729,
+      "pct_morena_muni": 54.06852248394004,
+      "pct_morena_gub": 50.92687950566427,
+      "delta_pct_morena": 3.141642978275776,
+      "pct_pan_muni": 19.75374732334047,
+      "pct_pan_gub": 7.003089598352215,
+      "delta_pct_pan": 12.750657724988255,
+      "morena_muni": 1010.0,
+      "morena_gub": 989.0
+    },
+    {
+      "seccion": 1730,
+      "pct_morena_muni": 51.79786200194364,
+      "pct_morena_gub": 48.541666666666664,
+      "delta_pct_morena": 3.2561953352769777,
+      "pct_pan_muni": 20.89407191448008,
+      "pct_pan_gub": 7.604166666666666,
+      "delta_pct_pan": 13.289905247813413,
+      "morena_muni": 1066.0,
+      "morena_gub": 932.0
+    },
+    {
+      "seccion": 1732,
+      "pct_morena_muni": 41.403238242097146,
+      "pct_morena_gub": 50.17135023989033,
+      "delta_pct_morena": -8.768111997793184,
+      "pct_pan_muni": 21.58828064764842,
+      "pct_pan_gub": 8.087731322823851,
+      "delta_pct_pan": 13.50054932482457,
+      "morena_muni": 537.0,
+      "morena_gub": 732.0
+    },
+    {
+      "seccion": 1733,
+      "pct_morena_muni": 43.45945945945946,
+      "pct_morena_gub": 44.940867279894874,
+      "delta_pct_morena": -1.4814078204354146,
+      "pct_pan_muni": 32.21621621621622,
+      "pct_pan_gub": 10.249671484888305,
+      "delta_pct_pan": 21.966544731327915,
+      "morena_muni": 402.0,
+      "morena_gub": 342.0
+    },
+    {
+      "seccion": 1734,
+      "pct_morena_muni": 46.084828711256115,
+      "pct_morena_gub": 29.73621103117506,
+      "delta_pct_morena": 16.348617680081055,
+      "pct_pan_muni": 28.05872756933116,
+      "pct_pan_gub": 10.311750599520384,
+      "delta_pct_pan": 17.746976969810778,
+      "morena_muni": 565.0,
+      "morena_gub": 124.0
+    },
+    {
+      "seccion": 1735,
+      "pct_morena_muni": 49.045424621461486,
+      "pct_morena_gub": 46.75880223757815,
+      "delta_pct_morena": 2.2866223838833335,
+      "pct_pan_muni": 24.950625411454904,
+      "pct_pan_gub": 9.805857189865087,
+      "delta_pct_pan": 15.144768221589818,
+      "morena_muni": 1490.0,
+      "morena_gub": 1421.0
+    },
+    {
+      "seccion": 1736,
+      "pct_morena_muni": 44.9079754601227,
+      "pct_morena_gub": 42.37080202422941,
+      "delta_pct_morena": 2.537173435893287,
+      "pct_pan_muni": 29.01840490797546,
+      "pct_pan_gub": 14.184940959975464,
+      "delta_pct_pan": 14.833463947999995,
+      "morena_muni": 2928.0,
+      "morena_gub": 2763.0
+    },
+    {
+      "seccion": 1738,
+      "pct_morena_muni": 54.724964739069115,
+      "pct_morena_gub": 53.49693251533743,
+      "delta_pct_morena": 1.228032223731688,
+      "pct_pan_muni": 20.59238363892807,
+      "pct_pan_gub": 8.895705521472392,
+      "delta_pct_pan": 11.696678117455678,
+      "morena_muni": 776.0,
+      "morena_gub": 872.0
+    },
+    {
+      "seccion": 1739,
+      "pct_morena_muni": 46.08160621761658,
+      "pct_morena_gub": 45.70720968629609,
+      "delta_pct_morena": 0.37439653132049244,
+      "pct_pan_muni": 28.14119170984456,
+      "pct_pan_gub": 14.089157952669234,
+      "delta_pct_pan": 14.052033757175325,
+      "morena_muni": 1423.0,
+      "morena_gub": 1661.0
+    },
+    {
+      "seccion": 1741,
+      "pct_morena_muni": 46.118721461187214,
+      "pct_morena_gub": 23.511904761904763,
+      "delta_pct_morena": 22.60681669928245,
+      "pct_pan_muni": 28.424657534246577,
+      "pct_pan_gub": 5.158730158730158,
+      "delta_pct_pan": 23.26592737551642,
+      "morena_muni": 404.0,
+      "morena_gub": 474.0
+    },
+    {
+      "seccion": 1742,
+      "pct_morena_muni": 51.657339647008186,
+      "pct_morena_gub": 37.23675075214071,
+      "delta_pct_morena": 14.420588894867478,
+      "pct_pan_muni": 18.209212225570383,
+      "pct_pan_gub": 5.970840083314047,
+      "delta_pct_pan": 12.238372142256335,
+      "morena_muni": 1200.0,
+      "morena_gub": 1609.0
+    },
+    {
+      "seccion": 1745,
+      "pct_morena_muni": 43.3852140077821,
+      "pct_morena_gub": 39.55582232893157,
+      "delta_pct_morena": 3.829391678850534,
+      "pct_pan_muni": 30.609597924773023,
+      "pct_pan_gub": 14.165666266506602,
+      "delta_pct_pan": 16.443931658266422,
+      "morena_muni": 669.0,
+      "morena_gub": 659.0
+    },
+    {
+      "seccion": 1746,
+      "pct_morena_muni": 40.483383685800604,
+      "pct_morena_gub": 40.44602128737962,
+      "delta_pct_morena": 0.037362398420981435,
+      "pct_pan_muni": 32.87009063444109,
+      "pct_pan_gub": 14.597060314242272,
+      "delta_pct_pan": 18.27303032019882,
+      "morena_muni": 670.0,
+      "morena_gub": 798.0
+    },
+    {
+      "seccion": 1747,
+      "pct_morena_muni": 47.66624040920716,
+      "pct_morena_gub": 39.05595736581652,
+      "delta_pct_morena": 8.610283043390645,
+      "pct_pan_muni": 25.0,
+      "pct_pan_gub": 6.775789874381425,
+      "delta_pct_pan": 18.224210125618576,
+      "morena_muni": 1491.0,
+      "morena_gub": 1026.0
+    },
+    {
+      "seccion": 1748,
+      "pct_morena_muni": 52.37891127303901,
+      "pct_morena_gub": 50.19978205593898,
+      "delta_pct_morena": 2.1791292171000265,
+      "pct_pan_muni": 19.37419631375911,
+      "pct_pan_gub": 7.192154013803124,
+      "delta_pct_pan": 12.182042299955986,
+      "morena_muni": 1222.0,
+      "morena_gub": 1382.0
+    },
+    {
+      "seccion": 1750,
+      "pct_morena_muni": 47.51102709514808,
+      "pct_morena_gub": 51.24545200111951,
+      "delta_pct_morena": -3.73442490597143,
+      "pct_pan_muni": 26.370510396975426,
+      "pct_pan_gub": 9.459837671424573,
+      "delta_pct_pan": 16.910672725550853,
+      "morena_muni": 1508.0,
+      "morena_gub": 1831.0
+    },
+    {
+      "seccion": 1751,
+      "pct_morena_muni": 45.520902455209026,
+      "pct_morena_gub": 46.7479674796748,
+      "delta_pct_morena": -1.227065024465773,
+      "pct_pan_muni": 29.595222295952222,
+      "pct_pan_gub": 10.975609756097562,
+      "delta_pct_pan": 18.61961253985466,
+      "morena_muni": 686.0,
+      "morena_gub": 690.0
+    },
+    {
+      "seccion": 1753,
+      "pct_morena_muni": 52.17391304347826,
+      "pct_morena_gub": 37.88819875776397,
+      "delta_pct_morena": 14.285714285714285,
+      "pct_pan_muni": 20.0,
+      "pct_pan_gub": 13.664596273291925,
+      "delta_pct_pan": 6.3354037267080745,
+      "morena_muni": 60.0,
+      "morena_gub": 61.0
+    },
+    {
+      "seccion": 1754,
+      "pct_morena_muni": 35.39719626168225,
+      "pct_morena_gub": 47.47081712062256,
+      "delta_pct_morena": -12.073620858940316,
+      "pct_pan_muni": 35.86448598130841,
+      "pct_pan_gub": 10.894941634241246,
+      "delta_pct_pan": 24.969544347067167,
+      "morena_muni": 303.0,
+      "morena_gub": 366.0
+    },
+    {
+      "seccion": 1931,
+      "pct_morena_muni": 46.058091286307054,
+      "pct_morena_gub": 52.04081632653062,
+      "delta_pct_morena": -5.982725040223563,
+      "pct_pan_muni": 25.311203319502074,
+      "pct_pan_gub": 7.8231292517006805,
+      "delta_pct_pan": 17.488074067801392,
+      "morena_muni": 111.0,
+      "morena_gub": 153.0
+    },
+    {
+      "seccion": 1932,
+      "pct_morena_muni": 57.42574257425742,
+      "pct_morena_gub": 53.81526104417671,
+      "delta_pct_morena": 3.610481530080712,
+      "pct_pan_muni": 13.861386138613863,
+      "pct_pan_gub": 4.417670682730924,
+      "delta_pct_pan": 9.44371545588294,
+      "morena_muni": 116.0,
+      "morena_gub": 134.0
+    },
+    {
+      "seccion": 1933,
+      "pct_morena_muni": 54.90196078431373,
+      "pct_morena_gub": 48.046875,
+      "delta_pct_morena": 6.855085784313729,
+      "pct_pan_muni": 17.647058823529413,
+      "pct_pan_gub": 6.25,
+      "delta_pct_pan": 11.397058823529413,
+      "morena_muni": 112.0,
+      "morena_gub": 123.0
+    },
+    {
+      "seccion": 1936,
+      "pct_morena_muni": 57.02127659574469,
+      "pct_morena_gub": 53.47222222222222,
+      "delta_pct_morena": 3.549054373522466,
+      "pct_pan_muni": 11.914893617021278,
+      "pct_pan_gub": 3.125,
+      "delta_pct_pan": 8.789893617021278,
+      "morena_muni": 134.0,
+      "morena_gub": 154.0
+    },
+    {
+      "seccion": 1937,
+      "pct_morena_muni": 57.14285714285714,
+      "pct_morena_gub": 53.874538745387454,
+      "delta_pct_morena": 3.2683183974696846,
+      "pct_pan_muni": 21.658986175115206,
+      "pct_pan_gub": 6.273062730627306,
+      "delta_pct_pan": 15.3859234444879,
+      "morena_muni": 124.0,
+      "morena_gub": 146.0
+    },
+    {
+      "seccion": 1938,
+      "pct_morena_muni": 60.29411764705882,
+      "pct_morena_gub": 36.507936507936506,
+      "delta_pct_morena": 23.786181139122313,
+      "pct_pan_muni": 8.088235294117647,
+      "pct_pan_gub": 3.1746031746031744,
+      "delta_pct_pan": 4.913632119514473,
+      "morena_muni": 82.0,
+      "morena_gub": 69.0
+    },
+    {
+      "seccion": 1939,
+      "pct_morena_muni": 50.649350649350644,
+      "pct_morena_gub": 48.708487084870846,
+      "delta_pct_morena": 1.9408635644797982,
+      "pct_pan_muni": 23.376623376623375,
+      "pct_pan_gub": 11.439114391143912,
+      "delta_pct_pan": 11.937508985479463,
+      "morena_muni": 117.0,
+      "morena_gub": 132.0
+    },
+    {
+      "seccion": 1940,
+      "pct_morena_muni": 55.02958579881657,
+      "pct_morena_gub": 0.0,
+      "delta_pct_morena": 55.02958579881657,
+      "pct_pan_muni": 17.159763313609467,
+      "pct_pan_gub": 8.843537414965986,
+      "delta_pct_pan": 8.31622589864348,
+      "morena_muni": 186.0,
+      "morena_gub": 0.0
+    },
+    {
+      "seccion": 1941,
+      "pct_morena_muni": 53.191489361702125,
+      "pct_morena_gub": 56.01092896174863,
+      "delta_pct_morena": -2.8194396000465076,
+      "pct_pan_muni": 20.66869300911854,
+      "pct_pan_gub": 8.19672131147541,
+      "delta_pct_pan": 12.471971697643133,
+      "morena_muni": 175.0,
+      "morena_gub": 205.0
+    },
+    {
+      "seccion": 1943,
+      "pct_morena_muni": 52.1551724137931,
+      "pct_morena_gub": 50.0,
+      "delta_pct_morena": 2.155172413793103,
+      "pct_pan_muni": 17.67241379310345,
+      "pct_pan_gub": 7.913669064748201,
+      "delta_pct_pan": 9.758744728355246,
+      "morena_muni": 121.0,
+      "morena_gub": 139.0
+    },
+    {
+      "seccion": 1944,
+      "pct_morena_muni": 58.74125874125874,
+      "pct_morena_gub": 46.55172413793103,
+      "delta_pct_morena": 12.189534603327708,
+      "pct_pan_muni": 4.895104895104895,
+      "pct_pan_gub": 2.8735632183908044,
+      "delta_pct_pan": 2.0215416767140906,
+      "morena_muni": 84.0,
+      "morena_gub": 81.0
+    },
+    {
+      "seccion": 1945,
+      "pct_morena_muni": 52.18978102189781,
+      "pct_morena_gub": 47.706422018348626,
+      "delta_pct_morena": 4.483359003549182,
+      "pct_pan_muni": 20.437956204379564,
+      "pct_pan_gub": 7.033639143730887,
+      "delta_pct_pan": 13.404317060648676,
+      "morena_muni": 143.0,
+      "morena_gub": 156.0
+    },
+    {
+      "seccion": 1946,
+      "pct_morena_muni": 55.172413793103445,
+      "pct_morena_gub": 52.94117647058824,
+      "delta_pct_morena": 2.231237322515206,
+      "pct_pan_muni": 15.804597701149426,
+      "pct_pan_gub": 5.637254901960785,
+      "delta_pct_pan": 10.167342799188642,
+      "morena_muni": 192.0,
+      "morena_gub": 216.0
+    },
+    {
+      "seccion": 1947,
+      "pct_morena_muni": 41.44736842105263,
+      "pct_morena_gub": 46.292947558770344,
+      "delta_pct_morena": -4.8455791377177135,
+      "pct_pan_muni": 29.166666666666668,
+      "pct_pan_gub": 8.499095840867993,
+      "delta_pct_pan": 20.667570825798677,
+      "morena_muni": 189.0,
+      "morena_gub": 256.0
+    },
+    {
+      "seccion": 1948,
+      "pct_morena_muni": 39.26247288503254,
+      "pct_morena_gub": 46.494464944649444,
+      "delta_pct_morena": -7.231992059616907,
+      "pct_pan_muni": 32.53796095444685,
+      "pct_pan_gub": 9.040590405904059,
+      "delta_pct_pan": 23.497370548542794,
+      "morena_muni": 181.0,
+      "morena_gub": 252.0
+    },
+    {
+      "seccion": 1949,
+      "pct_morena_muni": 47.66355140186916,
+      "pct_morena_gub": 44.15094339622642,
+      "delta_pct_morena": 3.51260800564274,
+      "pct_pan_muni": 20.5607476635514,
+      "pct_pan_gub": 7.547169811320755,
+      "delta_pct_pan": 13.013577852230645,
+      "morena_muni": 102.0,
+      "morena_gub": 117.0
+    },
+    {
+      "seccion": 1950,
+      "pct_morena_muni": 30.62200956937799,
+      "pct_morena_gub": 45.62899786780384,
+      "delta_pct_morena": -15.00698829842585,
+      "pct_pan_muni": 40.430622009569376,
+      "pct_pan_gub": 13.646055437100213,
+      "delta_pct_pan": 26.784566572469164,
+      "morena_muni": 128.0,
+      "morena_gub": 214.0
+    },
+    {
+      "seccion": 1951,
+      "pct_morena_muni": 56.730769230769226,
+      "pct_morena_gub": 50.0,
+      "delta_pct_morena": 6.730769230769226,
+      "pct_pan_muni": 17.307692307692307,
+      "pct_pan_gub": 2.7950310559006213,
+      "delta_pct_pan": 14.512661251791686,
+      "morena_muni": 118.0,
+      "morena_gub": 161.0
+    },
+    {
+      "seccion": 1952,
+      "pct_morena_muni": 52.5,
+      "pct_morena_gub": 11.904761904761903,
+      "delta_pct_morena": 40.595238095238095,
+      "pct_pan_muni": 20.0,
+      "pct_pan_gub": 11.904761904761903,
+      "delta_pct_pan": 8.095238095238097,
+      "morena_muni": 126.0,
+      "morena_gub": 20.0
+    },
+    {
+      "seccion": 1953,
+      "pct_morena_muni": 57.81818181818181,
+      "pct_morena_gub": 56.739811912225704,
+      "delta_pct_morena": 1.0783699059561087,
+      "pct_pan_muni": 19.636363636363637,
+      "pct_pan_gub": 5.6426332288401255,
+      "delta_pct_pan": 13.993730407523511,
+      "morena_muni": 159.0,
+      "morena_gub": 181.0
+    },
+    {
+      "seccion": 1954,
+      "pct_morena_muni": 57.73195876288659,
+      "pct_morena_gub": 54.78260869565217,
+      "delta_pct_morena": 2.9493500672344197,
+      "pct_pan_muni": 18.556701030927837,
+      "pct_pan_gub": 8.26086956521739,
+      "delta_pct_pan": 10.295831465710446,
+      "morena_muni": 112.0,
+      "morena_gub": 126.0
+    },
+    {
+      "seccion": 1955,
+      "pct_morena_muni": 40.8203125,
+      "pct_morena_gub": 42.78768233387358,
+      "delta_pct_morena": -1.9673698338735832,
+      "pct_pan_muni": 32.6171875,
+      "pct_pan_gub": 10.696920583468396,
+      "delta_pct_pan": 21.920266916531602,
+      "morena_muni": 209.0,
+      "morena_gub": 264.0
+    },
+    {
+      "seccion": 1956,
+      "pct_morena_muni": 58.51063829787234,
+      "pct_morena_gub": 49.7907949790795,
+      "delta_pct_morena": 8.71984331879284,
+      "pct_pan_muni": 21.27659574468085,
+      "pct_pan_gub": 5.02092050209205,
+      "delta_pct_pan": 16.2556752425888,
+      "morena_muni": 110.0,
+      "morena_gub": 119.0
+    },
+    {
+      "seccion": 1957,
+      "pct_morena_muni": 40.60475161987041,
+      "pct_morena_gub": 47.2027972027972,
+      "delta_pct_morena": -6.598045582926787,
+      "pct_pan_muni": 31.101511879049674,
+      "pct_pan_gub": 9.615384615384617,
+      "delta_pct_pan": 21.486127263665058,
+      "morena_muni": 188.0,
+      "morena_gub": 270.0
+    },
+    {
+      "seccion": 1958,
+      "pct_morena_muni": 43.96551724137931,
+      "pct_morena_gub": 45.90747330960854,
+      "delta_pct_morena": -1.9419560682292314,
+      "pct_pan_muni": 25.43103448275862,
+      "pct_pan_gub": 9.608540925266903,
+      "delta_pct_pan": 15.822493557491716,
+      "morena_muni": 102.0,
+      "morena_gub": 129.0
+    },
+    {
+      "seccion": 1959,
+      "pct_morena_muni": 37.44292237442922,
+      "pct_morena_gub": 36.25954198473282,
+      "delta_pct_morena": 1.1833803896964028,
+      "pct_pan_muni": 28.31050228310502,
+      "pct_pan_gub": 11.450381679389313,
+      "delta_pct_pan": 16.860120603715707,
+      "morena_muni": 82.0,
+      "morena_gub": 95.0
+    },
+    {
+      "seccion": 1960,
+      "pct_morena_muni": 58.63309352517986,
+      "pct_morena_gub": 50.59880239520959,
+      "delta_pct_morena": 8.03429112997027,
+      "pct_pan_muni": 12.23021582733813,
+      "pct_pan_gub": 4.790419161676647,
+      "delta_pct_pan": 7.439796665661483,
+      "morena_muni": 163.0,
+      "morena_gub": 169.0
+    },
+    {
+      "seccion": 1961,
+      "pct_morena_muni": 66.66666666666666,
+      "pct_morena_gub": 56.32183908045977,
+      "delta_pct_morena": 10.34482758620689,
+      "pct_pan_muni": 11.428571428571429,
+      "pct_pan_gub": 3.4482758620689653,
+      "delta_pct_pan": 7.9802955665024635,
+      "morena_muni": 140.0,
+      "morena_gub": 147.0
+    },
+    {
+      "seccion": 1962,
+      "pct_morena_muni": 57.21649484536082,
+      "pct_morena_gub": 49.797570850202426,
+      "delta_pct_morena": 7.418923995158394,
+      "pct_pan_muni": 18.556701030927837,
+      "pct_pan_gub": 7.6923076923076925,
+      "delta_pct_pan": 10.864393338620143,
+      "morena_muni": 111.0,
+      "morena_gub": 123.0
+    },
+    {
+      "seccion": 1963,
+      "pct_morena_muni": 60.72874493927125,
+      "pct_morena_gub": 58.36065573770492,
+      "delta_pct_morena": 2.3680892015663346,
+      "pct_pan_muni": 14.979757085020243,
+      "pct_pan_gub": 3.278688524590164,
+      "delta_pct_pan": 11.701068560430079,
+      "morena_muni": 150.0,
+      "morena_gub": 178.0
+    },
+    {
+      "seccion": 1965,
+      "pct_morena_muni": 57.47126436781609,
+      "pct_morena_gub": 54.4891640866873,
+      "delta_pct_morena": 2.982100281128787,
+      "pct_pan_muni": 16.47509578544061,
+      "pct_pan_gub": 4.643962848297214,
+      "delta_pct_pan": 11.831132937143398,
+      "morena_muni": 150.0,
+      "morena_gub": 176.0
+    },
+    {
+      "seccion": 1967,
+      "pct_morena_muni": 44.44444444444444,
+      "pct_morena_gub": 48.984771573604064,
+      "delta_pct_morena": -4.540327129159621,
+      "pct_pan_muni": 22.22222222222222,
+      "pct_pan_gub": 8.629441624365482,
+      "delta_pct_pan": 13.59278059785674,
+      "morena_muni": 148.0,
+      "morena_gub": 193.0
+    },
+    {
+      "seccion": 1968,
+      "pct_morena_muni": 47.44318181818182,
+      "pct_morena_gub": 52.63157894736842,
+      "delta_pct_morena": -5.188397129186598,
+      "pct_pan_muni": 23.579545454545457,
+      "pct_pan_gub": 8.61244019138756,
+      "delta_pct_pan": 14.967105263157897,
+      "morena_muni": 167.0,
+      "morena_gub": 220.0
+    },
+    {
+      "seccion": 1969,
+      "pct_morena_muni": 45.60260586319218,
+      "pct_morena_gub": 46.089385474860336,
+      "delta_pct_morena": -0.48677961166815464,
+      "pct_pan_muni": 30.944625407166125,
+      "pct_pan_gub": 11.731843575418994,
+      "delta_pct_pan": 19.21278183174713,
+      "morena_muni": 140.0,
+      "morena_gub": 165.0
+    },
+    {
+      "seccion": 1970,
+      "pct_morena_muni": 35.12747875354108,
+      "pct_morena_gub": 53.39506172839506,
+      "delta_pct_morena": -18.267582974853987,
+      "pct_pan_muni": 34.56090651558073,
+      "pct_pan_gub": 16.666666666666664,
+      "delta_pct_pan": 17.89423984891407,
+      "morena_muni": 124.0,
+      "morena_gub": 173.0
+    },
+    {
+      "seccion": 1971,
+      "pct_morena_muni": 29.54898911353033,
+      "pct_morena_gub": 36.91275167785235,
+      "delta_pct_morena": -7.36376256432202,
+      "pct_pan_muni": 43.701399688958006,
+      "pct_pan_gub": 19.731543624161073,
+      "delta_pct_pan": 23.969856064796932,
+      "morena_muni": 190.0,
+      "morena_gub": 275.0
+    },
+    {
+      "seccion": 1973,
+      "pct_morena_muni": 32.590529247910865,
+      "pct_morena_gub": 37.77239709443099,
+      "delta_pct_morena": -5.181867846520127,
+      "pct_pan_muni": 40.389972144846794,
+      "pct_pan_gub": 16.46489104116223,
+      "delta_pct_pan": 23.925081103684565,
+      "morena_muni": 117.0,
+      "morena_gub": 156.0
+    },
+    {
+      "seccion": 1974,
+      "pct_morena_muni": 35.10392609699769,
+      "pct_morena_gub": 45.39748953974895,
+      "delta_pct_morena": -10.293563442751264,
+      "pct_pan_muni": 39.722863741339495,
+      "pct_pan_gub": 16.317991631799163,
+      "delta_pct_pan": 23.40487210954033,
+      "morena_muni": 152.0,
+      "morena_gub": 217.0
+    },
+    {
+      "seccion": 1975,
+      "pct_morena_muni": 33.75796178343949,
+      "pct_morena_gub": 38.611111111111114,
+      "delta_pct_morena": -4.853149327671623,
+      "pct_pan_muni": 43.31210191082803,
+      "pct_pan_gub": 18.88888888888889,
+      "delta_pct_pan": 24.423213021939137,
+      "morena_muni": 106.0,
+      "morena_gub": 139.0
+    },
+    {
+      "seccion": 2012,
+      "pct_morena_muni": 55.83756345177665,
+      "pct_morena_gub": 49.79919678714859,
+      "delta_pct_morena": 6.0383666646280645,
+      "pct_pan_muni": 15.736040609137056,
+      "pct_pan_gub": 6.425702811244979,
+      "delta_pct_pan": 9.310337797892078,
+      "morena_muni": 110.0,
+      "morena_gub": 124.0
+    },
+    {
+      "seccion": 2016,
+      "pct_morena_muni": 53.142857142857146,
+      "pct_morena_gub": 8.542713567839195,
+      "delta_pct_morena": 44.60014357501795,
+      "pct_pan_muni": 15.714285714285714,
+      "pct_pan_gub": 9.045226130653267,
+      "delta_pct_pan": 6.669059583632446,
+      "morena_muni": 186.0,
+      "morena_gub": 17.0
+    },
+    {
+      "seccion": 2018,
+      "pct_morena_muni": 48.148148148148145,
+      "pct_morena_gub": 42.19178082191781,
+      "delta_pct_morena": 5.956367326230335,
+      "pct_pan_muni": 14.074074074074074,
+      "pct_pan_gub": 5.7534246575342465,
+      "delta_pct_pan": 8.320649416539828,
+      "morena_muni": 130.0,
+      "morena_gub": 154.0
+    },
+    {
+      "seccion": 2019,
+      "pct_morena_muni": 49.31972789115646,
+      "pct_morena_gub": 50.52160953800298,
+      "delta_pct_morena": -1.201881646846516,
+      "pct_pan_muni": 24.65986394557823,
+      "pct_pan_gub": 8.79284649776453,
+      "delta_pct_pan": 15.8670174478137,
+      "morena_muni": 290.0,
+      "morena_gub": 339.0
+    },
+    {
+      "seccion": 2020,
+      "pct_morena_muni": 47.107438016528924,
+      "pct_morena_gub": 48.205128205128204,
+      "delta_pct_morena": -1.0976901885992802,
+      "pct_pan_muni": 24.586776859504134,
+      "pct_pan_gub": 6.495726495726497,
+      "delta_pct_pan": 18.091050363777637,
+      "morena_muni": 228.0,
+      "morena_gub": 282.0
+    },
+    {
+      "seccion": 2021,
+      "pct_morena_muni": 37.19512195121951,
+      "pct_morena_gub": 43.12169312169312,
+      "delta_pct_morena": -5.926571170473608,
+      "pct_pan_muni": 33.38414634146341,
+      "pct_pan_gub": 11.772486772486772,
+      "delta_pct_pan": 21.61165956897664,
+      "morena_muni": 244.0,
+      "morena_gub": 326.0
+    },
+    {
+      "seccion": 2022,
+      "pct_morena_muni": 50.380710659898476,
+      "pct_morena_gub": 47.165775401069524,
+      "delta_pct_morena": 3.2149352588289517,
+      "pct_pan_muni": 20.304568527918782,
+      "pct_pan_gub": 6.2032085561497325,
+      "delta_pct_pan": 14.10135997176905,
+      "morena_muni": 397.0,
+      "morena_gub": 441.0
+    },
+    {
+      "seccion": 2023,
+      "pct_morena_muni": 49.0625,
+      "pct_morena_gub": 56.70391061452514,
+      "delta_pct_morena": -7.641410614525142,
+      "pct_pan_muni": 27.8125,
+      "pct_pan_gub": 9.776536312849162,
+      "delta_pct_pan": 18.03596368715084,
+      "morena_muni": 157.0,
+      "morena_gub": 203.0
+    },
+    {
+      "seccion": 2025,
+      "pct_morena_muni": 45.31590413943355,
+      "pct_morena_gub": 23.603603603603602,
+      "delta_pct_morena": 21.712300535829947,
+      "pct_pan_muni": 30.501089324618736,
+      "pct_pan_gub": 8.64864864864865,
+      "delta_pct_pan": 21.852440675970087,
+      "morena_muni": 208.0,
+      "morena_gub": 131.0
+    },
+    {
+      "seccion": 2026,
+      "pct_morena_muni": 39.37007874015748,
+      "pct_morena_gub": 44.1747572815534,
+      "delta_pct_morena": -4.804678541395916,
+      "pct_pan_muni": 32.020997375328086,
+      "pct_pan_gub": 12.62135922330097,
+      "delta_pct_pan": 19.399638152027116,
+      "morena_muni": 150.0,
+      "morena_gub": 182.0
+    },
+    {
+      "seccion": 2027,
+      "pct_morena_muni": 42.50681198910082,
+      "pct_morena_gub": 48.201438848920866,
+      "delta_pct_morena": -5.694626859820048,
+      "pct_pan_muni": 34.332425068119896,
+      "pct_pan_gub": 11.031175059952037,
+      "delta_pct_pan": 23.30125000816786,
+      "morena_muni": 156.0,
+      "morena_gub": 201.0
+    },
+    {
+      "seccion": 2028,
+      "pct_morena_muni": 51.1504424778761,
+      "pct_morena_gub": 52.98507462686567,
+      "delta_pct_morena": -1.83463214898957,
+      "pct_pan_muni": 18.58407079646018,
+      "pct_pan_gub": 5.3731343283582085,
+      "delta_pct_pan": 13.21093646810197,
+      "morena_muni": 289.0,
+      "morena_gub": 355.0
+    },
+    {
+      "seccion": 2029,
+      "pct_morena_muni": 52.65822784810127,
+      "pct_morena_gub": 49.375,
+      "delta_pct_morena": 3.2832278481012693,
+      "pct_pan_muni": 16.20253164556962,
+      "pct_pan_gub": 3.75,
+      "delta_pct_pan": 12.452531645569621,
+      "morena_muni": 208.0,
+      "morena_gub": 237.0
+    },
+    {
+      "seccion": 2030,
+      "pct_morena_muni": 45.19230769230769,
+      "pct_morena_gub": 44.69914040114613,
+      "delta_pct_morena": 0.4931672911615621,
+      "pct_pan_muni": 29.166666666666668,
+      "pct_pan_gub": 13.46704871060172,
+      "delta_pct_pan": 15.699617956064948,
+      "morena_muni": 141.0,
+      "morena_gub": 156.0
+    },
+    {
+      "seccion": 2031,
+      "pct_morena_muni": 44.61942257217848,
+      "pct_morena_gub": 45.76271186440678,
+      "delta_pct_morena": -1.1432892922283031,
+      "pct_pan_muni": 26.509186351706038,
+      "pct_pan_gub": 7.203389830508475,
+      "delta_pct_pan": 19.305796521197564,
+      "morena_muni": 170.0,
+      "morena_gub": 216.0
+    },
+    {
+      "seccion": 2032,
+      "pct_morena_muni": 39.892183288409704,
+      "pct_morena_gub": 45.59585492227979,
+      "delta_pct_morena": -5.703671633870087,
+      "pct_pan_muni": 27.762803234501348,
+      "pct_pan_gub": 3.3678756476683938,
+      "delta_pct_pan": 24.394927586832953,
+      "morena_muni": 148.0,
+      "morena_gub": 176.0
+    },
+    {
+      "seccion": 2033,
+      "pct_morena_muni": 39.46488294314381,
+      "pct_morena_gub": 47.19101123595505,
+      "delta_pct_morena": -7.726128292811239,
+      "pct_pan_muni": 34.11371237458194,
+      "pct_pan_gub": 9.269662921348315,
+      "delta_pct_pan": 24.844049453233623,
+      "morena_muni": 118.0,
+      "morena_gub": 168.0
+    },
+    {
+      "seccion": 2034,
+      "pct_morena_muni": 40.0,
+      "pct_morena_gub": 22.61904761904762,
+      "delta_pct_morena": 17.38095238095238,
+      "pct_pan_muni": 22.807017543859647,
+      "pct_pan_gub": 3.9115646258503403,
+      "delta_pct_pan": 18.89545291800931,
+      "morena_muni": 114.0,
+      "morena_gub": 133.0
+    },
+    {
+      "seccion": 2035,
+      "pct_morena_muni": 45.08196721311475,
+      "pct_morena_gub": 49.48453608247423,
+      "delta_pct_morena": -4.402568869359477,
+      "pct_pan_muni": 25.81967213114754,
+      "pct_pan_gub": 7.903780068728522,
+      "delta_pct_pan": 17.91589206241902,
+      "morena_muni": 110.0,
+      "morena_gub": 144.0
+    },
+    {
+      "seccion": 2036,
+      "pct_morena_muni": 43.80530973451327,
+      "pct_morena_gub": 42.857142857142854,
+      "delta_pct_morena": 0.9481668773704186,
+      "pct_pan_muni": 25.663716814159294,
+      "pct_pan_gub": 8.710801393728223,
+      "delta_pct_pan": 16.95291542043107,
+      "morena_muni": 99.0,
+      "morena_gub": 123.0
+    },
+    {
+      "seccion": 2037,
+      "pct_morena_muni": 47.368421052631575,
+      "pct_morena_gub": 48.4375,
+      "delta_pct_morena": -1.0690789473684248,
+      "pct_pan_muni": 24.401913875598087,
+      "pct_pan_gub": 10.15625,
+      "delta_pct_pan": 14.245663875598087,
+      "morena_muni": 99.0,
+      "morena_gub": 124.0
+    },
+    {
+      "seccion": 2038,
+      "pct_morena_muni": 61.092150170648466,
+      "pct_morena_gub": 5.660377358490567,
+      "delta_pct_morena": 55.4317728121579,
+      "pct_pan_muni": 13.310580204778159,
+      "pct_pan_gub": 3.7735849056603774,
+      "delta_pct_pan": 9.53699529911778,
+      "morena_muni": 179.0,
+      "morena_gub": 21.0
+    },
+    {
+      "seccion": 2039,
+      "pct_morena_muni": 56.451612903225815,
+      "pct_morena_gub": 50.98039215686274,
+      "delta_pct_morena": 5.471220746363073,
+      "pct_pan_muni": 13.306451612903224,
+      "pct_pan_gub": 5.555555555555555,
+      "delta_pct_pan": 7.750896057347669,
+      "morena_muni": 140.0,
+      "morena_gub": 156.0
+    },
+    {
+      "seccion": 2040,
+      "pct_morena_muni": 51.75257731958764,
+      "pct_morena_gub": 52.196836555360285,
+      "delta_pct_morena": -0.44425923577264825,
+      "pct_pan_muni": 17.7319587628866,
+      "pct_pan_gub": 5.799648506151142,
+      "delta_pct_pan": 11.932310256735457,
+      "morena_muni": 251.0,
+      "morena_gub": 297.0
+    },
+    {
+      "seccion": 2041,
+      "pct_morena_muni": 52.19298245614035,
+      "pct_morena_gub": 50.35460992907801,
+      "delta_pct_morena": 1.8383725270623401,
+      "pct_pan_muni": 18.421052631578945,
+      "pct_pan_gub": 8.156028368794328,
+      "delta_pct_pan": 10.265024262784618,
+      "morena_muni": 119.0,
+      "morena_gub": 142.0
+    },
+    {
+      "seccion": 2042,
+      "pct_morena_muni": 51.63934426229508,
+      "pct_morena_gub": 50.83056478405316,
+      "delta_pct_morena": 0.8087794782419238,
+      "pct_pan_muni": 21.721311475409834,
+      "pct_pan_gub": 4.983388704318937,
+      "delta_pct_pan": 16.737922771090897,
+      "morena_muni": 126.0,
+      "morena_gub": 153.0
+    },
+    {
+      "seccion": 2043,
+      "pct_morena_muni": 44.29347826086957,
+      "pct_morena_gub": 24.401913875598087,
+      "delta_pct_morena": 19.891564385271483,
+      "pct_pan_muni": 26.08695652173913,
+      "pct_pan_gub": 11.004784688995215,
+      "delta_pct_pan": 15.082171832743914,
+      "morena_muni": 163.0,
+      "morena_gub": 51.0
+    },
+    {
+      "seccion": 2044,
+      "pct_morena_muni": 46.111111111111114,
+      "pct_morena_gub": 42.72300469483568,
+      "delta_pct_morena": 3.388106416275434,
+      "pct_pan_muni": 28.055555555555557,
+      "pct_pan_gub": 10.56338028169014,
+      "delta_pct_pan": 17.492175273865417,
+      "morena_muni": 166.0,
+      "morena_gub": 182.0
+    },
+    {
+      "seccion": 2045,
+      "pct_morena_muni": 48.679245283018865,
+      "pct_morena_gub": 6.486486486486487,
+      "delta_pct_morena": 42.19275879653238,
+      "pct_pan_muni": 23.39622641509434,
+      "pct_pan_gub": 16.216216216216218,
+      "delta_pct_pan": 7.180010198878122,
+      "morena_muni": 129.0,
+      "morena_gub": 12.0
+    },
+    {
+      "seccion": 2046,
+      "pct_morena_muni": 41.86046511627907,
+      "pct_morena_gub": 43.865546218487395,
+      "delta_pct_morena": -2.0050811022083224,
+      "pct_pan_muni": 32.36434108527132,
+      "pct_pan_gub": 12.773109243697478,
+      "delta_pct_pan": 19.591231841573844,
+      "morena_muni": 216.0,
+      "morena_gub": 261.0
+    },
+    {
+      "seccion": 2116,
+      "pct_morena_muni": 49.38505203405866,
+      "pct_morena_gub": 33.02540415704388,
+      "delta_pct_morena": 16.35964787701478,
+      "pct_pan_muni": 23.36802270577105,
+      "pct_pan_gub": 7.390300230946882,
+      "delta_pct_pan": 15.97772247482417,
+      "morena_muni": 522.0,
+      "morena_gub": 143.0
+    },
+    {
+      "seccion": 2117,
+      "pct_morena_muni": 33.95669291338583,
+      "pct_morena_gub": 39.382716049382715,
+      "delta_pct_morena": -5.426023135996886,
+      "pct_pan_muni": 36.61417322834646,
+      "pct_pan_gub": 14.444444444444443,
+      "delta_pct_pan": 22.169728783902016,
+      "morena_muni": 345.0,
+      "morena_gub": 319.0
+    },
+    {
+      "seccion": 2118,
+      "pct_morena_muni": 41.25,
+      "pct_morena_gub": 48.0946123521682,
+      "delta_pct_morena": -6.844612352168198,
+      "pct_pan_muni": 34.53125,
+      "pct_pan_gub": 11.169513797634691,
+      "delta_pct_pan": 23.361736202365307,
+      "morena_muni": 264.0,
+      "morena_gub": 366.0
+    },
+    {
+      "seccion": 2119,
+      "pct_morena_muni": 31.564625850340132,
+      "pct_morena_gub": 38.599752168525406,
+      "delta_pct_morena": -7.035126318185274,
+      "pct_pan_muni": 42.17687074829932,
+      "pct_pan_gub": 18.401486988847584,
+      "delta_pct_pan": 23.77538375945174,
+      "morena_muni": 464.0,
+      "morena_gub": 623.0
+    },
+    {
+      "seccion": 2131,
+      "pct_morena_muni": 48.40764331210191,
+      "pct_morena_gub": 47.712418300653596,
+      "delta_pct_morena": 0.695225011448315,
+      "pct_pan_muni": 24.044585987261147,
+      "pct_pan_gub": 8.88888888888889,
+      "delta_pct_pan": 15.155697098372258,
+      "morena_muni": 304.0,
+      "morena_gub": 365.0
+    },
+    {
+      "seccion": 2132,
+      "pct_morena_muni": 23.518850987432675,
+      "pct_morena_gub": 31.89792663476874,
+      "delta_pct_morena": -8.379075647336066,
+      "pct_pan_muni": 53.85996409335727,
+      "pct_pan_gub": 26.953748006379584,
+      "delta_pct_pan": 26.906216086977686,
+      "morena_muni": 262.0,
+      "morena_gub": 400.0
+    },
+    {
+      "seccion": 2148,
+      "pct_morena_muni": 36.904761904761905,
+      "pct_morena_gub": 30.663615560640732,
+      "delta_pct_morena": 6.241146344121173,
+      "pct_pan_muni": 36.58008658008658,
+      "pct_pan_gub": 16.247139588100687,
+      "delta_pct_pan": 20.332946991985892,
+      "morena_muni": 341.0,
+      "morena_gub": 134.0
+    },
+    {
+      "seccion": 2149,
+      "pct_morena_muni": 38.83720930232558,
+      "pct_morena_gub": 45.85091420534459,
+      "delta_pct_morena": -7.013704903019004,
+      "pct_pan_muni": 36.82170542635659,
+      "pct_pan_gub": 13.150492264416316,
+      "delta_pct_pan": 23.671213161940273,
+      "morena_muni": 501.0,
+      "morena_gub": 652.0
+    },
+    {
+      "seccion": 2159,
+      "pct_morena_muni": 54.601226993865026,
+      "pct_morena_gub": 49.32088285229202,
+      "delta_pct_morena": 5.2803441415730035,
+      "pct_pan_muni": 11.349693251533742,
+      "pct_pan_gub": 4.4991511035653655,
+      "delta_pct_pan": 6.850542147968376,
+      "morena_muni": 534.0,
+      "morena_gub": 581.0
+    },
+    {
+      "seccion": 2160,
+      "pct_morena_muni": 61.20331950207469,
+      "pct_morena_gub": 51.90972222222222,
+      "delta_pct_morena": 9.29359727985247,
+      "pct_pan_muni": 8.091286307053942,
+      "pct_pan_gub": 3.8194444444444446,
+      "delta_pct_pan": 4.271841862609497,
+      "morena_muni": 295.0,
+      "morena_gub": 299.0
+    },
+    {
+      "seccion": 2161,
+      "pct_morena_muni": 54.17925478348439,
+      "pct_morena_gub": 49.22067268252666,
+      "delta_pct_morena": 4.958582100957727,
+      "pct_pan_muni": 14.501510574018129,
+      "pct_pan_gub": 4.8400328137817885,
+      "delta_pct_pan": 9.661477760236341,
+      "morena_muni": 538.0,
+      "morena_gub": 600.0
+    },
+    {
+      "seccion": 2162,
+      "pct_morena_muni": 49.65034965034965,
+      "pct_morena_gub": 47.478474784747846,
+      "delta_pct_morena": 2.171874865601808,
+      "pct_pan_muni": 25.374625374625374,
+      "pct_pan_gub": 8.364083640836409,
+      "delta_pct_pan": 17.010541733788966,
+      "morena_muni": 497.0,
+      "morena_gub": 386.0
+    },
+    {
+      "seccion": 2163,
+      "pct_morena_muni": 48.3835005574136,
+      "pct_morena_gub": 48.536355051935786,
+      "delta_pct_morena": -0.15285449452218813,
+      "pct_pan_muni": 24.08026755852843,
+      "pct_pan_gub": 7.743153918791313,
+      "delta_pct_pan": 16.33711363973712,
+      "morena_muni": 434.0,
+      "morena_gub": 514.0
+    },
+    {
+      "seccion": 2164,
+      "pct_morena_muni": 63.292847503373814,
+      "pct_morena_gub": 51.11583421891604,
+      "delta_pct_morena": 12.177013284457772,
+      "pct_pan_muni": 9.446693657219974,
+      "pct_pan_gub": 4.888416578108395,
+      "delta_pct_pan": 4.558277079111579,
+      "morena_muni": 469.0,
+      "morena_gub": 481.0
+    },
+    {
+      "seccion": 2165,
+      "pct_morena_muni": 42.67075978511129,
+      "pct_morena_gub": 30.15423355366698,
+      "delta_pct_morena": 12.516526231444306,
+      "pct_pan_muni": 30.237912509593244,
+      "pct_pan_gub": 8.655964746616304,
+      "delta_pct_pan": 21.581947762976938,
+      "morena_muni": 556.0,
+      "morena_gub": 958.0
+    },
+    {
+      "seccion": 2167,
+      "pct_morena_muni": 29.5169946332737,
+      "pct_morena_gub": 36.95652173913043,
+      "delta_pct_morena": -7.43952710585673,
+      "pct_pan_muni": 44.18604651162791,
+      "pct_pan_gub": 18.788819875776397,
+      "delta_pct_pan": 25.39722663585151,
+      "morena_muni": 165.0,
+      "morena_gub": 238.0
+    },
+    {
+      "seccion": 2168,
+      "pct_morena_muni": 34.87962419260129,
+      "pct_morena_gub": 44.02618657937807,
+      "delta_pct_morena": -9.146562386776779,
+      "pct_pan_muni": 37.639459776864356,
+      "pct_pan_gub": 15.548281505728315,
+      "delta_pct_pan": 22.09117827113604,
+      "morena_muni": 594.0,
+      "morena_gub": 807.0
+    },
+    {
+      "seccion": 2191,
+      "pct_morena_muni": 39.52434881087203,
+      "pct_morena_gub": 46.48318042813456,
+      "delta_pct_morena": -6.958831617262533,
+      "pct_pan_muni": 35.44733861834655,
+      "pct_pan_gub": 12.844036697247708,
+      "delta_pct_pan": 22.60330192109884,
+      "morena_muni": 349.0,
+      "morena_gub": 456.0
+    },
+    {
+      "seccion": 2192,
+      "pct_morena_muni": 50.127877237851656,
+      "pct_morena_gub": 48.6228813559322,
+      "delta_pct_morena": 1.5049958819194558,
+      "pct_pan_muni": 33.248081841432224,
+      "pct_pan_gub": 13.029661016949154,
+      "delta_pct_pan": 20.21842082448307,
+      "morena_muni": 392.0,
+      "morena_gub": 459.0
+    },
+    {
+      "seccion": 2193,
+      "pct_morena_muni": 58.64197530864198,
+      "pct_morena_gub": 43.15789473684211,
+      "delta_pct_morena": 15.484080571799872,
+      "pct_pan_muni": 15.432098765432098,
+      "pct_pan_gub": 5.263157894736842,
+      "delta_pct_pan": 10.168940870695256,
+      "morena_muni": 380.0,
+      "morena_gub": 246.0
+    },
+    {
+      "seccion": 2194,
+      "pct_morena_muni": 63.714637146371466,
+      "pct_morena_gub": 41.45854145854146,
+      "delta_pct_morena": 22.256095687830005,
+      "pct_pan_muni": 11.931119311193111,
+      "pct_pan_gub": 5.294705294705294,
+      "delta_pct_pan": 6.636414016487817,
+      "morena_muni": 518.0,
+      "morena_gub": 415.0
+    },
+    {
+      "seccion": 2195,
+      "pct_morena_muni": 35.24004085801838,
+      "pct_morena_gub": 39.679715302491104,
+      "delta_pct_morena": -4.439674444472722,
+      "pct_pan_muni": 37.07865168539326,
+      "pct_pan_gub": 13.790035587188612,
+      "delta_pct_pan": 23.28861609820465,
+      "morena_muni": 345.0,
+      "morena_gub": 446.0
+    },
+    {
+      "seccion": 2197,
+      "pct_morena_muni": 49.39172749391727,
+      "pct_morena_gub": 49.600709849157056,
+      "delta_pct_morena": -0.20898235523978315,
+      "pct_pan_muni": 24.412003244120033,
+      "pct_pan_gub": 8.074534161490684,
+      "delta_pct_pan": 16.337469082629347,
+      "morena_muni": 609.0,
+      "morena_gub": 559.0
+    },
+    {
+      "seccion": 2202,
+      "pct_morena_muni": 43.39171974522293,
+      "pct_morena_gub": 41.66666666666667,
+      "delta_pct_morena": 1.7250530785562574,
+      "pct_pan_muni": 33.04140127388535,
+      "pct_pan_gub": 23.61111111111111,
+      "delta_pct_pan": 9.430290162774238,
+      "morena_muni": 545.0,
+      "morena_gub": 690.0
+    },
+    {
+      "seccion": 2203,
+      "pct_morena_muni": 56.19678334910123,
+      "pct_morena_gub": 52.14968152866242,
+      "delta_pct_morena": 4.047101820438812,
+      "pct_pan_muni": 18.92147587511826,
+      "pct_pan_gub": 7.404458598726114,
+      "delta_pct_pan": 11.517017276392147,
+      "morena_muni": 594.0,
+      "morena_gub": 655.0
+    },
+    {
+      "seccion": 2204,
+      "pct_morena_muni": 62.98811544991511,
+      "pct_morena_gub": 53.66197183098591,
+      "delta_pct_morena": 9.326143618929194,
+      "pct_pan_muni": 10.186757215619695,
+      "pct_pan_gub": 4.084507042253521,
+      "delta_pct_pan": 6.102250173366174,
+      "morena_muni": 371.0,
+      "morena_gub": 381.0
+    },
+    {
+      "seccion": 2205,
+      "pct_morena_muni": 57.6307363927428,
+      "pct_morena_gub": 50.055741360089186,
+      "delta_pct_morena": 7.574995032653611,
+      "pct_pan_muni": 15.26147278548559,
+      "pct_pan_gub": 5.016722408026756,
+      "delta_pct_pan": 10.244750377458836,
+      "morena_muni": 540.0,
+      "morena_gub": 449.0
+    }
+  ],
+  "voto_cruzado_stats": {
+    "pct_morena_muni_promedio": 44.7,
+    "pct_morena_gub_promedio": 43.3,
+    "delta_promedio": 1.34,
+    "pct_pan_muni_promedio": 29.0,
+    "pct_pan_gub_promedio": 11.2,
+    "delta_pan_promedio": 17.84,
+    "secs_marca_propia": 53,
+    "secs_consistente": 120,
+    "secs_dependencia": 61,
+    "total_secciones": 234,
+    "voto_morena_muni_total": 95754,
+    "voto_morena_gub_total": 100339,
+    "secciones_filtradas_sin_acta_gub": 21
+  },
+  "sparklines_total_serie_real": 224
+}

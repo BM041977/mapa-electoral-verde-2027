@@ -1,168 +1,698 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Datos por Sección — {{ owner }}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datos por Sección · BaldemarMaza.com</title>
 
-  <link rel="stylesheet"
-        href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.datatables.net/buttons/3.2.0/css/buttons.dataTables.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-      color: #333;
-    }
+<link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.2.0/css/buttons.dataTables.min.css">
 
-    /* HEADER */
-    .topbar {
-      background: #2c3e50;
-      color: white;
-      padding: 14px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .topbar .brand {
-      font-weight: 600;
-      font-size: 16px;
-    }
-    .topbar .brand small {
-      display: block;
-      font-weight: 400;
-      font-size: 11px;
-      opacity: 0.7;
-    }
-    .topbar .nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 16px;
-      font-size: 13px;
-      opacity: 0.9;
-    }
-    .topbar .nav a:hover { opacity: 1; text-decoration: underline; }
+<style>
+:root {
+    --bg:           #FBF9F4;
+    --bg-card:      #FFFFFF;
+    --ink:          #1A1A1A;
+    --ink-soft:     #5A5A5A;
+    --ink-faint:    #8A8A8A;
+    --line:         #E8E4DC;
+    --line-strong:  #D4CFC4;
+    --accent:       #2D2D2D;
+    --accent-soft:  #ECECEC;
+    --shadow-sm:    0 1px 2px rgba(26,26,26,0.04);
+    --shadow-md:    0 8px 24px rgba(26,26,26,0.08);
+    --shadow-lg:    0 16px 48px rgba(26,26,26,0.18);
+}
 
-    /* MAIN */
-    main { padding: 20px; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-    .page-title {
-      background: white;
-      padding: 16px 24px;
-      border-radius: 8px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-      margin-bottom: 20px;
-    }
-    .page-title h1 {
-      margin: 0 0 4px 0;
-      font-size: 20px;
-      color: #2c3e50;
-    }
-    .page-title .subtitle {
-      color: #7f8c8d;
-      font-size: 13px;
-    }
+html, body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Manrope', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+}
 
-    .container {
-      background: white;
-      padding: 24px;
-      border-radius: 8px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    }
-    table.dataTable thead th {
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      background: #f8f9fa;
-    }
-    table.dataTable tbody td { font-size: 13px; }
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(circle at 1px 1px, rgba(26,26,26,0.04) 1px, transparent 0);
+    background-size: 24px 24px;
+    pointer-events: none;
+    z-index: 0;
+}
 
-    .badge {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-size: 11px;
-      font-weight: 600;
-      color: white;
-    }
-    /* === PALETA OFICIAL DE PARTIDOS (validada por Baldemar Maza) === */
-    .badge-MORENA  { background: #8B2332; }   /* guinda */
-    .badge-PVEM    { background: #4D9F3D; }   /* verde */
-    .badge-PT      { background: #ED1C24; }   /* rojo PT */
-    .badge-PAN     { background: #0066CC; }   /* azul */
-    .badge-PRI     { background: #CE1126; }   /* rojo bandera */
-    .badge-PRD     { background: #FFCC00; color:#333; }  /* amarillo (texto oscuro) */
-    .badge-MC      { background: #FF6600; }   /* naranja */
-    .badge-RSP     { background: #757575; }   /* gris */
-    .badge-PCHU    { background: #29B6F6; }   /* celeste */
-    .badge-PMCH    { background: #8E44AD; }   /* morado */
-    .badge-PPCH    { background: #8B0000; }   /* rojo vino */
-    .badge-PES     { background: #4A148C; }   /* morado fuerte */
-    .badge-FXM     { background: #DC143C; }   /* rojo carmesí */
-    .badge-default { background: #95a5a6; }
+.wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 64px 32px 120px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
-    .loading { padding: 40px; text-align: center; color: #7f8c8d; }
+/* BRAND */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    animation: fadeUp 0.6s ease-out;
+}
 
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 16px;
-      color: #95a5a6;
-      font-size: 11px;
-    }
-  </style>
+.brand-mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: var(--ink);
+    position: relative;
+    flex-shrink: 0;
+}
+
+.brand-mark::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px; height: 14px;
+    border: 2px solid #888888;
+    border-radius: 50%;
+}
+
+.brand-mark::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px; height: 4px;
+    background: #888888;
+    border-radius: 50%;
+}
+
+.brand-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+}
+
+.brand-tld {
+    color: var(--ink-soft);
+    font-weight: 500;
+}
+
+/* HEADER */
+header {
+    margin-bottom: 40px;
+    animation: fadeUp 0.7s ease-out;
+}
+
+.eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(32px, 4.5vw, 48px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    max-width: 800px;
+}
+
+h1 em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--ink-soft);
+}
+
+.lead {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    max-width: 680px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    text-decoration: none;
+    margin-bottom: 24px;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover { color: var(--accent); }
+
+/* FILTROS */
+.filters {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow-sm);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: 16px;
+    align-items: end;
+    animation: fadeUp 0.7s ease-out 0.15s backwards;
+}
+
+.filter-group { display: flex; flex-direction: column; gap: 6px; }
+
+.filter-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+}
+
+.filter-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 10px 36px 10px 14px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    color: var(--ink);
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%235A5A5A' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.filter-group select:hover { border-color: var(--line-strong); }
+.filter-group select:focus { outline: none; border-color: var(--accent); background-color: white; }
+
+.clear-btn {
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    height: fit-content;
+}
+
+.clear-btn:hover { background: var(--accent-soft); color: var(--ink); border-color: var(--line-strong); }
+
+@media (max-width: 900px) {
+    .filters { grid-template-columns: 1fr; }
+}
+
+/* TABLA */
+.table-card {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    animation: fadeUp 0.7s ease-out 0.3s backwards;
+}
+
+/* DataTables overrides */
+.dt-container { font-family: 'Manrope', sans-serif; font-size: 14px; }
+
+.dt-container .dt-buttons .dt-button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.dt-container .dt-buttons .dt-button:hover { background: #1A1A1A; }
+
+.dt-container .dt-search input {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    background: var(--bg);
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.dt-container .dt-search input:focus { outline: none; border-color: var(--accent); background: white; }
+
+table.dataTable {
+    border-collapse: separate !important;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table.dataTable thead th {
+    font-family: 'Manrope', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+    background: var(--bg);
+    border-top: 1px solid var(--line) !important;
+    border-bottom: 1px solid var(--line-strong) !important;
+    padding: 14px 12px;
+    text-align: left;
+}
+
+table.dataTable tbody td {
+    font-size: 13px;
+    padding: 12px;
+    border-bottom: 1px solid var(--line) !important;
+    color: var(--ink);
+}
+
+table.dataTable tbody tr:hover td { background: rgba(232,228,220,0.3); }
+
+table.dataTable tbody tr.row-sin-datos td { color: var(--ink-faint); font-style: italic; }
+
+.dt-container .dt-paging .dt-paging-button {
+    border-radius: 6px;
+    border: 1px solid transparent;
+    padding: 4px 10px;
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.dt-container .dt-paging .dt-paging-button.current {
+    background: var(--accent) !important;
+    color: white !important;
+    border-color: var(--accent);
+}
+
+.dt-container .dt-paging .dt-paging-button:hover:not(.current):not(.disabled) {
+    background: var(--accent-soft);
+    border-color: var(--line);
+}
+
+.dt-container .dt-info, .dt-container .dt-length label { font-size: 13px; color: var(--ink-soft); }
+
+.dt-container .dt-length select {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 4px 24px 4px 8px;
+    font-family: 'Manrope', sans-serif;
+    background: var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%235A5A5A' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") no-repeat right 8px center;
+}
+
+/* BADGES DE PARTIDO */
+.badge {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+}
+.badge-MORENA  { background: #8B2332; }
+.badge-PVEM    { background: #4D9F3D; }
+.badge-PT      { background: #ED1C24; }
+.badge-PAN     { background: #0066CC; }
+.badge-PRI     { background: #CE1126; }
+.badge-PRD     { background: #FFCC00; color:#333; }
+.badge-MC      { background: #FF6600; }
+.badge-RSP     { background: #757575; }
+.badge-PCHU    { background: #29B6F6; }
+.badge-PMCH    { background: #8E44AD; }
+.badge-PPCH    { background: #8B0000; }
+.badge-PES     { background: #4A148C; }
+.badge-FXM     { background: #DC143C; }
+.badge-default { background: #BBBBBB; }
+
+/* BOTÓN VER DETALLE */
+.btn-detalle {
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-detalle:hover { background: var(--accent); color: white; border-color: var(--accent); }
+
+/* NÚMEROS */
+.num { font-variant-numeric: tabular-nums; }
+.muted { color: var(--ink-faint); }
+
+/* MODAL */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(26,26,26,0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 20px;
+    animation: fadeIn 0.2s ease-out;
+}
+
+.modal-overlay[hidden] { display: none; }
+
+.modal-card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    max-width: 640px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: var(--shadow-lg);
+    animation: modalIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-header {
+    padding: 28px 32px 20px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 16px;
+}
+
+.modal-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+.modal-subtitle {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 4px;
+}
+
+.modal-close {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--ink-faint);
+    padding: 4px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    line-height: 0;
+}
+
+.modal-close:hover { background: var(--accent-soft); color: var(--ink); }
+
+.modal-body { padding: 24px 32px 32px; }
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--line);
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+}
+
+.stat-value {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+}
+
+.modal-section-title {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+}
+
+.partidos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.partido-row {
+    display: grid;
+    grid-template-columns: 70px 1fr auto auto;
+    gap: 14px;
+    align-items: center;
+    padding: 10px 14px;
+    background: var(--bg);
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.partido-row.is-ganador { background: #FEF6E0; border: 1px solid #F0D78C; }
+
+.partido-row .badge { justify-self: start; }
+
+.partido-bar-wrap {
+    height: 6px;
+    background: var(--line);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.partido-bar {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.4s ease;
+}
+
+.partido-votos { font-weight: 600; font-variant-numeric: tabular-nums; }
+.partido-pct   { color: var(--ink-soft); font-variant-numeric: tabular-nums; min-width: 50px; text-align: right; }
+
+@media (max-width: 600px) {
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .modal-header, .modal-body { padding-left: 20px; padding-right: 20px; }
+    .partido-row { grid-template-columns: 60px 1fr auto; }
+    .partido-row .partido-bar-wrap { display: none; }
+}
+
+/* CONTADOR DE LOGOUT */
+#contador {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+    background: white;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+#contador::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #888888;
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+#contador.alerta { background: #FEF2F2; color: #B91C1C; border-color: #FECACA; font-weight: 600; }
+#contador.alerta::before { background: #DC2626; }
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    margin-left: 20px;
+}
+
+footer a:hover { color: var(--accent); }
+
+@media (max-width: 480px) {
+    footer { flex-direction: column; gap: 8px; align-items: flex-start; }
+    footer a { margin-left: 0; }
+}
+
+/* ANIMATIONS */
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes modalIn { from { opacity: 0; transform: scale(0.96) translateY(8px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+
+/* LOADING */
+.loading-state {
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--ink-faint);
+    font-style: italic;
+    font-family: 'Fraunces', serif;
+}
+</style>
 </head>
 <body>
 
-<div class="topbar">
-  <div class="brand">
-    {{ owner }}
-    <small>{{ aviso_propiedad }}</small>
-  </div>
-  <div class="nav">
-    <a href="/inicio">← Inicio</a>
-    <a href="/logout">Cerrar sesión</a>
-  </div>
+<div class="wrap">
+
+    <div class="brand">
+        <span class="brand-mark"></span>
+        <span class="brand-name">BaldemarMaza<span class="brand-tld">.com</span></span>
+    </div>
+
+    <header>
+        <a href="/inicio" class="back-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Volver al inicio
+        </a>
+        <div class="eyebrow">Elección · Chiapas 2027</div>
+        <h1>Datos <em>por sección</em><br>de los 124 municipios.</h1>
+        <p class="lead">{{ meta.total_secciones }} secciones · {{ meta.municipios|length }} municipios · Filtra, busca y exporta. Fuente: {{ meta.fuente }}</p>
+    </header>
+
+    <!-- FILTROS -->
+    <div class="filters">
+        <div class="filter-group">
+            <label class="filter-label" for="filter-municipio">Municipio</label>
+            <select id="filter-municipio"><option value="">Todos</option></select>
+        </div>
+        <div class="filter-group">
+            <label class="filter-label" for="filter-distrito">Distrito local</label>
+            <select id="filter-distrito"><option value="">Todos</option></select>
+        </div>
+        <div class="filter-group">
+            <label class="filter-label" for="filter-partido">Partido ganador</label>
+            <select id="filter-partido"><option value="">Todos</option></select>
+        </div>
+        <button class="clear-btn" id="clear-filters">Limpiar filtros</button>
+    </div>
+
+    <!-- TABLA -->
+    <div class="table-card">
+        <div id="loading" class="loading-state">Cargando datos…</div>
+        <table id="tabla" class="display compact" style="width:100%; display:none;">
+            <thead>
+                <tr>
+                    <th>Municipio</th>
+                    <th>Sección</th>
+                    <th>Dist. Local</th>
+                    <th>L.N. 2024</th>
+                    <th>Ganador</th>
+                    <th>Votos</th>
+                    <th>% Ganador</th>
+                    <th>Margen</th>
+                    <th>% Part. 2024</th>
+                    <th>Tend. 2027</th>
+                    <th>Detalle</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <footer>
+        <span>© {{ owner }} · Ayuntamientos Chiapas 2024</span>
+        <span>
+            <a href="/inicio">Inicio</a>
+            <a href="/logout">Cerrar sesión</a>
+        </span>
+    </footer>
+
 </div>
 
-<main>
-  <div class="page-title">
-    <h1>Datos por Sección — Chiapas 2027</h1>
-    <div class="subtitle">
-      {{ meta.total_secciones }} secciones · {{ meta.municipios|length }} municipios · Fuente: {{ meta.fuente }}
+<!-- MODAL DETALLE -->
+<div class="modal-overlay" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+        <div class="modal-header">
+            <div>
+                <div class="modal-title" id="modal-title"></div>
+                <div class="modal-subtitle" id="modal-subtitle"></div>
+            </div>
+            <button class="modal-close" id="modal-close" aria-label="Cerrar">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div class="modal-body" id="modal-body"></div>
     </div>
-  </div>
+</div>
 
-  <div class="container">
-    <div id="loading" class="loading">Cargando datos…</div>
-    <table id="tabla" class="display compact" style="width:100%; display:none;">
-      <thead>
-        <tr>
-          <th>Municipio</th>
-          <th>Sección</th>
-          <th>Dist. Local</th>
-          <th>L.N. 2024</th>
-          <th>Ganador 2024</th>
-          <th>Votos Ganador</th>
-          <th>% Part. 2024</th>
-          <th>Tendencia 2027</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
+<div id="contador" aria-live="polite">⏳ 20:00</div>
 
-  <footer>
-    {{ aviso_propiedad }}
-  </footer>
-</main>
-
+<!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/3.2.0/js/dataTables.buttons.min.js"></script>
@@ -170,57 +700,263 @@
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 
 <script>
-(async function () {
-  const r = await fetch('/api/secciones');
-  if (!r.ok) {
-    document.getElementById('loading').textContent = 'Error al cargar datos. ¿Sesión expirada?';
-    return;
-  }
-  const data = await r.json();
-  document.getElementById('loading').style.display = 'none';
-  document.getElementById('tabla').style.display = '';
+/* ============================================================
+   DASHBOARD DATOS POR SECCIÓN
+   ============================================================ */
 
-  const pct = v => v == null ? '—' : (v * 100).toFixed(1) + '%';
-  const num = v => v == null ? '—' : v.toLocaleString('es-MX');
-  const badge = p => {
-    if (!p) return '<span class="badge badge-default">—</span>';
+const COLORS_PARTIDO = {
+    MORENA:'#8B2332', PVEM:'#4D9F3D', PT:'#ED1C24', PAN:'#0066CC',
+    PRI:'#CE1126', PRD:'#FFCC00', MC:'#FF6600', RSP:'#757575',
+    PCHU:'#29B6F6', PMCH:'#8E44AD', PPCH:'#8B0000', PES:'#4A148C',
+    FXM:'#DC143C'
+};
+
+let DATA = [];   // dataset enriquecido global
+let DT   = null; // instancia DataTable
+
+/* Helpers de formato */
+const fmtNum = v => v == null ? '—' : v.toLocaleString('es-MX');
+const fmtPct = v => v == null ? '—' : (v * 100).toFixed(1) + '%';
+
+const badgeHTML = p => {
+    if (!p) return '<span class="badge badge-default">Sin datos</span>';
     const safe = p.replace(/[^A-Z]/gi, '');
     return `<span class="badge badge-${safe}">${p}</span>`;
-  };
+};
 
-  new DataTable('#tabla', {
-    data: data,
-    columns: [
-      { data: 'municipio' },
-      { data: 'seccion' },
-      { data: 'distrito_local_id', defaultContent: '—' },
-      { data: 'listado_nominal',   render: num },
-      { data: 'partido_ganador',   render: badge },
-      { data: 'votos_ganador',     render: num },
-      { data: 'participacion_2024',render: pct },
-      { data: 'tendencia_2027',    render: pct },
-    ],
-    order: [[0, 'asc'], [1, 'asc']],
-    pageLength: 25,
-    lengthMenu: [10, 25, 50, 100],
-    language: {
-      search: 'Buscar:',
-      lengthMenu: 'Mostrar _MENU_ por página',
-      info: 'Mostrando _START_ a _END_ de _TOTAL_',
-      infoEmpty: 'Sin resultados',
-      infoFiltered: '(filtrado de _MAX_ total)',
-      paginate: { first:'«', last:'»', next:'›', previous:'‹' },
-      zeroRecords: 'Sin coincidencias',
-      emptyTable: 'Sin datos',
-    },
-    layout: {
-      topStart: 'buttons',
-      topEnd:   'search',
-    },
-    buttons: [
-      { extend: 'csv', text: 'Exportar CSV', filename: 'secciones_chiapas_2024' }
-    ],
-  });
+/* Enriquecer cada sección con % Ganador y Margen */
+function enriquecer(s) {
+    const vp = s.votos_por_partido || {};
+    const votos = Object.values(vp);
+
+    // % del ganador sobre el total de votos válidos
+    s.pct_ganador = (s.votos_ganador && s.total_votos)
+        ? s.votos_ganador / s.total_votos
+        : null;
+
+    // Margen = ganador - 2do lugar (entre partidos individuales)
+    if (s.votos_ganador && votos.length >= 2) {
+        const ordenados = votos.slice().sort((a,b) => b-a);
+        s.margen = ordenados[0] - ordenados[1];
+    } else if (s.votos_ganador && votos.length === 1) {
+        s.margen = s.votos_ganador; // único partido con votos
+    } else {
+        s.margen = null;
+    }
+
+    // Flag visual para secciones sin datos
+    s.sin_datos = !s.partido_ganador;
+    return s;
+}
+
+/* ============================================================
+   POBLAR FILTROS
+   ============================================================ */
+function poblarFiltros(data) {
+    const municipios = [...new Set(data.map(s => s.municipio))].sort();
+    const distritos  = [...new Set(data.map(s => s.distrito_local_id).filter(v => v != null))].sort((a,b) => a-b);
+    const partidos   = [...new Set(data.map(s => s.partido_ganador).filter(Boolean))].sort();
+
+    const m = document.getElementById('filter-municipio');
+    municipios.forEach(v => m.insertAdjacentHTML('beforeend', `<option value="${v}">${v}</option>`));
+
+    const d = document.getElementById('filter-distrito');
+    distritos.forEach(v => d.insertAdjacentHTML('beforeend', `<option value="${v}">Distrito ${v}</option>`));
+
+    const p = document.getElementById('filter-partido');
+    partidos.forEach(v => p.insertAdjacentHTML('beforeend', `<option value="${v}">${v}</option>`));
+}
+
+/* ============================================================
+   MODAL DE DETALLE
+   ============================================================ */
+function abrirModal(idSeccion) {
+    const s = DATA.find(r => r.id_seccion === idSeccion);
+    if (!s) return;
+
+    document.getElementById('modal-title').textContent = `Sección ${s.seccion}`;
+    document.getElementById('modal-subtitle').textContent =
+        `${s.municipio} · Distrito Local ${s.distrito_local_id ?? '—'} · Cabecera ${s.cabecera_distrital ?? '—'}`;
+
+    let html = `
+      <div class="stats-grid">
+        <div class="stat"><span class="stat-label">Listado Nominal</span><span class="stat-value">${fmtNum(s.listado_nominal)}</span></div>
+        <div class="stat"><span class="stat-label">Total votos</span><span class="stat-value">${fmtNum(s.total_votos)}</span></div>
+        <div class="stat"><span class="stat-label">Participación</span><span class="stat-value">${fmtPct(s.participacion_2024)}</span></div>
+      </div>
+    `;
+
+    const vp = s.votos_por_partido || {};
+    const ordenados = Object.entries(vp).sort((a,b) => b[1] - a[1]);
+
+    if (ordenados.length === 0) {
+        html += '<p class="modal-section-title">Sin datos de votación por partido para esta sección.</p>';
+    } else {
+        html += '<div class="modal-section-title">Votación por partido</div>';
+        html += '<div class="partidos-list">';
+        const max = ordenados[0][1];
+        const totalIndividuales = ordenados.reduce((acc, [,v]) => acc+v, 0);
+
+        ordenados.forEach(([partido, votos]) => {
+            const isGanador = partido === s.partido_ganador;
+            const pct = (votos / totalIndividuales) * 100;
+            const widthPct = (votos / max) * 100;
+            const color = COLORS_PARTIDO[partido] || '#888';
+            html += `
+              <div class="partido-row ${isGanador ? 'is-ganador' : ''}">
+                ${badgeHTML(partido)}
+                <div class="partido-bar-wrap"><div class="partido-bar" style="width:${widthPct}%;background:${color}"></div></div>
+                <span class="partido-votos">${fmtNum(votos)}</span>
+                <span class="partido-pct">${pct.toFixed(1)}%</span>
+              </div>
+            `;
+        });
+        html += '</div>';
+
+        // Nota sobre coaliciones si el total no cuadra
+        if (s.total_votos && Math.abs(totalIndividuales - s.total_votos) > 5) {
+            const dif = s.total_votos - totalIndividuales;
+            html += `<p style="margin-top:14px;font-size:12px;color:var(--ink-faint);font-style:italic;">
+              Nota: la suma de partidos individuales es ${fmtNum(totalIndividuales)}.
+              La diferencia de ${fmtNum(dif)} votos corresponde a coaliciones (no desglosadas aquí).
+            </p>`;
+        }
+    }
+
+    document.getElementById('modal-body').innerHTML = html;
+    document.getElementById('modal').hidden = false;
+}
+
+function cerrarModal() { document.getElementById('modal').hidden = true; }
+
+document.getElementById('modal-close').addEventListener('click', cerrarModal);
+document.getElementById('modal').addEventListener('click', e => {
+    if (e.target.id === 'modal') cerrarModal();
+});
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !document.getElementById('modal').hidden) cerrarModal();
+});
+
+/* ============================================================
+   INICIALIZACIÓN
+   ============================================================ */
+(async function init() {
+    try {
+        const r = await fetch('/api/secciones');
+        if (!r.ok) {
+            document.getElementById('loading').textContent = 'Error al cargar datos. ¿Sesión expirada?';
+            return;
+        }
+        DATA = (await r.json()).map(enriquecer);
+        poblarFiltros(DATA);
+
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('tabla').style.display = '';
+
+        DT = new DataTable('#tabla', {
+            data: DATA,
+            columns: [
+                { data: 'municipio' },
+                { data: 'seccion', className: 'num' },
+                { data: 'distrito_local_id', defaultContent: '—', className: 'num' },
+                { data: 'listado_nominal', render: fmtNum, className: 'num' },
+                { data: 'partido_ganador', render: badgeHTML },
+                { data: 'votos_ganador', render: fmtNum, className: 'num' },
+                { data: 'pct_ganador',   render: fmtPct, className: 'num' },
+                { data: 'margen',        render: fmtNum, className: 'num' },
+                { data: 'participacion_2024', render: fmtPct, className: 'num' },
+                { data: 'tendencia_2027',     render: fmtPct, className: 'num' },
+                {
+                    data: 'id_seccion',
+                    orderable: false,
+                    searchable: false,
+                    render: id => `<button class="btn-detalle" data-id="${id}">Ver</button>`
+                }
+            ],
+            order: [[0,'asc'], [1,'asc']],
+            pageLength: 25,
+            lengthMenu: [10, 25, 50, 100],
+            createdRow: (row, data) => {
+                if (data.sin_datos) row.classList.add('row-sin-datos');
+            },
+            language: {
+                search: 'Búsqueda libre:',
+                lengthMenu: 'Mostrar _MENU_ por página',
+                info: 'Mostrando _START_ a _END_ de _TOTAL_ secciones',
+                infoEmpty: 'Sin resultados',
+                infoFiltered: '(filtrado de _MAX_)',
+                paginate: { first:'«', last:'»', next:'›', previous:'‹' },
+                zeroRecords: 'Sin coincidencias',
+                emptyTable: 'Sin datos',
+            },
+            layout: { topStart: 'buttons', topEnd: 'search' },
+            buttons: [
+                { extend: 'csv', text: 'Exportar CSV', filename: 'secciones_chiapas_2024',
+                  exportOptions: { columns: [0,1,2,3,4,5,6,7,8,9] } }  // sin botón Detalle
+            ],
+        });
+
+        /* Conectar filtros dropdown con DataTables */
+        const aplicarFiltros = () => {
+            const mun = document.getElementById('filter-municipio').value;
+            const dis = document.getElementById('filter-distrito').value;
+            const par = document.getElementById('filter-partido').value;
+
+            DT.column(0).search(mun ? `^${mun}$` : '', true, false);
+            DT.column(2).search(dis ? `^${dis}$` : '', true, false);
+            // partido viene como HTML por el badge — buscamos texto sin tags
+            DT.column(4).search(par ? `>${par}<` : '', true, false);
+            DT.draw();
+        };
+
+        ['filter-municipio','filter-distrito','filter-partido'].forEach(id => {
+            document.getElementById(id).addEventListener('change', aplicarFiltros);
+        });
+
+        document.getElementById('clear-filters').addEventListener('click', () => {
+            document.getElementById('filter-municipio').value = '';
+            document.getElementById('filter-distrito').value = '';
+            document.getElementById('filter-partido').value  = '';
+            DT.search('').columns().search('').draw();
+        });
+
+        /* Click en botón "Ver" abre modal */
+        document.querySelector('#tabla tbody').addEventListener('click', e => {
+            const btn = e.target.closest('.btn-detalle');
+            if (btn) abrirModal(btn.dataset.id);
+        });
+
+    } catch (err) {
+        document.getElementById('loading').textContent = 'Error: ' + err.message;
+    }
+})();
+
+/* ============================================================
+   CONTADOR DE LOGOUT (alineado con Flask 20 min)
+   ============================================================ */
+(function () {
+    const DURACION_MS = 1200000;
+    const UMBRAL = 30;
+    const URL_LOGOUT = '/logout';
+    const expira = Date.now() + DURACION_MS;
+    const c = document.getElementById('contador');
+    let expirado = false, iv;
+
+    function tick() {
+        const r = Math.max(0, Math.ceil((expira - Date.now()) / 1000));
+        const min = Math.floor(r / 60);
+        const sec = r % 60;
+        c.textContent = '⏳ ' + min + ':' + (sec < 10 ? '0' : '') + sec;
+        if (r <= UMBRAL && r > 0) c.classList.add('alerta');
+        if (r <= 0 && !expirado) {
+            expirado = true;
+            clearInterval(iv);
+            alert('Sesión expirada');
+            window.location.href = URL_LOGOUT;
+        }
+    }
+    tick();
+    iv = setInterval(tick, 1000);
 })();
 </script>
 

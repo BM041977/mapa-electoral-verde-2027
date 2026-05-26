@@ -904,8 +904,7 @@ document.addEventListener('keydown', e => {
 
             DT.column(0).search(mun ? `^${mun}$` : '', true, false);
             DT.column(2).search(dis ? `^${dis}$` : '', true, false);
-            // partido viene como HTML por el badge — buscamos texto sin tags
-            DT.column(4).search(par ? `>${par}<` : '', true, false);
+            DT.column(4).search(par ? `^${par}$` : '', true, false);
             DT.draw();
         };
 

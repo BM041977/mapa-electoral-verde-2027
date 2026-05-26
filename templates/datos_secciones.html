@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datos por Sección — {{ owner }}</title>
+
+  <link rel="stylesheet"
+        href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.datatables.net/buttons/3.2.0/css/buttons.dataTables.min.css">
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    /* HEADER */
+    .topbar {
+      background: #2c3e50;
+      color: white;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .topbar .brand {
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .topbar .brand small {
+      display: block;
+      font-weight: 400;
+      font-size: 11px;
+      opacity: 0.7;
+    }
+    .topbar .nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 16px;
+      font-size: 13px;
+      opacity: 0.9;
+    }
+    .topbar .nav a:hover { opacity: 1; text-decoration: underline; }
+
+    /* MAIN */
+    main { padding: 20px; }
+
+    .page-title {
+      background: white;
+      padding: 16px 24px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+    }
+    .page-title h1 {
+      margin: 0 0 4px 0;
+      font-size: 20px;
+      color: #2c3e50;
+    }
+    .page-title .subtitle {
+      color: #7f8c8d;
+      font-size: 13px;
+    }
+
+    .container {
+      background: white;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    table.dataTable thead th {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      background: #f8f9fa;
+    }
+    table.dataTable tbody td { font-size: 13px; }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      color: white;
+    }
+    .badge-MORENA  { background: #8B2332; }
+    .badge-PVEM    { background: #4D9F3D; }
+    .badge-PT      { background: #D52B1E; }
+    .badge-PAN     { background: #0066CC; }
+    .badge-PRI     { background: #009933; }
+    .badge-PRD     { background: #FFCC00; color:#333; }
+    .badge-MC      { background: #FF6600; }
+    .badge-RSP     { background: #6A0DAD; }
+    .badge-PCHU    { background: #B8860B; }
+    .badge-PMCH    { background: #2F4F4F; }
+    .badge-PPCH    { background: #8B008B; }
+    .badge-PES     { background: #800000; }
+    .badge-FXM     { background: #DC143C; }
+    .badge-default { background: #95a5a6; }
+
+    .loading { padding: 40px; text-align: center; color: #7f8c8d; }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 16px;
+      color: #95a5a6;
+      font-size: 11px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    {{ owner }}
+    <small>{{ aviso_propiedad }}</small>
+  </div>
+  <div class="nav">
+    <a href="/inicio">← Inicio</a>
+    <a href="/logout">Cerrar sesión</a>
+  </div>
+</div>
+
+<main>
+  <div class="page-title">
+    <h1>Datos por Sección — Chiapas 2027</h1>
+    <div class="subtitle">
+      {{ meta.total_secciones }} secciones · {{ meta.municipios|length }} municipios · Fuente: {{ meta.fuente }}
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="loading" class="loading">Cargando datos…</div>
+    <table id="tabla" class="display compact" style="width:100%; display:none;">
+      <thead>
+        <tr>
+          <th>Municipio</th>
+          <th>Sección</th>
+          <th>Dist. Local</th>
+          <th>L.N. 2024</th>
+          <th>Ganador 2024</th>
+          <th>Votos Ganador</th>
+          <th>% Part. 2024</th>
+          <th>Tendencia 2027</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <footer>
+    {{ aviso_propiedad }}
+  </footer>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.2.0/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.html5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+
+<script>
+(async function () {
+  const r = await fetch('/api/secciones');
+  if (!r.ok) {
+    document.getElementById('loading').textContent = 'Error al cargar datos. ¿Sesión expirada?';
+    return;
+  }
+  const data = await r.json();
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('tabla').style.display = '';
+
+  const pct = v => v == null ? '—' : (v * 100).toFixed(1) + '%';
+  const num = v => v == null ? '—' : v.toLocaleString('es-MX');
+  const badge = p => {
+    if (!p) return '<span class="badge badge-default">—</span>';
+    const safe = p.replace(/[^A-Z]/gi, '');
+    return `<span class="badge badge-${safe}">${p}</span>`;
+  };
+
+  new DataTable('#tabla', {
+    data: data,
+    columns: [
+      { data: 'municipio' },
+      { data: 'seccion' },
+      { data: 'distrito_local_id', defaultContent: '—' },
+      { data: 'listado_nominal',   render: num },
+      { data: 'partido_ganador',   render: badge },
+      { data: 'votos_ganador',     render: num },
+      { data: 'participacion_2024',render: pct },
+      { data: 'tendencia_2027',    render: pct },
+    ],
+    order: [[0, 'asc'], [1, 'asc']],
+    pageLength: 25,
+    lengthMenu: [10, 25, 50, 100],
+    language: {
+      search: 'Buscar:',
+      lengthMenu: 'Mostrar _MENU_ por página',
+      info: 'Mostrando _START_ a _END_ de _TOTAL_',
+      infoEmpty: 'Sin resultados',
+      infoFiltered: '(filtrado de _MAX_ total)',
+      paginate: { first:'«', last:'»', next:'›', previous:'‹' },
+      zeroRecords: 'Sin coincidencias',
+      emptyTable: 'Sin datos',
+    },
+    layout: {
+      topStart: 'buttons',
+      topEnd:   'search',
+    },
+    buttons: [
+      { extend: 'csv', text: 'Exportar CSV', filename: 'secciones_chiapas_2024' }
+    ],
+  });
+})();
+</script>
+
+</body>
+</html>

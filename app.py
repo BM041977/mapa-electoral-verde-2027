@@ -28,10 +28,11 @@ USER     = os.environ.get("APP_USER", "Baldemar")
 PASSWORD = os.environ.get("APP_PASSWORD", "Victoria@Ever")
 
 # 📂 RUTAS DE ARCHIVOS
-BASE_DIR           = os.path.dirname(os.path.abspath(__file__))
-MAPA_HTML          = os.path.join(BASE_DIR, "templates", "mapa_ligero.html")
-MAPA_PARTIDOS_HTML = os.path.join(BASE_DIR, "templates", "mapa_por_partido.html")  # 🆕
-GEOJSON_PATH       = os.path.join(BASE_DIR, "secciones_simplificado.geojson")
+BASE_DIR            = os.path.dirname(os.path.abspath(__file__))
+MAPA_HTML           = os.path.join(BASE_DIR, "templates", "mapa_ligero.html")
+MAPA_PARTIDOS_HTML  = os.path.join(BASE_DIR, "templates", "mapa_por_partido.html")  # 🆕
+GEOJSON_PATH        = os.path.join(BASE_DIR, "secciones_simplificado.geojson")
+SECCIONES_JSON_PATH = os.path.join(BASE_DIR, "secciones.json")                       # 🆕 FASE 3
 
 # 💾 CACHE DEL GEOJSON (se carga UNA vez, no en cada request)
 _geojson_cache = None
@@ -42,6 +43,17 @@ def _cargar_geojson():
         with open(GEOJSON_PATH, "r", encoding="utf-8") as f:
             _geojson_cache = json.load(f)
     return _geojson_cache
+
+# 💾 CACHE DEL DATASET DE SECCIONES (FASE 3 — Dashboard)
+_secciones_cache = None
+
+def _cargar_secciones():
+    """Carga secciones.json una sola vez al primer acceso."""
+    global _secciones_cache
+    if _secciones_cache is None:
+        with open(SECCIONES_JSON_PATH, "r", encoding="utf-8") as f:
+            _secciones_cache = json.load(f)
+    return _secciones_cache
 
 # 🌐 INYECTAR DATOS DE PROPIETARIO EN TODOS LOS TEMPLATES
 # (en cualquier .html puedes usar {{ owner }}, {{ telefono }}, {{ aviso_propiedad }})
@@ -136,6 +148,32 @@ def mapa_partidos():
 @login_required
 def geojson_secciones():
     return jsonify(_cargar_geojson())
+
+# ════════════════════════════════════════════════════════════════
+# 🆕 FASE 3 — DASHBOARD DE DATOS POR SECCIÓN
+# ════════════════════════════════════════════════════════════════
+
+@app.route("/datos-secciones")
+@login_required
+def datos_secciones():
+    """Página HTML con tabla interactiva DataTables."""
+    data = _cargar_secciones()
+    return render_template("datos_secciones.html", meta=data["meta"])
+
+@app.route("/api/secciones")
+@login_required
+def api_secciones():
+    """Devuelve el dataset completo (2,278 secciones) en JSON.
+    DataTables lo carga del lado del cliente."""
+    data = _cargar_secciones()
+    return jsonify(data["secciones"])
+
+@app.route("/api/meta")
+@login_required
+def api_meta():
+    """Metadatos: municipios, partidos individuales, total de secciones."""
+    data = _cargar_secciones()
+    return jsonify(data["meta"])
 
 # -----------------------------
 # LOGOUT

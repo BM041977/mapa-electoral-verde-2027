@@ -599,6 +599,7 @@ footer a:hover { color: var(--accent); }
     font-style: italic;
     font-family: 'Fraunces', serif;
 }
+.filtros-ocultos { display: none !important; }
 </style>
 </head>
 <body>
@@ -900,7 +901,9 @@ document.addEventListener('keydown', e => {
             document.getElementById('filter-municipio').value = MUNICIPIO_FILTRO;
             DT.column(0).search('^' + MUNICIPIO_FILTRO + '$', true, false).draw();
             document.getElementById('filter-municipio').disabled = true;
-            document.getElementById('clear-filters').style.display = 'none';
+            document.getElementById('clear-filters').classList.add('filtros-ocultos');
+            document.getElementById('filter-distrito').closest('div').classList.add('filtros-ocultos');
+            document.getElementById('filter-partido').closest('div').classList.add('filtros-ocultos');
         }
         const aplicarFiltros = () => {
             const mun = document.getElementById('filter-municipio').value;

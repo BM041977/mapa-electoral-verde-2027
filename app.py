@@ -18,7 +18,7 @@ app.config["SESSION_COOKIE_HTTPONLY"] = True                              # JS n
 app.config["SESSION_COOKIE_SAMESITE"] = "Lax"                             # mitiga CSRF
 app.config["SESSION_COOKIE_SECURE"]   = os.environ.get("HTTPS", "0") == "1"  # solo HTTPS en producción
 
-# 👤 PROPIETARIO
+# PROPIETARIO
 OWNER             = "Baldemar Maza León"
 TELEFONO          = "961 217 0091"
 AVISO_PROPIEDAD   = f"Este sistema es un desarrollo independiente propiedad de {OWNER} · {TELEFONO}"

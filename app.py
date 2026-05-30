@@ -2,6 +2,14 @@ from flask import Flask, render_template, request, redirect, session, jsonify, s
 from functools import wraps
 import os
 import json
+
+def _cargar_usuarios():
+    try:
+        with open("usuarios.json", encoding="utf-8") as f:
+            return json.load(f)
+    except:
+        return {}
+
 import hmac
 from datetime import timedelta
 
@@ -116,11 +124,19 @@ def login():
         password_ok = hmac.compare_digest(password, PASSWORD)
 
         if usuario_ok and password_ok:
-
             session["logged_in"] = True
-            session.permanent    = True   # ⚡ CLAVE: activa los 3 min del lado servidor
-
-            return redirect("/inicio")    # 🔄 antes era /mapa, ahora va a la landing
+            session["es_maestro"] = True
+            session.permanent = True
+            return redirect("/inicio")
+        usuarios_muni = _cargar_usuarios()
+        if usuario in usuarios_muni:
+            if hmac.compare_digest(password, usuarios_muni[usuario]["password"]):
+                session["logged_in"] = True
+                session["es_maestro"] = False
+                session["municipio"] = usuarios_muni[usuario]["municipio"]
+                session.permanent = True
+                muni_url = usuarios_muni[usuario]["municipio"].replace(" ", "_")
+                return redirect(f"/ver-pdf/{muni_url}")
 
         return render_template(
             "login.html",

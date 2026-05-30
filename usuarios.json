@@ -1,0 +1,617 @@
+{
+  "acacoyagua": {
+    "password": "qM5oa#FJ",
+    "municipio": "Acacoyagua",
+    "archivo": "Diagnostico_Electoral_Acacoyagua_v8.pdf"
+  },
+  "acala": {
+    "password": "Cizp@i59",
+    "municipio": "Acala",
+    "archivo": "Diagnostico_Electoral_Acala_v8.pdf"
+  },
+  "acapetahua": {
+    "password": "x@l4ZEqO",
+    "municipio": "Acapetahua",
+    "archivo": "Diagnostico_Electoral_Acapetahua_v8.pdf"
+  },
+  "aldama": {
+    "password": "sxm8TUz#",
+    "municipio": "Aldama",
+    "archivo": "Diagnostico_Electoral_Aldama_v8.pdf"
+  },
+  "altamirano": {
+    "password": "XF$Ou41o",
+    "municipio": "Altamirano",
+    "archivo": "Diagnostico_Electoral_Altamirano_v8.pdf"
+  },
+  "amatan": {
+    "password": "@yJIze9k",
+    "municipio": "Amatan",
+    "archivo": "Diagnostico_Electoral_Amatan_v8.pdf"
+  },
+  "amatenango_de_la_frontera": {
+    "password": "l2d@3JB4",
+    "municipio": "Amatenango De La Frontera",
+    "archivo": "Diagnostico_Electoral_Amatenango_De_La_Frontera_v8.pdf"
+  },
+  "amatenango_del_valle": {
+    "password": "1Fnmi!w4",
+    "municipio": "Amatenango Del Valle",
+    "archivo": "Diagnostico_Electoral_Amatenango_Del_Valle_v8.pdf"
+  },
+  "angel_albino_corzo": {
+    "password": "H#KlDoc8",
+    "municipio": "Angel Albino Corzo",
+    "archivo": "Diagnostico_Electoral_Angel_Albino_Corzo_v8.pdf"
+  },
+  "arriaga": {
+    "password": "24!4IXgG",
+    "municipio": "Arriaga",
+    "archivo": "Diagnostico_Electoral_Arriaga_v8.pdf"
+  },
+  "bejucal_de_ocampo": {
+    "password": "Z2$eIPw9",
+    "municipio": "Bejucal De Ocampo",
+    "archivo": "Diagnostico_Electoral_Bejucal_De_Ocampo_v8.pdf"
+  },
+  "bella_vista": {
+    "password": "Id60#ylR",
+    "municipio": "Bella Vista",
+    "archivo": "Diagnostico_Electoral_Bella_Vista_v8.pdf"
+  },
+  "benemerito_de_las_americas": {
+    "password": "T@bCTYI7",
+    "municipio": "Benemerito De Las Americas",
+    "archivo": "Diagnostico_Electoral_Benemerito_De_Las_Americas_v8.pdf"
+  },
+  "berriozabal": {
+    "password": "xa%yOKh2",
+    "municipio": "Berriozabal",
+    "archivo": "Diagnostico_Electoral_Berriozabal_v8.pdf"
+  },
+  "bochil": {
+    "password": "51!FBeom",
+    "municipio": "Bochil",
+    "archivo": "Diagnostico_Electoral_Bochil_v8.pdf"
+  },
+  "cacahoatan": {
+    "password": "RY9x9M!z",
+    "municipio": "Cacahoatan",
+    "archivo": "Diagnostico_Electoral_Cacahoatan_v8.pdf"
+  },
+  "capitan_luis_angel_vidal": {
+    "password": "gZ@2Hr7A",
+    "municipio": "Capitan Luis Angel Vidal",
+    "archivo": "Diagnostico_Electoral_Capitan_Luis_Angel_Vidal_v8.pdf"
+  },
+  "catazaja": {
+    "password": "%UT4f25w",
+    "municipio": "Catazaja",
+    "archivo": "Diagnostico_Electoral_Catazaja_v8.pdf"
+  },
+  "chalchihuitan": {
+    "password": "I!pi6cXG",
+    "municipio": "Chalchihuitan",
+    "archivo": "Diagnostico_Electoral_Chalchihuitan_v8.pdf"
+  },
+  "chamula": {
+    "password": "1uqpU!3j",
+    "municipio": "Chamula",
+    "archivo": "Diagnostico_Electoral_Chamula_v8.pdf"
+  },
+  "chanal": {
+    "password": "ATS@J88k",
+    "municipio": "Chanal",
+    "archivo": "Diagnostico_Electoral_Chanal_v8.pdf"
+  },
+  "chapultenango": {
+    "password": "Pn#V0XIy",
+    "municipio": "Chapultenango",
+    "archivo": "Diagnostico_Electoral_Chapultenango_v8.pdf"
+  },
+  "chenalho": {
+    "password": "4UvJD%nK",
+    "municipio": "Chenalho",
+    "archivo": "Diagnostico_Electoral_Chenalho_v8.pdf"
+  },
+  "chiapa_de_corzo": {
+    "password": "pW6t5E@h",
+    "municipio": "Chiapa De Corzo",
+    "archivo": "Diagnostico_Electoral_Chiapa_De_Corzo_v8.pdf"
+  },
+  "chiapilla": {
+    "password": "Lz3Td$nx",
+    "municipio": "Chiapilla",
+    "archivo": "Diagnostico_Electoral_Chiapilla_v8.pdf"
+  },
+  "chicoasen": {
+    "password": "ZZ3tQFj@",
+    "municipio": "Chicoasen",
+    "archivo": "Diagnostico_Electoral_Chicoasen_v8.pdf"
+  },
+  "chicomuselo": {
+    "password": "z1z@ggRG",
+    "municipio": "Chicomuselo",
+    "archivo": "Diagnostico_Electoral_Chicomuselo_v8.pdf"
+  },
+  "chilon": {
+    "password": "W7RSw6@u",
+    "municipio": "Chilon",
+    "archivo": "Diagnostico_Electoral_Chilon_v8.pdf"
+  },
+  "cintalapa": {
+    "password": "4VBgR!AP",
+    "municipio": "Cintalapa",
+    "archivo": "Diagnostico_Electoral_Cintalapa_v8.pdf"
+  },
+  "coapilla": {
+    "password": "4Qf5#U7H",
+    "municipio": "Coapilla",
+    "archivo": "Diagnostico_Electoral_Coapilla_v8.pdf"
+  },
+  "comitan_de_dominguez": {
+    "password": "8fu0zYF%",
+    "municipio": "Comitan De Dominguez",
+    "archivo": "Diagnostico_Electoral_Comitan_De_Dominguez_v8.pdf"
+  },
+  "copainala": {
+    "password": "B0WJ!H2g",
+    "municipio": "Copainala",
+    "archivo": "Diagnostico_Electoral_Copainala_v8.pdf"
+  },
+  "el_bosque": {
+    "password": "2k%E56tj",
+    "municipio": "El Bosque",
+    "archivo": "Diagnostico_Electoral_El_Bosque_v8.pdf"
+  },
+  "el_parral": {
+    "password": "y63rV5F!",
+    "municipio": "El Parral",
+    "archivo": "Diagnostico_Electoral_El_Parral_v8.pdf"
+  },
+  "el_porvenir": {
+    "password": "!0cCinKs",
+    "municipio": "El Porvenir",
+    "archivo": "Diagnostico_Electoral_El_Porvenir_v8.pdf"
+  },
+  "emiliano_zapata": {
+    "password": "%VIlA5Oc",
+    "municipio": "Emiliano Zapata",
+    "archivo": "Diagnostico_Electoral_Emiliano_Zapata_v8.pdf"
+  },
+  "escuintla": {
+    "password": "Ku020mI$",
+    "municipio": "Escuintla",
+    "archivo": "Diagnostico_Electoral_Escuintla_v8.pdf"
+  },
+  "francisco_leon": {
+    "password": "ZgdqL#3i",
+    "municipio": "Francisco Leon",
+    "archivo": "Diagnostico_Electoral_Francisco_Leon_v8.pdf"
+  },
+  "frontera_comalapa": {
+    "password": "lk7H@gOy",
+    "municipio": "Frontera Comalapa",
+    "archivo": "Diagnostico_Electoral_Frontera_Comalapa_v8.pdf"
+  },
+  "frontera_hidalgo": {
+    "password": "LE7$ZAla",
+    "municipio": "Frontera Hidalgo",
+    "archivo": "Diagnostico_Electoral_Frontera_Hidalgo_v8.pdf"
+  },
+  "honduras_de_la_sierra": {
+    "password": "37E@YkYQ",
+    "municipio": "Honduras De La Sierra",
+    "archivo": "Diagnostico_Electoral_Honduras_De_La_Sierra_v8.pdf"
+  },
+  "huehuetan": {
+    "password": "#Sg0nPUK",
+    "municipio": "Huehuetan",
+    "archivo": "Diagnostico_Electoral_Huehuetan_v8.pdf"
+  },
+  "huitiupan": {
+    "password": "3!z8ttF4",
+    "municipio": "Huitiupan",
+    "archivo": "Diagnostico_Electoral_Huitiupan_v8.pdf"
+  },
+  "huixtan": {
+    "password": "gL@9mQVv",
+    "municipio": "Huixtan",
+    "archivo": "Diagnostico_Electoral_Huixtan_v8.pdf"
+  },
+  "huixtla": {
+    "password": "$AlmAT0m",
+    "municipio": "Huixtla",
+    "archivo": "Diagnostico_Electoral_Huixtla_v8.pdf"
+  },
+  "ixhuatan": {
+    "password": "k0#jXBbi",
+    "municipio": "Ixhuatan",
+    "archivo": "Diagnostico_Electoral_Ixhuatan_v8.pdf"
+  },
+  "ixtacomitan": {
+    "password": "k598WV$y",
+    "municipio": "Ixtacomitan",
+    "archivo": "Diagnostico_Electoral_Ixtacomitan_v8.pdf"
+  },
+  "ixtapa": {
+    "password": "s92Rv@nW",
+    "municipio": "Ixtapa",
+    "archivo": "Diagnostico_Electoral_Ixtapa_v8.pdf"
+  },
+  "ixtapangajoya": {
+    "password": "61A3d$B4",
+    "municipio": "Ixtapangajoya",
+    "archivo": "Diagnostico_Electoral_Ixtapangajoya_v8.pdf"
+  },
+  "jiquipilas": {
+    "password": "B#4WG4mg",
+    "municipio": "Jiquipilas",
+    "archivo": "Diagnostico_Electoral_Jiquipilas_v8.pdf"
+  },
+  "jitotol": {
+    "password": "#I70gt8c",
+    "municipio": "Jitotol",
+    "archivo": "Diagnostico_Electoral_Jitotol_v8.pdf"
+  },
+  "juarez": {
+    "password": "SsZl7@pp",
+    "municipio": "Juarez",
+    "archivo": "Diagnostico_Electoral_Juarez_v8.pdf"
+  },
+  "la_concordia": {
+    "password": "@OssTA7R",
+    "municipio": "La Concordia",
+    "archivo": "Diagnostico_Electoral_La_Concordia_v8.pdf"
+  },
+  "la_grandeza": {
+    "password": "7l#0nTdI",
+    "municipio": "La Grandeza",
+    "archivo": "Diagnostico_Electoral_La_Grandeza_v8.pdf"
+  },
+  "la_independencia": {
+    "password": "cd@XSSt6",
+    "municipio": "La Independencia",
+    "archivo": "Diagnostico_Electoral_La_Independencia_v8.pdf"
+  },
+  "la_libertad": {
+    "password": "TVSit!H3",
+    "municipio": "La Libertad",
+    "archivo": "Diagnostico_Electoral_La_Libertad_v8.pdf"
+  },
+  "la_trinitaria": {
+    "password": "D9xhcdT!",
+    "municipio": "La Trinitaria",
+    "archivo": "Diagnostico_Electoral_La_Trinitaria_v8.pdf"
+  },
+  "larrainzar": {
+    "password": "f2FeA#eX",
+    "municipio": "Larrainzar",
+    "archivo": "Diagnostico_Electoral_Larrainzar_v8.pdf"
+  },
+  "las_margaritas": {
+    "password": "X$NBgTq8",
+    "municipio": "Las Margaritas",
+    "archivo": "Diagnostico_Electoral_Las_Margaritas_v8.pdf"
+  },
+  "las_rosas": {
+    "password": "#x4kY7Cy",
+    "municipio": "Las Rosas",
+    "archivo": "Diagnostico_Electoral_Las_Rosas_v8.pdf"
+  },
+  "mapastepec": {
+    "password": "I4!7bnx6",
+    "municipio": "Mapastepec",
+    "archivo": "Diagnostico_Electoral_Mapastepec_v8.pdf"
+  },
+  "maravilla_tenejapa": {
+    "password": "#Bd7qFIM",
+    "municipio": "Maravilla Tenejapa",
+    "archivo": "Diagnostico_Electoral_Maravilla_Tenejapa_v8.pdf"
+  },
+  "marques_de_comillas": {
+    "password": "qrg41J@z",
+    "municipio": "Marques De Comillas",
+    "archivo": "Diagnostico_Electoral_Marques_De_Comillas_v8.pdf"
+  },
+  "mazapa_de_madero": {
+    "password": "FiV#M3X7",
+    "municipio": "Mazapa De Madero",
+    "archivo": "Diagnostico_Electoral_Mazapa_De_Madero_v8.pdf"
+  },
+  "mazatan": {
+    "password": "8#ESjti1",
+    "municipio": "Mazatan",
+    "archivo": "Diagnostico_Electoral_Mazatan_v8.pdf"
+  },
+  "metapa": {
+    "password": "PxEu9wH#",
+    "municipio": "Metapa",
+    "archivo": "Diagnostico_Electoral_Metapa_v8.pdf"
+  },
+  "mezcalapa": {
+    "password": "WqB4jL!Y",
+    "municipio": "Mezcalapa",
+    "archivo": "Diagnostico_Electoral_Mezcalapa_v8.pdf"
+  },
+  "mitontic": {
+    "password": "Vrha%0K2",
+    "municipio": "Mitontic",
+    "archivo": "Diagnostico_Electoral_Mitontic_v8.pdf"
+  },
+  "montecristo_de_guerrero": {
+    "password": "VQXx0@q9",
+    "municipio": "Montecristo De Guerrero",
+    "archivo": "Diagnostico_Electoral_Montecristo_De_Guerrero_v8.pdf"
+  },
+  "motozintla": {
+    "password": "%7SBFrNe",
+    "municipio": "Motozintla",
+    "archivo": "Diagnostico_Electoral_Motozintla_v8.pdf"
+  },
+  "nicolas_ruiz": {
+    "password": "njB0C%J3",
+    "municipio": "Nicolas Ruiz",
+    "archivo": "Diagnostico_Electoral_Nicolas_Ruiz_v8.pdf"
+  },
+  "ocosingo": {
+    "password": "aq27SN%4",
+    "municipio": "Ocosingo",
+    "archivo": "Diagnostico_Electoral_Ocosingo_v8.pdf"
+  },
+  "ocotepec": {
+    "password": "Rqfpy$0s",
+    "municipio": "Ocotepec",
+    "archivo": "Diagnostico_Electoral_Ocotepec_v8.pdf"
+  },
+  "ocozocoautla_de_espinosa": {
+    "password": "YnZ9n9A@",
+    "municipio": "Ocozocoautla De Espinosa",
+    "archivo": "Diagnostico_Electoral_Ocozocoautla_De_Espinosa_v8.pdf"
+  },
+  "ostuacan": {
+    "password": "M9dbAc#0",
+    "municipio": "Ostuacan",
+    "archivo": "Diagnostico_Electoral_Ostuacan_v8.pdf"
+  },
+  "osumacinta": {
+    "password": "onVSs4b$",
+    "municipio": "Osumacinta",
+    "archivo": "Diagnostico_Electoral_Osumacinta_v8.pdf"
+  },
+  "palenque": {
+    "password": "0yi$pzAU",
+    "municipio": "Palenque",
+    "archivo": "Diagnostico_Electoral_Palenque_v8.pdf"
+  },
+  "pantelho": {
+    "password": "FtKl55%G",
+    "municipio": "Pantelho",
+    "archivo": "Diagnostico_Electoral_Pantelho_v8.pdf"
+  },
+  "pantepec": {
+    "password": "l0QY#Y0T",
+    "municipio": "Pantepec",
+    "archivo": "Diagnostico_Electoral_Pantepec_v8.pdf"
+  },
+  "pichucalco": {
+    "password": "!BXD2Tby",
+    "municipio": "Pichucalco",
+    "archivo": "Diagnostico_Electoral_Pichucalco_v8.pdf"
+  },
+  "pijijiapan": {
+    "password": "G$JtX3Ie",
+    "municipio": "Pijijiapan",
+    "archivo": "Diagnostico_Electoral_Pijijiapan_v8.pdf"
+  },
+  "pueblo_nuevo_solistahuacan": {
+    "password": "D6uL$AgK",
+    "municipio": "Pueblo Nuevo Solistahuacan",
+    "archivo": "Diagnostico_Electoral_Pueblo_Nuevo_Solistahuacan_v8.pdf"
+  },
+  "rayon": {
+    "password": "dExwD@5N",
+    "municipio": "Rayon",
+    "archivo": "Diagnostico_Electoral_Rayon_v8.pdf"
+  },
+  "reforma": {
+    "password": "K7d@fj1M",
+    "municipio": "Reforma",
+    "archivo": "Diagnostico_Electoral_Reforma_v8.pdf"
+  },
+  "rincon_chamula_san_pedro": {
+    "password": "BrL0%qDZ",
+    "municipio": "Rincon Chamula San Pedro",
+    "archivo": "Diagnostico_Electoral_Rincon_Chamula_San_Pedro_v8.pdf"
+  },
+  "sabanilla": {
+    "password": "T!l9TxPq",
+    "municipio": "Sabanilla",
+    "archivo": "Diagnostico_Electoral_Sabanilla_v8.pdf"
+  },
+  "salto_de_agua": {
+    "password": "wa2uGw$T",
+    "municipio": "Salto De Agua",
+    "archivo": "Diagnostico_Electoral_Salto_De_Agua_v8.pdf"
+  },
+  "san_andres_duraznal": {
+    "password": "uPmC8#hj",
+    "municipio": "San Andres Duraznal",
+    "archivo": "Diagnostico_Electoral_San_Andres_Duraznal_v8.pdf"
+  },
+  "san_cristobal_de_las_casas": {
+    "password": "bKVT8@fp",
+    "municipio": "San Cristobal De Las Casas",
+    "archivo": "Diagnostico_Electoral_San_Cristobal_De_Las_Casas_v8.pdf"
+  },
+  "san_fernando": {
+    "password": "!GElv3Q3",
+    "municipio": "San Fernando",
+    "archivo": "Diagnostico_Electoral_San_Fernando_v8.pdf"
+  },
+  "san_juan_cancuc": {
+    "password": "dud4II$X",
+    "municipio": "San Juan Cancuc",
+    "archivo": "Diagnostico_Electoral_San_Juan_Cancuc_v8.pdf"
+  },
+  "san_lucas": {
+    "password": "UxFdl8%g",
+    "municipio": "San Lucas",
+    "archivo": "Diagnostico_Electoral_San_Lucas_v8.pdf"
+  },
+  "santiago_el_pinar": {
+    "password": "NiVmq@v0",
+    "municipio": "Santiago El Pinar",
+    "archivo": "Diagnostico_Electoral_Santiago_El_Pinar_v8.pdf"
+  },
+  "siltepec": {
+    "password": "FDL%0q8A",
+    "municipio": "Siltepec",
+    "archivo": "Diagnostico_Electoral_Siltepec_v8.pdf"
+  },
+  "simojovel": {
+    "password": "p@dTmIb0",
+    "municipio": "Simojovel",
+    "archivo": "Diagnostico_Electoral_Simojovel_v8.pdf"
+  },
+  "sitala": {
+    "password": "N22Cff3%",
+    "municipio": "Sitala",
+    "archivo": "Diagnostico_Electoral_Sitala_v8.pdf"
+  },
+  "socoltenango": {
+    "password": "5xDXZy1!",
+    "municipio": "Socoltenango",
+    "archivo": "Diagnostico_Electoral_Socoltenango_v8.pdf"
+  },
+  "solosuchiapa": {
+    "password": "o$xoIA30",
+    "municipio": "Solosuchiapa",
+    "archivo": "Diagnostico_Electoral_Solosuchiapa_v8.pdf"
+  },
+  "soyalo": {
+    "password": "2junOj#Q",
+    "municipio": "Soyalo",
+    "archivo": "Diagnostico_Electoral_Soyalo_v8.pdf"
+  },
+  "suchiapa": {
+    "password": "frgU6UL@",
+    "municipio": "Suchiapa",
+    "archivo": "Diagnostico_Electoral_Suchiapa_v8.pdf"
+  },
+  "suchiate": {
+    "password": "Xe%9pbCa",
+    "municipio": "Suchiate",
+    "archivo": "Diagnostico_Electoral_Suchiate_v8.pdf"
+  },
+  "sunuapa": {
+    "password": "eHVgF#H1",
+    "municipio": "Sunuapa",
+    "archivo": "Diagnostico_Electoral_Sunuapa_v8.pdf"
+  },
+  "tapachula": {
+    "password": "Ze9q#OlA",
+    "municipio": "Tapachula",
+    "archivo": "Diagnostico_Electoral_Tapachula_v8.pdf"
+  },
+  "tapalapa": {
+    "password": "e3340!1X",
+    "municipio": "Tapalapa",
+    "archivo": "Diagnostico_Electoral_Tapalapa_v8.pdf"
+  },
+  "tapilula": {
+    "password": "%kqBfBw1",
+    "municipio": "Tapilula",
+    "archivo": "Diagnostico_Electoral_Tapilula_v8.pdf"
+  },
+  "tecpatan": {
+    "password": "1XG$eKEd",
+    "municipio": "Tecpatan",
+    "archivo": "Diagnostico_Electoral_Tecpatan_v8.pdf"
+  },
+  "tenejapa": {
+    "password": "W@xbRhr3",
+    "municipio": "Tenejapa",
+    "archivo": "Diagnostico_Electoral_Tenejapa_v8.pdf"
+  },
+  "teopisca": {
+    "password": "zY3y!Hoe",
+    "municipio": "Teopisca",
+    "archivo": "Diagnostico_Electoral_Teopisca_v8.pdf"
+  },
+  "tila": {
+    "password": "ni%Yj1KV",
+    "municipio": "Tila",
+    "archivo": "Diagnostico_Electoral_Tila_v8.pdf"
+  },
+  "tonala": {
+    "password": "mXu$6R44",
+    "municipio": "Tonala",
+    "archivo": "Diagnostico_Electoral_Tonala_v8.pdf"
+  },
+  "totolapa": {
+    "password": "2cuhWu$B",
+    "municipio": "Totolapa",
+    "archivo": "Diagnostico_Electoral_Totolapa_v8.pdf"
+  },
+  "tumbala": {
+    "password": "6f#uRRec",
+    "municipio": "Tumbala",
+    "archivo": "Diagnostico_Electoral_Tumbala_v8.pdf"
+  },
+  "tuxtla_chico": {
+    "password": "3Q1snD7#",
+    "municipio": "Tuxtla Chico",
+    "archivo": "Diagnostico_Electoral_Tuxtla_Chico_v8.pdf"
+  },
+  "tuxtla_gutierrez": {
+    "password": "0%AHXqfk",
+    "municipio": "Tuxtla Gutierrez",
+    "archivo": "Diagnostico_Electoral_Tuxtla_Gutierrez_v8.pdf"
+  },
+  "tuzantan": {
+    "password": "$JVl0ut6",
+    "municipio": "Tuzantan",
+    "archivo": "Diagnostico_Electoral_Tuzantan_v8.pdf"
+  },
+  "tzimol": {
+    "password": "KET91%qc",
+    "municipio": "Tzimol",
+    "archivo": "Diagnostico_Electoral_Tzimol_v8.pdf"
+  },
+  "union_juarez": {
+    "password": "jw6uKkB#",
+    "municipio": "Union Juarez",
+    "archivo": "Diagnostico_Electoral_Union_Juarez_v8.pdf"
+  },
+  "venustiano_carranza": {
+    "password": "GgkW4V@e",
+    "municipio": "Venustiano Carranza",
+    "archivo": "Diagnostico_Electoral_Venustiano_Carranza_v8.pdf"
+  },
+  "villa_corzo": {
+    "password": "lbWi#LZ3",
+    "municipio": "Villa Corzo",
+    "archivo": "Diagnostico_Electoral_Villa_Corzo_v8.pdf"
+  },
+  "villacomaltitlan": {
+    "password": "CEtm6@UA",
+    "municipio": "Villacomaltitlan",
+    "archivo": "Diagnostico_Electoral_Villacomaltitlan_v8.pdf"
+  },
+  "villaflores": {
+    "password": "cSD#3nRA",
+    "municipio": "Villaflores",
+    "archivo": "Diagnostico_Electoral_Villaflores_v8.pdf"
+  },
+  "yajalon": {
+    "password": "obi$4OIJ",
+    "municipio": "Yajalon",
+    "archivo": "Diagnostico_Electoral_Yajalon_v8.pdf"
+  },
+  "zinacantan": {
+    "password": "z3t!39H2",
+    "municipio": "Zinacantan",
+    "archivo": "Diagnostico_Electoral_Zinacantan_v8.pdf"
+  }
+}

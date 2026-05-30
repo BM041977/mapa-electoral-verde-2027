@@ -172,6 +172,28 @@ def diagnosticos():
     ]
     return render_template("diagnosticos.html", municipios=municipios, owner=OWNER)
 
+
+@app.route("/ver-pdf/<municipio>")
+@login_required
+def ver_pdf(municipio):
+    pdf_dir = os.path.join(app.static_folder, "pdfs")
+    archivos = [f for f in os.listdir(pdf_dir) if f.endswith(".pdf")]
+    archivo = next((f for f in archivos if municipio in f), None)
+    if not archivo:
+        return "PDF no encontrado", 404
+    return render_template("visor_pdf.html", municipio=municipio.replace("_", " "), owner=OWNER)
+
+
+@app.route("/ver-pdf/<municipio>")
+@login_required
+def ver_pdf(municipio):
+    pdf_dir = os.path.join(app.static_folder, "pdfs")
+    archivos = [f for f in os.listdir(pdf_dir) if f.endswith(".pdf")]
+    archivo = next((f for f in archivos if municipio in f), None)
+    if not archivo:
+        return "PDF no encontrado", 404
+    return render_template("visor_pdf.html", municipio=municipio.replace("_", " "), owner=OWNER)
+
 # -----------------------------
 # GEOJSON (protegido)
 # -----------------------------

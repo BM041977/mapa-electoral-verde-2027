@@ -178,6 +178,10 @@ def mapa_partidos():
 def diagnosticos():
     pdf_dir = os.path.join(app.static_folder, "pdfs")
     archivos = sorted([f for f in os.listdir(pdf_dir) if f.endswith(".pdf")])
+    es_maestro = session.get("es_maestro", True)
+    municipio_sesion = session.get("municipio", "")
+    if not es_maestro and municipio_sesion:
+        archivos = [f for f in archivos if municipio_sesion.replace(" ", "_") in f]
     municipios = [
         {
             "archivo": f,

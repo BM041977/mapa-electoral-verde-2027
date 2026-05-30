@@ -618,7 +618,7 @@ footer a:hover { color: var(--accent); }
         </a>
         <div class="eyebrow">Elección · Chiapas 2027</div>
         <h1>Datos <em>por sección</em><br>de los 124 municipios.</h1>
-        <p class="lead">{{ meta.total_secciones }} secciones · {{ meta.municipios|length }} municipios · Filtra, busca y exporta. Fuente: {{ meta.fuente }}</p>
+        
     </header>
 
     <!-- FILTROS -->
@@ -647,12 +647,12 @@ footer a:hover { color: var(--accent); }
                     <th>Municipio</th>
                     <th>Sección</th>
                     <th>Dist. Local</th>
-                    <th>L.N. 2024</th>
+                    <th>L.N. 2027</th>
                     <th>Ganador</th>
                     <th>Votos</th>
                     <th>% Ganador</th>
                     <th>Margen</th>
-                    <th>% Part. 2024</th>
+                    <th>% Part. 2027</th>
                     <th>Tend. 2027</th>
                     <th>Detalle</th>
                 </tr>
@@ -662,7 +662,7 @@ footer a:hover { color: var(--accent); }
     </div>
 
     <footer>
-        <span>© {{ owner }} · Ayuntamientos Chiapas 2024</span>
+        <span>© {{ owner }} · Ayuntamientos Chiapas 2027</span>
         <span>
             <a href="/inicio">Inicio</a>
             <a href="/logout">Cerrar sesión</a>
@@ -781,7 +781,7 @@ function abrirModal(idSeccion) {
       <div class="stats-grid">
         <div class="stat"><span class="stat-label">Listado Nominal</span><span class="stat-value">${fmtNum(s.listado_nominal)}</span></div>
         <div class="stat"><span class="stat-label">Total votos</span><span class="stat-value">${fmtNum(s.total_votos)}</span></div>
-        <div class="stat"><span class="stat-label">Participación</span><span class="stat-value">${fmtPct(s.participacion_2024)}</span></div>
+        <div class="stat"><span class="stat-label">Participación</span><span class="stat-value">${fmtPct(s.participacion_2027)}</span></div>
       </div>
     `;
 
@@ -863,7 +863,7 @@ document.addEventListener('keydown', e => {
                 { data: 'votos_ganador', render: fmtNum, className: 'num' },
                 { data: 'pct_ganador',   render: fmtPct, className: 'num' },
                 { data: 'margen',        render: fmtNum, className: 'num' },
-                { data: 'participacion_2024', render: fmtPct, className: 'num' },
+                { data: 'participacion_2027', render: fmtPct, className: 'num' },
                 { data: 'tendencia_2027',     render: fmtPct, className: 'num' },
                 {
                     data: 'id_seccion',

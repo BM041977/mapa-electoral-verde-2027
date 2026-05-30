@@ -7,30 +7,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-    font-family: 'Manrope', sans-serif;
-    background: #FBF9F4;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-header {
-    padding: 16px 32px;
-    border-bottom: 1px solid #E8E4DC;
-    background: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-.header-left {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.back-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size:
+body { font-family: 'Manrope', sans-serif; background: #FBF9F4; min-height: 100vh; display: flex; flex-direction: column; }
+header { padding: 14px 28px; border-bottom: 1px solid #E8E4DC; background: #fff; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.back-link { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: #5A5A5A; text-decoration: none; }
+.back-link:hover { color: #1A1A1A; }
+.back-link svg { width: 14px; height: 14px; }
+.titulo { font-family: 'Fraunces', serif; font-weight: 500; font-size: 17px; color: #1A1A1A; }
+.subtitulo { font-size: 12px; color: #5A5A5A; margin-top: 2px; }
+.contacto { font-size: 13px; color: #5A5A5A; text-align: right; }
+.contacto strong { display: block; color: #1A1A1A; font-weight: 600; margin-bottom: 2px; }
+.visor { flex: 1; width: 100%; height: calc(100vh - 72px); border: none; }
+</style>
+</head>
+<body>
+<header>
+    <div style="display:flex;align-items:center;gap:20px;">
+        <a class="back-link" href="/diagnosticos">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+            Regresar
+        </a>
+        <div>
+            <div class="titulo">{{ municipio }}</div>
+            <div class="subtitulo">Diagnóstico Electoral · Chiapas 2027</div>
+        </div>
+    </div>
+    <div class="contacto">
+        <strong>¿Necesitas este diagnóstico?</strong>
+        Baldemar Maza · 961 217 0091
+    </div>
+</header>
+<iframe class="visor" src="/static/pdfs/Diagnostico_Electoral_{{ municipio | replace(' ', '_') }}_v8.pdf#toolbar=0&navpanes=0"></iframe>
+</body>
+</html>

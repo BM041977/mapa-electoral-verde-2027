@@ -82,6 +82,21 @@ def login_required(f):
         return f(*args, **kwargs)
     return wrapper
 
+
+def nombre_bonito(archivo):
+    nombre = archivo.replace("Diagnostico_Electoral_", "").replace("_v8.pdf", "")
+    palabras = nombre.split("_")
+    minusculas = {"De", "Del", "La", "Las", "Los", "El", "Y", "A"}
+    resultado = []
+    for i, p in enumerate(palabras):
+        if i == 0:
+            resultado.append(p.capitalize())
+        elif p in minusculas:
+            resultado.append(p.lower())
+        else:
+            resultado.append(p.capitalize())
+    return " ".join(resultado)
+
 # -----------------------------
 # LOGIN
 # -----------------------------
@@ -140,6 +155,22 @@ def mapa():
 def mapa_partidos():
     # Mismo razonamiento: 3.7 MB, mejor servirlo crudo sin Jinja.
     return send_file(MAPA_PARTIDOS_HTML)
+
+
+@app.route("/diagnosticos")
+@login_required
+def diagnosticos():
+    pdf_dir = os.path.join(app.static_folder, "pdfs")
+    archivos = sorted([f for f in os.listdir(pdf_dir) if f.endswith(".pdf")])
+    municipios = [
+        {
+            "archivo": f,
+            "nombre": nombre_bonito(f),
+            "url": f"/static/pdfs/{f}"
+        }
+        for f in archivos
+    ]
+    return render_template("diagnosticos.html", municipios=municipios, owner=OWNER)
 
 # -----------------------------
 # GEOJSON (protegido)

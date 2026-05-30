@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BaldemarMaza.com – Diagnósticos Municipales Chiapas 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --bg:           #FBF9F4;
+    --bg-card:      #FFFFFF;
+    --ink:          #1A1A1A;
+    --ink-soft:     #5A5A5A;
+    --line:         #E8E4DC;
+    --accent:       #2D2D2D;
+    --accent-soft:  #ECECEC;
+    --shadow-sm:    0 1px 2px rgba(26,26,26,0.04);
+    --shadow-md:    0 8px 24px rgba(26,26,26,0.08);
+    --shadow-lg:    0 16px 48px rgba(26,26,26,0.18);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Manrope', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+}
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(circle at 1px 1px, rgba(26,26,26,0.04) 1px, transparent 0);
+    background-size: 24px 24px;
+    pointer-events: none;
+    z-index: 0;
+}
+.wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 32px 120px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    animation: fadeUp 0.6s ease-out;
+}
+.brand-mark {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    background: var(--ink);
+    position: relative; flex-shrink: 0;
+}
+.brand-mark::before {
+    content: '';
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px; height: 14px;
+    border: 2px solid #888; border-radius: 50%;
+}
+.brand-mark::after {
+    content: '';
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px; height: 4px;
+    background: #888; border-radius: 50%;
+}
+.brand-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 600; font-size: 18px;
+    letter-spacing: -0.01em; color: var(--ink);
+}
+.brand-tld { color: var(--ink-soft); font-weight: 500; }
+.back-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 13px; font-weight: 600;
+    color: var(--ink-soft); text-decoration: none;
+    margin-bottom: 40px;
+    transition: color 0.2s ease;
+    animation: fadeUp 0.65s ease-out;
+}
+.back-link:hover { color: var(--ink); }
+.back-link svg { width: 14px; height: 14px; }
+header {
+    margin-bottom: 40px;
+    animation: fadeUp 0.7s ease-out;
+}
+.eyebrow {
+    font-size: 13px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 16px;
+}
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(30px, 4.5vw, 48px);
+    line-height: 1.05; letter-spacing: -0.02em;
+    color: var(--ink); max-width: 720px;
+}
+h1 em { font-style: italic; font-weight: 400; color: var(--ink-soft); }
+.lead {
+    margin-top: 16px; font-size: 16px;
+    line-height: 1.55; color: var(--ink-soft); max-width: 560px;
+}
+
+/* BÚSQUEDA */
+.search-bar {
+    margin-bottom: 40px;
+    animation: fadeUp 0.75s ease-out;
+}
+.search-input {
+    width: 100%; max-width: 480px;
+    padding: 12px 16px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px; font-weight: 500;
+    color: var(--ink);
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: var(--shadow-sm);
+}
+.search-input::placeholder { color: var(--ink-soft); }
+.search-input:focus {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-md);
+}
+.results-count {
+    margin-top: 10px;
+    font-size: 13px; color: var(--ink-soft);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    flex: 1;
+}
+.muni-card {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 24px 20px 20px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    animation: fadeUp 0.7s ease-out backwards;
+}
+.muni-card::after {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 3px; background: var(--accent);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.muni-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent);
+}
+.muni-card:hover::after { transform: scaleX(1); }
+.muni-card.hidden { display: none; }
+
+.card-icon {
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.25s ease;
+    flex-shrink: 0;
+}
+.muni-card:hover .card-icon { background: var(--accent); color: white; }
+.card-icon svg { width: 20px; height: 20px; }
+
+.muni-nombre {
+    font-family: 'Fraunces', serif;
+    font-weight: 500; font-size: 17px;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    flex: 1;
+}
+.card-cta {
+    font-size: 12px; font-weight: 600;
+    color: var(--ink-soft);
+    display: flex; align-items: center; gap: 4px;
+    transition: color 0.2s ease;
+}
+.muni-card:hover .card-cta { color: var(--accent); }
+.card-cta svg { width: 12px; height: 12px; transition: transform 0.25s ease; }
+.muni-card:hover .card-cta svg { transform: translateX(3px); }
+
+.no-resultados {
+    display: none;
+    grid-column: 1/-1;
+    padding: 48px 0;
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 15px;
+}
+
+/* FOOTER / CONTADOR */
+#contador {
+    position: fixed; bottom: 20px; left: 20px; z-index: 9999;
+    background: white; padding: 10px 16px; border-radius: 999px;
+    border: 1px solid var(--line);
+    font-family: 'Manrope', sans-serif; font-size: 13px; font-weight: 500;
+    color: var(--ink-soft); box-shadow: var(--shadow-sm);
+    display: flex; align-items: center; gap: 8px;
+    transition: all 0.3s ease;
+}
+#contador::before {
+    content: ''; width: 6px; height: 6px;
+    background: #888; border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+#contador.alerta { background: #FEF2F2; color: #B91C1C; border-color: #FECACA; font-weight: 600; }
+#contador.alerta::before { background: #DC2626; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+@keyframes fadeUp { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }
+
+footer {
+    margin-top: 64px; padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 13px; color: var(--ink-soft);
+    display: flex; justify-content: space-between; align-items: center;
+}
+.logout-link {
+    color: var(--ink-soft); text-decoration: none;
+    font-weight: 500; transition: color 0.2s ease;
+}
+.logout-link:hover { color: var(--accent); }
+
+@media (max-width: 640px) {
+    .wrap { padding: 40px 16px 100px; }
+    .grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+    footer { flex-direction: column; gap: 8px; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="brand">
+        <span class="brand-mark"></span>
+        <span class="brand-name">BaldemarMaza<span class="brand-tld">.com</span></span>
+    </div>
+
+    <a class="back-link" href="/inicio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 5l-7 7 7 7"/>
+        </svg>
+        Volver al inicio
+    </a>
+
+    <header>
+        <div class="eyebrow">Chiapas · Elección 2027</div>
+        <h1>Diagnósticos <em>electorales</em><br>municipales.</h1>
+        <p class="lead">123 municipios analizados. Descarga el PDF de cada municipio con el diagnóstico completo de secciones, partidos y tendencias para 2027.</p>
+    </header>
+
+    <div class="search-bar">
+        <input
+            class="search-input"
+            type="text"
+            id="buscador"
+            placeholder="Buscar municipio…"
+            autocomplete="off"
+            spellcheck="false"
+        >
+        <div class="results-count" id="contador-resultados">123 municipios</div>
+    </div>
+
+    <div class="grid" id="grid">
+        {% for muni in municipios %}
+        <a class="muni-card" href="{{ muni.url }}" download="{{ muni.archivo }}">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                </svg>
+            </div>
+            <div class="muni-nombre">{{ muni.nombre }}</div>
+            <div class="card-cta">
+                Descargar PDF
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M13 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        {% endfor %}
+        <div class="no-resultados" id="no-resultados">
+            No se encontró ningún municipio con ese nombre.
+        </div>
+    </div>
+
+    <footer>
+        <span>© {{ owner }} · Diagnósticos Chiapas 2027</span>
+        <a href="/logout" class="logout-link">Cerrar sesión</a>
+    </footer>
+
+</div>
+
+<div id="contador" aria-live="polite">⏳ 20:00</div>
+
+<script>
+(function () {
+    const DURACION_MS = 1200000;
+    const UMBRAL = 30;
+    const expira = Date.now() + DURACION_MS;
+    const c = document.getElementById('contador');
+    let expirado = false, iv;
+    function tick() {
+        const r = Math.max(0, Math.ceil((expira - Date.now()) / 1000));
+        const min = Math.floor(r / 60);
+        const sec = r % 60;
+        c.textContent = '⏳ ' + min + ':' + (sec < 10 ? '0' : '') + sec;
+        if (r <= UMBRAL && r > 0) c.classList.add('alerta');
+        if (r <= 0 && !expirado) {
+            expirado = true; clearInterval(iv);
+            alert('Sesión expirada');
+            window.location.href = '/logout';
+        }
+    }
+    tick();
+    iv = setInterval(tick, 1000);
+})();
+
+// Buscador
+(function () {
+    const input = document.getElementById('buscador');
+    const cards = document.querySelectorAll('.muni-card');
+    const noRes = document.getElementById('no-resultados');
+    const contRes = document.getElementById('contador-resultados');
+    const total = cards.length;
+
+    input.addEventListener('input', function () {
+        const q = this.value.trim().toLowerCase()
+            .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        let visibles = 0;
+        cards.forEach(function (card) {
+            const nombre = card.querySelector('.muni-nombre').textContent.toLowerCase()
+                .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+            if (!q || nombre.includes(q)) {
+                card.classList.remove('hidden');
+                visibles++;
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+        noRes.style.display = visibles === 0 ? 'block' : 'none';
+        contRes.textContent = visibles === total
+            ? total + ' municipios'
+            : visibles + ' de ' + total + ' municipios';
+    });
+})();
+</script>
+</body>
+</html>

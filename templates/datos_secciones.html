@@ -895,6 +895,13 @@ document.addEventListener('keydown', e => {
         });
 
         /* Conectar filtros dropdown con DataTables */
+        const MUNICIPIO_FILTRO = '{{ municipio_filtro }}';
+        if (MUNICIPIO_FILTRO) {
+            document.getElementById('filter-municipio').value = MUNICIPIO_FILTRO;
+            DT.column(0).search('^' + MUNICIPIO_FILTRO + '$', true, false).draw();
+            document.getElementById('filter-municipio').disabled = true;
+            document.getElementById('clear-filters').style.display = 'none';
+        }
         const aplicarFiltros = () => {
             const mun = document.getElementById('filter-municipio').value;
             const dis = document.getElementById('filter-distrito').value;

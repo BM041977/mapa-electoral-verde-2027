@@ -896,15 +896,6 @@ document.addEventListener('keydown', e => {
         });
 
         /* Conectar filtros dropdown con DataTables */
-        const MUNICIPIO_FILTRO = '{{ municipio_filtro }}';
-        if (MUNICIPIO_FILTRO) {
-            document.getElementById('filter-municipio').value = MUNICIPIO_FILTRO;
-            DT.column(0).search('^' + MUNICIPIO_FILTRO + '$', true, false).draw();
-            document.getElementById('filter-municipio').disabled = true;
-            document.getElementById('clear-filters').classList.add('filtros-ocultos');
-            document.getElementById('filter-distrito').closest('div').classList.add('filtros-ocultos');
-            document.getElementById('filter-partido').closest('div').classList.add('filtros-ocultos');
-        }
         const aplicarFiltros = () => {
             const mun = document.getElementById('filter-municipio').value;
             const dis = document.getElementById('filter-distrito').value;
@@ -915,6 +906,15 @@ document.addEventListener('keydown', e => {
             DT.column(4).search(par ? `^${par}$` : '', true, false);
             DT.draw();
         };
+        const MUNICIPIO_FILTRO = '{{ municipio_filtro }}';
+        if (MUNICIPIO_FILTRO) {
+            document.getElementById('filter-municipio').value = MUNICIPIO_FILTRO;
+            aplicarFiltros();
+            document.getElementById('filter-municipio').disabled = true;
+            document.getElementById('clear-filters').classList.add('filtros-ocultos');
+            document.getElementById('filter-distrito').closest('div').classList.add('filtros-ocultos');
+            document.getElementById('filter-partido').closest('div').classList.add('filtros-ocultos');
+        }
 
         ['filter-municipio','filter-distrito','filter-partido'].forEach(id => {
             document.getElementById(id).addEventListener('change', aplicarFiltros);

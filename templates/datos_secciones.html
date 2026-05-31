@@ -908,6 +908,13 @@ document.addEventListener('keydown', e => {
         };
         const MUNICIPIO_FILTRO = '{{ municipio_filtro }}';
         if (MUNICIPIO_FILTRO) {
+            const dataMuni = DATA.filter(s => s.municipio === MUNICIPIO_FILTRO.toUpperCase());
+            const d = document.getElementById('filter-distrito');
+            const p = document.getElementById('filter-partido');
+            d.innerHTML = '<option value="">Todos</option>';
+            p.innerHTML = '<option value="">Todos</option>';
+            [...new Set(dataMuni.map(s => s.distrito_local_id).filter(v => v != null))].sort((a,b)=>a-b).forEach(v => d.insertAdjacentHTML('beforeend', `<option value="${v}">Distrito ${v}</option>`));
+            [...new Set(dataMuni.map(s => s.partido_ganador).filter(Boolean))].sort().forEach(v => p.insertAdjacentHTML('beforeend', `<option value="${v}">${v}</option>`));
             DT.column(0).search('^' + MUNICIPIO_FILTRO.toUpperCase() + '$', true, false).draw();
             document.getElementById('filter-municipio').disabled = true;
         }

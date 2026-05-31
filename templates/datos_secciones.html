@@ -901,7 +901,11 @@ document.addEventListener('keydown', e => {
             const dis = document.getElementById('filter-distrito').value;
             const par = document.getElementById('filter-partido').value;
 
-            DT.column(0).search(mun ? `^${mun}$` : '', true, false);
+            if (MUNICIPIO_FILTRO) {
+                DT.column(0).search('^' + MUNICIPIO_FILTRO.toUpperCase() + '$', true, false);
+            } else {
+                DT.column(0).search(mun ? `^${mun}$` : '', true, false);
+            }
             DT.column(2).search(dis ? `^${dis}$` : '', true, false);
             DT.column(4).search(par ? `^${par}$` : '', true, false);
             DT.draw();

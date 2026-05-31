@@ -136,7 +136,8 @@ def inicio():
 @app.route("/mapa")
 @login_required
 def mapa():
-    es_maestro = session.get("es_maestro", True)
+    return send_file(MAPA_HTML)    
+es_maestro = session.get("es_maestro", True)
     municipio_filtro = "" if es_maestro else session.get("municipio", "")
     return render_template("mapa_ligero.html", municipio_filtro=municipio_filtro)
  
@@ -144,6 +145,7 @@ def mapa():
 @app.route("/mapa-partidos")
 @login_required
 def mapa_partidos():
+    return send_file(MAPA_PARTIDOS_HTML)
     es_maestro = session.get("es_maestro", True)
     municipio_filtro = "" if es_maestro else session.get("municipio", "")
     return render_template("mapa_por_partido.html", municipio_filtro=municipio_filtro)

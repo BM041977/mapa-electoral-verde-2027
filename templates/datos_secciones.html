@@ -910,9 +910,6 @@ document.addEventListener('keydown', e => {
         if (MUNICIPIO_FILTRO) {
             DT.column(0).search('^' + MUNICIPIO_FILTRO.toUpperCase() + '$', true, false).draw();
             document.getElementById('filter-municipio').disabled = true;
-            document.getElementById('clear-filters').classList.add('filtros-ocultos');
-            document.getElementById('filter-distrito').closest('div').classList.add('filtros-ocultos');
-            document.getElementById('filter-partido').closest('div').classList.add('filtros-ocultos');
         }
 
         ['filter-municipio','filter-distrito','filter-partido'].forEach(id => {
@@ -920,10 +917,14 @@ document.addEventListener('keydown', e => {
         });
 
         document.getElementById('clear-filters').addEventListener('click', () => {
-            document.getElementById('filter-municipio').value = '';
+            if (!MUNICIPIO_FILTRO) document.getElementById('filter-municipio').value = '';
             document.getElementById('filter-distrito').value = '';
             document.getElementById('filter-partido').value  = '';
-            DT.search('').columns().search('').draw();
+            DT.column(1).search('');
+            DT.column(2).search('');
+            DT.column(4).search('');
+            if (!MUNICIPIO_FILTRO) DT.column(0).search('');
+            DT.draw();
         });
 
         /* Click en botón "Ver" abre modal */

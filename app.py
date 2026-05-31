@@ -220,7 +220,9 @@ def geojson_secciones():
 def datos_secciones():
     """Página HTML con tabla interactiva DataTables."""
     data = _cargar_secciones()
-    return render_template("datos_secciones.html", meta=data["meta"])
+    es_maestro = session.get("es_maestro", True)
+    municipio_filtro = "" if es_maestro else session.get("municipio", "")
+    return render_template("datos_secciones.html", meta=data["meta"], municipio_filtro=municipio_filtro)
 
 @app.route("/api/secciones")
 @login_required

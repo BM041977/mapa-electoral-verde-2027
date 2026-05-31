@@ -908,7 +908,7 @@ document.addEventListener('keydown', e => {
         };
         const MUNICIPIO_FILTRO = '{{ municipio_filtro }}';
         if (MUNICIPIO_FILTRO) {
-            DT.column(0).search('^' + MUNICIPIO_FILTRO + '$', true, false).draw();
+            DT.column(0).search('^' + MUNICIPIO_FILTRO.toUpperCase() + '$', true, false).draw();
             document.getElementById('filter-municipio').disabled = true;
             document.getElementById('clear-filters').classList.add('filtros-ocultos');
             document.getElementById('filter-distrito').closest('div').classList.add('filtros-ocultos');

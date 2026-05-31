@@ -118,16 +118,19 @@ def inicio():
 @app.route("/mapa")
 @login_required
 def mapa():
-    es_maestro = session.get("es_maestro", True)
-    municipio_filtro = "" if es_maestro else session.get("municipio", "")
-    return render_template("mapa_ligero.html", municipio_filtro=municipio_filtro)
+    return send_file(MAPA_HTML)
 
 @app.route("/mapa-partidos")
 @login_required
 def mapa_partidos():
+    return send_file(MAPA_PARTIDOS_HTML)
+
+@app.route("/api/mi-municipio")
+@login_required
+def api_mi_municipio():
     es_maestro = session.get("es_maestro", True)
-    municipio_filtro = "" if es_maestro else session.get("municipio", "")
-    return render_template("mapa_por_partido.html", municipio_filtro=municipio_filtro)
+    municipio = "" if es_maestro else session.get("municipio", "")
+    return jsonify({"municipio": municipio})
 
 @app.route("/diagnosticos")
 @login_required

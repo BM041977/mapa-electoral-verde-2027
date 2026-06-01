@@ -106,7 +106,7 @@ def login():
                 session["municipio"] = usuarios_muni[usuario]["municipio"]
                 session.permanent = True
                 muni_url = usuarios_muni[usuario]["municipio"].replace(" ", "_")
-                return redirect(f"/ver-pdf/{muni_url}")
+                return redirect("/inicio")
         return render_template("login.html", error="Usuario o contraseña incorrectos")
     return render_template("login.html")
 

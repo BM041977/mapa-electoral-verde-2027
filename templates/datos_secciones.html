@@ -891,7 +891,7 @@ document.addEventListener('keydown', e => {
             },
             layout: { topStart: 'buttons', topEnd: 'search' },
             buttons: [
-                  // sin botón Detalle
+                {% if es_maestro %}{ extend: 'csv', text: 'Exportar CSV', filename: 'secciones_chiapas_2027', exportOptions: { columns: [0,1,2,3,4,5,6,7,8,9] } }{% endif %}
             ],
         });
 

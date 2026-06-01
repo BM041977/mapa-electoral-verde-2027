@@ -891,7 +891,29 @@ document.addEventListener('keydown', e => {
             },
             layout: { topStart: 'buttons', topEnd: 'search' },
             buttons: [
-                {% if es_maestro %}{ extend: 'csv', text: 'Exportar CSV', filename: 'secciones_chiapas_2027', bom: true, exportOptions: { columns: [0,1,2,3,4,5,6,7,8,9] } }{% endif %}
+                {% if es_maestro %}{ text: '⬇ Exportar Excel', className: 'dt-button', action: function(e, dt, node, config) {
+                        var data = dt.rows({search:'applied'}).data().toArray();
+                        var headers = ['Municipio','Sección','Dist. Local','L.N. 2027','Ganador','Votos','% Ganador','Margen','% Part. 2027','Tend. 2027'];
+                        var rows = data.map(function(r) {
+                            return [
+                                r.municipio || '',
+                                r.seccion || '',
+                                r.distrito_local_id || '',
+                                r.listado_nominal || '',
+                                r.partido_ganador || '',
+                                r.votos_ganador || '',
+                                r.pct_ganador ? parseFloat((r.pct_ganador*100).toFixed(1)) : '',
+                                r.margen || '',
+                                r.participacion_2027 ? parseFloat((r.participacion_2027*100).toFixed(1)) : '',
+                                r.tendencia_2027 ? parseFloat((r.tendencia_2027*100).toFixed(1)) : ''
+                            ];
+                        });
+                        var ws = XLSX.utils.aoa_to_sheet([headers].concat(rows));
+                        ws['!cols'] = [{wch:22},{wch:10},{wch:12},{wch:12},{wch:10},{wch:10},{wch:12},{wch:10},{wch:14},{wch:12}];
+                        var wb = XLSX.utils.book_new();
+                        XLSX.utils.book_append_sheet(wb, ws, 'Secciones');
+                        XLSX.writeFile(wb, 'secciones_chiapas_2027.xlsx');
+                    }}{% endif %}
             ],
         });
 

@@ -166,7 +166,7 @@ def datos_secciones():
     data = _cargar_secciones()
     es_maestro = session.get("es_maestro", True)
     municipio_filtro = "" if es_maestro else session.get("municipio", "")
-    return render_template("datos_secciones.html", meta=data["meta"], municipio_filtro=municipio_filtro)
+    return render_template("datos_secciones.html", meta=data["meta"], municipio_filtro=municipio_filtro, es_maestro=es_maestro)
 
 @app.route("/api/secciones")
 @login_required

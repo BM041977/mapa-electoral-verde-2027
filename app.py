@@ -152,7 +152,8 @@ def ver_pdf(municipio):
     archivo = next((f for f in archivos if municipio in f), None)
     if not archivo:
         return "PDF no encontrado", 404
-    return render_template("visor_pdf.html", municipio=municipio.replace("_", " "), owner=OWNER)
+    es_maestro = session.get("es_maestro", True)
+    return render_template("visor_pdf.html", municipio=municipio.replace("_", " "), owner=OWNER, es_maestro=es_maestro, archivo=archivo)
 
 @app.route("/geojson/secciones")
 @login_required

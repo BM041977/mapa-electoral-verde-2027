@@ -31,7 +31,7 @@ header { padding: 14px 28px; border-bottom: 1px solid #E8E4DC; background: #fff;
             <div class="subtitulo">Diagnóstico Electoral · Chiapas 2027</div>
         </div>
     </div>
-    <div class="contacto">
+    {% if es_maestro %}<a href="/static/pdfs/{{ archivo }}" download="{{ archivo }}" style="font-size:13px;font-weight:600;color:#1A1A1A;text-decoration:none;background:#F0F0F0;padding:8px 16px;border-radius:8px;border:1px solid #E8E4DC;">⬇ Descargar PDF</a>{% endif %}<div class="contacto">
         <strong>¿Necesitas este diagnóstico?</strong>
         Baldemar Maza · 961 217 0091
     </div>

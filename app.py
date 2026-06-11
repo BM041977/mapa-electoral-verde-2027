@@ -23,7 +23,7 @@ app.config["SESSION_COOKIE_SECURE"]   = os.environ.get("HTTPS", "0") == "1"
 
 OWNER             = "Baldemar Maza León"
 TELEFONO          = "961 217 0091"
-AVISO_PROPIEDAD   = f"Este sistema es un desarrollo independiente propiedad de {OWNER} · {TELEFONO}"
+AVISO_PROPIEDAD   = f"Sistema desarrollado para este partido político por {OWNER} · {TELEFONO}"
 
 USER     = os.environ.get("APP_USER", "Baldemar")
 PASSWORD = os.environ.get("APP_PASSWORD", "Victoria@Ever")

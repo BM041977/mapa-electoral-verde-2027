@@ -782,7 +782,7 @@ function abrirModal(idSeccion) {
       <div class="stats-grid">
         <div class="stat"><span class="stat-label">Listado Nominal</span><span class="stat-value">${fmtNum(s.listado_nominal)}</span></div>
         <div class="stat"><span class="stat-label">Total votos</span><span class="stat-value">${fmtNum(s.total_votos)}</span></div>
-        <div class="stat"><span class="stat-label">Participación</span><span class="stat-value">${fmtPct(s.participacion_2027)}</span></div>
+        <div class="stat"><span class="stat-label">Participación</span><span class="stat-value">${s.listado_nominal && s.total_votos ? fmtPct(s.total_votos / s.listado_nominal) : '—'}</span></div>
       </div>
     `;
 

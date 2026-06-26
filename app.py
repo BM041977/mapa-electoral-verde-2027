@@ -23,7 +23,7 @@ app.config["SESSION_COOKIE_SECURE"]   = os.environ.get("HTTPS", "0") == "1"
 
 OWNER             = "Baldemar Maza León"
 TELEFONO          = "961 217 0091"
-AVISO_PROPIEDAD   = f"Sistema desarrollado para este partido político por {OWNER} · {TELEFONO}"
+AVISO_PROPIEDAD   = f"Este sistema es un desarrollo independiente propiedad de {OWNER} · {TELEFONO}"
 
 USER     = os.environ.get("APP_USER", "Baldemar")
 PASSWORD = os.environ.get("APP_PASSWORD", "Victoria@Ever")
@@ -31,6 +31,7 @@ PASSWORD = os.environ.get("APP_PASSWORD", "Victoria@Ever")
 BASE_DIR            = os.path.dirname(os.path.abspath(__file__))
 MAPA_HTML           = os.path.join(BASE_DIR, "templates", "mapa_ligero.html")
 MAPA_PARTIDOS_HTML  = os.path.join(BASE_DIR, "templates", "mapa_por_partido.html")
+HISTORICO_HTML      = os.path.join(BASE_DIR, "templates", "historico.html")
 GEOJSON_PATH        = os.path.join(BASE_DIR, "secciones_simplificado.geojson")
 SECCIONES_JSON_PATH = os.path.join(BASE_DIR, "secciones.json")
 
@@ -184,6 +185,87 @@ def api_meta():
 def logout():
     session.clear()
     return redirect("/")
+
+@app.route("/historico")
+@login_required
+def historico():
+    es_maestro = session.get("es_maestro", True)
+    municipio_usuario = "" if es_maestro else session.get("municipio", "")
+    return render_template(
+        "historico.html",
+        es_master=es_maestro,
+        municipio_usuario=municipio_usuario
+    )
+
+_candidatos_cache = None
+def _cargar_candidatos():
+    global _candidatos_cache
+    if _candidatos_cache is None:
+        path = os.path.join(app.static_folder, 'data', 'historico_candidatos.json')
+        with open(path, 'r', encoding='utf-8') as f:
+            _candidatos_cache = json.load(f)
+    return _candidatos_cache
+@app.route('/candidatos')
+@login_required
+def candidatos():
+    es_maestro = session.get("es_maestro", True)
+    if not es_maestro:
+        return "Acceso restringido", 403
+    return render_template('candidatos.html')
+@app.route('/api/candidatos/buscar')
+@login_required
+def api_buscar_candidatos():
+    es_maestro = session.get("es_maestro", True)
+    if not es_maestro:
+        return jsonify({"error": "no autorizado"}), 403
+    q = request.args.get('q', '').strip().upper()
+    if len(q) < 3:
+        return jsonify({"resultados": []})
+    data = _cargar_candidatos()
+    resultados = []
+    for nombre in data['perfiles'].keys():
+        if q in nombre:
+            resultados.append(nombre)
+            if len(resultados) >= 20:
+                break
+    return jsonify({"resultados": sorted(resultados)})
+@app.route('/api/candidatos/perfil')
+@login_required
+def api_perfil_candidato():
+    es_maestro = session.get("es_maestro", True)
+    if not es_maestro:
+        return jsonify({"error": "no autorizado"}), 403
+    nombre = request.args.get('nombre', '').strip().upper()
+    data = _cargar_candidatos()
+    perfil = data['perfiles'].get(nombre)
+    if not perfil:
+        return jsonify({"error": "no encontrado"}), 404
+    return jsonify(perfil)
+@app.route('/api/candidatos/municipio/<municipio>')
+@login_required
+def api_candidatos_municipio(municipio):
+    es_maestro = session.get("es_maestro", True)
+    municipio_sesion = session.get("municipio", "")
+    municipio_norm = municipio.strip().upper().replace('_', ' ')
+    if not es_maestro and municipio_norm != municipio_sesion.strip().upper():
+        return jsonify({"error": "no autorizado"}), 403
+    data = _cargar_candidatos()
+    resultado = []
+    for nombre, perfil in data['perfiles'].items():
+        if 'CANCELADO' in nombre.upper():
+            continue
+        if municipio_norm in perfil['municipios'] and perfil['total_participaciones'] > 1:
+            resultado.append({
+                'nombre': nombre,
+                'total_participaciones': perfil['total_participaciones'],
+                'anos': perfil['anos'],
+                'partidos': perfil['partidos'],
+                'veces_gano_presidente': perfil['veces_gano_presidente'],
+                'veces_candidato_presidente': perfil['veces_candidato_presidente'],
+                'posible_homonimo': perfil.get('posible_homonimo', False),
+            })
+    resultado.sort(key=lambda x: -x['total_participaciones'])
+    return jsonify({"candidatos": resultado})
 
 if __name__ == "__main__":
     app.run(debug=True)

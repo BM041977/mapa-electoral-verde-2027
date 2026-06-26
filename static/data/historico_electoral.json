@@ -1,0 +1,6329 @@
+{
+  "anos": [
+    1998,
+    2001,
+    2004,
+    2007,
+    2010,
+    2012,
+    2015,
+    2018,
+    2021,
+    2024
+  ],
+  "municipios": [
+    "ACACOYAGUA",
+    "ACALA",
+    "ACAPETAHUA",
+    "ALDAMA",
+    "ALTAMIRANO",
+    "AMATAN",
+    "AMATENANGO DE LA FRONTERA",
+    "AMATENANGO DEL VALLE",
+    "ANGEL ALBINO CORZO",
+    "ARRIAGA",
+    "BEJUCAL DE OCAMPO",
+    "BELISARIO DOMINGUEZ",
+    "BELLA VISTA",
+    "BENEMERITO DE LAS AMERICAS",
+    "BERRIOZABAL",
+    "BOCHIL",
+    "CACAHOATAN",
+    "CAPITAN LUIS ANGEL VIDAL",
+    "CATAZAJA",
+    "CHALCHIHUITAN",
+    "CHAMULA",
+    "CHANAL",
+    "CHAPULTENANGO",
+    "CHENALHO",
+    "CHIAPA DE CORZO",
+    "CHIAPILLA",
+    "CHICOASEN",
+    "CHICOMUSELO",
+    "CHILON",
+    "CINTALAPA",
+    "COAPILLA",
+    "COMITAN DE DOMINGUEZ",
+    "COPAINALA",
+    "EL BOSQUE",
+    "EL PARRAL",
+    "EL PORVENIR",
+    "EMILIANO ZAPATA",
+    "ESCUINTLA",
+    "FRANCISCO LEON",
+    "FRONTERA COMALAPA",
+    "FRONTERA HIDALGO",
+    "HONDURAS DE LA SIERRA",
+    "HUEHUETAN",
+    "HUITIUPAN",
+    "HUIXTAN",
+    "HUIXTLA",
+    "IXHUATAN",
+    "IXTACOMITAN",
+    "IXTAPA",
+    "IXTAPANGAJOYA",
+    "JIQUIPILAS",
+    "JITOTOL",
+    "JUAREZ",
+    "LA CONCORDIA",
+    "LA GRANDEZA",
+    "LA INDEPENDENCIA",
+    "LA LIBERTAD",
+    "LA TRINITARIA",
+    "LARRAINZAR",
+    "LAS MARGARITAS",
+    "LAS ROSAS",
+    "MAPASTEPEC",
+    "MARAVILLA TENEJAPA",
+    "MARQUES DE COMILLAS",
+    "MAZAPA DE MADERO",
+    "MAZATAN",
+    "METAPA DE DOMINGUEZ",
+    "MEZCALAPA",
+    "MITONTIC",
+    "MONTECRISTO DE GUERRERO",
+    "MOTOZINTLA",
+    "NICOLAS RUIZ",
+    "OCOSINGO",
+    "OCOTEPEC",
+    "OCOZOCOAUTLA DE ESPINOSA",
+    "OSTUACAN",
+    "OSUMACINTA",
+    "OXCHUC",
+    "PALENQUE",
+    "PANTELHO",
+    "PANTEPEC",
+    "PICHUCALCO",
+    "PIJIJIAPAN",
+    "PUEBLO NUEVO SOLISTAHUACAN",
+    "RAYON",
+    "REFORMA",
+    "RINCON CHAMULA SAN PEDRO",
+    "SABANILLA",
+    "SALTO DE AGUA",
+    "SAN ANDRES DURAZNAL",
+    "SAN CRISTOBAL DE LAS CASAS",
+    "SAN FERNANDO",
+    "SAN JUAN CANCUC",
+    "SAN LUCAS",
+    "SANTIAGO EL PINAR",
+    "SILTEPEC",
+    "SIMOJOVEL",
+    "SITALA",
+    "SOCOLTENANGO",
+    "SOLOSUCHIAPA",
+    "SOYALO",
+    "SUCHIAPA",
+    "SUCHIATE",
+    "SUNUAPA",
+    "TAPACHULA",
+    "TAPALAPA",
+    "TAPILULA",
+    "TECPATAN",
+    "TENEJAPA",
+    "TEOPISCA",
+    "TILA",
+    "TONALA",
+    "TOTOLAPA",
+    "TUMBALA",
+    "TUXTLA CHICO",
+    "TUXTLA GUTIERREZ",
+    "TUZANTAN",
+    "TZIMOL",
+    "UNION JUAREZ",
+    "VENUSTIANO CARRANZA",
+    "VILLA CORZO",
+    "VILLACOMALTITLAN",
+    "VILLAFLORES",
+    "YAJALON",
+    "ZINACANTAN"
+  ],
+  "partidos_colores": {
+    "PRI": "#E53935",
+    "COALICION": "#37474F",
+    "PAN": "#0066CC",
+    "PMCH": "#FF5722",
+    "PCHU": "#9C27B0",
+    "PVEM": "#00A65A",
+    "PRD": "#FFD600",
+    "MORENA": "#8B1E3F",
+    "PT": "#CC0000",
+    "RSP": "#795548",
+    "PANAL": "#FFD700",
+    "PSD": "#607D8B",
+    "PES": "#6A1B9A",
+    "MC": "#FF8C00",
+    "PORFIRIO CORREA LOPEZ": "#9E9E9E",
+    "LEOBARDO LOPEZ MORALES": "#9E9E9E",
+    "PAS": "#009688",
+    "INDEPENDIENTE": "#757575",
+    "POCH": "#3E2723"
+  },
+  "datos": {
+    "ACACOYAGUA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA PARA TODOS",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2018": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      }
+    },
+    "ACALA": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "COALICION",
+        "partido_original": "ALIANZA POR ACALA",
+        "color": "#37474F"
+      },
+      "2004": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2012": {
+        "partido": "PAN",
+        "partido_original": "COALICION PAN POCH",
+        "color": "#0066CC"
+      },
+      "2015": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2018": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2021": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "ACAPETAHUA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2004": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2007": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2010": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "ALDAMA": {
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "FUERZA Y CORAZON POR CHIAPAS",
+        "color": "#8B1E3F"
+      }
+    },
+    "ALTAMIRANO": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "AMATAN": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2004": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      }
+    },
+    "AMATENANGO DE LA FRONTERA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN AMATENANGO DE LA FRONTERA",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "AMATENANGO DEL VALLE": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRD",
+        "partido_original": "COALICION PRD PT MC",
+        "color": "#FFD600"
+      },
+      "2015": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2021": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "ANGEL ALBINO CORZO": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR ANGEL ALBINO CORZO",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PANAL",
+        "partido_original": "PANAL",
+        "color": "#FFD700"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "ARRIAGA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PT",
+        "partido_original": "PT CONVERGENCIA",
+        "color": "#CC0000"
+      },
+      "2010": {
+        "partido": "PSD",
+        "partido_original": "PSD",
+        "color": "#607D8B"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI POCH",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2018": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "BEJUCAL DE OCAMPO": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN BEJUCAL DE OCAMPO",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PT CONVERGENCIA",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRD",
+        "partido_original": "COALICION PRD PT MC",
+        "color": "#FFD600"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "PES",
+        "partido_original": "PES",
+        "color": "#6A1B9A"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "SEGUIREMOS HACIENDO HISTORIA EN CHIAPAS",
+        "color": "#8B1E3F"
+      }
+    },
+    "BELISARIO DOMINGUEZ": {
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      }
+    },
+    "BELLA VISTA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN BELLA VISTA",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI POCH",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2021": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "BENEMERITO DE LAS AMERICAS": {
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2018": {
+        "partido": "PANAL",
+        "partido_original": "PANAL",
+        "color": "#FFD700"
+      },
+      "2021": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2024": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      }
+    },
+    "BERRIOZABAL": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "BOCHIL": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN BOCHIL",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "COALICION",
+        "partido_original": "VA POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "CACAHOATAN": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2021": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "CAPITAN LUIS ANGEL VIDAL": {
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "CATAZAJA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN CATAZAJA",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI POCH",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "CHALCHIHUITAN": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2012": {
+        "partido": "PRD",
+        "partido_original": "COALICION PRD PT MC",
+        "color": "#FFD600"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "CHAMULA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2024": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "CHANAL": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2021": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2024": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      }
+    },
+    "CHAPULTENANGO": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2018": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2021": {
+        "partido": "COALICION",
+        "partido_original": "VA POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "CHENALHO": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      }
+    },
+    "CHIAPA DE CORZO": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "CHIAPILLA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "COALICION",
+        "partido_original": "ALIANZA POR CHIAPILLA",
+        "color": "#37474F"
+      },
+      "2004": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PAN",
+        "partido_original": "COALICION PAN POCH",
+        "color": "#0066CC"
+      },
+      "2015": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2018": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2021": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2024": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      }
+    },
+    "CHICOASEN": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2024": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      }
+    },
+    "CHICOMUSELO": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PT",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "CHILON": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "CINTALAPA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "COAPILLA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN COAPILLA",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "COMITAN DE DOMINGUEZ": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "COALICION",
+        "partido_original": "ALIANZA POR COMITAN",
+        "color": "#37474F"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PVEM CONVERGENCIA",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "COALICION",
+        "partido_original": "VA POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2024": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "COPAINALA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "COALICION",
+        "partido_original": "VA POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "EL BOSQUE": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2021": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2024": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      }
+    },
+    "EL PARRAL": {
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "EL PORVENIR": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2012": {
+        "partido": "PRD",
+        "partido_original": "COALICION PRD PT MC",
+        "color": "#FFD600"
+      },
+      "2015": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2018": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "EMILIANO ZAPATA": {
+      "2012": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2015": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "ESCUINTLA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "FRANCISCO LEON": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2012": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "FRONTERA COMALAPA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PANAL",
+        "partido_original": "PANAL",
+        "color": "#FFD700"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "FRONTERA HIDALGO": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "MC",
+        "partido_original": "CONVERGENCIA",
+        "color": "#FF8C00"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PAN",
+        "partido_original": "COALICION PAN POCH",
+        "color": "#0066CC"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      }
+    },
+    "HONDURAS DE LA SIERRA": {
+      "2024": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      }
+    },
+    "HUEHUETAN": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN HUEHUETAN",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      }
+    },
+    "HUITIUPAN": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD CONVERGENCIA",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "HUIXTAN": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRD",
+        "partido_original": "COALICION PRD PT MC",
+        "color": "#FFD600"
+      },
+      "2015": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2018": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2021": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2024": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "HUIXTLA": {
+      "1998": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2001": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN HUIXTLA",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "IXHUATAN": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PT CONVERGENCIA",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRD",
+        "partido_original": "COALICION PRD PT MC",
+        "color": "#FFD600"
+      },
+      "2015": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "SEGUIREMOS HACIENDO HISTORIA EN CHIAPAS",
+        "color": "#8B1E3F"
+      }
+    },
+    "IXTACOMITAN": {
+      "1998": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN IXTACOMITAN",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PAN",
+        "partido_original": "PAN PRD MC",
+        "color": "#0066CC"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "IXTAPA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "MC",
+        "partido_original": "CONVERGENCIA",
+        "color": "#FF8C00"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "IXTAPANGAJOYA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2004": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PAN",
+        "partido_original": "COALICION PAN POCH",
+        "color": "#0066CC"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2024": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      }
+    },
+    "JIQUIPILAS": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "COALICION",
+        "partido_original": "ALIANZA POR JIQUIPILAS",
+        "color": "#37474F"
+      },
+      "2004": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PT CONVERGENCIA",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "JITOTOL": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2021": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2024": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      }
+    },
+    "JUAREZ": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN JUAREZ",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "LA CONCORDIA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2004": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI PCHU",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2021": {
+        "partido": "PES",
+        "partido_original": "PES",
+        "color": "#6A1B9A"
+      },
+      "2024": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      }
+    },
+    "LA GRANDEZA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "MC",
+        "partido_original": "CONVERGENCIA",
+        "color": "#FF8C00"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PANAL",
+        "partido_original": "PANAL",
+        "color": "#FFD700"
+      },
+      "2021": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2024": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      }
+    },
+    "LA INDEPENDENCIA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD CONVERGENCIA",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "LA LIBERTAD": {
+      "1998": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2001": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2004": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2015": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2018": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2021": {
+        "partido": "PORFIRIO CORREA LOPEZ",
+        "partido_original": "PORFIRIO CORREA LOPEZ",
+        "color": "#9E9E9E"
+      },
+      "2024": {
+        "partido": "PORFIRIO CORREA LOPEZ",
+        "partido_original": "PORFIRIO CORREA LOPEZ",
+        "color": "#9E9E9E"
+      }
+    },
+    "LA TRINITARIA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PT",
+        "color": "#00A65A"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "LARRAINZAR": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2024": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      }
+    },
+    "LAS MARGARITAS": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PT CONVERGENCIA",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2021": {
+        "partido": "PES",
+        "partido_original": "PES",
+        "color": "#6A1B9A"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "LAS ROSAS": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PVEM PT",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2021": {
+        "partido": "COALICION",
+        "partido_original": "VA POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "MAPASTEPEC": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRD",
+        "partido_original": "COALICION PRD PT MC",
+        "color": "#FFD600"
+      },
+      "2015": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "MARAVILLA TENEJAPA": {
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PT CONVERGENCIA",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2018": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2021": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "MARQUES DE COMILLAS": {
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA PARA TODOS",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2024": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "MAZAPA DE MADERO": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2021": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2024": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      }
+    },
+    "MAZATAN": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PT CONVERGENCIA",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2021": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "METAPA DE DOMINGUEZ": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PANAL",
+        "partido_original": "PANAL",
+        "color": "#FFD700"
+      },
+      "2021": {
+        "partido": "LEOBARDO LOPEZ MORALES",
+        "partido_original": "LEOBARDO LOPEZ MORALES",
+        "color": "#9E9E9E"
+      },
+      "2024": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      }
+    },
+    "MEZCALAPA": {
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2021": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "MITONTIC": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PES",
+        "partido_original": "FUERZA POR MEXICO",
+        "color": "#6A1B9A"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "MONTECRISTO DE GUERRERO": {
+      "2001": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      }
+    },
+    "MOTOZINTLA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN MOTOZINTLA",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "NICOLAS RUIZ": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2004": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRD",
+        "partido_original": "COALICION PRD PT MC",
+        "color": "#FFD600"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "OCOSINGO": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "OCOTEPEC": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN OCOTEPEC",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PT",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2024": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "OCOZOCOAUTLA DE ESPINOSA": {
+      "1998": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "MC",
+        "partido_original": "MC",
+        "color": "#FF8C00"
+      },
+      "2018": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "OSTUACAN": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN OSTUACAN",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PANAL",
+        "partido_original": "PANAL",
+        "color": "#FFD700"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "COALICION",
+        "partido_original": "VA POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "OSUMACINTA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PAN",
+        "partido_original": "PAN PRD MC",
+        "color": "#0066CC"
+      },
+      "2021": {
+        "partido": "COALICION",
+        "partido_original": "VA POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "FUERZA Y CORAZON POR CHIAPAS",
+        "color": "#8B1E3F"
+      }
+    },
+    "OXCHUC": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "PALENQUE": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2007": {
+        "partido": "MC",
+        "partido_original": "CONVERGENCIA",
+        "color": "#FF8C00"
+      },
+      "2010": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2012": {
+        "partido": "PRD",
+        "partido_original": "COALICION PRD PT MC",
+        "color": "#FFD600"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "PANTELHO": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRD",
+        "partido_original": "COALICION PRD PT MC",
+        "color": "#FFD600"
+      },
+      "2015": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2018": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2021": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      }
+    },
+    "PANTEPEC": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2015": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "COALICION",
+        "partido_original": "VA POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2024": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      }
+    },
+    "PICHUCALCO": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN PICHUCALCO",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "PIJIJIAPAN": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "PUEBLO NUEVO SOLISTAHUACAN": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRD",
+        "partido_original": "COALICION PRD PT MC",
+        "color": "#FFD600"
+      },
+      "2015": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2018": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2021": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2024": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      }
+    },
+    "RAYON": {
+      "1998": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2021": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2024": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      }
+    },
+    "REFORMA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN REFORMA",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "MC",
+        "partido_original": "MC",
+        "color": "#FF8C00"
+      }
+    },
+    "RINCON CHAMULA SAN PEDRO": {
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "SABANILLA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRD",
+        "partido_original": "COALICION PRD PT MC",
+        "color": "#FFD600"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "SALTO DE AGUA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PT CONVERGENCIA",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2021": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "SAN ANDRES DURAZNAL": {
+      "2001": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2004": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2021": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2024": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      }
+    },
+    "SAN CRISTOBAL DE LAS CASAS": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PAS",
+        "partido_original": "PAS",
+        "color": "#009688"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "SAN FERNANDO": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "SAN JUAN CANCUC": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2021": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2024": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      }
+    },
+    "SAN LUCAS": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "SANTIAGO EL PINAR": {
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PT CONVERGENCIA",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRD",
+        "partido_original": "COALICION PRD PT MC",
+        "color": "#FFD600"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "SILTEPEC": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "SIMOJOVEL": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PT",
+        "partido_original": "PT CONVERGENCIA",
+        "color": "#CC0000"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "SITALA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2018": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "SOCOLTENANGO": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "COALICION",
+        "partido_original": "ALIANZA POR SOCOLTENANGO",
+        "color": "#37474F"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA PARA TODOS",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PT",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PANAL",
+        "partido_original": "PANAL",
+        "color": "#FFD700"
+      },
+      "2021": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "SEGUIREMOS HACIENDO HISTORIA EN CHIAPAS",
+        "color": "#8B1E3F"
+      }
+    },
+    "SOLOSUCHIAPA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PAN",
+        "partido_original": "COALICION PAN POCH",
+        "color": "#0066CC"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2024": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      }
+    },
+    "SOYALO": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN SOYALO",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "INDEPENDIENTE",
+        "partido_original": "INDEPENDIENTE",
+        "color": "#757575"
+      },
+      "2021": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "SUCHIAPA": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2021": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "SUCHIATE": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      }
+    },
+    "SUNUAPA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PANAL",
+        "partido_original": "PANAL",
+        "color": "#FFD700"
+      },
+      "2018": {
+        "partido": "PAN",
+        "partido_original": "PAN PRD MC",
+        "color": "#0066CC"
+      },
+      "2021": {
+        "partido": "PES",
+        "partido_original": "PES",
+        "color": "#6A1B9A"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "FUERZA Y CORAZON POR CHIAPAS",
+        "color": "#8B1E3F"
+      }
+    },
+    "TAPACHULA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN TAPACHULA",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM PANAL",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "TAPALAPA": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN TAPALAPA",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2021": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "TAPILULA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2018": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2021": {
+        "partido": "COALICION",
+        "partido_original": "VA POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "TECPATAN": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN TECPATAN",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2021": {
+        "partido": "COALICION",
+        "partido_original": "VA POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "TENEJAPA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN TENEJAPA",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PT CONVERGENCIA",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "TEOPISCA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "TILA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2010": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "TONALA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PANAL",
+        "partido_original": "PAN PANAL",
+        "color": "#FFD700"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "TOTOLAPA": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN TOTOLAPA",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRD",
+        "partido_original": "COALICION PRD PT MC",
+        "color": "#FFD600"
+      },
+      "2015": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2018": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2021": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "TUMBALA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "TUXTLA CHICO": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PAS",
+        "partido_original": "PAS",
+        "color": "#009688"
+      },
+      "2004": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "COALICION",
+        "partido_original": "VA POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "FUERZA Y CORAZON POR CHIAPAS",
+        "color": "#8B1E3F"
+      }
+    },
+    "TUXTLA GUTIERREZ": {
+      "1998": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2001": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA PARA TODOS",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PVEM PT CONVERGENCIA",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM POCH",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI PVEM PANAL PCHU",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "SEGUIREMOS HACIENDO HISTORIA EN CHIAPAS",
+        "color": "#8B1E3F"
+      }
+    },
+    "TUZANTAN": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PANAL",
+        "partido_original": "PANAL",
+        "color": "#FFD700"
+      },
+      "2021": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2024": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "TZIMOL": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PVEM PT CONVERGENCIA",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI POCH",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "INDEPENDIENTE",
+        "partido_original": "INDEPENDIENTE",
+        "color": "#757575"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "RSP",
+        "partido_original": "RSP",
+        "color": "#795548"
+      }
+    },
+    "UNION JUAREZ": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "MC",
+        "partido_original": "MC",
+        "color": "#FF8C00"
+      }
+    },
+    "VENUSTIANO CARRANZA": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN VENUSTIANO CARRANZA",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PAN",
+        "partido_original": "PAN",
+        "color": "#0066CC"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2024": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      }
+    },
+    "VILLA CORZO": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "COALICION",
+        "partido_original": "ALIANZA POR EL CAMBIO EN VILLA CORZO",
+        "color": "#37474F"
+      },
+      "2004": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "COALICION",
+        "partido_original": "UNIDAD POR CHIAPAS",
+        "color": "#37474F"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM PANAL",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "MORENA",
+        "partido_original": "PT MORENA PES",
+        "color": "#8B1E3F"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "VILLACOMALTITLAN": {
+      "1998": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PT",
+        "partido_original": "PT",
+        "color": "#CC0000"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PCHU",
+        "partido_original": "PCHU",
+        "color": "#9C27B0"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "VILLAFLORES": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN VILLAFLORES",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2015": {
+        "partido": "PMCH",
+        "partido_original": "PMCH",
+        "color": "#FF5722"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "MORENA",
+        "partido_original": "MORENA",
+        "color": "#8B1E3F"
+      }
+    },
+    "YAJALON": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN YAJALON",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2012": {
+        "partido": "POCH",
+        "partido_original": "POCH",
+        "color": "#3E2723"
+      },
+      "2015": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2018": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2021": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      },
+      "2024": {
+        "partido": "PVEM",
+        "partido_original": "PVEM",
+        "color": "#00A65A"
+      }
+    },
+    "ZINACANTAN": {
+      "1998": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2001": {
+        "partido": "PRD",
+        "partido_original": "PRD",
+        "color": "#FFD600"
+      },
+      "2004": {
+        "partido": "COALICION",
+        "partido_original": "COALICION ALIANZA POR CHIAPAS EN ZINACANTAN",
+        "color": "#37474F"
+      },
+      "2007": {
+        "partido": "PRD",
+        "partido_original": "PRD PT CONVERGENCIA",
+        "color": "#FFD600"
+      },
+      "2010": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2012": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2015": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2018": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2021": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      },
+      "2024": {
+        "partido": "PRI",
+        "partido_original": "PRI",
+        "color": "#E53935"
+      }
+    }
+  }
+}

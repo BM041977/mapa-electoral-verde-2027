@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trayectoria de Candidatos · Chiapas 1998–2024</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --bg:          #FBF9F4;
+    --bg-card:     #FFFFFF;
+    --ink:         #1A1A1A;
+    --ink-soft:    #5A5A5A;
+    --line:        #E8E4DC;
+    --accent:      #2D2D2D;
+    --shadow-sm:   0 1px 2px rgba(26,26,26,0.04);
+    --shadow-md:   0 8px 24px rgba(26,26,26,0.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); color: var(--ink); font-family: 'Manrope', system-ui, sans-serif; min-height: 100vh; }
+
+.header {
+    background: var(--bg-card); border-bottom: 1px solid var(--line);
+    padding: 14px 24px; display: flex; align-items: center; gap: 14px;
+}
+.header h1 { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; }
+.header a { margin-left: auto; color: var(--ink-soft); font-size: 0.82rem; text-decoration: none; }
+.header a:hover { color: var(--ink); }
+
+.contenedor { max-width: 760px; margin: 0 auto; padding: 32px 20px 90px; }
+
+.buscador { position: relative; margin-bottom: 24px; }
+.buscador input {
+    width: 100%; padding: 14px 44px 14px 18px; font-size: 1rem;
+    border: 1px solid var(--line); border-radius: 10px;
+    background: var(--bg-card); color: var(--ink);
+    font-family: 'Manrope', system-ui, sans-serif;
+}
+.buscador input:focus { outline: none; border-color: var(--accent); }
+
+.btn-limpiar {
+    position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+    width: 28px; height: 28px; border-radius: 50%; border: none;
+    background: var(--bg); color: var(--ink-soft); cursor: pointer;
+    font-size: 0.95rem; line-height: 1; display: none;
+    align-items: center; justify-content: center;
+}
+.btn-limpiar:hover { background: var(--line); color: var(--ink); }
+.btn-limpiar.visible { display: flex; }
+
+.sugerencias {
+    position: absolute; top: 100%; left: 0; right: 0; z-index: 100;
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: 10px; margin-top: 4px; box-shadow: var(--shadow-md);
+    max-height: 320px; overflow-y: auto; display: none;
+}
+.sugerencia-item {
+    padding: 10px 18px; cursor: pointer; font-size: 0.9rem;
+    border-bottom: 1px solid var(--line);
+}
+.sugerencia-item:last-child { border-bottom: none; }
+.sugerencia-item:hover, .sugerencia-item.activo { background: var(--bg); }
+.sugerencia-item mark { background: none; color: var(--accent); font-weight: 700; }
+.sugerencia-vacia { padding: 14px 18px; font-size: 0.85rem; color: var(--ink-soft); cursor: default; }
+.sugerencia-vacia:hover { background: transparent; }
+
+.estado-vacio {
+    text-align: center; padding: 60px 20px; color: var(--ink-soft);
+    font-size: 0.9rem; line-height: 1.6;
+}
+
+#perfil { display: none; }
+
+.perfil-header {
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 24px; margin-bottom: 20px;
+    box-shadow: var(--shadow-sm);
+}
+.perfil-nombre { font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 600; margin-bottom: 12px; }
+
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
+.stat-box { background: var(--bg); border-radius: 10px; padding: 12px 14px; }
+.stat-label { font-size: 0.64rem; font-weight: 700; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px; }
+.stat-val { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 600; }
+
+.badges { display: flex; gap: 8px; flex-wrap: wrap; }
+.badge {
+    font-size: 0.74rem; font-weight: 600; padding: 5px 12px;
+    border-radius: 20px; background: var(--bg); color: var(--ink-soft);
+}
+.badge.alerta { background: #FBE9E7; color: #B33A2F; }
+.badge.exito { background: #E8F5E9; color: #2E7D32; }
+
+.timeline { background: var(--bg-card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 24px; box-shadow: var(--shadow-sm); }
+.timeline h3 { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; margin-bottom: 16px; }
+
+.evento {
+    display: flex; gap: 16px; padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+}
+.evento:last-child { border-bottom: none; }
+.evento-ano { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; min-width: 56px; }
+.evento-detalle { flex: 1; }
+.evento-cargo { font-size: 0.88rem; font-weight: 600; margin-bottom: 2px; }
+.evento-partido { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 2px 9px; border-radius: 14px; margin-top: 4px; }
+.evento-municipio { font-size: 0.78rem; color: var(--ink-soft); }
+.evento-resultado { font-size: 0.78rem; font-weight: 600; padding: 4px 10px; border-radius: 14px; align-self: center; white-space: nowrap; }
+.evento-resultado.gano { background: #E8F5E9; color: #2E7D32; }
+.evento-resultado.perdio { background: #FBE9E7; color: #B33A2F; }
+
+.tabs {
+    display: flex; gap: 8px; margin-bottom: 24px;
+}
+.tab {
+    padding: 9px 20px; border-radius: 8px; border: 1px solid var(--line);
+    background: var(--bg-card); color: var(--ink-soft); font-size: 0.88rem;
+    font-weight: 600; cursor: pointer; font-family: 'Manrope', sans-serif;
+    transition: all 0.2s ease;
+}
+.tab.activo { background: var(--accent); color: #fff; border-color: var(--accent); }
+.tab:hover:not(.activo) { border-color: var(--accent); color: var(--ink); }
+
+.panel { display: none; }
+.panel.activo { display: block; }
+
+.municipio-select {
+    width: 100%; padding: 14px 18px; font-size: 1rem;
+    border: 1px solid var(--line); border-radius: 10px;
+    background: var(--bg-card); color: var(--ink);
+    font-family: 'Manrope', sans-serif; margin-bottom: 20px;
+    appearance: none; cursor: pointer;
+}
+.municipio-select:focus { outline: none; border-color: var(--accent); }
+
+.tabla-candidatos { width: 100%; border-collapse: collapse; }
+.tabla-candidatos th {
+    font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.4px; color: var(--ink-soft); padding: 10px 14px;
+    border-bottom: 2px solid var(--line); text-align: left; background: var(--bg);
+}
+.tabla-candidatos td {
+    padding: 12px 14px; border-bottom: 1px solid var(--line);
+    font-size: 0.88rem; vertical-align: middle;
+}
+.tabla-candidatos tr:last-child td { border-bottom: none; }
+.tabla-candidatos tr:hover td { background: var(--bg); cursor: pointer; }
+.tabla-candidatos .nombre-link { font-weight: 600; color: var(--ink); }
+.tabla-candidatos .nombre-link:hover { color: var(--accent); text-decoration: underline; }
+.anios-rango { font-size: 0.78rem; color: var(--ink-soft); }
+.veces-badge {
+    display: inline-block; font-size: 0.72rem; font-weight: 700;
+    padding: 2px 9px; border-radius: 14px; background: var(--bg);
+    color: var(--ink-soft); border: 1px solid var(--line);
+}
+.gano-badge {
+    font-size: 0.72rem; font-weight: 700; padding: 2px 9px;
+    border-radius: 14px; background: #E8F5E9; color: #2E7D32;
+}
+.loading-municipio { text-align: center; padding: 40px; color: var(--ink-soft); font-size: 0.88rem; }
+
+.aviso-homonimo {
+    background: #FFF3E0; border: 1px solid #FFB74D; border-radius: 10px;
+    padding: 14px 18px; margin-bottom: 16px; font-size: 0.85rem;
+    color: #8A5A00; line-height: 1.5; display: flex; gap: 10px; align-items: flex-start;
+}
+.aviso-homonimo .icono { font-size: 1.1rem; flex-shrink: 0; }
+
+.reloj-pagina {
+    position: fixed; bottom: 16px; left: 16px; z-index: 50;
+    display: flex; align-items: center; gap: 7px;
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: 20px; padding: 7px 14px;
+    font-size: 0.78rem; color: var(--ink-soft);
+    box-shadow: var(--shadow-sm);
+}
+.reloj-pagina .punto { width: 6px; height: 6px; border-radius: 50%; background: #8A8A8A; flex-shrink: 0; }
+.reloj-pagina .tiempo { font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+.marca-fija {
+    position: fixed; bottom: 14px; right: 14px; z-index: 9999;
+    background: white; padding: 6px 10px; border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+    user-select: none;
+}
+.marca-fija:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0,0,0,0.2); }
+.marca-fija img { height: 70px; width: auto; display: block; }
+
+@media (max-width: 480px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .marca-fija img { height: 50px; }
+    .marca-fija { right: 10px; bottom: 10px; }
+    .reloj-pagina { left: 14px; bottom: 14px; padding: 6px 12px; font-size: 0.72rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Trayectoria de Candidatos · Chiapas 1998–2024</h1>
+  <a href="/inicio">← Volver al inicio</a>
+</div>
+
+<div class="contenedor">
+
+  <div class="tabs">
+    <button class="tab activo" onclick="cambiarTab('nombre')">🔍 Buscar por nombre</button>
+    <button class="tab" onclick="cambiarTab('municipio')">🏛 Explorar por municipio</button>
+  </div>
+
+  <!-- PANEL: BUSCAR POR NOMBRE -->
+  <div class="panel activo" id="panel-nombre">
+    <div class="buscador">
+      <input type="text" id="input-buscar" placeholder="Escribe el nombre de un candidato..." autocomplete="off">
+      <button type="button" class="btn-limpiar" id="btn-limpiar" aria-label="Limpiar búsqueda">✕</button>
+      <div class="sugerencias" id="sugerencias"></div>
+    </div>
+    <div class="estado-vacio" id="estado-vacio">
+      Busca un candidato por nombre para ver su trayectoria electoral completa: en qué elecciones participó, con qué partidos, en qué municipios y si ganó o perdió.
+    </div>
+    <div id="perfil"></div>
+  </div>
+
+  <!-- PANEL: EXPLORAR POR MUNICIPIO -->
+  <div class="panel" id="panel-municipio">
+    <select class="municipio-select" id="select-municipio" onchange="cargarMunicipio()">
+      <option value="">— Selecciona un municipio —</option>
+    </select>
+    <div id="resultado-municipio"></div>
+  </div>
+
+</div>
+
+<div class="reloj-pagina">
+  <span class="punto"></span>
+  <span>⏳</span>
+  <span class="tiempo" id="reloj-tiempo">0:00</span>
+</div>
+
+<div class="marca-fija"><img src="/static/logo.png" alt="Baldemar Maza León"></div>
+
+<script>
+let timeoutBusqueda = null;
+let sugerenciasActuales = [];
+let indiceActivo = -1;
+
+const coloresPartido = {
+    'PAN':    '#004AB0',
+    'PRI':    '#DC3545',
+    'PVEM':   '#53AF31',
+    'PT':     '#DA291C',
+    'MC':     '#FD8000',
+    'MORENA': '#A11317',
+    'RSP':    '#808080',
+    'PCHU':   '#056A84',
+    'PMCH':   '#743C90',
+    'PES':    '#5E327D',
+    'PRD':    '#FFD100',
+    'PPCH':   '#B73A3A',
+    'INDEPENDIENTE': '#B3B3B3',
+    'FXM':    '#EC008C',
+    'FUERZA POR MEXICO': '#EC008C',
+    'CONVERGENCIA': '#FD8000',
+    'PANAL':  '#009EA7'
+};
+function colorPartido(partido) {
+    const tokens = String(partido || '').toUpperCase().split(/\s+/);
+    for (const t of tokens) {
+        if (coloresPartido[t]) return coloresPartido[t];
+    }
+    return '#5A5A5A';
+}
+function estiloPartido(partido) {
+    const bg = colorPartido(partido);
+    const claro = (bg === coloresPartido['PRD']);
+    return 'background:' + bg + ';color:' + (claro ? '#1A1A1A' : '#fff') + ';';
+}
+
+function escaparHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function resaltarCoincidencia(nombre, q) {
+    const idx = nombre.toUpperCase().indexOf(q.toUpperCase());
+    if (idx === -1) return escaparHtml(nombre);
+    const antes = escaparHtml(nombre.slice(0, idx));
+    const medio = escaparHtml(nombre.slice(idx, idx + q.length));
+    const despues = escaparHtml(nombre.slice(idx + q.length));
+    return antes + '<mark>' + medio + '</mark>' + despues;
+}
+
+const inputBuscar = document.getElementById('input-buscar');
+const btnLimpiar = document.getElementById('btn-limpiar');
+const divSugerencias = document.getElementById('sugerencias');
+
+inputBuscar.addEventListener('input', e => {
+    const q = e.target.value.trim();
+    btnLimpiar.classList.toggle('visible', e.target.value.length > 0);
+    clearTimeout(timeoutBusqueda);
+    indiceActivo = -1;
+    if (q.length < 3) {
+        divSugerencias.style.display = 'none';
+        sugerenciasActuales = [];
+        return;
+    }
+    timeoutBusqueda = setTimeout(() => buscarCandidatos(q), 300);
+});
+
+inputBuscar.addEventListener('keydown', e => {
+    const items = divSugerencias.querySelectorAll('.sugerencia-item[data-nombre]');
+    if (divSugerencias.style.display !== 'block' || !items.length) return;
+
+    if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        indiceActivo = (indiceActivo + 1) % items.length;
+        marcarActivo(items);
+    } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        indiceActivo = (indiceActivo - 1 + items.length) % items.length;
+        marcarActivo(items);
+    } else if (e.key === 'Enter') {
+        e.preventDefault();
+        const objetivo = indiceActivo >= 0 ? items[indiceActivo] : items[0];
+        if (objetivo) verPerfil(objetivo.getAttribute('data-nombre'));
+    } else if (e.key === 'Escape') {
+        divSugerencias.style.display = 'none';
+        indiceActivo = -1;
+    }
+});
+
+function marcarActivo(items) {
+    items.forEach((it, i) => it.classList.toggle('activo', i === indiceActivo));
+    if (indiceActivo >= 0) items[indiceActivo].scrollIntoView({block: 'nearest'});
+}
+
+btnLimpiar.addEventListener('click', () => {
+    inputBuscar.value = '';
+    btnLimpiar.classList.remove('visible');
+    divSugerencias.style.display = 'none';
+    sugerenciasActuales = [];
+    indiceActivo = -1;
+    document.getElementById('perfil').style.display = 'none';
+    document.getElementById('perfil').innerHTML = '';
+    document.getElementById('estado-vacio').style.display = 'block';
+    history.replaceState(null, '', '/candidatos');
+    inputBuscar.focus();
+});
+
+function buscarCandidatos(q) {
+    fetch('/api/candidatos/buscar?q=' + encodeURIComponent(q))
+        .then(r => r.json())
+        .then(data => {
+            sugerenciasActuales = data.resultados;
+            indiceActivo = -1;
+            if (!data.resultados.length) {
+                divSugerencias.innerHTML = '<div class="sugerencia-vacia">No se encontraron candidatos con ese nombre.</div>';
+                divSugerencias.style.display = 'block';
+                return;
+            }
+            divSugerencias.innerHTML = data.resultados.map(nombre =>
+                '<div class="sugerencia-item" data-nombre="' + escaparHtml(nombre) + '" onclick="verPerfil(this.getAttribute(\'data-nombre\'))">' + resaltarCoincidencia(nombre, q) + '</div>'
+            ).join('');
+            divSugerencias.style.display = 'block';
+        });
+}
+
+function verPerfil(nombre) {
+    divSugerencias.style.display = 'none';
+    inputBuscar.value = nombre;
+    btnLimpiar.classList.add('visible');
+    document.getElementById('estado-vacio').style.display = 'none';
+    const perfilDiv = document.getElementById('perfil');
+    perfilDiv.style.display = 'block';
+    perfilDiv.innerHTML = '<div class="loading">Cargando perfil...</div>';
+    history.replaceState(null, '', '/candidatos?nombre=' + encodeURIComponent(nombre));
+
+    fetch('/api/candidatos/perfil?nombre=' + encodeURIComponent(nombre))
+        .then(r => r.json())
+        .then(p => {
+            if (p.error) {
+                perfilDiv.innerHTML = '<div class="loading">No se encontró el candidato.</div>';
+                return;
+            }
+            renderPerfil(p);
+        });
+}
+
+function renderPerfil(p) {
+    const badges = [];
+    if (p.cambio_partido) badges.push('<span class="badge alerta">Cambió de partido</span>');
+    if (p.cambio_municipio) badges.push('<span class="badge alerta">Cambió de municipio</span>');
+    if (p.veces_gano_presidente > 0) badges.push('<span class="badge exito">Ganó presidencia ' + p.veces_gano_presidente + ' vez(es)</span>');
+
+    const avisoHomonimo = p.posible_homonimo
+        ? '<div class="aviso-homonimo"><span class="icono">⚠️</span><span>Este nombre aparece registrado en municipios distintos en el mismo año, lo cual no puede corresponder a una sola persona. Es probable que esta trayectoria mezcle a <strong>varias personas distintas</strong> que comparten el mismo nombre. Verifica con cuidado antes de usar esta información.</span></div>'
+        : '';
+
+    const html =
+        avisoHomonimo +
+        '<div class="perfil-header">' +
+            '<div class="perfil-nombre">' + escaparHtml(p.nombre) + '</div>' +
+            '<div class="stats-grid">' +
+                '<div class="stat-box"><div class="stat-label">Participaciones</div><div class="stat-val">' + p.total_participaciones + '</div></div>' +
+                '<div class="stat-box"><div class="stat-label">Años activo</div><div class="stat-val">' + p.anos[0] + '–' + p.anos[p.anos.length - 1] + '</div></div>' +
+                '<div class="stat-box"><div class="stat-label">Veces candidato a presidente</div><div class="stat-val">' + p.veces_candidato_presidente + '</div></div>' +
+                '<div class="stat-box"><div class="stat-label">Ganó la presidencia</div><div class="stat-val">' + p.veces_gano_presidente + '</div></div>' +
+            '</div>' +
+            '<div class="badges">' + badges.join('') + '</div>' +
+        '</div>' +
+        '<div class="timeline">' +
+            '<h3>Línea de tiempo electoral</h3>' +
+            p.historial.map(h => {
+                let resultado = '';
+                if (h.es_presidente) {
+                    resultado = h.gano
+                        ? '<span class="evento-resultado gano">Ganó</span>'
+                        : '<span class="evento-resultado perdio">Perdió</span>';
+                }
+                return '<div class="evento">' +
+                    '<div class="evento-ano">' + h.ano + '</div>' +
+                    '<div class="evento-detalle">' +
+                        '<div class="evento-cargo">' + escaparHtml(h.cargo) + '</div>' +
+                        '<div class="evento-municipio">' + escaparHtml(h.municipio) + '</div>' +
+                        '<span class="evento-partido" style="' + estiloPartido(h.partido) + '">' + escaparHtml(h.partido) + '</span>' +
+                    '</div>' +
+                    resultado +
+                '</div>';
+            }).join('') +
+        '</div>';
+
+    document.getElementById('perfil').innerHTML = html;
+}
+
+function cambiarTab(tab) {
+    document.querySelectorAll('.tab').forEach((t, i) => {
+        t.classList.toggle('activo', (i === 0 && tab === 'nombre') || (i === 1 && tab === 'municipio'));
+    });
+    document.getElementById('panel-nombre').classList.toggle('activo', tab === 'nombre');
+    document.getElementById('panel-municipio').classList.toggle('activo', tab === 'municipio');
+    if (tab === 'municipio' && !municipiosCargados) cargarMunicipios();
+}
+
+let municipiosCargados = false;
+const MUNICIPIOS = [
+    "ACACOYAGUA","ACALA","ACAPETAHUA","ALDAMA","ALTAMIRANO","AMATAN",
+    "AMATENANGO DE LA FRONTERA","AMATENANGO DEL VALLE","ANGEL ALBINO CORZO","ARRIAGA",
+    "BEJUCAL DE OCAMPO","BELISARIO DOMINGUEZ","BELLA VISTA","BENEMERITO DE LAS AMERICAS",
+    "BERRIOZABAL","BOCHIL","CACAHOATAN","CAPITAN LUIS ANGEL VIDAL","CATAZAJA",
+    "CHALCHIHUITAN","CHAMULA","CHANAL","CHAPULTENANGO","CHENALHO","CHIAPA DE CORZO",
+    "CHIAPILLA","CHICOASEN","CHICOMUSELO","CHILON","CINTALAPA","COAPILLA",
+    "COMITAN DE DOMINGUEZ","COPAINALA","EL BOSQUE","EL PARRAL","EL PORVENIR",
+    "EMILIANO ZAPATA","ESCUINTLA","FRANCISCO LEON","FRONTERA COMALAPA","FRONTERA HIDALGO",
+    "HONDURAS DE LA SIERRA","HUEHUETAN","HUITIUPAN","HUIXTAN","HUIXTLA","IXHUATAN",
+    "IXTACOMITAN","IXTAPA","IXTAPANGAJOYA","JIQUIPILAS","JITOTOL","JUAREZ",
+    "LA CONCORDIA","LA GRANDEZA","LA INDEPENDENCIA","LA LIBERTAD","LA TRINITARIA",
+    "LARRAINZAR","LAS MARGARITAS","LAS ROSAS","MAPASTEPEC","MARAVILLA TENEJAPA",
+    "MARQUES DE COMILLAS","MAZAPA DE MADERO","MAZATAN",
+    "METAPA DE DOMINGUEZ","MEZCALAPA","MITONTIC","MONTECRISTO DE GUERRERO","MOTOZINTLA",
+    "NICOLAS RUIZ","OCOSINGO","OCOTEPEC","OCOZOCOAUTLA DE ESPINOSA","OSTUACAN",
+    "OSUMACINTA","OXCHUC","PALENQUE","PANTELHO","PANTEPEC","PICHUCALCO","PIJIJIAPAN",
+    "PUEBLO NUEVO SOLISTAHUACAN","RAYON","REFORMA","RINCON CHAMULA SAN PEDRO",
+    "SABANILLA","SALTO DE AGUA","SAN ANDRES DURAZNAL","SAN CRISTOBAL DE LAS CASAS",
+    "SAN FERNANDO","SAN JUAN CANCUC","SAN LUCAS","SANTIAGO EL PINAR","SILTEPEC",
+    "SIMOJOVEL","SITALA","SOCOLTENANGO","SOLOSUCHIAPA","SOYALO","SUCHIAPA","SUCHIATE",
+    "SUNUAPA","TAPACHULA","TAPALAPA","TAPILULA","TECPATAN","TENEJAPA","TEOPISCA",
+    "TILA","TONALA","TOTOLAPA","TUMBALA","TUXTLA CHICO","TUXTLA GUTIERREZ","TUZANTAN",
+    "TZIMOL","UNION JUAREZ","VENUSTIANO CARRANZA","VILLA CORZO","VILLACOMALTITLAN",
+    "VILLAFLORES","YAJALON","ZINACANTAN"
+];
+
+function capitalizar(s) {
+    const minusculas = ['de','del','la','las','los','el','y','por','a','en'];
+    return s.toLowerCase().split(' ').map((w, i) =>
+        i === 0 || !minusculas.includes(w) ? w.charAt(0).toUpperCase() + w.slice(1) : w
+    ).join(' ');
+}
+
+function cargarMunicipios() {
+    const sel = document.getElementById('select-municipio');
+    const unique = [...new Set(MUNICIPIOS)].sort();
+    unique.forEach(m => {
+        const opt = document.createElement('option');
+        opt.value = m;
+        opt.textContent = capitalizar(m);
+        sel.appendChild(opt);
+    });
+    municipiosCargados = true;
+}
+
+function cargarMunicipio() {
+    const municipio = document.getElementById('select-municipio').value;
+    const div = document.getElementById('resultado-municipio');
+    if (!municipio) { div.innerHTML = ''; return; }
+    div.innerHTML = '<div class="loading-municipio">Cargando candidatos...</div>';
+
+    fetch('/api/candidatos/municipio/' + encodeURIComponent(municipio))
+        .then(r => r.json())
+        .then(data => {
+            if (!data.candidatos || !data.candidatos.length) {
+                div.innerHTML = '<div class="loading-municipio">No se encontraron candidatos con trayectoria en este municipio.</div>';
+                return;
+            }
+            renderTablaMunicipio(data.candidatos, municipio);
+        });
+}
+
+function renderTablaMunicipio(candidatos, municipio) {
+    const soloPresidentes = candidatos.filter(c => c.veces_candidato_presidente > 0);
+    const resto = candidatos.filter(c => c.veces_candidato_presidente === 0);
+
+    let html = '<div class="timeline" style="padding: 0; overflow: hidden;">';
+    html += '<table class="tabla-candidatos">';
+    html += '<thead><tr>' +
+        '<th>Candidato</th>' +
+        '<th>Años</th>' +
+        '<th style="text-align:center">Participaciones</th>' +
+        '<th style="text-align:center">Veces a presidente</th>' +
+        '<th style="text-align:center">Ganó</th>' +
+        '</tr></thead><tbody>';
+
+    const renderFila = c =>
+        '<tr onclick="verPerfilDesdeTabla(\'' + c.nombre.replace(/'/g, "\\'") + '\')">' +
+        '<td><span class="nombre-link">' + escaparHtml(c.nombre) + '</span>' + (c.posible_homonimo ? ' <span title="Posible homónimo">⚠️</span>' : '') + '</td>' +
+        '<td><span class="anios-rango">' + c.anos[0] + (c.anos.length > 1 ? '–' + c.anos[c.anos.length-1] : '') + '</span></td>' +
+        '<td style="text-align:center"><span class="veces-badge">' + c.total_participaciones + '</span></td>' +
+        '<td style="text-align:center">' + (c.veces_candidato_presidente > 0 ? '<span class="veces-badge">' + c.veces_candidato_presidente + '</span>' : '—') + '</td>' +
+        '<td style="text-align:center">' + (c.veces_gano_presidente > 0 ? '<span class="gano-badge">✓ ' + c.veces_gano_presidente + '</span>' : '—') + '</td>' +
+        '</tr>';
+
+    if (soloPresidentes.length) {
+        html += '<tr><td colspan="5" style="background:var(--bg);font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.4px;color:var(--ink-soft);padding:8px 14px;">Candidatos a presidente (' + soloPresidentes.length + ')</td></tr>';
+        soloPresidentes.forEach(c => { html += renderFila(c); });
+    }
+    if (resto.length) {
+        html += '<tr><td colspan="5" style="background:var(--bg);font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.4px;color:var(--ink-soft);padding:8px 14px;">Otros cargos (' + resto.length + ')</td></tr>';
+        resto.forEach(c => { html += renderFila(c); });
+    }
+
+    html += '</tbody></table></div>';
+    html += '<p style="font-size:0.78rem;color:var(--ink-soft);margin-top:12px;text-align:right">Haz clic en un candidato para ver su perfil completo.</p>';
+    document.getElementById('resultado-municipio').innerHTML = html;
+}
+
+function verPerfilDesdeTabla(nombre) {
+    cambiarTab('nombre');
+    verPerfil(nombre);
+}
+
+document.addEventListener('click', e => {
+    if (!e.target.closest('.buscador')) {
+        divSugerencias.style.display = 'none';
+        indiceActivo = -1;
+    }
+});
+
+(function () {
+    const DURACION_MS = 1200000;
+    const UMBRAL = 30;
+    const expira = Date.now() + DURACION_MS;
+    const c = document.getElementById('reloj-tiempo');
+    let expirado = false, iv;
+    function tick() {
+        const r = Math.max(0, Math.ceil((expira - Date.now()) / 1000));
+        const min = Math.floor(r / 60), sec = r % 60;
+        c.textContent = min + ':' + (sec < 10 ? '0' : '') + sec;
+        if (r <= UMBRAL && r > 0) c.style.color = '#B33A2F';
+        if (r <= 0 && !expirado) {
+            expirado = true;
+            clearInterval(iv);
+            alert('Sesión expirada');
+            window.location.href = '/logout';
+        }
+    }
+    tick();
+    iv = setInterval(tick, 1000);
+})();
+
+(function cargarDesdeUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const nombre = params.get('nombre');
+    if (nombre) verPerfil(nombre);
+})();
+</script>
+</body>
+</html>

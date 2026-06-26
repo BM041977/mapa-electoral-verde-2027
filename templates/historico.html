@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Histórico Electoral · Chiapas 1998–2024</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+:root {
+    --bg:          #FBF9F4;
+    --bg-card:     #FFFFFF;
+    --ink:         #1A1A1A;
+    --ink-soft:    #5A5A5A;
+    --line:        #E8E4DC;
+    --accent:      #2D2D2D;
+    --accent-soft: #ECECEC;
+    --shadow-sm:   0 1px 2px rgba(26,26,26,0.04);
+    --shadow-md:   0 8px 24px rgba(26,26,26,0.08);
+    --shadow-lg:   0 16px 48px rgba(26,26,26,0.18);
+}
+
+html, body, #map { width: 100%; height: 100%; margin: 0; padding: 0; }
+body { font-family: 'Manrope', system-ui, sans-serif; -webkit-font-smoothing: antialiased; background: var(--bg); }
+
+/* TOP BAR - dos filas */
+#top-bar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow-sm);
+}
+#top-bar-row1 {
+    padding: 10px 20px;
+    display: flex; align-items: center; gap: 16px;
+    border-bottom: 1px solid var(--line);
+}
+#top-bar-row1 h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 1rem; font-weight: 600;
+    color: var(--ink); margin: 0;
+}
+#btn-ver-estrategico {
+    margin-left: auto;
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 0.78rem; font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Manrope', system-ui, sans-serif;
+}
+#btn-ver-estrategico:hover { opacity: 0.85; }
+#top-bar-row1 a {
+    color: var(--ink-soft);
+    font-size: 0.78rem; font-weight: 500;
+    text-decoration: none; white-space: nowrap;
+}
+#top-bar-row1 a:hover { color: var(--ink); }
+
+#top-bar-row2 {
+    padding: 8px 20px;
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+}
+#top-bar-row2 label {
+    font-size: 0.7rem; font-weight: 700;
+    color: var(--ink-soft); text-transform: uppercase;
+    letter-spacing: 0.5px; white-space: nowrap;
+}
+#top-bar-row2 select {
+    background: var(--bg); color: var(--ink);
+    border: 1px solid var(--line); border-radius: 6px;
+    padding: 5px 10px; font-size: 0.83rem;
+    font-family: 'Manrope', system-ui, sans-serif;
+    cursor: pointer; min-width: 220px;
+}
+#top-bar-row2 select:focus { outline: none; border-color: var(--accent); }
+.divider { width: 1px; height: 20px; background: var(--line); flex-shrink: 0; }
+
+.ano-btns { display: flex; gap: 3px; flex-wrap: wrap; }
+.ano-btn {
+    background: var(--bg); border: 1px solid var(--line);
+    color: var(--ink-soft); border-radius: 5px;
+    padding: 4px 10px; font-size: 0.75rem; font-weight: 600;
+    font-family: 'Manrope', system-ui, sans-serif;
+    cursor: pointer; transition: all 0.15s;
+}
+.ano-btn:hover { border-color: var(--accent); color: var(--ink); }
+.ano-btn.activo { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* LEYENDA */
+#leyenda-panel {
+    position: fixed; top: calc(50% + 45px); left: 12px; transform: translateY(-50%); z-index: 9998;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 12px 16px;
+    box-shadow: var(--shadow-md);
+    min-width: 170px;
+}
+#leyenda-panel h3 {
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin: 0 0 8px 0;
+}
+.ley-item {
+    display: flex; align-items: center; gap: 7px;
+    font-size: 0.78rem; font-weight: 500;
+    color: var(--ink); margin-bottom: 4px;
+}
+.ley-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+/* PANEL SECCIÓN */
+#panel-seccion {
+    position: fixed; top: 95px; right: 12px; z-index: 9998;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    width: 300px;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    display: none;
+}
+.panel-header {
+    padding: 16px 18px 12px;
+    border-bottom: 1px solid var(--line);
+}
+.sec-label {
+    font-size: 0.68rem; font-weight: 700;
+    color: var(--ink-soft); text-transform: uppercase;
+    letter-spacing: 0.6px; margin-bottom: 2px;
+}
+.sec-num {
+    font-family: 'Fraunces', serif;
+    font-size: 1.6rem; font-weight: 700;
+    color: var(--ink); line-height: 1.1;
+}
+.sec-mun {
+    font-size: 0.75rem; font-weight: 500;
+    color: var(--ink-soft); margin-top: 2px;
+}
+.panel-body { padding: 14px 18px; }
+
+.tabla {
+    width: 100%; border-collapse: collapse;
+    font-size: 0.78rem; font-family: 'Manrope', system-ui, sans-serif;
+}
+.tabla th {
+    padding: 5px 6px; text-align: left;
+    font-size: 0.65rem; font-weight: 700;
+    color: var(--ink-soft); text-transform: uppercase;
+    letter-spacing: 0.4px;
+    border-bottom: 1px solid var(--line);
+}
+.tabla td {
+    padding: 6px 6px;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink);
+}
+.tabla tr:last-child td { border-bottom: none; }
+.chip {
+    display: inline-block; padding: 2px 8px;
+    border-radius: 20px; font-size: 0.65rem;
+    font-weight: 700; color: #fff;
+    letter-spacing: 0.3px;
+}
+
+.chart-section {
+    padding: 12px 18px 16px;
+    border-top: 1px solid var(--line);
+}
+.chart-label {
+    font-size: 0.65rem; font-weight: 700;
+    color: var(--ink-soft); text-transform: uppercase;
+    letter-spacing: 0.6px; text-align: center;
+    margin-bottom: 8px;
+}
+.chart-box { position: relative; height: 130px; }
+
+/* BANNER GANADOR MUNICIPIO */
+#banner-ganador {
+    position: fixed; top: 90px; left: 0; right: 0; z-index: 9997;
+    background: #FBF9F4;
+    border-bottom: 1px solid var(--line);
+    padding: 7px 20px;
+    display: none;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-family: 'Manrope', system-ui, sans-serif;
+}
+#banner-ganador .ban-label {
+    font-size: 0.68rem; font-weight: 700;
+    color: var(--ink-soft); text-transform: uppercase;
+    letter-spacing: 0.6px; white-space: nowrap;
+}
+#banner-ganador .ban-partido {
+    display: flex; align-items: center; gap: 7px;
+    font-size: 0.88rem; font-weight: 700; color: var(--ink);
+}
+#banner-ganador .ban-dot {
+    width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+}
+#banner-ganador .ban-divider {
+    width: 1px; height: 16px; background: var(--line);
+}
+#banner-ganador .ban-stat {
+    font-size: 0.78rem; color: var(--ink-soft);
+}
+#banner-ganador .ban-stat strong { color: var(--ink); font-weight: 600; }
+
+#panel-estrategico {
+    position: fixed; top: 95px; left: 50%; z-index: 9996;
+    display: none;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    transform: translateX(-50%);
+}
+#estr-card {
+    background: rgba(251,249,244,0.98);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 6px 20px 20px;
+    box-shadow: var(--shadow-md);
+    font-family: 'Manrope', system-ui, sans-serif;
+    max-width: 500px;
+    overflow: visible;
+}
+#estr-drag-handle {
+    display: flex; align-items: center; justify-content: center;
+    height: 18px; margin: 0 0 8px; cursor: grab;
+    position: relative;
+    width: 100%;
+}
+#estr-drag-handle:active { cursor: grabbing; }
+.estr-grip {
+    width: 32px; height: 4px; border-radius: 2px;
+    background: var(--line); display: block;
+}
+#estr-cerrar {
+    position: absolute; top: 0; right: 8px;
+    background: none; border: none;
+    font-size: 0.9rem; color: var(--ink-soft);
+    cursor: pointer; padding: 4px 6px; line-height: 1;
+}
+#estr-cerrar:hover { color: var(--ink); }
+#estr-titulo {
+    font-family: 'Fraunces', serif;
+    font-size: 1.05rem; font-weight: 600;
+    color: var(--ink); margin-bottom: 14px;
+}
+#estr-mun-sub {
+    font-size: 0.78rem; font-weight: 600;
+    color: var(--ink-soft); margin-bottom: 4px;
+    text-transform: uppercase; letter-spacing: 0.4px;
+}
+#estr-sub-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-bottom: 16px;
+}
+.estr-sub-item {
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: 8px; padding: 8px 12px;
+}
+.estr-sub-label {
+    display: block; font-size: 0.66rem; font-weight: 700;
+    color: var(--ink-soft); text-transform: uppercase;
+    letter-spacing: 0.4px; margin-bottom: 2px;
+}
+.estr-sub-val {
+    font-family: 'Fraunces', serif; font-size: 1.05rem;
+    font-weight: 600; color: var(--ink);
+}
+.estr-grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+.estr-tarjeta {
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: 10px; padding: 14px 16px;
+    box-shadow: 0 1px 2px rgba(26,26,26,0.04);
+}
+.estr-tarjeta.dark { background: var(--accent); border-color: var(--accent); }
+.estr-tag { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; }
+.estr-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.estr-label { font-size: 0.66rem; font-weight: 700; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.4px; }
+.estr-tarjeta.dark .estr-label { color: #ECECEC; }
+.estr-partido { font-size: 0.78rem; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
+.estr-tarjeta.dark .estr-partido { color: #fff; }
+.estr-num { font-family: 'Fraunces', serif; font-size: 1.25rem; font-weight: 600; color: var(--ink); }
+.estr-tarjeta.dark .estr-num { color: #fff; }
+.estr-unidad { font-size: 0.68rem; color: var(--ink-soft); }
+.estr-tarjeta.dark .estr-unidad { color: #ECECEC; }
+.estr-diff-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+    margin-top: 8px;
+}
+.estr-diff-grid > div {
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center;
+    padding: 4px 6px;
+}
+.estr-diff-grid .estr-num { font-size: 1.05rem; }
+.estr-diff-grid .estr-unidad { display: block; margin-top: 1px; }
+#estr-proyeccion-wrap {
+    background: #ECEAE3; border: 1px dashed #B9B5A8;
+    border-radius: 10px; padding: 12px 14px; margin-top: 4px;
+}
+#estr-proyeccion-badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: #5A5A5A; color: #fff;
+    font-size: 0.62rem; font-weight: 700; letter-spacing: 0.6px;
+    padding: 3px 9px; border-radius: 20px; margin-bottom: 8px;
+}
+#estr-proyeccion-label { font-size: 0.72rem; color: var(--ink-soft); margin-bottom: 10px; }
+.estr-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.estr-umbral {
+    background: rgba(255,255,255,0.6); border: 1px solid var(--line);
+    border-radius: 10px; padding: 10px 14px;
+    display: flex; align-items: center; justify-content: space-between; gap: 8px;
+}
+.estr-umbral-txt { font-size: 0.74rem; color: var(--ink); }
+.estr-umbral-num { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--ink); white-space: nowrap; }
+
+/* LOADING */
+#loading-overlay {
+    position: fixed; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+    padding: 16px 24px;
+    display: flex; align-items: center; gap: 12px;
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-size: 0.85rem; font-weight: 500;
+    color: var(--ink-soft);
+    z-index: 99999;
+}
+.spin {
+    width: 16px; height: 16px;
+    border: 2px solid var(--line);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* LOGO ESQUINA */
+#logo-corner {
+    position: fixed; bottom: 14px; right: 14px; z-index: 9998;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 8px 14px;
+    box-shadow: var(--shadow-md);
+}
+#logo-corner img { height: 40px; display: block; }
+
+#contador {
+    position: fixed; bottom: 14px; left: 14px; z-index: 9998;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 8px 14px;
+    box-shadow: var(--shadow-sm);
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+}
+#contador.alerta {
+    color: #C0392B;
+    border-color: #C0392B;
+}
+
+/* TOOLTIP */
+.tt-sistema {
+    background: white !important;
+    border: 1px solid var(--line) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 8px rgba(26,26,26,0.12) !important;
+    padding: 10px 14px !important;
+    font-family: 'Manrope', system-ui, sans-serif !important;
+    font-size: 0.8rem !important;
+    color: var(--ink) !important;
+    min-width: 200px !important;
+}
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<div id="top-bar">
+  <div id="top-bar-row1">
+    <h1>Histórico Electoral · Chiapas 1998–2024</h1>
+    <button id="btn-ver-estrategico" onclick="document.getElementById('panel-estrategico').style.display='block'">Ver datos estratégicos</button>
+    <a href="/inicio">← Volver al inicio</a>
+  </div>
+  <div id="top-bar-row2">
+    <label>Municipio</label>
+    {% if es_master %}
+    <select id="sel-mun" onchange="cambiarMunicipio(this.value)">
+      <option value="">— Selecciona un municipio —</option>
+    </select>
+    {% else %}
+    <select id="sel-mun" disabled>
+      <option value="{{ municipio_usuario }}">{{ municipio_usuario }}</option>
+    </select>
+    {% endif %}
+    <div class="divider"></div>
+    <label>Elección</label>
+    <div class="ano-btns" id="ano-btns"></div>
+  </div>
+</div>
+
+<div id="leyenda-panel">
+  <h3>Ganador de la Sección</h3>
+  <div id="leyenda"></div>
+</div>
+
+<div id="panel-seccion">
+  <div class="panel-header" style="position:relative">
+    <button id="btn-cerrar-panel" onclick="document.getElementById('panel-seccion').style.display='none'" style="position:absolute;top:10px;right:10px;background:none;border:none;font-size:1.1rem;color:var(--ink-soft);cursor:pointer;line-height:1;padding:2px 6px;border-radius:4px;">✕</button>
+    <div class="sec-label">Sección electoral</div>
+    <div class="sec-num" id="panel-sec-num">—</div>
+    <div class="sec-mun" id="panel-sec-mun">—</div>
+  </div>
+  <div class="panel-body">
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>Año</th>
+          <th>Ganador</th>
+          <th style="text-align:center">L.N.</th>
+          <th style="text-align:center">Votos</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-body"></tbody>
+    </table>
+  </div>
+  <div class="chart-section">
+    <div class="chart-label">Listado Nominal 1998 – 2024</div>
+    <div class="chart-box"><canvas id="chart-ln"></canvas></div>
+  </div>
+</div>
+
+<div id="logo-corner">
+  <img src="{{ url_for('static', filename='logo.png') }}" alt="" onerror="this.style.display='none'">
+</div>
+
+<div id="panel-estrategico">
+  <div id="estr-card">
+    <div id="estr-drag-handle">
+      <div class="estr-grip"></div>
+    </div>
+    <button id="estr-cerrar" onclick="document.getElementById('panel-estrategico').style.display='none'">✕</button>
+    <div id="estr-contenido"></div>
+  </div>
+</div>
+
+<div id="contador" aria-live="polite">⏳ 20:00</div>
+
+
+
+<div id="loading-overlay">
+  <div class="spin"></div><span>Cargando datos...</span>
+</div>
+
+<script>
+const ES_MASTER = {{ 'true' if es_master else 'false' }};
+const MUN_USUARIO = "{{ municipio_usuario if not es_master else '' }}";
+const ANOS = [1998,2001,2004,2007,2010,2012,2015,2018,2021,2024];
+
+let datos = null, geo = null, capa = null, munActual = null, anoActual = 2024, grafica = null;
+
+const fmt = n => n && parseInt(n) ? parseInt(n).toLocaleString('es-MX') : '—';
+
+// Botones de año
+ANOS.forEach(a => {
+    const b = document.createElement('button');
+    b.className = 'ano-btn' + (a===2024?' activo':'');
+    b.textContent = a;
+    b.onclick = () => {
+        anoActual = a;
+        document.querySelectorAll('.ano-btn').forEach(x => x.classList.toggle('activo', parseInt(x.textContent)===a));
+        if (munActual) render();
+    };
+    document.getElementById('ano-btns').appendChild(b);
+});
+
+// Mapa
+const map = L.map('map', { center: [16.75, -93.1], zoom: 9, preferCanvas: true });
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '©OpenStreetMap', maxZoom: 19
+}).addTo(map);
+const svgRenderer = L.svg();
+
+// Cargar datos
+fetch("{{ url_for('static', filename='data/historico_secciones.json') }}")
+    .then(r => r.json())
+    .then(d => {
+        datos = d;
+        if (ES_MASTER) {
+            const s = document.getElementById('sel-mun');
+            d.municipios.forEach(m => {
+                const o = document.createElement('option');
+                o.value = m; o.textContent = m;
+                s.appendChild(o);
+            });
+        }
+        return fetch("{{ url_for('static', filename='secciones_wgs84.geojson') }}").then(r => r.json());
+    })
+    .then(g => {
+        geo = g;
+        document.getElementById('loading-overlay').style.display = 'none';
+        if (!ES_MASTER) cambiarMunicipio(MUN_USUARIO);
+    })
+    .catch(e => {
+        document.getElementById('loading-overlay').innerHTML = '<span>Error: ' + e.message + '</span>';
+    });
+
+function cambiarMunicipio(m) {
+    if (!m || !datos) return;
+    munActual = m;
+    document.getElementById('panel-seccion').style.display = 'none';
+    render();
+}
+
+function render() {
+    if (!geo || !datos || !munActual) return;
+    if (capa) map.removeLayer(capa);
+
+    const dm = datos.datos[munActual] || {};
+    const secs = new Set(Object.keys(dm).map(s => parseInt(s)));
+    const claveMun = datos.claves_municipio ? datos.claves_municipio[munActual] : null;
+
+    let feats = [];
+    if (claveMun != null) {
+        feats = geo.features.filter(f =>
+            secs.has(parseInt(f.properties.seccion)) &&
+            f.properties.municipio != null &&
+            parseInt(f.properties.municipio) === claveMun
+        );
+    }
+    if (feats.length === 0) {
+        feats = geo.features.filter(f => secs.has(parseInt(f.properties.seccion)));
+    }
+
+    if (!feats.length) return;
+
+    const pmap = {};
+    capa = L.geoJSON({type:'FeatureCollection', features:feats}, {
+        renderer: svgRenderer,
+        style: f => {
+            const s = String(parseInt(f.properties.seccion));
+            const d = dm[s] && dm[s][String(anoActual)];
+            if (d) pmap[d.partido] = d.color;
+            return {
+                fillColor: d ? d.color : '#E8E4DC',
+                weight: 0.8, color: '#1A1A1A',
+                fillOpacity: d ? 0.82 : 0.15
+            };
+        },
+        onEachFeature: (f, layer) => {
+            const s = String(parseInt(f.properties.seccion));
+            const d = dm[s] && dm[s][String(anoActual)];
+            const top3 = d && d.top ? d.top.slice(0,3).map(t =>
+                    '<tr>' +
+                    '<td style="padding:2px 10px 2px 0"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:'+t.color+';margin-right:5px"></span>' +
+                    '<span style="font-weight:600;color:#1A1A1A">'+t.partido+'</span></td>' +
+                    '<td style="text-align:right;color:#1A1A1A;font-weight:600;padding-right:8px">'+parseInt(t.votos).toLocaleString('es-MX')+'</td>' +
+                    '<td style="text-align:right;color:#5A5A5A">('+t.pct+'%)</td>' +
+                    '</tr>'
+                ).join('') : '';
+            const pct = d && d.ln && d.ln > 0 ? d.total/d.ln*100 : 0; const participacion = pct > 0 && pct <= 100 ? pct.toFixed(1)+'%' : '—';
+            const tip = d
+                ? '<strong style="font-family:Fraunces,serif;font-size:0.95rem;display:block;margin-bottom:6px;color:#1A1A1A">Sección ' + s + '</strong>' +
+                  '<table style="border-collapse:collapse;font-family:Manrope,sans-serif;font-size:0.78rem;width:100%;margin-bottom:6px">' +
+                  '<tr><td style="color:#5A5A5A;padding-bottom:5px;font-weight:600" colspan="3">Top 3 partidos:</td></tr>' +
+                  top3 +
+                  '<tr><td colspan="3" style="border-top:1px solid #E8E4DC;padding-top:6px;padding-bottom:2px"><span style="color:#5A5A5A">Listado Nominal:</span> <strong>' + fmt(d.ln) + '</strong></td></tr>' +
+                  '<tr><td colspan="3"><span style="color:#5A5A5A">Votación Total:</span> <strong>' + fmt(d.total) + '</strong></td></tr>' +
+                  '<tr><td colspan="3"><span style="color:#5A5A5A">Participación:</span> <strong>' + participacion + '</strong></td></tr>' +
+                  '</table>'
+                : '<strong style="font-family:Fraunces,serif">Sección ' + s + '</strong><br><span style="color:#5A5A5A;font-size:0.78rem">Sin dato ' + anoActual + '</span>';
+            layer.bindTooltip(tip, {sticky:true, className:'tt-sistema'});
+            if (d) layer.on('click', () => verSeccion(s, dm[s]||{}));
+        }
+    }).addTo(map);
+
+    document.getElementById('leyenda').innerHTML = Object.entries(pmap).sort()
+        .map(([p,c]) => '<div class="ley-item"><div class="ley-dot" style="background:'+c+'"></div><span>'+p+'</span></div>').join('');
+
+    try {
+        const b = capa.getBounds();
+        if (b.isValid()) map.fitBounds(b, {padding:[40,40], maxZoom:13});
+    } catch(e) {}
+
+    calcularGanadorMunicipio();
+}
+
+function calcularGanadorMunicipio() {
+    if (!datos || !munActual) return;
+    const dm = datos.datos[munActual] || {};
+    let lnTotal = 0, votosTotal = 0;
+    let lnTotal2021 = 0;
+    const totalesPartido = {};
+
+    Object.values(dm).forEach(secData => {
+        const d = secData[String(anoActual)];
+        if (!d) return;
+        votosTotal += d.total || 0;
+        lnTotal += d.ln || 0;
+        if (d.top) {
+            d.top.forEach(t => { totalesPartido[t.partido] = (totalesPartido[t.partido]||0) + t.votos; });
+        }
+        const d21 = secData['2021'];
+        if (d21 && d21.ln) lnTotal2021 += d21.ln;
+    });
+
+    const panel = document.getElementById('panel-estrategico');
+    const key = munActual + '|' + anoActual;
+    const ganadorOficial = (datos.ganadores_municipio && datos.ganadores_municipio[key]) || null;
+
+    const ordenados = Object.entries(totalesPartido).sort((a,b) => b[1]-a[1]);
+    if (!ganadorOficial && ordenados.length < 1) {
+        panel.style.display = 'none';
+        return;
+    }
+
+    const pctMun = lnTotal > 0 ? votosTotal/lnTotal*100 : 0;
+    const participacion = pctMun > 0 && pctMun <= 100 ? pctMun.toFixed(1)+'%' : '—';
+
+    const [pGanador, vGanador] = ordenados[0] || [ganadorOficial || '—', 0];
+    const [pSegundo, vSegundo] = ordenados[1] || ['—', 0];
+    const margenVotos = vGanador - vSegundo;
+    const margenPct = vGanador > 0 ? Math.round(margenVotos/vGanador*100) : 0;
+    const colorGanador = datos.colores[pGanador] || '#808080';
+    const colorSegundo = datos.colores[pSegundo] || '#808080';
+
+    let proyeccionWrap = '';
+    if (anoActual === 2024 && lnTotal2021 > 0 && lnTotal > 0) {
+        const crecPct = (lnTotal - lnTotal2021) / lnTotal2021 * 100;
+        const factor = 1 + crecPct/100;
+        const umbralMinimo = Math.round(vSegundo * factor);
+        const umbralConsolidacion = Math.round(vGanador * factor);
+        const proyeccionLabel = 'El padrón electoral de ' + munActual + ' crece ' + crecPct.toFixed(1) + '% cada periodo. Esto es una estimación, no un resultado oficial.';
+        proyeccionWrap = '<div id="estr-proyeccion-wrap">' +
+            '<div id="estr-proyeccion-badge">⚡ PROYECCIÓN 2027</div>' +
+            '<div id="estr-proyeccion-label">' + proyeccionLabel + '</div>' +
+            '<div class="estr-grid2">' +
+                '<div class="estr-umbral"><span class="estr-umbral-txt">Para no perder, ' + pGanador + ' necesita superar</span><span class="estr-umbral-num">' + umbralMinimo.toLocaleString('es-MX') + '</span></div>' +
+                '<div class="estr-umbral"><span class="estr-umbral-txt">Para repetir su resultado de ' + anoActual + '</span><span class="estr-umbral-num">' + umbralConsolidacion.toLocaleString('es-MX') + '</span></div>' +
+            '</div>' +
+        '</div>';
+    }
+
+    const html =
+        '<div id="estr-titulo">Partido Ganador · Elección ' + anoActual + '</div>' +
+        '<div id="estr-sub-grid">' +
+            '<div class="estr-sub-item"><span class="estr-sub-label">Listado nominal</span><span class="estr-sub-val">' + (lnTotal?lnTotal.toLocaleString('es-MX'):'—') + '</span></div>' +
+            '<div class="estr-sub-item"><span class="estr-sub-label">Participación</span><span class="estr-sub-val">' + participacion + '</span></div>' +
+        '</div>' +
+        '<div class="estr-grid3">' +
+            '<div class="estr-tarjeta">' +
+                '<div class="estr-tag"><div class="estr-dot" style="background:'+colorGanador+'"></div><span class="estr-label">1er lugar</span></div>' +
+                '<div class="estr-partido">' + pGanador + '</div>' +
+                '<span class="estr-num">' + vGanador.toLocaleString('es-MX') + '</span> <span class="estr-unidad">votos</span>' +
+            '</div>' +
+            '<div class="estr-tarjeta">' +
+                '<div class="estr-tag"><div class="estr-dot" style="background:'+colorSegundo+'"></div><span class="estr-label">2do lugar</span></div>' +
+                '<div class="estr-partido">' + pSegundo + '</div>' +
+                '<span class="estr-num">' + vSegundo.toLocaleString('es-MX') + '</span> <span class="estr-unidad">votos</span>' +
+            '</div>' +
+            '<div class="estr-tarjeta dark">' +
+                '<div class="estr-label">Diferencia</div>' +
+                '<div class="estr-diff-grid">' +
+                    '<div><span class="estr-num">' + margenVotos.toLocaleString('es-MX') + '</span><span class="estr-unidad"> votos</span></div>' +
+                    '<div><span class="estr-num">' + margenPct + '%</span><span class="estr-unidad"> ventaja</span></div>' +
+                '</div>' +
+            '</div>' +
+        '</div>' +
+        proyeccionWrap;
+
+    document.getElementById('estr-contenido').innerHTML = html;
+}
+
+function verSeccion(sec, ds) {
+    document.getElementById('panel-seccion').style.display = 'block';
+    document.getElementById('panel-sec-num').textContent = 'Sección ' + sec;
+    document.getElementById('panel-sec-mun').textContent = munActual;
+
+    const tbody = document.getElementById('tabla-body');
+    const limpiarPartido = p => p && p.length > 8 ? p.substring(0,7)+'…' : (p||'?');
+    tbody.innerHTML = ANOS.map(a => {
+        const d = ds[String(a)];
+        return d
+            ? '<tr><td><strong>' + a + '</strong></td>' +
+              '<td><span class="chip" style="background:'+d.color+'">'+limpiarPartido(d.partido)+'</span></td>' +
+              '<td style="text-align:center;color:#5A5A5A">' + fmt(d.ln) + '</td>' +
+              '<td style="text-align:center;color:#5A5A5A">' + fmt(d.total) + '</td></tr>'
+            : '<tr><td><strong>'+a+'</strong></td><td colspan="3" style="color:#AEAAA0;font-size:0.72rem">Sin dato</td></tr>';
+    }).join('');
+
+    const lnData = ANOS.map(a => { const d = ds[String(a)]; return d && d.ln ? parseInt(d.ln) : null; });
+
+    if (grafica) grafica.destroy();
+    grafica = new Chart(document.getElementById('chart-ln').getContext('2d'), {
+        type: 'line',
+        data: {
+            labels: ANOS,
+            datasets: [{
+                data: lnData,
+                borderColor: '#2D2D2D',
+                backgroundColor: 'rgba(45,45,45,0.06)',
+                tension: 0.3, fill: true,
+                pointBackgroundColor: '#2D2D2D',
+                pointRadius: 3,
+                spanGaps: true
+            }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+                x: { ticks: { color: '#5A5A5A', font: { size: 9, family: 'Manrope' } }, grid: { color: '#E8E4DC' } },
+                y: { ticks: { color: '#5A5A5A', font: { size: 9, family: 'Manrope' } }, grid: { color: '#E8E4DC' }, beginAtZero: false }
+            }
+        }
+    });
+}
+
+(function () {
+    const panel = document.getElementById('panel-estrategico');
+    const handle = document.getElementById('estr-drag-handle');
+    let dragging = false, offsetX = 0, offsetY = 0, moved = false;
+
+    handle.addEventListener('mousedown', e => {
+        dragging = true; moved = false;
+        const rect = panel.getBoundingClientRect();
+        offsetX = e.clientX - rect.left;
+        offsetY = e.clientY - rect.top;
+        panel.style.transform = 'none';
+        panel.style.left = rect.left + 'px';
+        panel.style.top = rect.top + 'px';
+        e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', e => {
+        if (!dragging) return;
+        moved = true;
+        panel.style.left = (e.clientX - offsetX) + 'px';
+        panel.style.top = (e.clientY - offsetY) + 'px';
+    });
+
+    document.addEventListener('mouseup', () => { dragging = false; });
+})();
+
+(function () {
+    const DURACION_MS = 1200000;
+    const UMBRAL = 30;
+    const URL_LOGOUT = '/logout';
+    const expira = Date.now() + DURACION_MS;
+    const c = document.getElementById('contador');
+    let expirado = false, iv;
+    function tick() {
+        const r = Math.max(0, Math.ceil((expira - Date.now()) / 1000));
+        const min = Math.floor(r / 60);
+        const sec = r % 60;
+        c.textContent = '⏳ ' + min + ':' + (sec < 10 ? '0' : '') + sec;
+        if (r <= UMBRAL && r > 0) c.classList.add('alerta');
+        if (r <= 0 && !expirado) {
+            expirado = true;
+            clearInterval(iv);
+            alert('Sesión expirada');
+            window.location.href = URL_LOGOUT;
+        }
+    }
+    tick();
+    iv = setInterval(tick, 1000);
+})();
+</script>
+</body>
+</html>

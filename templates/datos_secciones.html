@@ -59,7 +59,6 @@ body::before {
     flex-direction: column;
 }
 
-/* BRAND */
 .brand {
     display: flex;
     align-items: center;
@@ -109,7 +108,6 @@ body::before {
     font-weight: 500;
 }
 
-/* HEADER */
 header {
     margin-bottom: 40px;
     animation: fadeUp 0.7s ease-out;
@@ -162,7 +160,6 @@ h1 em {
 
 .back-link:hover { color: var(--accent); }
 
-/* FILTROS */
 .filters {
     background: var(--bg-card);
     border: 1px solid var(--line);
@@ -227,7 +224,6 @@ h1 em {
     .filters { grid-template-columns: 1fr; }
 }
 
-/* TABLA */
 .table-card {
     background: var(--bg-card);
     border: 1px solid var(--line);
@@ -237,7 +233,6 @@ h1 em {
     animation: fadeUp 0.7s ease-out 0.3s backwards;
 }
 
-/* DataTables overrides */
 .dt-container { font-family: 'Manrope', sans-serif; font-size: 14px; }
 
 .dt-container .dt-buttons .dt-button {
@@ -329,7 +324,6 @@ table.dataTable tbody tr.row-sin-datos td { color: var(--ink-faint); font-style:
     background: var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%235A5A5A' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") no-repeat right 8px center;
 }
 
-/* BADGES DE PARTIDO */
 .badge {
     display: inline-block;
     padding: 3px 9px;
@@ -340,22 +334,23 @@ table.dataTable tbody tr.row-sin-datos td { color: var(--ink-faint); font-style:
     color: white;
     font-family: 'Manrope', sans-serif;
 }
-.badge-MORENA  { background: #8B2332; }
-.badge-PVEM    { background: #4D9F3D; }
-.badge-PT      { background: #ED1C24; }
-.badge-PAN     { background: #0066CC; }
-.badge-PRI     { background: #CE1126; }
-.badge-PRD     { background: #FFCC00; color:#333; }
-.badge-MC      { background: #FF6600; }
-.badge-RSP     { background: #757575; }
-.badge-PCHU    { background: #29B6F6; }
-.badge-PMCH    { background: #8E44AD; }
-.badge-PPCH    { background: #8B0000; }
-.badge-PES     { background: #4A148C; }
-.badge-FXM     { background: #DC143C; }
+.badge-MORENA  { background: #A11317; }
+.badge-PVEM    { background: #53AF31; }
+.badge-PT      { background: #DA291C; }
+.badge-PAN     { background: #004AB0; }
+.badge-PRI     { background: #DC3545; }
+.badge-PRD     { background: #FFD100; color:#333; }
+.badge-MC      { background: #FD8000; }
+.badge-RSP     { background: #808080; }
+.badge-PCHU    { background: #056A84; }
+.badge-PMCH    { background: #743C90; }
+.badge-PPCH    { background: #B73A3A; }
+.badge-PES     { background: #5E327D; }
+.badge-FXM     { background: #EC008C; }
+.badge-PANAL   { background: #009EA7; }
+.badge-INDEPENDIENTE { background: #B3B3B3; }
 .badge-default { background: #BBBBBB; }
 
-/* BOTÓN VER DETALLE */
 .btn-detalle {
     background: transparent;
     border: 1px solid var(--line);
@@ -371,11 +366,9 @@ table.dataTable tbody tr.row-sin-datos td { color: var(--ink-faint); font-style:
 
 .btn-detalle:hover { background: var(--accent); color: white; border-color: var(--accent); }
 
-/* NÚMEROS */
 .num { font-variant-numeric: tabular-nums; }
 .muted { color: var(--ink-faint); }
 
-/* MODAL */
 .modal-overlay {
     position: fixed;
     inset: 0;
@@ -525,7 +518,6 @@ table.dataTable tbody tr.row-sin-datos td { color: var(--ink-faint); font-style:
     .partido-row .partido-bar-wrap { display: none; }
 }
 
-/* CONTADOR DE LOGOUT */
 #contador {
     position: fixed;
     bottom: 20px;
@@ -558,7 +550,6 @@ table.dataTable tbody tr.row-sin-datos td { color: var(--ink-faint); font-style:
 #contador.alerta { background: #FEF2F2; color: #B91C1C; border-color: #FECACA; font-weight: 600; }
 #contador.alerta::before { background: #DC2626; }
 
-/* FOOTER */
 footer {
     margin-top: 40px;
     padding-top: 24px;
@@ -585,13 +576,11 @@ footer a:hover { color: var(--accent); }
     footer a { margin-left: 0; }
 }
 
-/* ANIMATIONS */
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes modalIn { from { opacity: 0; transform: scale(0.96) translateY(8px); } to { opacity: 1; transform: scale(1) translateY(0); } }
 
-/* LOADING */
 .loading-state {
     padding: 60px 20px;
     text-align: center;
@@ -622,7 +611,6 @@ footer a:hover { color: var(--accent); }
         
     </header>
 
-    <!-- FILTROS -->
     <div class="filters">
         <div class="filter-group">
             <label class="filter-label" for="filter-municipio">Municipio</label>
@@ -639,7 +627,6 @@ footer a:hover { color: var(--accent); }
         <button class="clear-btn" id="clear-filters">Limpiar filtros</button>
     </div>
 
-    <!-- TABLA -->
     <div class="table-card">
         <div id="loading" class="loading-state">Cargando datos…</div>
         <table id="tabla" class="display compact" style="width:100%; display:none;">
@@ -672,7 +659,6 @@ footer a:hover { color: var(--accent); }
 
 </div>
 
-<!-- MODAL DETALLE -->
 <div class="modal-overlay" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <div class="modal-card">
         <div class="modal-header">
@@ -692,7 +678,6 @@ footer a:hover { color: var(--accent); }
 
 <div id="contador" aria-live="polite">⏳ 20:00</div>
 
-<!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/3.2.0/js/dataTables.buttons.min.js"></script>
@@ -700,21 +685,27 @@ footer a:hover { color: var(--accent); }
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 
 <script>
-/* ============================================================
-   DASHBOARD DATOS POR SECCIÓN
-   ============================================================ */
-
 const COLORS_PARTIDO = {
-    MORENA:'#8B2332', PVEM:'#4D9F3D', PT:'#ED1C24', PAN:'#0066CC',
-    PRI:'#CE1126', PRD:'#FFCC00', MC:'#FF6600', RSP:'#757575',
-    PCHU:'#29B6F6', PMCH:'#8E44AD', PPCH:'#8B0000', PES:'#4A148C',
-    FXM:'#DC143C'
+    PAN:    '#004AB0',
+    PRI:    '#DC3545',
+    PVEM:   '#53AF31',
+    PT:     '#DA291C',
+    MC:     '#FD8000',
+    MORENA: '#A11317',
+    RSP:    '#808080',
+    PCHU:   '#056A84',
+    PMCH:   '#743C90',
+    PES:    '#5E327D',
+    PRD:    '#FFD100',
+    PPCH:   '#B73A3A',
+    INDEPENDIENTE: '#B3B3B3',
+    FXM:    '#EC008C',
+    PANAL:  '#009EA7'
 };
 
-let DATA = [];   // dataset enriquecido global
-let DT   = null; // instancia DataTable
+let DATA = [];
+let DT   = null;
 
-/* Helpers de formato */
 const fmtNum = v => v == null ? '—' : v.toLocaleString('es-MX');
 const fmtPct = v => v == null ? '—' : (v * 100).toFixed(1) + '%';
 
@@ -724,34 +715,27 @@ const badgeHTML = p => {
     return `<span class="badge badge-${safe}">${p}</span>`;
 };
 
-/* Enriquecer cada sección con % Ganador y Margen */
 function enriquecer(s) {
     const vp = s.votos_por_partido || {};
     const votos = Object.values(vp);
 
-    // % del ganador sobre el total de votos válidos
     s.pct_ganador = (s.votos_ganador && s.total_votos)
         ? s.votos_ganador / s.total_votos
         : null;
 
-    // Margen = ganador - 2do lugar (entre partidos individuales)
     if (s.votos_ganador && votos.length >= 2) {
         const ordenados = votos.slice().sort((a,b) => b-a);
         s.margen = ordenados[0] - ordenados[1];
     } else if (s.votos_ganador && votos.length === 1) {
-        s.margen = s.votos_ganador; // único partido con votos
+        s.margen = s.votos_ganador;
     } else {
         s.margen = null;
     }
 
-    // Flag visual para secciones sin datos
     s.sin_datos = !s.partido_ganador;
     return s;
 }
 
-/* ============================================================
-   POBLAR FILTROS
-   ============================================================ */
 function poblarFiltros(data) {
     const municipios = [...new Set(data.map(s => s.municipio))].sort();
     const distritos  = [...new Set(data.map(s => s.distrito_local_id).filter(v => v != null))].sort((a,b) => a-b);
@@ -767,9 +751,6 @@ function poblarFiltros(data) {
     partidos.forEach(v => p.insertAdjacentHTML('beforeend', `<option value="${v}">${v}</option>`));
 }
 
-/* ============================================================
-   MODAL DE DETALLE
-   ============================================================ */
 function abrirModal(idSeccion) {
     const s = DATA.find(r => r.id_seccion === idSeccion);
     if (!s) return;
@@ -813,7 +794,6 @@ function abrirModal(idSeccion) {
         });
         html += '</div>';
 
-        // Nota sobre coaliciones si el total no cuadra
         if (s.total_votos && Math.abs(totalIndividuales - s.total_votos) > 5) {
             const dif = s.total_votos - totalIndividuales;
             html += `<p style="margin-top:14px;font-size:12px;color:var(--ink-faint);font-style:italic;">
@@ -837,9 +817,6 @@ document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && !document.getElementById('modal').hidden) cerrarModal();
 });
 
-/* ============================================================
-   INICIALIZACIÓN
-   ============================================================ */
 (async function init() {
     try {
         const r = await fetch('/api/secciones');
@@ -917,7 +894,6 @@ document.addEventListener('keydown', e => {
             ],
         });
 
-        /* Conectar filtros dropdown con DataTables */
         const aplicarFiltros = () => {
             const mun = document.getElementById('filter-municipio').value;
             const dis = document.getElementById('filter-distrito').value;
@@ -960,7 +936,6 @@ document.addEventListener('keydown', e => {
             DT.draw();
         });
 
-        /* Click en botón "Ver" abre modal */
         document.querySelector('#tabla tbody').addEventListener('click', e => {
             const btn = e.target.closest('.btn-detalle');
             if (btn) abrirModal(btn.dataset.id);
@@ -971,9 +946,6 @@ document.addEventListener('keydown', e => {
     }
 })();
 
-/* ============================================================
-   CONTADOR DE LOGOUT (alineado con Flask 20 min)
-   ============================================================ */
 (function () {
     const DURACION_MS = 1200000;
     const UMBRAL = 30;

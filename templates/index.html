@@ -33,7 +33,6 @@ html, body {
     min-height: 100vh;
 }
 
-/* Sutil textura de fondo */
 body::before {
     content: '';
     position: fixed;
@@ -55,7 +54,6 @@ body::before {
     flex-direction: column;
 }
 
-/* ENCABEZADO */
 .brand {
     display: flex;
     align-items: center;
@@ -148,7 +146,6 @@ h1 em {
     max-width: 560px;
 }
 
-/* CARDS */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -177,9 +174,12 @@ h1 em {
     animation: fadeUp 0.7s ease-out backwards;
 }
 
-.card:nth-child(1) { animation-delay: 0.15s; }
-.card:nth-child(2) { animation-delay: 0.3s; }
-.card:nth-child(3) { animation-delay: 0.45s; }
+.card:nth-child(1) { animation-delay: 0.10s; }
+.card:nth-child(2) { animation-delay: 0.20s; }
+.card:nth-child(3) { animation-delay: 0.30s; }
+.card:nth-child(4) { animation-delay: 0.40s; }
+.card:nth-child(5) { animation-delay: 0.50s; }
+.card:nth-child(6) { animation-delay: 0.60s; }
 
 .card::after {
     content: '';
@@ -281,7 +281,6 @@ h1 em {
 
 .card:hover .card-cta svg { transform: translateX(4px); }
 
-/* CONTADOR DE LOGOUT */
 #contador {
     position: fixed;
     bottom: 20px;
@@ -330,7 +329,6 @@ h1 em {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* FOOTER */
 footer {
     margin-top: 64px;
     padding-top: 24px;
@@ -368,8 +366,8 @@ footer {
 
     <header>
         <div class="eyebrow">Elección · Chiapas 2027</div>
-        <h1>Mapas <em>electorales</em><br>de casillas y partidos.</h1>
-        <p class="lead">Visualización geográfica de las 7,214 casillas instaladas. Selecciona la vista que deseas consultar.</p>
+        <h1>¿Quién compite? ¿Quién gana? <em>¿Por qué?</em></h1>
+        <p class="lead">26 años de historia electoral de Chiapas. Mapas, candidatos, secciones y diagnósticos municipales — todo en un solo lugar.</p>
     </header>
 
     <div class="cards">
@@ -387,6 +385,7 @@ footer {
             <p class="card-question">¿Quién ganó cada zona?</p>
             <p class="card-desc">Vista política territorial. Cada sección coloreada por su partido ganador. Útil para entender de un vistazo el mapa de poder territorial del estado.</p>
             <div class="card-meta">
+                <span class="tag">Elección 2024</span>
                 <span class="tag">Color por ganador</span>
                 <span class="tag">Vista territorial</span>
             </div>
@@ -410,6 +409,7 @@ footer {
             <p class="card-question">¿Cómo le fue al partido X?</p>
             <p class="card-desc">Vista por fuerza electoral. Filtra por cada partido y observa dónde tiene presencia, aunque no haya ganado. Incluye Top 3 por sección y detalle de casillas.</p>
             <div class="card-meta">
+                <span class="tag">Elección 2024</span>
                 <span class="tag">Filtros por partido</span>
                 <span class="tag">Top 3 + casillas</span>
             </div>
@@ -433,6 +433,7 @@ footer {
             <p class="card-question">¿Qué dicen los números de fondo?</p>
             <p class="card-desc">Vista tabular completa. Las 2,278 secciones del estado con ganador, votos, participación y margen. Filtra por municipio, distrito o partido. Exporta a CSV.</p>
             <div class="card-meta">
+                <span class="tag">Elección 2024</span>
                 <span class="tag">Tabla buscable</span>
                 <span class="tag">Filtros y export</span>
             </div>
@@ -444,6 +445,45 @@ footer {
             </div>
         </a>
 
+        <a class="card" href="/historico">
+            <div class="card-icon">📅</div>
+            <div class="card-title">Histórico Electoral</div>
+            <p class="card-question">¿Cómo ha votado cada sección desde 1998?</p>
+            <p class="card-desc">26 años de historia electoral por sección. Visualiza quién ganó en cada sección en cada elección desde 1998 hasta 2024. Cambia el año y ve la evolución del voto.</p>
+            <div class="card-meta">
+                <span class="tag">1998–2024</span>
+                <span class="tag">Por sección</span>
+            </div>
+            <div class="card-cta">
+                Ver histórico
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 10h12M10 4l6 6-6 6"/></svg>
+            </div>
+        </a>
+
+        <a class="card" href="/candidatos">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/>
+                    <line x1="19" y1="8" x2="19" y2="14"/>
+                    <line x1="22" y1="11" x2="16" y2="11"/>
+                </svg>
+            </div>
+            <div class="card-title">Trayectoria de Candidatos</div>
+            <p class="card-question">¿Quién ha competido y cuántas veces?</p>
+            <p class="card-desc">Historial completo de candidatos desde 1998 hasta 2024. Busca por nombre o explora quiénes han competido en tu municipio, con qué partidos y si ganaron o perdieron.</p>
+            <div class="card-meta">
+                <span class="tag">1998–2024</span>
+                <span class="tag">Por candidato</span>
+                <span class="tag">Por municipio</span>
+            </div>
+            <div class="card-cta">
+                Ver candidatos
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M13 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
 
         <a class="card" href="/diagnosticos">
             <div class="card-icon">
@@ -455,15 +495,15 @@ footer {
                     <polyline points="10 9 9 9 8 9"/>
                 </svg>
             </div>
-            <div class="card-title">Diagn&#243;sticos</div>
-            <p class="card-question">&#191;Qu&#233; dice el an&#225;lisis de mi municipio?</p>
-            <p class="card-desc">123 diagn&#243;sticos municipales en PDF. An&#225;lisis completo por secci&#243;n, tendencia de voto, fortalezas y riesgos electorales de cara a 2027.</p>
+            <div class="card-title">Diagnósticos</div>
+            <p class="card-question">¿Qué dice el análisis de mi municipio?</p>
+            <p class="card-desc">123 diagnósticos municipales en PDF. Análisis completo por sección, tendencia de voto, fortalezas y riesgos electorales de cara a 2027.</p>
             <div class="card-meta">
                 <span class="tag">123 municipios</span>
                 <span class="tag">Descarga PDF</span>
             </div>
             <div class="card-cta">
-                Ver diagn&#243;sticos
+                Ver diagnósticos
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
@@ -483,7 +523,7 @@ footer {
 
 <script>
 (function () {
-    const DURACION_MS = 1200000; // 20 minutos (alineado con Flask)
+    const DURACION_MS = 1200000;
     const UMBRAL = 30;
     const URL_LOGOUT = '/logout';
     const expira = Date.now() + DURACION_MS;

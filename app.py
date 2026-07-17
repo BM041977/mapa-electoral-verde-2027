@@ -73,7 +73,8 @@ def login_required(f):
     return wrapper
 
 def nombre_bonito(archivo):
-    nombre = archivo.replace("Diagnostico_Electoral_", "").replace("_v8.pdf", "")
+    nombre = archivo.replace("Diagnostico_Electoral_Municipio_de_", "").replace("Diagnostico_Electoral_", "")
+    nombre = nombre.replace("_v8.pdf", "").replace(".pdf", "")
     palabras = nombre.split("_")
     minusculas = {"De", "Del", "La", "Las", "Los", "El", "Y", "A"}
     resultado = []

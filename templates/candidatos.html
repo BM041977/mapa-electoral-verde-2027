@@ -380,6 +380,11 @@ btnLimpiar.addEventListener('click', () => {
     indiceActivo = -1;
     document.getElementById('perfil').style.display = 'none';
     document.getElementById('perfil').innerHTML = '';
+    if (!ES_MAESTRO) {
+        cambiarTab('municipio');
+        history.replaceState(null, '', '/candidatos');
+        return;
+    }
     document.getElementById('estado-vacio').style.display = 'block';
     history.replaceState(null, '', '/candidatos');
     inputBuscar.focus();

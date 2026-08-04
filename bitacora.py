@@ -65,7 +65,12 @@ def _get_ip():
 
 
 def registrar_acceso():
-    """Registra el request actual en la bitácora. Llamar desde @app.before_request."""
+    """Registra el request actual en la bitácora. Llamar desde @app.before_request.
+
+    Envuelto en try/except a propósito: un problema de la base de datos
+    (red, timeout, bloqueo, etc.) nunca debe tumbar el sitio -- en el peor
+    caso, ese acceso específico simplemente no queda registrado.
+    """
     ruta = request.path
     if ruta.startswith(RUTAS_EXCLUIDAS_PREFIJOS):
         return
@@ -76,13 +81,20 @@ def registrar_acceso():
     metodo = request.method
     fecha_hora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    conn = sqlite3.connect(DB_PATH)
-    conn.execute(
-        "INSERT INTO accesos (usuario, ip, user_agent, ruta, metodo, fecha_hora) VALUES (?, ?, ?, ?, ?, ?)",
-        (usuario, ip, user_agent, ruta, metodo, fecha_hora),
-    )
-    conn.commit()
-    conn.close()
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        conn.execute(
+            "INSERT INTO accesos (usuario, ip, user_agent, ruta, metodo, fecha_hora) VALUES (?, ?, ?, ?, ?, ?)",
+            (usuario, ip, user_agent, ruta, metodo, fecha_hora),
+        )
+        conn.commit()
+        conn.close()
+    except Exception as e:
+        try:
+            from flask import current_app
+            current_app.logger.warning(f"bitacora: no se pudo registrar el acceso: {e}")
+        except Exception:
+            pass
 
 
 def detectar_sesiones_simultaneas(usuario, minutos=5):

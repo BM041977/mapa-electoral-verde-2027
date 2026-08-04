@@ -590,6 +590,7 @@ footer a:hover { color: var(--accent); }
 }
 .filtros-ocultos { display: none !important; }
 </style>
+<link rel="stylesheet" href="/static/marca_agua_print.css">
 </head>
 <body>
 
@@ -972,5 +973,13 @@ document.addEventListener('keydown', e => {
 })();
 </script>
 
+<script>
+  window.SESION = {
+    usuario: "{{ usuario }}",
+    ip: "{{ ip_cliente }}",
+    municipio: "{{ municipio }}"
+  };
+</script>
+<script src="/static/marca_agua.js"></script>
 </body>
 </html>

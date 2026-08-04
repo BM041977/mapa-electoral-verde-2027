@@ -394,6 +394,7 @@ body { font-family: 'Manrope', system-ui, sans-serif; -webkit-font-smoothing: an
     min-width: 200px !important;
 }
 </style>
+<link rel="stylesheet" href="/static/marca_agua_print.css">
 </head>
 <body>
 
@@ -505,10 +506,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const svgRenderer = L.svg();
 
 // Cargar datos
-fetch("{{ url_for('static', filename='data/historico_secciones.json') }}")
-    .then(r => r.json())
-    .then(d => {
+Promise.all([
+    fetch("{{ url_for('static', filename='data/historico_secciones.json') }}").then(r => r.json()),
+    fetch("{{ url_for('static', filename='secciones_wgs84.geojson') }}").then(r => r.json())
+])
+    .then(([d, g]) => {
         datos = d;
+        geo = g;
         if (ES_MASTER) {
             const s = document.getElementById('sel-mun');
             d.municipios.forEach(m => {
@@ -517,10 +521,6 @@ fetch("{{ url_for('static', filename='data/historico_secciones.json') }}")
                 s.appendChild(o);
             });
         }
-        return fetch("{{ url_for('static', filename='secciones_wgs84.geojson') }}").then(r => r.json());
-    })
-    .then(g => {
-        geo = g;
         document.getElementById('loading-overlay').style.display = 'none';
         if (!ES_MASTER) cambiarMunicipio(MUN_USUARIO);
     })
@@ -530,7 +530,7 @@ fetch("{{ url_for('static', filename='data/historico_secciones.json') }}")
 
 function cambiarMunicipio(m) {
     if (!m || !datos) return;
-    munActual = m;
+    munActual = m.toUpperCase();
     document.getElementById('panel-seccion').style.display = 'none';
     render();
 }
@@ -789,5 +789,13 @@ function verSeccion(sec, ds) {
     iv = setInterval(tick, 1000);
 })();
 </script>
+<script>
+  window.SESION = {
+    usuario: "{{ usuario }}",
+    ip: "{{ ip_cliente }}",
+    municipio: "{{ municipio }}"
+  };
+</script>
+<script src="/static/marca_agua.js"></script>
 </body>
 </html>

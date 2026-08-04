@@ -195,6 +195,7 @@ html, body { background: var(--bg); color: var(--ink); font-family: 'Manrope', s
     .reloj-pagina { left: 14px; bottom: 14px; padding: 6px 12px; font-size: 0.72rem; }
 }
 </style>
+<link rel="stylesheet" href="/static/marca_agua_print.css">
 </head>
 <body>
 
@@ -205,7 +206,7 @@ html, body { background: var(--bg); color: var(--ink); font-family: 'Manrope', s
 
 <div class="contenedor">
 
-  <div class="tabs">
+  <div class="tabs" id="tabs-candidatos">
     <button class="tab activo" onclick="cambiarTab('nombre')">🔍 Buscar por nombre</button>
     <button class="tab" onclick="cambiarTab('municipio')">🏛 Explorar por municipio</button>
   </div>
@@ -228,6 +229,8 @@ html, body { background: var(--bg); color: var(--ink); font-family: 'Manrope', s
     <select class="municipio-select" id="select-municipio" onchange="cargarMunicipio()">
       <option value="">— Selecciona un municipio —</option>
     </select>
+    <select class="municipio-select" id="select-ano-municipio" onchange="aplicarFiltros()"></select>
+    <select class="municipio-select" id="select-partido-municipio" onchange="aplicarFiltros()"></select>
     <div id="resultado-municipio"></div>
   </div>
 
@@ -245,6 +248,11 @@ html, body { background: var(--bg); color: var(--ink); font-family: 'Manrope', s
 let timeoutBusqueda = null;
 let sugerenciasActuales = [];
 let indiceActivo = -1;
+let candidatosMunicipioActual = [];
+let municipioTablaActual = '';
+
+const ES_MAESTRO = {{ 'true' if es_maestro else 'false' }};
+const MUNICIPIO_SESION = "{{ municipio }}";
 
 const coloresPartido = {
     'PAN':    '#004AB0',
@@ -294,6 +302,34 @@ function resaltarCoincidencia(nombre, q) {
 const inputBuscar = document.getElementById('input-buscar');
 const btnLimpiar = document.getElementById('btn-limpiar');
 const divSugerencias = document.getElementById('sugerencias');
+
+const ANOS_CANDIDATOS = [1998,2001,2004,2007,2010,2012,2015,2018,2021,2024];
+(function initFiltroAno() {
+    const sel = document.getElementById('select-ano-municipio');
+    ANOS_CANDIDATOS.slice().reverse().forEach(a => {
+        const opt = document.createElement('option');
+        opt.value = a;
+        opt.textContent = a;
+        if (a === 2024) opt.selected = true;
+        sel.appendChild(opt);
+    });
+})();
+
+if (!ES_MAESTRO) {
+    document.getElementById('tabs-candidatos').style.display = 'none';
+    document.getElementById('panel-nombre').classList.remove('activo');
+    document.getElementById('panel-municipio').classList.add('activo');
+
+    const selMuni = document.getElementById('select-municipio');
+    selMuni.innerHTML = '';
+    const optMuni = document.createElement('option');
+    optMuni.value = MUNICIPIO_SESION;
+    optMuni.textContent = capitalizar(MUNICIPIO_SESION);
+    optMuni.selected = true;
+    selMuni.appendChild(optMuni);
+    selMuni.disabled = true;
+    cargarMunicipio();
+}
 
 inputBuscar.addEventListener('input', e => {
     const q = e.target.value.trim();
@@ -491,19 +527,51 @@ function cargarMunicipios() {
 
 function cargarMunicipio() {
     const municipio = document.getElementById('select-municipio').value;
+    municipioTablaActual = municipio;
     const div = document.getElementById('resultado-municipio');
-    if (!municipio) { div.innerHTML = ''; return; }
+    if (!municipio) { div.innerHTML = ''; candidatosMunicipioActual = []; return; }
     div.innerHTML = '<div class="loading-municipio">Cargando candidatos...</div>';
 
     fetch('/api/candidatos/municipio/' + encodeURIComponent(municipio))
         .then(r => r.json())
         .then(data => {
-            if (!data.candidatos || !data.candidatos.length) {
+            candidatosMunicipioActual = data.candidatos || [];
+            if (!candidatosMunicipioActual.length) {
                 div.innerHTML = '<div class="loading-municipio">No se encontraron candidatos con trayectoria en este municipio.</div>';
                 return;
             }
-            renderTablaMunicipio(data.candidatos, municipio);
+            poblarFiltroPartido();
+            aplicarFiltros();
         });
+}
+
+function poblarFiltroPartido() {
+    const selPartido = document.getElementById('select-partido-municipio');
+    const partidos = new Set();
+    candidatosMunicipioActual.forEach(c => (c.partidos || []).forEach(p => partidos.add(p)));
+    selPartido.innerHTML = '<option value="">Todos los partidos</option>';
+    [...partidos].sort().forEach(p => {
+        const opt = document.createElement('option');
+        opt.value = p;
+        opt.textContent = p;
+        selPartido.appendChild(opt);
+    });
+}
+
+function aplicarFiltros() {
+    if (!candidatosMunicipioActual.length) return;
+    const ano = parseInt(document.getElementById('select-ano-municipio').value, 10);
+    const partido = document.getElementById('select-partido-municipio').value;
+    let filtrados = candidatosMunicipioActual.filter(c => (c.anos_en_municipio || c.anos).includes(ano));
+    if (partido) {
+        filtrados = filtrados.filter(c => (c.partidos || []).includes(partido));
+    }
+    const div = document.getElementById('resultado-municipio');
+    if (!filtrados.length) {
+        div.innerHTML = '<div class="loading-municipio">Ningún candidato con trayectoria en ' + ano + (partido ? ' (' + partido + ')' : '') + ' para este municipio.</div>';
+        return;
+    }
+    renderTablaMunicipio(filtrados, municipioTablaActual);
 }
 
 function renderTablaMunicipio(candidatos, municipio) {
@@ -578,10 +646,19 @@ document.addEventListener('click', e => {
 })();
 
 (function cargarDesdeUrl() {
+    if (!ES_MAESTRO) return;
     const params = new URLSearchParams(window.location.search);
     const nombre = params.get('nombre');
     if (nombre) verPerfil(nombre);
 })();
 </script>
+<script>
+  window.SESION = {
+    usuario: "{{ usuario }}",
+    ip: "{{ ip_cliente }}",
+    municipio: "{{ municipio }}"
+  };
+</script>
+<script src="/static/marca_agua.js"></script>
 </body>
 </html>

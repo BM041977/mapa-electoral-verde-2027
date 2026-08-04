@@ -18,6 +18,7 @@ header { padding: 14px 28px; border-bottom: 1px solid #E8E4DC; background: #fff;
 .contacto strong { display: block; color: #1A1A1A; font-weight: 600; margin-bottom: 2px; }
 .visor { flex: 1; width: 100%; height: calc(100vh - 72px); border: none; }
 </style>
+<link rel="stylesheet" href="/static/marca_agua_print.css">
 </head>
 <body>
 <header>
@@ -37,5 +38,13 @@ header { padding: 14px 28px; border-bottom: 1px solid #E8E4DC; background: #fff;
     </div>
 </header>
 <iframe class="visor" src="/static/pdfs/{{ archivo }}#toolbar=0&navpanes=0"></iframe>
+<script>
+  window.SESION = {
+    usuario: "{{ usuario }}",
+    ip: "{{ ip_cliente }}",
+    municipio: "{{ municipio }}"
+  };
+</script>
+<script src="/static/marca_agua.js"></script>
 </body>
 </html>

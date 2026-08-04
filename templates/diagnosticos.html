@@ -254,6 +254,7 @@ footer {
     footer { flex-direction: column; gap: 8px; align-items: flex-start; }
 }
 </style>
+<link rel="stylesheet" href="/static/marca_agua_print.css">
 </head>
 <body>
 <div class="wrap">
@@ -374,5 +375,13 @@ footer {
     });
 })();
 </script>
+<script>
+  window.SESION = {
+    usuario: "{{ usuario }}",
+    ip: "{{ ip_cliente }}",
+    municipio: "{{ municipio }}"
+  };
+</script>
+<script src="/static/marca_agua.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, session, jsonify, send_file
+from flask import Flask, render_template, request, redirect, session, jsonify, send_file, Response
 from functools import wraps
 import os
 import json
@@ -12,8 +12,14 @@ def _cargar_usuarios():
 
 import hmac
 from datetime import timedelta
+from bitacora import init_bitacora, registrar_acceso
 
 app = Flask(__name__)
+init_bitacora(app)
+
+@app.before_request
+def _log_acceso():
+    registrar_acceso()
 
 app.secret_key = os.environ.get("SECRET_KEY", "clave_super_segura")
 app.permanent_session_lifetime = timedelta(minutes=20)
@@ -55,7 +61,14 @@ def _cargar_secciones():
 
 @app.context_processor
 def inject_owner():
-    return {"owner": OWNER, "telefono": TELEFONO, "aviso_propiedad": AVISO_PROPIEDAD}
+    return {
+        "owner": OWNER,
+        "telefono": TELEFONO,
+        "aviso_propiedad": AVISO_PROPIEDAD,
+        "usuario": session.get("usuario", "usuario"),
+        "ip_cliente": _ip_cliente(),
+        "municipio": session.get("municipio", ""),
+    }
 
 @app.after_request
 def no_cache(response):
@@ -98,6 +111,7 @@ def login():
         if usuario_ok and password_ok:
             session["logged_in"] = True
             session["es_maestro"] = True
+            session["usuario"] = usuario
             session.permanent = True
             return redirect("/inicio")
         usuarios_muni = _cargar_usuarios()
@@ -106,6 +120,7 @@ def login():
                 session["logged_in"] = True
                 session["es_maestro"] = False
                 session["municipio"] = usuarios_muni[usuario]["municipio"]
+                session["usuario"] = usuario
                 session.permanent = True
                 muni_url = usuarios_muni[usuario]["municipio"].replace(" ", "_")
                 return redirect("/inicio")
@@ -117,15 +132,53 @@ def login():
 def inicio():
     return render_template("index.html")
 
+def _ip_cliente():
+    forwarded = request.headers.get("X-Forwarded-For", "")
+    if forwarded:
+        return forwarded.split(",")[0].strip()
+    return request.remote_addr or "desconocida"
+
+def _inyectar_sesion(html, cierre, usuario, ip_cliente, municipio):
+    bloque = (
+        f'<script>\n'
+        f'  window.SESION = {{\n'
+        f'    usuario: "{usuario}",\n'
+        f'    ip: "{ip_cliente}",\n'
+        f'    municipio: "{municipio}"\n'
+        f'  }};\n'
+        f'</script>\n'
+        f'<script src="/static/marca_agua.js"></script>\n'
+        f'{cierre}'
+    )
+    return html.replace(cierre, bloque, 1)
+
 @app.route("/mapa")
 @login_required
 def mapa():
-    return send_file(MAPA_HTML)
+    with open(MAPA_HTML, encoding="utf-8") as f:
+        html = f.read()
+    html = _inyectar_sesion(
+        html,
+        "</html>",
+        session.get("usuario", "usuario"),
+        _ip_cliente(),
+        session.get("municipio", ""),
+    )
+    return Response(html, mimetype="text/html")
 
 @app.route("/mapa-partidos")
 @login_required
 def mapa_partidos():
-    return send_file(MAPA_PARTIDOS_HTML)
+    with open(MAPA_PARTIDOS_HTML, encoding="utf-8") as f:
+        html = f.read()
+    html = _inyectar_sesion(
+        html,
+        "</body>",
+        session.get("usuario", "usuario"),
+        _ip_cliente(),
+        session.get("municipio", ""),
+    )
+    return Response(html, mimetype="text/html")
 
 @app.route("/api/mi-municipio")
 @login_required
@@ -210,9 +263,7 @@ def _cargar_candidatos():
 @login_required
 def candidatos():
     es_maestro = session.get("es_maestro", True)
-    if not es_maestro:
-        return "Acceso restringido", 403
-    return render_template('candidatos.html')
+    return render_template('candidatos.html', es_maestro=es_maestro)
 @app.route('/api/candidatos/buscar')
 @login_required
 def api_buscar_candidatos():
@@ -234,13 +285,15 @@ def api_buscar_candidatos():
 @login_required
 def api_perfil_candidato():
     es_maestro = session.get("es_maestro", True)
-    if not es_maestro:
-        return jsonify({"error": "no autorizado"}), 403
     nombre = request.args.get('nombre', '').strip().upper()
     data = _cargar_candidatos()
     perfil = data['perfiles'].get(nombre)
     if not perfil:
         return jsonify({"error": "no encontrado"}), 404
+    if not es_maestro:
+        municipio_sesion = session.get("municipio", "").strip().upper()
+        if municipio_sesion not in perfil.get('municipios', []):
+            return jsonify({"error": "no autorizado"}), 403
     return jsonify(perfil)
 @app.route('/api/candidatos/municipio/<municipio>')
 @login_required
@@ -256,10 +309,15 @@ def api_candidatos_municipio(municipio):
         if 'CANCELADO' in nombre.upper():
             continue
         if municipio_norm in perfil['municipios'] and perfil['total_participaciones'] > 1:
+            anos_en_municipio = sorted({
+                h.get('ano') for h in perfil.get('historial', [])
+                if str(h.get('municipio', '')).strip().upper() == municipio_norm
+            })
             resultado.append({
                 'nombre': nombre,
                 'total_participaciones': perfil['total_participaciones'],
                 'anos': perfil['anos'],
+                'anos_en_municipio': anos_en_municipio,
                 'partidos': perfil['partidos'],
                 'veces_gano_presidente': perfil['veces_gano_presidente'],
                 'veces_candidato_presidente': perfil['veces_candidato_presidente'],

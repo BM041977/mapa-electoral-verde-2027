@@ -1,0 +1,24 @@
+/*
+ * marca_agua_print.css — respaldo CSS al bloqueo de impresión en JS.
+ * Incluir en <head> de mapa_ligero.html y mapa_por_partido.html.
+ * Si alguien logra evadir window.print() (poco común, pero posible con
+ * extensiones de navegador), esta regla deja la hoja impresa en blanco.
+ */
+
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  body::before {
+    content: "Impresión no autorizada — Sistema de Diagnóstico Electoral";
+    visibility: visible !important;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #000;
+  }
+}

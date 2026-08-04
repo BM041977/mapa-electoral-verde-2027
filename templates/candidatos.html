@@ -372,6 +372,7 @@ function marcarActivo(items) {
 }
 
 btnLimpiar.addEventListener('click', () => {
+    clearTimeout(timeoutBusqueda);
     inputBuscar.value = '';
     btnLimpiar.classList.remove('visible');
     divSugerencias.style.display = 'none';

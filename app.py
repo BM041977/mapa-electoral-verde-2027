@@ -190,8 +190,16 @@ def api_mi_municipio():
 @app.route("/diagnosticos")
 @login_required
 def diagnosticos():
+    # static/pdfs/ no se sube a este repo a propósito (los diagnósticos de
+    # este sitio se entregan de forma impresa) — por eso NO usamos
+    # os.listdir directo: si la carpeta no existe, os.listdir lanza
+    # FileNotFoundError y tumba la ruta con un 500. isdir() la evita y deja
+    # que la plantilla muestre la leyenda correspondiente con municipios=[].
     pdf_dir = os.path.join(app.static_folder, "pdfs")
-    archivos = sorted([f for f in os.listdir(pdf_dir) if f.endswith(".pdf")])
+    if os.path.isdir(pdf_dir):
+        archivos = sorted([f for f in os.listdir(pdf_dir) if f.endswith(".pdf")])
+    else:
+        archivos = []
     es_maestro = session.get("es_maestro", True)
     municipio_sesion = session.get("municipio", "")
     if not es_maestro and municipio_sesion:

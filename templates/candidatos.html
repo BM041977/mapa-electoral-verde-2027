@@ -566,38 +566,63 @@ function poblarFiltroPartido() {
 
 function aplicarFiltros() {
     if (!candidatosMunicipioActual.length) return;
-    const ano = parseInt(document.getElementById('select-ano-municipio').value, 10);
+    const anoRaw = document.getElementById('select-ano-municipio').value;
+    const ano = anoRaw ? parseInt(anoRaw, 10) : null;
     const partido = document.getElementById('select-partido-municipio').value;
-    let filtrados = candidatosMunicipioActual.filter(c => (c.anos_en_municipio || c.anos).includes(ano));
+    let filtrados = candidatosMunicipioActual.filter(c => !ano || (c.anos_en_municipio || c.anos).includes(ano));
     if (partido) {
         filtrados = filtrados.filter(c => (c.partidos || []).includes(partido));
     }
     const div = document.getElementById('resultado-municipio');
     if (!filtrados.length) {
-        div.innerHTML = '<div class="loading-municipio">Ningún candidato con trayectoria en ' + ano + (partido ? ' (' + partido + ')' : '') + ' para este municipio.</div>';
+        div.innerHTML = '<div class="loading-municipio">Ningún candidato con trayectoria en ' + (ano || 'todos los años') + (partido ? ' (' + partido + ')' : '') + ' para este municipio.</div>';
         return;
     }
-    renderTablaMunicipio(filtrados, municipioTablaActual);
+    renderTablaMunicipio(filtrados, municipioTablaActual, ano);
 }
 
-function renderTablaMunicipio(candidatos, municipio) {
-    const soloPresidentes = candidatos.filter(c => c.veces_candidato_presidente > 0);
-    const resto = candidatos.filter(c => c.veces_candidato_presidente === 0);
+function renderTablaMunicipio(candidatos, municipio, ano) {
+    // Ordenar por participación más reciente primero (último año en que
+    // aparece en este municipio) — dentro de cada grupo (presidentes/otros)
+    // esto deja arriba a quien ha estado activo más recientemente.
+    const ordenados = candidatos.slice().sort((a, b) => {
+        const anosA = a.anos_en_municipio || a.anos;
+        const anosB = b.anos_en_municipio || b.anos;
+        return Math.max(...anosB) - Math.max(...anosA);
+    });
+
+    const soloPresidentes = ordenados.filter(c => c.veces_candidato_presidente > 0);
+    const resto = ordenados.filter(c => c.veces_candidato_presidente === 0);
+
+    const headerAnios = ano ? ('Cargo en ' + ano) : 'Años';
 
     let html = '<div class="timeline" style="padding: 0; overflow: hidden;">';
     html += '<table class="tabla-candidatos">';
     html += '<thead><tr>' +
         '<th>Candidato</th>' +
-        '<th>Años</th>' +
+        '<th>' + headerAnios + '</th>' +
         '<th style="text-align:center">Participaciones</th>' +
         '<th style="text-align:center">Veces a presidente</th>' +
         '<th style="text-align:center">Ganó</th>' +
         '</tr></thead><tbody>';
 
+    const celdaAnios = c => {
+        if (!ano) {
+            return '<span class="anios-rango">' + c.anos[0] + (c.anos.length > 1 ? '–' + c.anos[c.anos.length-1] : '') + '</span>';
+        }
+        const entradas = (c.historial_en_municipio || []).filter(h => h.ano === ano);
+        if (!entradas.length) {
+            return '<span class="anios-rango">—</span>';
+        }
+        return entradas.map(h =>
+            '<span class="anios-rango">' + escaparHtml(h.cargo || '—') + (h.partido ? ' · ' + escaparHtml(h.partido) : '') + '</span>'
+        ).join('<br>');
+    };
+
     const renderFila = c =>
         '<tr onclick="verPerfilDesdeTabla(\'' + c.nombre.replace(/'/g, "\\'") + '\')">' +
         '<td><span class="nombre-link">' + escaparHtml(c.nombre) + '</span>' + (c.posible_homonimo ? ' <span title="Posible homónimo">⚠️</span>' : '') + '</td>' +
-        '<td><span class="anios-rango">' + c.anos[0] + (c.anos.length > 1 ? '–' + c.anos[c.anos.length-1] : '') + '</span></td>' +
+        '<td>' + celdaAnios(c) + '</td>' +
         '<td style="text-align:center"><span class="veces-badge">' + c.total_participaciones + '</span></td>' +
         '<td style="text-align:center">' + (c.veces_candidato_presidente > 0 ? '<span class="veces-badge">' + c.veces_candidato_presidente + '</span>' : '—') + '</td>' +
         '<td style="text-align:center">' + (c.veces_gano_presidente > 0 ? '<span class="gano-badge">✓ ' + c.veces_gano_presidente + '</span>' : '—') + '</td>' +

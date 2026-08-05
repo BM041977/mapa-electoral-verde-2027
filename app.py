@@ -321,11 +321,27 @@ def api_candidatos_municipio(municipio):
                 h.get('ano') for h in perfil.get('historial', [])
                 if str(h.get('municipio', '')).strip().upper() == municipio_norm
             })
+            historial_en_municipio = sorted(
+                [
+                    {
+                        'ano': h.get('ano'),
+                        'cargo': h.get('cargo'),
+                        'partido': h.get('partido'),
+                        'gano': h.get('gano', False),
+                        'es_presidente': h.get('es_presidente', False),
+                    }
+                    for h in perfil.get('historial', [])
+                    if str(h.get('municipio', '')).strip().upper() == municipio_norm
+                ],
+                key=lambda h: h['ano'],
+                reverse=True,
+            )
             resultado.append({
                 'nombre': nombre,
                 'total_participaciones': perfil['total_participaciones'],
                 'anos': perfil['anos'],
                 'anos_en_municipio': anos_en_municipio,
+                'historial_en_municipio': historial_en_municipio,
                 'partidos': perfil['partidos'],
                 'veces_gano_presidente': perfil['veces_gano_presidente'],
                 'veces_candidato_presidente': perfil['veces_candidato_presidente'],

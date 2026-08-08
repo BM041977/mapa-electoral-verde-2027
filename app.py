@@ -286,6 +286,21 @@ def _archivo_estrategicas_pipeline(municipio_key):
         return os.path.join(PIPELINE_DATOS_DIR, "datos_estrategicas.json")
     return os.path.join(PIPELINE_DATOS_DIR, f"datos_estrategicas_{_slug_municipio(municipio_key)}.json")
 
+_presidentes_cache = None
+def _cargar_presidentes():
+    """Archivo consolidado (123 municipios) generado por el script de backfill —
+    reemplaza la lectura por-municipio desde PIPELINE_DATOS_DIR para que este
+    endpoint funcione también en producción, no solo en local."""
+    global _presidentes_cache
+    if _presidentes_cache is None:
+        path = os.path.join(app.static_folder, 'data', 'presidentes_historicos.json')
+        if os.path.exists(path):
+            with open(path, 'r', encoding='utf-8') as f:
+                _presidentes_cache = json.load(f)
+        else:
+            _presidentes_cache = {}
+    return _presidentes_cache
+
 _candidatos_cache = None
 def _cargar_candidatos():
     global _candidatos_cache
@@ -386,45 +401,12 @@ def api_presidentes_municipio(municipio):
     if not es_maestro and municipio_norm != municipio_sesion.strip().upper():
         return jsonify({"error": "no autorizado"}), 403
 
-    ruta_datos = _archivo_datos_pipeline(municipio_norm)
-    if not os.path.exists(ruta_datos):
+    data = _cargar_presidentes()
+    entrada = data.get(municipio_norm)
+    if not entrada:
         return jsonify({"error": "municipio no encontrado"}), 404
 
-    try:
-        with open(ruta_datos, encoding='utf-8') as f:
-            datos_base = json.load(f)
-    except (json.JSONDecodeError, OSError):
-        return jsonify({"error": "municipio no encontrado"}), 404
-
-    presidentes_hist = datos_base.get('presidentes_historicos', [])
-
-    margen_2024_votos = None
-    margen_2024_pct = None
-    ruta_estr = _archivo_estrategicas_pipeline(municipio_norm)
-    if os.path.exists(ruta_estr):
-        try:
-            with open(ruta_estr, encoding='utf-8') as f:
-                datos_estr = json.load(f)
-            margen_2024_votos = datos_estr.get('margen_2024_votos')
-            margen_2024_pct = datos_estr.get('margen_2024_pct')
-        except (json.JSONDecodeError, OSError):
-            pass  # margen queda en None si el archivo de estratégicas falla
-
-    presidentes = []
-    for p in presidentes_hist:
-        anio = p.get('anio')
-        es_2024 = (anio == 2024)
-        presidentes.append({
-            'anio': anio,
-            'candidato': p.get('candidato'),
-            'partido': p.get('partido'),
-            'margen_votos': margen_2024_votos if es_2024 else None,
-            'margen_pct': margen_2024_pct if es_2024 else None,
-        })
-
-    presidentes.sort(key=lambda x: x['anio'] or 0, reverse=True)
-
-    return jsonify({"municipio": municipio_norm, "presidentes": presidentes})
+    return jsonify({"municipio": municipio_norm, "presidentes": entrada.get('presidentes', [])})
 
 # ════════════════════════════════════════════════════════════════
 # PLANILLA POR AÑO/MUNICIPIO/PARTIDO — quién compitió y planilla completa

@@ -229,9 +229,10 @@ html, body { background: var(--bg); color: var(--ink); font-family: 'Manrope', s
     <select class="municipio-select" id="select-municipio" onchange="cargarMunicipio()">
       <option value="">— Selecciona un municipio —</option>
     </select>
-    <select class="municipio-select" id="select-ano-municipio" onchange="aplicarFiltros()"></select>
-    <select class="municipio-select" id="select-partido-municipio" onchange="aplicarFiltros()"></select>
-    <div id="resultado-municipio"></div>
+    <div id="resultado-presidentes"></div>
+    <select class="municipio-select" id="select-ano-municipio" onchange="aplicarFiltros()" style="display:none"></select>
+    <select class="municipio-select" id="select-partido-municipio" onchange="aplicarFiltros()" style="display:none"></select>
+    <div id="resultado-municipio" style="display:none"></div>
   </div>
 
 </div>
@@ -250,6 +251,7 @@ let sugerenciasActuales = [];
 let indiceActivo = -1;
 let candidatosMunicipioActual = [];
 let municipioTablaActual = '';
+let anioPresidenteExpandido = null;
 
 const ES_MAESTRO = {{ 'true' if es_maestro else 'false' }};
 const MUNICIPIO_SESION = "{{ municipio }}";
@@ -263,7 +265,9 @@ const coloresPartido = {
     'MORENA': '#A11317',
     'RSP':    '#808080',
     'PCHU':   '#056A84',
+    'CHIAPAS UNIDO': '#056A84',
     'PMCH':   '#743C90',
+    'MOVER A CHIAPAS': '#743C90',
     'PES':    '#5E327D',
     'PRD':    '#FFD100',
     'PPCH':   '#B73A3A',
@@ -288,6 +292,23 @@ function estiloPartido(partido) {
 
 function escaparHtml(s) {
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function formatearCargo(cargo) {
+    // Equivalente en JS a _formatear_cargo() del backend: capitaliza cada
+    // palabra (incluida "(A)" en mayúscula), pero corrige el sufijo de
+    // ordinal pegado a un número: "1Er" -> "1er", "2Do" -> "2do", etc.
+    const texto = String(cargo || '').toLowerCase();
+    let resultado = texto.replace(/(^|[^a-záéíóúñü])([a-záéíóúñü])/gi, (m, sep, letra) => sep + letra.toUpperCase());
+    resultado = resultado.replace(/(\d+)([A-Za-z]+)/g, (m, num, suf) => num + suf.toLowerCase());
+    return resultado;
+}
+
+function titleCaseNombre(nombre) {
+    // Solo para mostrar en pantalla — equivalente a _title_case_nombre() del
+    // backend (que ya usan compitio_contra/planilla). "MARTIN RAMIRO CHAMBE
+    // LEON" -> "Martin Ramiro Chambe Leon". No toca el dato original.
+    return String(nombre || '').toLowerCase().replace(/(^|[^a-záéíóúñü])([a-záéíóúñü])/gi, (m, sep, letra) => sep + letra.toUpperCase());
 }
 
 function resaltarCoincidencia(nombre, q) {
@@ -402,7 +423,7 @@ function buscarCandidatos(q) {
                 return;
             }
             divSugerencias.innerHTML = data.resultados.map(nombre =>
-                '<div class="sugerencia-item" data-nombre="' + escaparHtml(nombre) + '" onclick="verPerfil(this.getAttribute(\'data-nombre\'))">' + resaltarCoincidencia(nombre, q) + '</div>'
+                '<div class="sugerencia-item" data-nombre="' + escaparHtml(nombre) + '" onclick="verPerfil(this.getAttribute(\'data-nombre\'))">' + resaltarCoincidencia(titleCaseNombre(nombre), q) + '</div>'
             ).join('');
             divSugerencias.style.display = 'block';
         });
@@ -410,7 +431,7 @@ function buscarCandidatos(q) {
 
 function verPerfil(nombre) {
     divSugerencias.style.display = 'none';
-    inputBuscar.value = nombre;
+    inputBuscar.value = titleCaseNombre(nombre);
     btnLimpiar.classList.add('visible');
     document.getElementById('estado-vacio').style.display = 'none';
     const perfilDiv = document.getElementById('perfil');
@@ -442,7 +463,7 @@ function renderPerfil(p) {
     const html =
         avisoHomonimo +
         '<div class="perfil-header">' +
-            '<div class="perfil-nombre">' + escaparHtml(p.nombre) + '</div>' +
+            '<div class="perfil-nombre">' + escaparHtml(titleCaseNombre(p.nombre)) + '</div>' +
             '<div class="stats-grid">' +
                 '<div class="stat-box"><div class="stat-label">Participaciones</div><div class="stat-val">' + p.total_participaciones + '</div></div>' +
                 '<div class="stat-box"><div class="stat-label">Años activo</div><div class="stat-val">' + p.anos[0] + '–' + p.anos[p.anos.length - 1] + '</div></div>' +
@@ -463,7 +484,7 @@ function renderPerfil(p) {
                 return '<div class="evento">' +
                     '<div class="evento-ano">' + h.ano + '</div>' +
                     '<div class="evento-detalle">' +
-                        '<div class="evento-cargo">' + escaparHtml(h.cargo) + '</div>' +
+                        '<div class="evento-cargo">' + escaparHtml(formatearCargo(h.cargo)) + '</div>' +
                         '<div class="evento-municipio">' + escaparHtml(h.municipio) + '</div>' +
                         '<span class="evento-partido" style="' + estiloPartido(h.partido) + '">' + escaparHtml(h.partido) + '</span>' +
                     '</div>' +
@@ -475,6 +496,7 @@ function renderPerfil(p) {
     document.getElementById('perfil').innerHTML = html;
 }
 
+// TABS
 function cambiarTab(tab) {
     document.querySelectorAll('.tab').forEach((t, i) => {
         t.classList.toggle('activo', (i === 0 && tab === 'nombre') || (i === 1 && tab === 'municipio'));
@@ -484,6 +506,7 @@ function cambiarTab(tab) {
     if (tab === 'municipio' && !municipiosCargados) cargarMunicipios();
 }
 
+// MUNICIPIOS
 let municipiosCargados = false;
 const MUNICIPIOS = [
     "ACACOYAGUA","ACALA","ACAPETAHUA","ALDAMA","ALTAMIRANO","AMATAN",
@@ -534,21 +557,160 @@ function cargarMunicipios() {
 function cargarMunicipio() {
     const municipio = document.getElementById('select-municipio').value;
     municipioTablaActual = municipio;
+    cargarPresidentesMunicipio(municipio);
     const div = document.getElementById('resultado-municipio');
     if (!municipio) { div.innerHTML = ''; candidatosMunicipioActual = []; return; }
     div.innerHTML = '<div class="loading-municipio">Cargando candidatos...</div>';
 
-    fetch('/api/candidatos/municipio/' + encodeURIComponent(municipio))
+    // Desactivado: tabla oculta en esta vista, ver Ajuste B
+    // fetch('/api/candidatos/municipio/' + encodeURIComponent(municipio))
+    //     .then(r => r.json())
+    //     .then(data => {
+    //         candidatosMunicipioActual = data.candidatos || [];
+    //         if (!candidatosMunicipioActual.length) {
+    //             div.innerHTML = '<div class="loading-municipio">No se encontraron candidatos con trayectoria en este municipio.</div>';
+    //             return;
+    //         }
+    //         poblarFiltroPartido();
+    //         aplicarFiltros();
+    //     });
+}
+
+function cargarPresidentesMunicipio(municipio) {
+    const div = document.getElementById('resultado-presidentes');
+    if (!municipio) { div.innerHTML = ''; return; }
+    div.innerHTML = '<div class="loading-municipio">Cargando historial de presidentes...</div>';
+
+    fetch('/api/candidatos/presidentes/' + encodeURIComponent(municipio))
         .then(r => r.json())
         .then(data => {
-            candidatosMunicipioActual = data.candidatos || [];
-            if (!candidatosMunicipioActual.length) {
-                div.innerHTML = '<div class="loading-municipio">No se encontraron candidatos con trayectoria en este municipio.</div>';
+            const presidentes = data.presidentes || [];
+            if (!presidentes.length) {
+                div.innerHTML = '<div class="loading-municipio">No hay historial de presidentes registrado para este municipio.</div>';
                 return;
             }
-            poblarFiltroPartido();
-            aplicarFiltros();
+            renderTablaPresidentes(presidentes);
+        })
+        .catch(() => {
+            div.innerHTML = '<div class="loading-municipio">Error al cargar historial de presidentes.</div>';
         });
+}
+
+function renderTablaPresidentes(presidentes) {
+    anioPresidenteExpandido = null;
+
+    let html = '<div class="timeline" style="padding: 0; overflow: hidden; margin-bottom: 20px;">';
+    html += '<h3 style="padding: 18px 20px 4px;">Historial de Presidentes Municipales</h3>';
+    html += '<table class="tabla-candidatos">';
+    html += '<thead><tr>' +
+        '<th>Año</th>' +
+        '<th>Candidato</th>' +
+        '<th>Partido</th>' +
+        '</tr></thead><tbody>';
+
+    presidentes.forEach(p => {
+        const partidoEscapado = String(p.partido || '').replace(/'/g, "\\'");
+        html += '<tr id="fila-presidente-' + p.anio + '" class="fila-presidente" onclick="togglePresidente(' + p.anio + ', \'' + partidoEscapado + '\')" style="cursor:pointer">' +
+            '<td>' + p.anio + '</td>' +
+            '<td>' + escaparHtml(p.candidato || '—') + '</td>' +
+            '<td><span class="evento-partido" style="' + estiloPartido(p.partido) + '">' + escaparHtml(p.partido || '—') + '</span></td>' +
+            '</tr>';
+        html += '<tr id="detalle-presidente-' + p.anio + '" style="display:none">' +
+            '<td colspan="3" style="padding:0;background:var(--bg);">' +
+                '<div id="contenido-presidente-' + p.anio + '" style="padding:24px 14px 18px;border-top:1px solid var(--line);"></div>' +
+            '</td>' +
+            '</tr>';
+    });
+
+    html += '</tbody></table></div>';
+    document.getElementById('resultado-presidentes').innerHTML = html;
+}
+
+function togglePresidente(anio, partido) {
+    if (anioPresidenteExpandido === anio) {
+        colapsarPresidente();
+        return;
+    }
+
+    const filaDetalle = document.getElementById('detalle-presidente-' + anio);
+    if (!filaDetalle) return;
+
+    if (anioPresidenteExpandido !== null) {
+        const filaDetalleAnterior = document.getElementById('detalle-presidente-' + anioPresidenteExpandido);
+        if (filaDetalleAnterior) filaDetalleAnterior.style.display = 'none';
+    }
+
+    anioPresidenteExpandido = anio;
+    document.querySelectorAll('.fila-presidente').forEach(fila => {
+        fila.style.display = (fila.id === 'fila-presidente-' + anio) ? '' : 'none';
+    });
+    filaDetalle.style.display = 'table-row';
+    const contenedorEl = document.querySelector('.contenedor');
+    if (contenedorEl) contenedorEl.style.maxWidth = '1100px';
+    const contenido = document.getElementById('contenido-presidente-' + anio);
+    contenido.innerHTML = '<div class="loading-municipio">Cargando...</div>';
+
+    fetch('/api/candidatos/planilla/' + encodeURIComponent(municipioTablaActual) + '/' + anio + '/' + encodeURIComponent(partido))
+        .then(r => r.json())
+        .then(data => {
+            contenido.innerHTML = renderDetallePresidente(data);
+        })
+        .catch(() => {
+            contenido.innerHTML = '<div class="loading-municipio">Error al cargar el detalle.</div>';
+        });
+}
+
+function colapsarPresidente() {
+    if (anioPresidenteExpandido === null) return;
+    const filaDetalle = document.getElementById('detalle-presidente-' + anioPresidenteExpandido);
+    if (filaDetalle) filaDetalle.style.display = 'none';
+    document.querySelectorAll('.fila-presidente').forEach(fila => { fila.style.display = ''; });
+    const contenedorEl = document.querySelector('.contenedor');
+    if (contenedorEl) contenedorEl.style.maxWidth = '';
+    anioPresidenteExpandido = null;
+}
+
+function renderDetallePresidente(data) {
+    const compitioContra = data.compitio_contra || [];
+    const planilla = data.planilla || [];
+
+    const filaTarjeta = (esUltimo) =>
+        'display:flex;flex-direction:column;gap:4px;padding-bottom:12px;margin-bottom:12px;' +
+        (esUltimo ? '' : 'border-bottom:1px solid var(--line);');
+
+    let html = '<button type="button" onclick="colapsarPresidente()" style="display:inline-flex;align-items:center;gap:6px;background:transparent;border:1px solid var(--line);border-radius:8px;padding:7px 14px;font-family:\'Manrope\',sans-serif;font-size:0.78rem;font-weight:600;color:var(--ink-soft);cursor:pointer;margin-bottom:20px;">✕ Ver todos los años</button>';
+    html += '<div style="display:grid;grid-template-columns:0.8fr 1.2fr;gap:36px;">';
+
+    html += '<div>';
+    html += '<h4 style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.4px;color:var(--ink-soft);margin-bottom:10px;">Compitió contra</h4>';
+    if (!compitioContra.length) {
+        html += '<p style="font-size:0.85rem;color:var(--ink-soft);">Sin competidores registrados para este año.</p>';
+    } else {
+        html += compitioContra.map((c, i, arr) =>
+            '<div style="' + filaTarjeta(i === arr.length - 1) + '">' +
+                '<span style="font-size:0.88rem;">' + escaparHtml(c.nombre) + '</span>' +
+                '<span class="evento-partido" style="display:inline-block;white-space:nowrap;width:fit-content;' + estiloPartido(c.partido) + '">' + escaparHtml(c.partido || '—') + '</span>' +
+            '</div>'
+        ).join('');
+    }
+    html += '</div>';
+
+    html += '<div>';
+    html += '<h4 style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.4px;color:var(--ink-soft);margin-bottom:10px;">Su planilla</h4>';
+    if (!planilla.length) {
+        html += '<p style="font-size:0.85rem;color:var(--ink-soft);">Sin planilla registrada para este año.</p>';
+    } else {
+        html += planilla.map((m, i, arr) =>
+            '<div style="' + filaTarjeta(i === arr.length - 1) + '">' +
+                '<span style="font-size:0.88rem;">' + escaparHtml(m.nombre) + '</span>' +
+                '<span style="font-size:0.76rem;color:var(--ink-soft);">' + escaparHtml(m.cargo || '—') + '</span>' +
+            '</div>'
+        ).join('');
+    }
+    html += '</div>';
+
+    html += '</div>';
+    return html;
 }
 
 function poblarFiltroPartido() {
@@ -621,7 +783,7 @@ function renderTablaMunicipio(candidatos, municipio, ano) {
 
     const renderFila = c =>
         '<tr onclick="verPerfilDesdeTabla(\'' + c.nombre.replace(/'/g, "\\'") + '\')">' +
-        '<td><span class="nombre-link">' + escaparHtml(c.nombre) + '</span>' + (c.posible_homonimo ? ' <span title="Posible homónimo">⚠️</span>' : '') + '</td>' +
+        '<td><span class="nombre-link">' + escaparHtml(c.nombre) + '</span>' + (c.posible_homonimo ? ' <span title="Posible homónimo: este nombre aparece en varios municipios en el mismo año">⚠️</span>' : '') + '</td>' +
         '<td>' + celdaAnios(c) + '</td>' +
         '<td style="text-align:center"><span class="veces-badge">' + c.total_participaciones + '</span></td>' +
         '<td style="text-align:center">' + (c.veces_candidato_presidente > 0 ? '<span class="veces-badge">' + c.veces_candidato_presidente + '</span>' : '—') + '</td>' +
@@ -676,6 +838,7 @@ document.addEventListener('click', e => {
     iv = setInterval(tick, 1000);
 })();
 
+// Si la URL trae ?nombre=..., cargar ese perfil directamente
 (function cargarDesdeUrl() {
     if (!ES_MAESTRO) return;
     const params = new URLSearchParams(window.location.search);

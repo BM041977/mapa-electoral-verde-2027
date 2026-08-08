@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, redirect, session, jsonify, s
 from functools import wraps
 import os
 import json
+import re
+import unicodedata
 
 def _cargar_usuarios():
     try:
@@ -259,6 +261,31 @@ def historico():
         municipio_usuario=municipio_usuario
     )
 
+# ════════════════════════════════════════════════════════════════
+# PRESIDENTES MUNICIPALES HISTÓRICOS — datos del pipeline de PDFs
+# ════════════════════════════════════════════════════════════════
+# ⚠️ Estas rutas viven fuera de este repo (paquete_v11_final no está
+# en git ni se despliega a Render). Funciona en local; en producción
+# devolverá 404 hasta que se decida cómo sincronizar esos JSON.
+PIPELINE_DATOS_DIR = os.environ.get(
+    "PIPELINE_DATOS_DIR",
+    r"C:\Users\Baldemar Maza\Documents\chiapas_2027\paquete-v11.13-CHIAPAS-2027\paquete_v11_final",
+)
+
+def _slug_municipio(municipio_key):
+    """'TUXTLA GUTIERREZ' -> 'tuxtla_gutierrez' (mismo slug que municipio_config.py)."""
+    return municipio_key.title().replace(' ', '_').lower()
+
+def _archivo_datos_pipeline(municipio_key):
+    if municipio_key == "TUXTLA GUTIERREZ":
+        return os.path.join(PIPELINE_DATOS_DIR, "datos_tuxtla.json")
+    return os.path.join(PIPELINE_DATOS_DIR, f"datos_{_slug_municipio(municipio_key)}.json")
+
+def _archivo_estrategicas_pipeline(municipio_key):
+    if municipio_key == "TUXTLA GUTIERREZ":
+        return os.path.join(PIPELINE_DATOS_DIR, "datos_estrategicas.json")
+    return os.path.join(PIPELINE_DATOS_DIR, f"datos_estrategicas_{_slug_municipio(municipio_key)}.json")
+
 _candidatos_cache = None
 def _cargar_candidatos():
     global _candidatos_cache
@@ -349,6 +376,182 @@ def api_candidatos_municipio(municipio):
             })
     resultado.sort(key=lambda x: -x['total_participaciones'])
     return jsonify({"candidatos": resultado})
+
+@app.route('/api/candidatos/presidentes/<municipio>')
+@login_required
+def api_presidentes_municipio(municipio):
+    es_maestro = session.get("es_maestro", True)
+    municipio_sesion = session.get("municipio", "")
+    municipio_norm = municipio.strip().upper().replace('_', ' ')
+    if not es_maestro and municipio_norm != municipio_sesion.strip().upper():
+        return jsonify({"error": "no autorizado"}), 403
+
+    ruta_datos = _archivo_datos_pipeline(municipio_norm)
+    if not os.path.exists(ruta_datos):
+        return jsonify({"error": "municipio no encontrado"}), 404
+
+    try:
+        with open(ruta_datos, encoding='utf-8') as f:
+            datos_base = json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return jsonify({"error": "municipio no encontrado"}), 404
+
+    presidentes_hist = datos_base.get('presidentes_historicos', [])
+
+    margen_2024_votos = None
+    margen_2024_pct = None
+    ruta_estr = _archivo_estrategicas_pipeline(municipio_norm)
+    if os.path.exists(ruta_estr):
+        try:
+            with open(ruta_estr, encoding='utf-8') as f:
+                datos_estr = json.load(f)
+            margen_2024_votos = datos_estr.get('margen_2024_votos')
+            margen_2024_pct = datos_estr.get('margen_2024_pct')
+        except (json.JSONDecodeError, OSError):
+            pass  # margen queda en None si el archivo de estratégicas falla
+
+    presidentes = []
+    for p in presidentes_hist:
+        anio = p.get('anio')
+        es_2024 = (anio == 2024)
+        presidentes.append({
+            'anio': anio,
+            'candidato': p.get('candidato'),
+            'partido': p.get('partido'),
+            'margen_votos': margen_2024_votos if es_2024 else None,
+            'margen_pct': margen_2024_pct if es_2024 else None,
+        })
+
+    presidentes.sort(key=lambda x: x['anio'] or 0, reverse=True)
+
+    return jsonify({"municipio": municipio_norm, "presidentes": presidentes})
+
+# ════════════════════════════════════════════════════════════════
+# PLANILLA POR AÑO/MUNICIPIO/PARTIDO — quién compitió y planilla completa
+# ════════════════════════════════════════════════════════════════
+def _normalizar_nombre(nombre):
+    """Mayúsculas, sin acentos, espacios colapsados — para matchear nombres
+    entre presidentes_historicos (Title Case, acentos inconsistentes) y
+    historico_candidatos.json (MAYÚSCULAS)."""
+    nfkd = unicodedata.normalize('NFKD', str(nombre or ''))
+    sin_acentos = ''.join(c for c in nfkd if not unicodedata.combining(c))
+    return re.sub(r'\s+', ' ', sin_acentos.strip().upper())
+
+def _title_case_nombre(nombre):
+    return str(nombre or '').title()
+
+def _formatear_cargo(cargo):
+    """Similar a _title_case_nombre pero corrige el efecto secundario de
+    .title() sobre sufijos de ordinal pegados a números: "1ER"->"1Er" (mal)
+    se corrige a "1er" (bien). El resto del texto (Presidente, Sindico,
+    Regidor, Propietario, Suplente, "(A)") ya sale correcto con .title()."""
+    texto = str(cargo or '').title()
+    return re.sub(r'(\d+)([A-Za-z]+)', lambda m: m.group(1) + m.group(2).lower(), texto)
+
+def _rango_cargo(cargo):
+    """Cargo (str) -> (es_suplente, numero) para ordenar una planilla:
+    Presidente(0) < Sindico(1) < 1er Regidor(2) < 2do Regidor(3) < ...,
+    con todos los suplentes agrupados al final."""
+    c = str(cargo or '').strip().upper()
+    es_suplente = 'SUPLENTE' in c
+
+    if c.startswith('PRESIDENTE'):
+        numero = 0
+    elif c.startswith('SINDICO') or c.startswith('SÍNDICO'):
+        numero = 1
+    elif 'REGIDOR' in c:
+        m = re.match(r'^(\d+)[A-Z]*\s+REGIDOR', c)
+        numero = (1 + int(m.group(1))) if m else 100
+    else:
+        numero = 999
+
+    return (es_suplente, numero)
+
+_indice_planillas = None
+def _construir_indice_planillas():
+    """Índice perezoso: (anio, municipio) -> [{nombre, cargo, partido}, ...],
+    construido una sola vez a partir de historico_candidatos.json (ya cacheado
+    por _cargar_candidatos()) y reutilizado en todos los requests siguientes."""
+    global _indice_planillas
+    if _indice_planillas is not None:
+        return _indice_planillas
+    data = _cargar_candidatos()
+    indice = {}
+    for nombre, perfil in data['perfiles'].items():
+        for h in perfil.get('historial', []):
+            anio = h.get('ano')
+            municipio = str(h.get('municipio', '')).strip().upper()
+            if anio is None or not municipio:
+                continue
+            indice.setdefault((anio, municipio), []).append({
+                'nombre': nombre,
+                'cargo': h.get('cargo'),
+                'partido': h.get('partido'),
+            })
+    _indice_planillas = indice
+    return _indice_planillas
+
+@app.route('/api/candidatos/planilla/<municipio>/<int:ano>/<partido>')
+@login_required
+def api_planilla_candidato(municipio, ano, partido):
+    es_maestro = session.get("es_maestro", True)
+    municipio_sesion = session.get("municipio", "")
+    municipio_norm = municipio.strip().upper().replace('_', ' ')
+    if not es_maestro and municipio_norm != municipio_sesion.strip().upper():
+        return jsonify({"error": "no autorizado"}), 403
+
+    indice = _construir_indice_planillas()
+    entradas = indice.get((ano, municipio_norm), [])
+
+    # Resolver el partido real del ganador cruzando presidentes_historicos
+    # (nombre, Title Case) con las entradas de historico_candidatos.json
+    # (MAYÚSCULAS) para este año/municipio — el <partido> de la URL puede
+    # venir en formato distinto (ej. coalición) al que usa cada candidato
+    # individualmente en su historial.
+    partido_resuelto = partido
+    ruta_datos = _archivo_datos_pipeline(municipio_norm)
+    if os.path.exists(ruta_datos):
+        try:
+            with open(ruta_datos, encoding='utf-8') as f:
+                datos_base = json.load(f)
+            ganador = next(
+                (p.get('candidato') for p in datos_base.get('presidentes_historicos', [])
+                 if p.get('anio') == ano),
+                None
+            )
+            if ganador:
+                objetivo = _normalizar_nombre(ganador)
+                match = next(
+                    (e for e in entradas
+                     if str(e.get('cargo', '')).strip().upper().startswith('PRESIDENTE')
+                     and _normalizar_nombre(e['nombre']) == objetivo),
+                    None
+                )
+                if match:
+                    partido_resuelto = match['partido']
+        except (json.JSONDecodeError, OSError):
+            pass  # si falla la lectura, seguimos con el partido de la URL
+
+    compitio_contra = [
+        {'nombre': _title_case_nombre(e['nombre']), 'cargo': _formatear_cargo(e['cargo']), 'partido': e['partido']}
+        for e in entradas
+        if str(e.get('cargo', '')).strip().upper().startswith('PRESIDENTE')
+        and e.get('partido') != partido_resuelto
+    ]
+
+    planilla_ordenada = sorted(
+        (e for e in entradas if e.get('partido') == partido_resuelto),
+        key=lambda e: _rango_cargo(e.get('cargo'))
+    )
+    planilla = [{'nombre': _title_case_nombre(e['nombre']), 'cargo': _formatear_cargo(e['cargo'])} for e in planilla_ordenada]
+
+    return jsonify({
+        "municipio": municipio_norm,
+        "anio": ano,
+        "partido": partido,
+        "compitio_contra": compitio_contra,
+        "planilla": planilla,
+    })
 
 if __name__ == "__main__":
     app.run(debug=True)

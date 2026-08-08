@@ -490,29 +490,29 @@ def api_planilla_candidato(municipio, ano, partido):
     # (MAYÚSCULAS) para este año/municipio — el <partido> de la URL puede
     # venir en formato distinto (ej. coalición) al que usa cada candidato
     # individualmente en su historial.
+    # FIX (08-ago-2026): antes leía el ganador desde _archivo_datos_pipeline()
+    # (PIPELINE_DATOS_DIR, solo existe en local) — mismo problema ya resuelto
+    # para /api/candidatos/presidentes/. Ahora usa el archivo consolidado del
+    # repo (_cargar_presidentes()), igual en local y en producción.
     partido_resuelto = partido
-    ruta_datos = _archivo_datos_pipeline(municipio_norm)
-    if os.path.exists(ruta_datos):
-        try:
-            with open(ruta_datos, encoding='utf-8') as f:
-                datos_base = json.load(f)
-            ganador = next(
-                (p.get('candidato') for p in datos_base.get('presidentes_historicos', [])
-                 if p.get('anio') == ano),
+    datos_presidentes = _cargar_presidentes()
+    entrada_municipio = datos_presidentes.get(municipio_norm)
+    if entrada_municipio:
+        ganador = next(
+            (p.get('candidato') for p in entrada_municipio.get('presidentes', [])
+             if p.get('anio') == ano),
+            None
+        )
+        if ganador:
+            objetivo = _normalizar_nombre(ganador)
+            match = next(
+                (e for e in entradas
+                 if str(e.get('cargo', '')).strip().upper().startswith('PRESIDENTE')
+                 and _normalizar_nombre(e['nombre']) == objetivo),
                 None
             )
-            if ganador:
-                objetivo = _normalizar_nombre(ganador)
-                match = next(
-                    (e for e in entradas
-                     if str(e.get('cargo', '')).strip().upper().startswith('PRESIDENTE')
-                     and _normalizar_nombre(e['nombre']) == objetivo),
-                    None
-                )
-                if match:
-                    partido_resuelto = match['partido']
-        except (json.JSONDecodeError, OSError):
-            pass  # si falla la lectura, seguimos con el partido de la URL
+            if match:
+                partido_resuelto = match['partido']
 
     compitio_contra = [
         {'nombre': _title_case_nombre(e['nombre']), 'cargo': _formatear_cargo(e['cargo']), 'partido': e['partido']}

@@ -27,3 +27,6 @@ FUENTES/
 PUBLICAR/
 *.xlsx
 generar_mapa_partidos.py
+
+# Respaldo local de PDFs con branding de partido (no se sube al repo)
+pdfs_respaldo_no_publico/
